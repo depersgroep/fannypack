@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+// IDENTITY
+//
+// description:
+// App logo
+////////////////////////////////////////////////////////////////////////////////
+
+.identity {
+	//
+}
+
+.identity,
+.identity__link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.identity__link {
+	text-decoration: none;
+}
+
+.identity__logo {
+	width: $identity-logo-small-dimension;
+	height: $identity-logo-small-dimension;
+	border-radius: $identity-logo-small-border-radius;
+	background-color: $fannypack-pink;
+	letter-spacing: -1px;
+	line-height: $identity-logo-small-dimension;
+	text-align: center;
+
+	.identity--large & {
+		width: $identity-logo-large-dimension;
+		height: $identity-logo-large-dimension;
+		line-height: $identity-logo-large-dimension;
+	}
+
+	.identity--xlarge & {
+		width: $identity-logo-xlarge-dimension;
+		height: $identity-logo-xlarge-dimension;
+		line-height: $identity-logo-xlarge-dimension;
+	}
+}
+
+.identity__character {
+	color: $white;
+	font-size: $identity-character-font-size;
+	font-weight: bold;
+
+	&:not(:first-child) {
+		color: rgba($black, .25);
+		font-weight: normal;
+	}
+}
+
+.identity__name {
+	margin-left: 15px;
+	color: $black;
+	font-size: $identity-name-font-size;
+	font-weight: bold;
+}

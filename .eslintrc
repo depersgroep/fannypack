@@ -1,0 +1,25 @@
+# De Persgroep Javascript conventions for ESLint
+
+# Configure ESLint: http://eslint.org/docs/user-guide/configuring
+# How to configure ESLint? https://atlassian.persgroep.net/confluence/pages/viewpage.action?pageId=128502019
+# Rule information: http://eslint.org/docs/rules/
+
+---
+
+parserOptions:
+  ecmaVersion: 5
+  sourceType": "script"
+
+env:
+  browser: true
+
+globals:
+  "$": false,
+  "App": false,
+  "window": false,
+  "document": false,
+  "debounce": false,
+  "require": false,
+  "console": false
+
+extends: ["persgroep"]

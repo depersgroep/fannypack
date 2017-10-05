@@ -1,0 +1,12 @@
+{{ partial "head" . }}
+
+{{ partial "header" . }}
+
+<main class="fp-main-container" role="main">
+	{{ partial "drawer" . }}
+	<article class="fp-article">
+		{{ .Content }}
+	</article>
+</main>
+
+{{ partial "footer" . }}

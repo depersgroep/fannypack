@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////////////////
+// BUTTONS
+//
+// description
+////////////////////////////////////////////////////////////////////////////////
+
+.button {
+	height: $button-height;
+	padding-right: 15px;
+	padding-left: 15px;
+	transition: background-color .15s ease-in-out;
+	border: 0;
+	border-radius: $button-border-radius;
+	background-color: $button-default-bg;
+	font-weight: bold;
+
+	&:focus,
+	&:hover {
+		background-color: $button-default-hover-bg;
+	}
+
+	& + & {
+		margin-left: $base-spacing-unit;
+	}
+}
+
+.button--primary {
+	background-color: $button-primary-bg;
+	color: $button-primary-color;
+
+	&:focus,
+	&:hover {
+		background-color: $button-primary-hover-bg;
+	}
+}

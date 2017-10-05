@@ -1,0 +1,108 @@
+@charset 'UTF-8';
+
+@import 'functions';
+
+@import 'site-settings';
+@import 'documentation-settings';
+@import 'modules-settings';
+@import 'mixins/mixins';
+
+////////////////////////////////////////////////////////////////////////////////
+// DOCS
+//
+// description:
+// custom styling for the documentation site
+////////////////////////////////////////////////////////////////////////////////
+
+.identity__character {
+	&:first-child {
+		color: $neon-blue;
+	}
+
+	&:last-child {
+		color: $neon-yellow;
+		font-weight: bold;
+	}
+}
+
+.highlight {
+	margin-bottom: $double-spacing-unit;
+
+	.chroma {
+		padding: $double-spacing-unit;
+	}
+}
+
+.chroma {
+	overflow: auto;
+}
+
+.fp-example {
+	padding: $double-spacing-unit;
+	border: 1px solid $border-color;
+	border-radius: $border-radius-large;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+
+	+ .highlight {
+		margin-top: -1px;
+
+		.chroma {
+			margin: 0;
+		}
+	}
+}
+
+.theme-fp-docs {
+	background-color: $evil-gray;
+}
+
+.fp-main-container {
+	@include clearfix;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.fp-drawer {
+	width: $drawer-width;
+	padding: $double-spacing-unit;
+	float: left;
+}
+
+.fp-article {
+	margin-left: $drawer-width;
+	padding: $double-spacing-unit;
+	border-right: 1px solid $border-color;
+	border-left: 1px solid $border-color;
+	background-color: $white;
+}
+
+.fp-nav {
+	//
+}
+
+.fp-nav__list {
+	@include unstyled-list;
+
+	// nested
+	& & {
+		margin-top: $base-spacing-unit;
+		padding-left: ($base-spacing-unit * 1.5);
+		border-left: 2px solid $fannypack-pink;
+	}
+}
+
+.fp-nav__item {
+	display: block;
+}
+
+.fp-nav__link {
+	display: block;
+	font-weight: bold;
+	text-decoration: none;
+
+	.fp-nav__list .fp-nav__list & {
+		font-weight: normal;
+	}
+}

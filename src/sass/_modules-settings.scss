@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////////////////////////////////
+// MODULE SETTINGS
+//
+// description:
+// Per module settings
+////////////////////////////////////////////////////////////////////////////////
+
+// scss-lint:disable SpaceAfterVariableName
+
+//==============================================================================
+// FORMS
+//==============================================================================
+$form-elements-height: 35px !default;
+$form-help-text-color: $aluminum !default;
+$form-meta-color     : $form-help-text-color !default;
+
+$form-element-disabled-border : $iron !default;
+$form-element-disabled-bg : $silver !default;
+$form-element-readonly-border : $iron !default;
+$form-element-readonly-bg : $silver !default;
+
+//==============================================================================
+// SITE HEADER
+//==============================================================================
+$site-header-bg          : $white !default;
+$site-header-border-color: $border-color !default;
+$site-header-height      : 70px !default;
+
+//==============================================================================
+// IDENTITY
+//==============================================================================
+$identity-name-font-size           : $font-size-large !default;
+$identity-character-font-size      : 1em !default;
+
+$identity-logo-small-dimension     : 40px !default;
+$identity-logo-large-dimension     : 80px !default;
+$identity-logo-xlarge-dimension    : 940px !default;
+
+$identity-logo-small-border-radius : 5px !default;
+$identity-logo-large-border-radius : 10px !default;
+$identity-logo-xlarge-border-radius: 12px !default;
+
+
+$identity-logo-green: #6bd888 !default;
+$fannypack-pink: #fc569f !default;
+
+//==============================================================================
+// TOOLBAR
+//==============================================================================
+$toolbar-height: $site-header-height !default;
+$toolbar-light-bg: $white !default;
+$toolbar-dark-bg: #3c4d62 !default;
+$toolbar-border-color: $border-color !default;
+
+//==============================================================================
+// BREADCRUMB
+//==============================================================================
+$breadcrumb-default-color: $aluminum !default;
+$breadcrumb-light-color: $white !default;
+
+//==============================================================================
+// BUTTONS
+//==============================================================================
+$button-height: $form-elements-height !default;
+$button-border-radius: ($button-height / 2) !default;
+
+// default
+$button-default-bg: $iron !default;
+$button-default-hover-bg: darken($button-default-bg, 15%) !default;
+
+// primary
+$button-primary-bg: #47a0c3 !default;
+$button-primary-hover-bg: darken($button-primary-bg, 15%) !default;
+$button-primary-color: $white !default;
+
+// scss-lint:enable SpaceAfterVariableName

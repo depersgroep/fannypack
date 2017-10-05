@@ -1,0 +1,125 @@
+{
+  "name": "Fannypack",
+  "version": "1.0.0",
+  "description": "De Persgroep Styleguide for all internal applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:joggink/fannypack.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "styleguide",
+    "DPP",
+    "Persgroep"
+  ],
+  "author": "Rebel Squad",
+  "license": "ISC",
+  "homepage": "https://github.com/joggink/fannypack#readme",
+  "clean": [
+    "static/"
+  ],
+  "js": {
+    "files": [
+      {
+        "src": [
+          "src/js/persgroep/3rdparty/*.js",
+          "src/js/persgroep/*.js",
+          "src/js/persgroep/classes/*.js",
+          "src/js/bootstrap.js",
+          "src/js/modules/*.js",
+          "src/js/vendor/picturefill.js"
+        ],
+        "dest": "static/js/",
+        "file": "styleguide.js"
+      },
+      {
+        "src": [
+          "src/js/config/*.js"
+        ],
+        "dest": "static/js/",
+        "file": "main-head.js"
+      }
+    ],
+    "hint": {
+      "src": [
+        "src/js/**/*.js",
+        "!./src/js/persgroep/**/*.js",
+        "!./src/js/vendor/**/*.js"
+      ]
+    },
+    "watch": "src/js/**/*.js"
+  },
+  "sass": {
+    "files": [
+      {
+        "src": "src/sass/**/*.scss",
+        "dest": "static/css/",
+        "file": "main.css"
+      }
+    ],
+    "hint": {
+      "src": [
+        "src/sass/**/*.scss",
+        "!./src/sass/base/_normalize.scss",
+        "!./src/sass/modules/_syntax.scss"
+      ]
+    },
+    "watch": "src/sass/**/*.scss",
+    "autoprefixer": {
+      "browsers": [
+        "Firefox >=27",
+        "Chrome >= 33",
+        "ie >= 9",
+        "Safari >= 7",
+        "iOS >= 7",
+        "Android >= 4.1"
+      ]
+    }
+  },
+  "img": {
+    "src": "src/img/**/*",
+    "dest": "static/img/",
+    "watch": "src/img/**/*"
+  },
+  "fonts": {
+    "src": "src/fonts/**/*",
+    "dest": "static/",
+    "watch": "src/fonts/**/*"
+  },
+  "git": {
+    "hooks": {
+      "precommit": {
+        "src": "scripts/.pre-commit",
+        "dest": ".git/hooks/pre-commit"
+      }
+    }
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "eslint": "^3.12.2",
+    "eslint-config-persgroep": "1.0.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-bless": "^3.2.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "file-exists": "^1.0.0",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}

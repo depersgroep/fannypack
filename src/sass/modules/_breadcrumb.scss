@@ -1,0 +1,34 @@
+////////////////////////////////////////////////////////////////////////////////
+// BREADCRUMB
+//
+// description
+////////////////////////////////////////////////////////////////////////////////
+
+.breadcrumb {
+	@include unstyled-list;
+	display: flex;
+	flex-direction: row;
+	color: $breadcrumb-default-color;
+}
+
+.breadcrumb--light {
+	color: $breadcrumb-light-color;
+}
+
+.breadcrumb__item {
+	&::after {
+		margin-right: 7px;
+		margin-left: $half-spacing-unit;
+		content: '\203A'; // &rsaquo;
+	}
+
+	&:last-child {
+		&::after {
+			content: none;
+		}
+	}
+}
+
+.breadcrumb__link {
+	color: inherit;
+}

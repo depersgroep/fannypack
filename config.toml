@@ -1,0 +1,18 @@
+
+baseurl = "https://fannypack.persgroep.net/"
+languageCode = "en-us"
+title = "Fannypack"
+theme = "dpp"
+metadataformat = "toml"
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+# disableLiveReload = true
+
+pygmentsUseClasses=true
+pygmentsCodeFences = true
+
+[blackfriday]
+	smartDashes = false
+	latexDashes = false
