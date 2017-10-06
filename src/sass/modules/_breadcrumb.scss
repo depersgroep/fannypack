@@ -5,15 +5,20 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .breadcrumb {
-	@include unstyled-list;
-	display: flex;
-	flex-direction: row;
 	color: $breadcrumb-default-color;
 }
 
+// light version on a dark background
 .breadcrumb--light {
 	color: $breadcrumb-light-color;
 }
+
+.breadcrumb__list {
+	@include unstyled-list;
+	display: flex;
+	flex-direction: row;
+}
+
 
 .breadcrumb__item {
 	&::after {
@@ -31,4 +36,13 @@
 
 .breadcrumb__link {
 	color: inherit;
+
+	&:focus,
+	&:hover {
+		color: $text-color;
+
+		.breadcrumb--light & {
+			color: rgba($breadcrumb-light-color, .66);
+		}
+	}
 }

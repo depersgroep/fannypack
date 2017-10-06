@@ -14,14 +14,20 @@
 // custom styling for the documentation site
 ////////////////////////////////////////////////////////////////////////////////
 
-.identity__character {
-	&:first-child {
-		color: $neon-blue;
+.app-icon--neon-pink {
+	.app-icon__logo {
+		background-color: $neon-pink;
 	}
 
-	&:last-child {
-		color: $neon-yellow;
-		font-weight: bold;
+	.app-icon__character {
+		&:first-child {
+			color: $neon-blue;
+		}
+
+		&:last-child {
+			color: $neon-yellow;
+			font-weight: bold;
+		}
 	}
 }
 
@@ -51,6 +57,25 @@
 			margin: 0;
 		}
 	}
+
+	&--dark {
+		background-color: $almost-black;
+	}
+
+	&--app-icons {
+		@include clearfix;
+
+		.app-icon {
+			margin-right: $double-spacing-unit;
+			float: left;
+		}
+	}
+
+	&-app-icons-stacked {
+		.app-icon:not(:last-child) {
+			margin-bottom: $double-spacing-unit;
+		}
+	}
 }
 
 .theme-fp-docs {
@@ -68,6 +93,10 @@
 	width: $drawer-width;
 	padding: $double-spacing-unit;
 	float: left;
+
+	@include mq-max(800px) {
+		display: none;
+	}
 }
 
 .fp-article {
@@ -76,6 +105,10 @@
 	border-right: 1px solid $border-color;
 	border-left: 1px solid $border-color;
 	background-color: $white;
+
+	@include mq-max(800px) {
+		margin-left: 0;
+	}
 }
 
 .fp-nav {
@@ -89,7 +122,7 @@
 	& & {
 		margin-top: $base-spacing-unit;
 		padding-left: ($base-spacing-unit * 1.5);
-		border-left: 2px solid $fannypack-pink;
+		border-left: 2px solid $neon-pink;
 	}
 }
 
@@ -101,6 +134,15 @@
 	display: block;
 	font-weight: bold;
 	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		color: $purple;
+	}
+
+	&.is-active {
+		color: $fuchsia;
+	}
 
 	.fp-nav__list .fp-nav__list & {
 		font-weight: normal;

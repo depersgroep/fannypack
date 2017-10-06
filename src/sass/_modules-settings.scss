@@ -27,22 +27,28 @@ $site-header-border-color: $border-color !default;
 $site-header-height      : 70px !default;
 
 //==============================================================================
-// IDENTITY
+// APP ICONS
 //==============================================================================
-$identity-name-font-size           : $font-size-large !default;
-$identity-character-font-size      : 1em !default;
+$app-icon-name-font-size           : $font-size-large !default;
+$app-icon-character-font      : 16px !default;
 
-$identity-logo-small-dimension     : 40px !default;
-$identity-logo-large-dimension     : 80px !default;
-$identity-logo-xlarge-dimension    : 940px !default;
+$app-icon-logo-small-dimension     : 40px !default;
+$app-icon-logo-large-dimension     : 80px !default;
+$app-icon-logo-xlarge-dimension    : 94px !default;
 
-$identity-logo-small-border-radius : 5px !default;
-$identity-logo-large-border-radius : 10px !default;
-$identity-logo-xlarge-border-radius: 12px !default;
+$app-icon-logo-small-border-radius : 5px !default;
+$app-icon-logo-large-border-radius : 10px !default;
+$app-icon-logo-xlarge-border-radius: 12px !default;
 
+$app-icon-character-font-large: 32px !default;
+$app-icon-character-font-xlarge: 40px !default;
 
-$identity-logo-green: #6bd888 !default;
-$fannypack-pink: #fc569f !default;
+$app-icon-lumberjack-red: $lumberjack-red !default;
+$app-icon-lavender-blue: $lavender-blue !default;
+$app-icon-turquoise-blue: $turquoise-blue !default;
+$app-icon-steel-blue: $steel-blue !default;
+$app-icon-green-yellow: $green-yellow !default;
+$app-icon-spring-green: $spring-green !default;
 
 //==============================================================================
 // TOOLBAR
@@ -72,5 +78,27 @@ $button-default-hover-bg: darken($button-default-bg, 15%) !default;
 $button-primary-bg: #47a0c3 !default;
 $button-primary-hover-bg: darken($button-primary-bg, 15%) !default;
 $button-primary-color: $white !default;
+
+//==============================================================================
+// ICONS
+//==============================================================================
+$icon-font-path: #{$font-path}MaterialIcons !default;
+
+//==============================================================================
+// PAGINATION
+//==============================================================================
+$pagination-item-dimension: 30px, 60px !default;
+$pagination-border-color: $border-color !default;
+$pagination-color: #152030 !default;
+$pagination-active-bg: $pagination-color !default;
+$pagination-active-border-color: $pagination-color !default;
+$pagination-hover-bg: $primary-color !default;
+$pagination-font-size: $font-size-small, emify(20);
+$pagination-disabled-color: $aluminum !default;
+
+//==============================================================================
+// TABLES
+//==============================================================================
+$table-border-color: $border-color !default;
 
 // scss-lint:enable SpaceAfterVariableName

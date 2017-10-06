@@ -199,8 +199,6 @@ Form elements should always be wrapped by `.form__group`. This comes in handy wh
 
 By default checkboxes and radio buttons are stacked.
 
-For **a11y**
-
 <div class="fp-example">
 	<fieldset class="form__group">
 		<legend class="form__label" id="brandpicker">Choose a brand</legend>
@@ -453,4 +451,17 @@ Sometimes a field needs extra explanation when a `placeholder` and a `label` isn
 ## Validation
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, officia.
+
+<div class="fp-example">
+	<fieldset class="form__group is-valid">
+		<label for="requiredinvalidinputid" class="form__label">Name</label>
+		<input id="requiredinvalidinputid" name="requiredinvalidinputid" type="text" class="form__field" required="required" />
+	</fieldset>
+
+	<fieldset class="form__group is-invalid">
+		<label for="requiredinvalidinputid" class="form__label">Name</label>
+		<input id="requiredinvalidinputid" name="requiredinvalidinputid" type="text" class="form__field" required="required" />
+		<span class="form__feedback">Please enter your name</span>
+	</fieldset>
+</div>
 

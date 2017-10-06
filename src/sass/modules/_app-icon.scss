@@ -1,0 +1,100 @@
+////////////////////////////////////////////////////////////////////////////////
+// APP ICON
+//
+// description:
+// App logo's
+////////////////////////////////////////////////////////////////////////////////
+
+.app-icon {
+	//
+}
+
+.app-icon,
+.app-icon__link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	// width: 100%;
+	// height: 100%;
+}
+
+.app-icon__link {
+	//
+}
+
+.app-icon__logo {
+	width: $app-icon-logo-small-dimension;
+	height: $app-icon-logo-small-dimension;
+	border-radius: $app-icon-logo-small-border-radius;
+	background-color: $primary-color;
+	letter-spacing: -1px;
+	line-height: $app-icon-logo-small-dimension;
+	text-align: center;
+
+	// sizing
+	.app-icon--large & {
+		width: $app-icon-logo-large-dimension;
+		height: $app-icon-logo-large-dimension;
+		border-radius: $app-icon-logo-large-border-radius;
+		line-height: $app-icon-logo-large-dimension;
+	}
+
+	.app-icon--xlarge & {
+		width: $app-icon-logo-xlarge-dimension;
+		height: $app-icon-logo-xlarge-dimension;
+		border-radius: $app-icon-logo-xlarge-border-radius;
+		line-height: $app-icon-logo-xlarge-dimension;
+	}
+
+	// coloring
+	.app-icon--lumberjack-red & {
+		background-color: $app-icon-lumberjack-red;
+	}
+
+	.app-icon--spring-green & {
+		background-color: $app-icon-spring-green;
+	}
+
+	.app-icon--lavender-blue & {
+		background-color: $app-icon-lavender-blue;
+	}
+
+	.app-icon--turquoise-blue & {
+		background-color: $app-icon-turquoise-blue;
+	}
+
+	.app-icon--steel-blue & {
+		background-color: $app-icon-steel-blue;
+	}
+
+	.app-icon--green-yellow & {
+		background-color: $app-icon-green-yellow;
+	}
+}
+
+.app-icon__character {
+	color: $white;
+	font-size: $app-icon-character-font;
+	font-weight: bold;
+
+	&:not(:first-child) {
+		color: rgba($black, .25);
+		font-weight: normal;
+	}
+
+	.app-icon--large & {
+		font-size: $app-icon-character-font-large;
+	}
+
+	.app-icon--xlarge & {
+		font-size: $app-icon-character-font-xlarge;
+	}
+}
+
+.app-icon__name {
+	margin-left: 15px;
+	color: $black;
+	font-size: $app-icon-name-font-size;
+	font-weight: bold;
+}
