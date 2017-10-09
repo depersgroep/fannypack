@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js theme-fp-docs">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+	<title>Document</title>
+	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/main.css" />
+	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/docs.css" />
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+	<div class="site-header__section">
+		<a href="/" class="app-icon app-icon--neon-pink" aria-labelledby="app-icon-name">
+			<div class="app-icon__logo" aria-hidden="true">
+				<span class="app-icon__character">F</span>
+				<span class="app-icon__character">P</span>
+			</div>
+			<span class="app-icon__name" id="app-icon-name">Fannypack</span>
+		</a>
+	</div>
+</header>
+
+
+<main class="fp-main-container" role="main">
+	<div class="fp-drawer">
+	
+	
+
+<nav class="fp-nav" role="navigation">
+	<ul class="fp-nav__list">
+	
+		
+		<li class="fp-nav__item">
+			
+
+<a class="fp-nav__link " title="Modules" href="/modules/">
+	
+	Modules
+</a>
+
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="App Icons" href="/modules/app-icons/">
+	
+	App Icons
+</a>
+
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
+	
+	Breadcrumb
+</a>
+
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Buttons" href="/modules/buttons/">
+	
+	Buttons
+</a>
+
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Forms" href="/modules/forms/">
+	
+	Forms
+</a>
+
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Icons" href="/modules/icons/">
+	
+	Icons
+</a>
+
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Pagination" href="/modules/pagination/">
+	
+	Pagination
+</a>
+
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link is-active" title="Tables" href="/modules/tables/">
+	
+	Tables
+</a>
+
+<ul id="scrollspy">
+</ul>
+
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Toolbar" href="/modules/toolbar/">
+	
+	Toolbar
+</a>
+
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+	</ul>
+</nav>
+
+	
+</div>
+
+
+	<article class="fp-article">
+		
+
+<h1 id="tables">Tables</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam. Deleniti minima veniam maxime sit eius, delectus necessitatibus, doloremque maiores!</p>
+
+<div class="fp-example">
+    <table class="table">
+        <caption>Fannypack lovers</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Gwendolyn</td>
+                <td>Matthys</td>
+                <td>Visual designer</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Yannick</td>
+                <td>Van Avermaet</td>
+                <td>Frontend Architect</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>Jochen</td>
+                <td>Vandendriessche</td>
+                <td>Frontend developer</td>
+            </tr>
+            <tr>
+                <td scope="row">4</td>
+                <td>Gregory </td>
+                <td>Van Looy</td>
+                <td>Frontend developer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;table&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">caption</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Fannypack lovers</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">caption</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">thead</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">#</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">First name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Last name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Role</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">thead</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tbody</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;row&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Gwendolyn</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Matthys</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Visual designer</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		...
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tbody</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="borders-everywhere">Borders everywhere</h2>
+
+<div class="fp-example">
+    <table class="table table--bordered">
+        <caption>Fannypack lovers</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Gwendolyn</td>
+                <td>Matthys</td>
+                <td>Visual designer</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Yannick</td>
+                <td>Van Avermaet</td>
+                <td>Frontend Architect</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>Jochen</td>
+                <td>Vandendriessche</td>
+                <td>Frontend developer</td>
+            </tr>
+            <tr>
+                <td scope="row">4</td>
+                <td>Gregory </td>
+                <td>Van Looy</td>
+                <td>Frontend developer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;table table--bordered&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	...
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="only-horizontal-borders">Only horizontal borders</h2>
+
+<div class="fp-example">
+    <table class="table table--horizontal-borders">
+        <caption>Fannypack lovers</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Gwendolyn</td>
+                <td>Matthys</td>
+                <td>Visual designer</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Yannick</td>
+                <td>Van Avermaet</td>
+                <td>Frontend Architect</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>Jochen</td>
+                <td>Vandendriessche</td>
+                <td>Frontend developer</td>
+            </tr>
+            <tr>
+                <td scope="row">4</td>
+                <td>Gregory </td>
+                <td>Van Looy</td>
+                <td>Frontend developer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;table table--horizontal-borders&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	...
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="striped">Striped</h2>
+
+<div class="fp-example">
+    <table class="table table--striped">
+        <caption>Fannypack lovers</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Gwendolyn</td>
+                <td>Matthys</td>
+                <td>Visual designer</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Yannick</td>
+                <td>Van Avermaet</td>
+                <td>Frontend Architect</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>Jochen</td>
+                <td>Vandendriessche</td>
+                <td>Frontend developer</td>
+            </tr>
+            <tr>
+                <td scope="row">4</td>
+                <td>Gregory </td>
+                <td>Van Looy</td>
+                <td>Frontend developer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;table table--striped&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	...
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="responsive-tables">Responsive tables</h2>
+
+<p>We have two solutions. Either your table scrolls <code>.table--responsive</code> or it transforms in to blocks
+with the content stacked on top of each other <code>.table--transformer</code>.</p>
+
+<h3 id="responsive">Responsive</h3>
+
+<p>Resize your browser to see the result.</p>
+
+<div class="fp-example">
+    <table class="table table--bordered table--responsive">
+        <caption>Responsive table</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+                <th>table heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+            <tr>
+                <td scope="row">4</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+            <tr>
+                <td scope="row">5</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+            <tr>
+                <td scope="row">6</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+                <td>table cell</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;table table--bordered table--responsive&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	...
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="tranforming-responsive-table">Tranforming responsive table</h2>
+
+<p>This requires a little more work than just css. You need to add the required
+attributes to make this work and be accessible.</p>
+
+<div class="fp-example">
+    <table class="table table--bordered table--transformer">
+        <caption>Transforming responsive table</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row" data-title="No.">1</td>
+                <td data-title="First name">Gwendolyn</td>
+                <td data-title="Last name">Matthys</td>
+                <td data-title="Role">Visual designer</td>
+            </tr>
+            <tr>
+                <td scope="row" data-title="No.">2</td>
+                <td data-title="First name">Yannick</td>
+                <td data-title="Last name">Van Avermaet</td>
+                <td data-title="Role">Frontend Architect</td>
+            </tr>
+            <tr>
+                <td scope="row" data-title="No.">3</td>
+                <td data-title="First name">Jochen</td>
+                <td data-title="Last name">Vandendriessche</td>
+                <td data-title="Role">Frontend developer</td>
+            </tr>
+            <tr>
+                <td scope="row" data-title="No.">4</td>
+                <td data-title="First name">Gregory </td>
+                <td data-title="Last name">Van Looy</td>
+                <td data-title="Role">Frontend developer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;table table--striped table--transformer&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">caption</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Transforming responsive table</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">caption</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">thead</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">#</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">First name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Last name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Role</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">th</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">thead</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tbody</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;row&#34;</span><span class="s1f40"> </span><span class="s7d1">data-title</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;No.&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">data-title</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;First name&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Gwendolyn</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">data-title</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Last name&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Matthys</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">data-title</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Role&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Visual designer</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		...
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tbody</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+	</article>
+</main>
+
+</body>
+</html>
+
