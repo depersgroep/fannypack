@@ -216,6 +216,43 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam.
 </table>
 ```
 
+## Simple tables with key - value pairs
+
+Sometimes all you need to display is a table with some key-value pairs as data.
+With `.key` or `scope="row"` you can emphasize the key. If you need extra styling
+ for the value , just add `.value` to that cell.
+
+<div class="fp-example">
+	<table class="table table--horizontal-borders">
+		<tbody>
+			<tr>
+				<td class="key">ID</td>
+				<td class="value">12345</td>
+			</tr>
+			<tr>
+				<td class="key">Last change</td>
+				<td class="value"><em>Not saved yet</em></td>
+			</tr>
+			<tr>
+				<td scope="row">Status</td>
+				<td>Draft</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+```html
+<tr>
+	<td class="key">Last change</td>
+	<td class="value"><em>Not saved yet</em></td>
+</tr>
+<!-- or -->
+<tr>
+	<td scope="row">Status</td>
+	<td>Draft</td>
+</tr>
+```
+
 ## Responsive tables
 
 We have two solutions. Either your table scrolls `.table--responsive` or it transforms in to blocks
@@ -332,7 +369,7 @@ Resize your browser to see the result.
 </table>
 ```
 
-## Tranforming responsive table
+## Transforming responsive table
 
 This requires a little more work than just css. You need to add the required
 attributes to make this work and be accessible.

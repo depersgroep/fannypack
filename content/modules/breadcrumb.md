@@ -51,7 +51,13 @@ parent = "Modules"
 	</nav>
 </div>
 
-## Accessibilty and internationalization
+```html
+<nav class="breadcrumb breadcrumb--light" role="navigation" aria-label="Breadcrumb">
+	...
+</nav>
+```
+
+## Accessibility and internationalization
 
 The `aria-label="Breadcrumb"` is a translatable string. So for the Dutch this can be `aria-label="kruimelpad"`.
 

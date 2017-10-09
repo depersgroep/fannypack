@@ -11,7 +11,8 @@
 }
 
 .form__fieldset {
-	//
+	padding: 0;
+	border: 0;
 }
 
 .form__legend {
@@ -24,9 +25,9 @@
 	padding: 0;
 	border: 0;
 
-	&:last-child {
-		margin-bottom: 0;
-	}
+	// &:last-child {
+	// 	margin-bottom: 0;
+	// }
 }
 
 .form__label {
@@ -151,4 +152,12 @@ input[type="color"].form__field {
 //==============================================================================
 .form__actions {
 	text-align: right;
+}
+
+//==============================================================================
+// HELPERS for additional text
+//==============================================================================
+.form__joiner-text {
+	padding-top: 4px;
+	text-align: center;
 }

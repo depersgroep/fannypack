@@ -1,0 +1,24 @@
+////////////////////////////////////////////////////////////////////////////////
+// GRID
+//
+// description
+////////////////////////////////////////////////////////////////////////////////
+
+.row {
+	@include clearfix;
+	margin-right: ($grid-spacing-unit * -1);
+	margin-left: ($grid-spacing-unit * -1);
+}
+
+[class^="col-"] {
+	padding-right: $grid-spacing-unit;
+	padding-left: $grid-spacing-unit;
+	float: left;
+}
+
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		width: percentage($i / 12);
+	}
+}

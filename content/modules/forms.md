@@ -465,3 +465,93 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, officia.
 	</fieldset>
 </div>
 
+## Layouting
+
+If you need to layout different fields according a grid pattern, you can use our [grid layout](/layout/grid).
+
+<div class="fp-example">
+	<form action="" class="form">
+		<fieldset class="form__fieldset">
+			<div class="row">
+				<div class="col-6">
+					<div class="form__group">
+						<label for="" class="form__label">First name</label>
+						<input type="text" class="form__field" />
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="form__group">
+						<label for="" class="form__label">Last name</label>
+						<input type="text" class="form__field" />
+					</div>
+				</div>
+			</div>
+		</fieldset>
+		<fieldset class="form__fieldset">
+			<div class="row">
+				<div class="col-4">
+					<div class="form__group">
+						<label for="" class="form__label">Address</label>
+						<input type="text" class="form__field" />
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="form__group">
+						<label for="" class="form__label">Zip code</label>
+						<input type="text" class="form__field" />
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="form__group">
+						<label for="" class="form__label">City</label>
+						<input type="text" class="form__field" />
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+
+```html
+<fieldset class="form__fieldset">
+	<div class="row">
+		<div class="col-6">
+			<div class="form__group">
+				<label for="" class="form__label">First name</label>
+				<input type="text" class="form__field" />
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="form__group">
+				<label for="" class="form__label">Last name</label>
+				<input type="text" class="form__field" />
+			</div>
+		</div>
+	</div>
+</fieldset>
+```
+
+## Special cases
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ullam distinctio enim in corporis fugit doloremque deleniti debitis ad dolores.
+
+<div class="fp-example">
+	<fieldset class="form__fieldset">
+		<legend class="form__label">Pick a date</legend>
+		<div class="row">
+			<div class="col-7">
+				<div class="form__group">
+					<input type="date" class="form__field" />
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="form__joiner-text">at</div>
+			</div>
+			<div class="col-3">
+				<div class="form__group">
+					<input type="time" class="form__field" />
+				</div>
+			</div>
+		</div>
+	</fieldset>
+</div>

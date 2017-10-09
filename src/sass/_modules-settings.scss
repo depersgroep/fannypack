@@ -8,6 +8,20 @@
 // scss-lint:disable SpaceAfterVariableName
 
 //==============================================================================
+// GRID
+//==============================================================================
+$grid-spacing-unit: $base-spacing-unit !default;
+
+//==============================================================================
+// ALERTS
+//==============================================================================
+$alert-error-bg: $error-color !default;
+
+$alert-warning-bg: $warning-color !default;
+
+$alert-success-bg: $success-color !default;
+
+//==============================================================================
 // FORMS
 //==============================================================================
 $form-elements-height: 35px !default;
@@ -69,6 +83,7 @@ $breadcrumb-light-color: $white !default;
 //==============================================================================
 $button-height: $form-elements-height !default;
 $button-border-radius: ($button-height / 2) !default;
+$button-font: Arial, sans-serif !default;
 
 // default
 $button-default-bg: $iron !default;

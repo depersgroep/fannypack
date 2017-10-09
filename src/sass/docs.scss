@@ -76,6 +76,15 @@
 			margin-bottom: $double-spacing-unit;
 		}
 	}
+
+	&--grid {
+		[class^="col-"] {
+			padding: $half-spacing-unit;
+			border: 1px solid $border-color;
+			background-color: $evil-gray;
+			white-space: nowrap;
+		}
+	}
 }
 
 .theme-fp-docs {

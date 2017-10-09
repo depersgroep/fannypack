@@ -12,6 +12,7 @@
 	border: 0;
 	border-radius: $button-border-radius;
 	background-color: $button-default-bg;
+	font-family: $button-font;
 	font-weight: bold;
 
 	&:focus,

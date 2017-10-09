@@ -11,15 +11,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facere dolorum e
 <div class="fp-example">
 	<div class="toolbar">
 		<div class="toolbar__section">
-			<ol class="breadcrumb">
-				<li class="breadcrumb__item">
-					<a href="#" class="breadcrumb__link">Home</a>
-				</li>
-				<li class="breadcrumb__item">
-					<a href="#" class="breadcrumb__link">Brands</a>
-				</li>
-				<li class="breadcrumb__item">Lee</li>
-			</ol>
+			<nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__item">
+						<a href="#" class="breadcrumb__link">Home</a>
+					</li>
+					<li class="breadcrumb__item">
+						<a href="#" class="breadcrumb__link">Brands</a>
+					</li>
+					<li class="breadcrumb__item">Lee</li>
+				</ol>
+			</nav>
 		</div>
 		<div class="toolbar__section">
 			<button class="button button--primary" type="submit">Save</button>
@@ -44,15 +46,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facere dolorum e
 <div class="fp-example">
 	<div class="toolbar toolbar--dark">
 		<div class="toolbar__section">
-			<ol class="breadcrumb breadcrumb--light">
-				<li class="breadcrumb__item">
-					<a href="#" class="breadcrumb__link">Home</a>
-				</li>
-				<li class="breadcrumb__item">
-					<a href="#" class="breadcrumb__link">Brands</a>
-				</li>
-				<li class="breadcrumb__item">Lee</li>
-			</ol>
+			<nav class="breadcrumb breadcrumb--light" role="navigation" aria-label="Breadcrumb">
+				<ol class="breadcrumb__list ">
+					<li class="breadcrumb__item">
+						<a href="#" class="breadcrumb__link">Home</a>
+					</li>
+					<li class="breadcrumb__item">
+						<a href="#" class="breadcrumb__link">Brands</a>
+					</li>
+					<li class="breadcrumb__item">Lee</li>
+				</ol>
+			</nav>
 		</div>
 		<div class="toolbar__section">
 			<button class="button button--primary" type="submit">Save</button>
