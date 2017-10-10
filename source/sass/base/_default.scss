@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////
+// DEFAULT
+//
+// description
+// no classes here, only element selectors
+////////////////////////////////////////////////////////////////////////////////
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	width: 100%;
+	min-height: 100%;
+}
+
+body {
+	@include font-smoothing(on);
+	color: $text-color;
+	font-family: $sans-serif;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+textarea {
+	max-width: 100%; // disables horizontal resizing
+}
+
+pre {
+	tab-size: 4;
+}
+
+code {
+	@include font-smoothing(default);
+	padding: .2em .4em;
+	border-radius: $border-radius-base;
+	background-color: $silver;
+	color: $navy;
+	font-size: 90%;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js theme-fp-docs">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/main.css" />
+	<link rel="stylesheet" href="/css/docs.css" />
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+	<div class="site-header__section">
+		<a href="/" class="app-icon app-icon--neon-pink" aria-labelledby="app-icon-name">
+			<div class="app-icon__logo" aria-hidden="true">
+				<span class="app-icon__character">F</span>
+				<span class="app-icon__character">P</span>
+			</div>
+			<span class="app-icon__name" id="app-icon-name">Fannypack</span>
+		</a>
+	</div>
+</header>
+
+
+<main class="fp-main-container" role="main">
+	<div class="fp-drawer">
+	
+	
+
+<nav class="fp-nav" role="navigation">
+	<ul class="fp-nav__list">
+	
+		
+		<li class="fp-nav__item">
+			
+
+<a class="fp-nav__link " title="Layout" href="/">
+	
+	Layout
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Grid" href="/layout/grid/">
+	
+	Grid
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Typography" href="/layout/typography/">
+	
+	Typography
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li class="fp-nav__item">
+			
+
+<a class="fp-nav__link " title="Modules" href="/modules/">
+	
+	Modules
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link is-active" title="Alerts" href="/modules/alert/">
+	
+	Alerts
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="App Icons" href="/modules/app-icons/">
+	
+	App Icons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
+	
+	Breadcrumb
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Buttons" href="/modules/buttons/">
+	
+	Buttons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Forms" href="/modules/forms/">
+	
+	Forms
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Icons" href="/modules/icons/">
+	
+	Icons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Pagination" href="/modules/pagination/">
+	
+	Pagination
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Tables" href="/modules/tables/">
+	
+	Tables
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Toolbar" href="/modules/toolbar/">
+	
+	Toolbar
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+	</ul>
+</nav>
+
+	
+</div>
+
+
+	<article class="fp-article">
+		
+
+<h1 id="alerts">Alerts</h1>
+
+<p>Be brief in your description text, one paragraph should be more than enought to get your feedback across to the user.</p>
+
+<div class="fp-example">
+    <div class="alert alert--error" role="alert" aria-describedby="alertdescription1" aria-live="assertive">
+        <h3 class="alert__title">Error</h3>
+        <p class="alert__text" id="alertdescription1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</p>
+    </div>
+    <div class="alert alert--warning" role="alert" aria-describedby="alertdescription2" aria-live="assertive">
+        <h3 class="alert__title">Warning</h3>
+        <p class="alert__text" id="alertdescription2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</p>
+    </div>
+    <div class="alert alert--success" role="alert" aria-describedby="alertdescription3" aria-live="polite">
+        <h3 class="alert__title">Success</h3>
+        <p class="alert__text" id="alertdescription3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</p>
+    </div>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1770">&lt;!-- ERROR --&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert alert--error&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alertdescription1&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-live</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;assertive&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">h3</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert__title&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Error</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">h3</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">p</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert__text&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alertdescription1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">p</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1770">&lt;!-- WARNING --&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert alert--warning&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alertdescription2&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-live</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;polite&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">h3</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert__title&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Warning</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">h3</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">p</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert__text&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alertdescription2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">p</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1770">&lt;!-- SUCCESS --&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert alert--success&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alertdescription3&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-live</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;polite&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">h3</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert__title&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Success</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">h3</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">p</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alert__text&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;alertdescription3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">p</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+	</article>
+</main>
+
+</body>
+</html>
+

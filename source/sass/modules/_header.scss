@@ -1,0 +1,23 @@
+////////////////////////////////////////////////////////////////////////////////
+// HEADER
+//
+// description:
+// The page header
+////////////////////////////////////////////////////////////////////////////////
+
+.site-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: $site-header-height;
+	padding-right: $double-spacing-unit;
+	padding-left: $double-spacing-unit;
+	border-bottom: 1px solid $site-header-border-color;
+	background-color: $site-header-bg;
+}
+
+.site-header__section {
+	// display: flex;
+	// align-items: center;
+}

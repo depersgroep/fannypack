@@ -1,0 +1,119 @@
+////////////////////////////////////////////////////////////////////////////////
+// MODULE SETTINGS
+//
+// description:
+// Per module settings
+////////////////////////////////////////////////////////////////////////////////
+
+// scss-lint:disable SpaceAfterVariableName
+
+//==============================================================================
+// GRID
+//==============================================================================
+$grid-spacing-unit: $base-spacing-unit !default;
+
+//==============================================================================
+// ALERTS
+//==============================================================================
+$alert-error-bg: $error-color !default;
+
+$alert-warning-bg: $warning-color !default;
+
+$alert-success-bg: $success-color !default;
+
+//==============================================================================
+// FORMS
+//==============================================================================
+$form-elements-height: 35px !default;
+$form-help-text-color: $aluminum !default;
+$form-meta-color     : $form-help-text-color !default;
+
+$form-element-disabled-border : $iron !default;
+$form-element-disabled-bg : $silver !default;
+$form-element-readonly-border : $iron !default;
+$form-element-readonly-bg : $silver !default;
+
+//==============================================================================
+// SITE HEADER
+//==============================================================================
+$site-header-bg          : $white !default;
+$site-header-border-color: $border-color !default;
+$site-header-height      : 70px !default;
+
+//==============================================================================
+// APP ICONS
+//==============================================================================
+$app-icon-name-font-size           : $font-size-large !default;
+$app-icon-character-font      : 16px !default;
+
+$app-icon-logo-small-dimension     : 40px !default;
+$app-icon-logo-large-dimension     : 80px !default;
+$app-icon-logo-xlarge-dimension    : 94px !default;
+
+$app-icon-logo-small-border-radius : 5px !default;
+$app-icon-logo-large-border-radius : 10px !default;
+$app-icon-logo-xlarge-border-radius: 12px !default;
+
+$app-icon-character-font-large: 32px !default;
+$app-icon-character-font-xlarge: 40px !default;
+
+$app-icon-lumberjack-red: $lumberjack-red !default;
+$app-icon-lavender-blue: $lavender-blue !default;
+$app-icon-turquoise-blue: $turquoise-blue !default;
+$app-icon-steel-blue: $steel-blue !default;
+$app-icon-green-yellow: $green-yellow !default;
+$app-icon-spring-green: $spring-green !default;
+
+//==============================================================================
+// TOOLBAR
+//==============================================================================
+$toolbar-height: $site-header-height !default;
+$toolbar-light-bg: $white !default;
+$toolbar-dark-bg: #3c4d62 !default;
+$toolbar-border-color: $border-color !default;
+
+//==============================================================================
+// BREADCRUMB
+//==============================================================================
+$breadcrumb-default-color: $aluminum !default;
+$breadcrumb-light-color: $white !default;
+
+//==============================================================================
+// BUTTONS
+//==============================================================================
+$button-height: $form-elements-height !default;
+$button-border-radius: ($button-height / 2) !default;
+$button-font: Arial, sans-serif !default;
+
+// default
+$button-default-bg: $iron !default;
+$button-default-hover-bg: darken($button-default-bg, 15%) !default;
+
+// primary
+$button-primary-bg: #47a0c3 !default;
+$button-primary-hover-bg: darken($button-primary-bg, 15%) !default;
+$button-primary-color: $white !default;
+
+//==============================================================================
+// ICONS
+//==============================================================================
+$icon-font-path: #{$font-path}MaterialIcons !default;
+
+//==============================================================================
+// PAGINATION
+//==============================================================================
+$pagination-item-dimension: 30px, 60px !default;
+$pagination-border-color: $border-color !default;
+$pagination-color: #152030 !default;
+$pagination-active-bg: $pagination-color !default;
+$pagination-active-border-color: $pagination-color !default;
+$pagination-hover-bg: $primary-color !default;
+$pagination-font-size: $font-size-small, emify(20);
+$pagination-disabled-color: $aluminum !default;
+
+//==============================================================================
+// TABLES
+//==============================================================================
+$table-border-color: $border-color !default;
+
+// scss-lint:enable SpaceAfterVariableName
