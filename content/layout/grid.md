@@ -8,7 +8,8 @@ menu:
 
 # Grid
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sit voluptatibus, provident repudiandae nobis minus delectus in quod aliquam libero.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nam illum corporis unde sequi placeat fugiat suscipit aliquam asperiores minima.
+
 
 <div class="fp-example fp-example--grid">
 	<div class="row">
@@ -39,3 +40,39 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sit voluptatibus, 
 		<div class="col-6">.col-6</div>
 	</div>
 </div>
+
+```html
+<div class="row">
+	<div class="col-4">.col-4</div>
+	<div class="col-4">.col-4</div>
+	<div class="col-4">.col-4</div>
+</div>
+<div class="row">
+	<div class="col-6">.col-6</div>
+	<div class="col-6">.col-6</div>
+</div>
+```
+
+## Containers
+
+When using grid for page layout, your grid will usually be nested inside a `.container` but you can also use grids in other modules without the `.container`.
+It will calculate the widths based on the available width of its wrapper.
+
+```html
+<div class="container">
+	<div class="row">
+		<div class="col-4">.col-4</div>
+		<div class="col-4">.col-4</div>
+		<div class="col-4">.col-4</div>
+	</div>
+</div>
+
+<!-- or -->
+<div class="some-random-module">
+	<div class="row">
+		<div class="col-4">.col-4</div>
+		<div class="col-4">.col-4</div>
+		<div class="col-4">.col-4</div>
+	</div>
+</div>
+```

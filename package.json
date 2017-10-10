@@ -82,7 +82,7 @@
   },
   "img": {
     "src": "src/img/**/*",
-    "dest": "static/img/",
+    "dest": "static/",
     "watch": "src/img/**/*"
   },
   "fonts": {

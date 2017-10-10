@@ -79,3 +79,29 @@ The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com
 	<h3>Horizontal rule</h3>
 	<hr/>
 </div>
+
+## Contextual helper classes
+
+If you want to style certain parts that are not a specific part of a module, we have helper classes available to make your development life easier.
+
+<div class="fp-example">
+	<p class="text--success">Text in <strong>success</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
+	<p>Text in <strong>success</strong> color. Lorem ipsum dolor sit amet, <span class="text--success">consectetur</span> adipisicing elit. Dolore, excepturi.</p>
+	<p class="text--warning">Text in <strong>warning</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
+	<p>Text in <strong>warning</strong> color. <span class="text--warning">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
+	<p class="text--error">Text in <strong>error</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
+	<p>Text in <strong>error</strong> color. Lorem ipsum dolor sit amet, consectetur <span class="text--error">adipisicing</span> elit. Dolore, excepturi.</p>
+	<p class="text--muted">Text in <strong>muted</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
+	<p>Text in <strong>muted</strong> color. Lorem ipsum dolor sit amet, consectetur <span class="text--muted">adipisicing</span> elit. Dolore, excepturi.</p>
+</div>
+
+```html
+<p class="text--success">...</p>
+<p>... <span class="text--success">consectetur</span> ...</p>
+<p class="text--warning">...</p>
+<p>... <span class="text--warning">Lorem ipsum</span> ...</p>
+<p class="text--error">...</p>
+<p>... <span class="text--error">adipisicing</span> ...</p>
+<p class="text--muted">...</p>
+<p>... <span class="text--muted">adipisicing</span> ...</p>
+```

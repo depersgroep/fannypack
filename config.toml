@@ -16,3 +16,4 @@ pygmentsCodeFences = true
 [blackfriday]
 	smartDashes = false
 	latexDashes = false
+	extensions = ["noIntraEmphasis"]

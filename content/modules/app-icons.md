@@ -234,23 +234,53 @@ If for some reason you aren't able to swap the module element with a link you ca
 
 ## Graphic logo
 
-The logo has to be white. If you want to put a little bit of contrast in the logo, the darker area's should be black with an opacity of 25%.
+The graphic logo has to be white. If you want to put a little bit of contrast in the logo, the darker area's should be black with an opacity of 25%.
+Its dimensions should be 100x100. We only show it at 50x50 but this way it's high dpi ready.
 
-<table class="table table--bordered">
-	<caption>Logo dimensions</caption>
-	<tbody>
-		<tr>
-			<td scope="row">Default</td>
-			<td>20x20</td>
-		</tr>
-		<tr>
-			<td scope="row">Large</td>
-			<td>40x40</td>
-		</tr>
-		<tr>
-			<td scope="row">X-large</td>
-			<td>50x50</td>
-		</tr>
-	</tbody>
-</table>
+The original image:
+
+<div class="fp-transparent-bg">
+	<img src="/img/timeymctimeface-clock.png" alt="a simplistic clock in white and transparent black" />
+</div>
+
+In its processed state:
+
+<div class="fp-example fp-example--app-icons">
+	<div class="app-icon app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+		<div class="app-icon__logo" aria-hidden="true">
+			<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
+		</div>
+	</div>
+	<div class="app-icon app-icon--large app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+		<div class="app-icon__logo" aria-hidden="true">
+			<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
+		</div>
+	</div>
+	<div class="app-icon app-icon--xlarge app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+		<div class="app-icon__logo" aria-hidden="true">
+			<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
+		</div>
+	</div>
+</div>
+
+```html
+<div class="app-icon app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+	<div class="app-icon__logo" aria-hidden="true">
+		<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
+	</div>
+</div>
+<!-- large -->
+<div class="app-icon app-icon--large app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+	<div class="app-icon__logo" aria-hidden="true">
+		<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
+	</div>
+</div>
+<!--  xlarge -->
+<div class="app-icon app-icon--xlarge app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+	<div class="app-icon__logo" aria-hidden="true">
+		<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
+	</div>
+</div>
+```
+
 
