@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fannypack</title>
+    <link>https://fannypack.persgroep.net/</link>
+    <description>Recent content on Fannypack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Oct 2017 13:02:58 +0200</lastBuildDate>
+    
+	<atom:link href="https://fannypack.persgroep.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Typography</title>
+      <link>https://fannypack.persgroep.net/layout/typography/</link>
+      <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/layout/typography/</guid>
+      <description>Typography Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam totam quos odit nulla ab pariatur dolorem id quasi dicta.
+Font The base font-family for Fannypack is Source Sans Pro in 3 styles: regular, semi-bold and bold.
+Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading Unordered list  list item list item list item  nested list item   list item  Ordered list  list item list item list item  nested list item   list item  Mixed nested lists  list item list item list item  nested list item   list item   list item list item list item  nested list item   list item  Paragraph text with lorem ipsum dolor sit amet, m2 consectetur adipisicing elit8.</description>
+    </item>
+    
+    <item>
+      <title>Alerts</title>
+      <link>https://fannypack.persgroep.net/modules/alert/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/alert/</guid>
+      <description>Alerts Be brief in your description text, one paragraph should be more than enought to get your feedback across to the user.
+Error Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.
+ Warning Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.
+ Success Lorem ipsum dolor sit amet, consectetur adipisicing elit.</description>
+    </item>
+    
+    <item>
+      <title>Grid</title>
+      <link>https://fannypack.persgroep.net/layout/grid/</link>
+      <pubDate>Mon, 09 Oct 2017 10:08:25 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/layout/grid/</guid>
+      <description>Grid Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nam illum corporis unde sequi placeat fugiat suscipit aliquam asperiores minima.
+.col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1  .col-8 .col-4  .col-4 .col-4 .col-4  .col-6 .col-6   &amp;lt;divclass=&amp;#34;row&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;row&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;col-6&amp;#34;&amp;gt;.col-6&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-6&amp;#34;&amp;gt;.col-6&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  Containers When using grid for page layout, your grid will usually be nested inside a .container but you can also use grids in other modules without the .</description>
+    </item>
+    
+    <item>
+      <title>Tables</title>
+      <link>https://fannypack.persgroep.net/modules/tables/</link>
+      <pubDate>Fri, 06 Oct 2017 14:38:47 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/tables/</guid>
+      <description>Tables Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam. Deleniti minima veniam maxime sit eius, delectus necessitatibus, doloremque maiores!
+Fannypack lovers   # First name Last name Role     1 Gwendolyn Matthys Visual designer   2 Yannick Van Avermaet Frontend Architect   3 Jochen Vandendriessche Frontend developer   4 Gregory  Van Looy Frontend developer     &amp;lt;tableclass=&amp;#34;table&amp;#34;&amp;gt;&amp;lt;caption&amp;gt;Fannypack lovers&amp;lt;/caption&amp;gt;&amp;lt;thead&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;thscope=&amp;#34;col&amp;#34;&amp;gt;#&amp;lt;/th&amp;gt;&amp;lt;thscope=&amp;#34;col&amp;#34;&amp;gt;First name&amp;lt;/th&amp;gt;&amp;lt;thscope=&amp;#34;col&amp;#34;&amp;gt;Last name&amp;lt;/th&amp;gt;&amp;lt;thscope=&amp;#34;col&amp;#34;&amp;gt;Role&amp;lt;/th&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;/thead&amp;gt;&amp;lt;tbody&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;tdscope=&amp;#34;row&amp;#34;&amp;gt;1&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Gwendolyn&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Matthys&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Visual designer&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;.</description>
+    </item>
+    
+    <item>
+      <title>Pagination</title>
+      <link>https://fannypack.persgroep.net/modules/pagination/</link>
+      <pubDate>Fri, 06 Oct 2017 10:47:45 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/pagination/</guid>
+      <description>Pagination Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex delectus, nisi, et possimus eius vero. Soluta sint quasi molestias doloribus.
+Previous  1  2  3  &amp;hellip;  15  Next     &amp;lt;navclass=&amp;#34;pagination&amp;#34;role=&amp;#34;navigation&amp;#34;aria-label=&amp;#34;Pagination&amp;#34;&amp;gt;&amp;lt;olclass=&amp;#34;pagination__list&amp;#34;&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item pagination__item--previous&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to previous page, page 1&amp;#34;&amp;gt;Previous&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to page 1&amp;#34;&amp;gt;1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item is-active&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Current page, page 2&amp;#34;aria-current=&amp;#34;true&amp;#34;&amp;gt;2&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to page 3&amp;#34;&amp;gt;3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item pagination__item--dummy&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;pagination__link&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;…&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to last page, page 15&amp;#34;&amp;gt;15&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item pagination__item--next&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to next page, page 2&amp;#34;&amp;gt;Next&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;/nav&amp;gt;  Disabled states You can disable pagination items with .</description>
+    </item>
+    
+    <item>
+      <title>Breadcrumb</title>
+      <link>https://fannypack.persgroep.net/modules/breadcrumb/</link>
+      <pubDate>Fri, 06 Oct 2017 10:13:41 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/breadcrumb/</guid>
+      <description>Breadcrumb Home  Brands  Lee    &amp;lt;navclass=&amp;#34;breadcrumb&amp;#34;role=&amp;#34;navigation&amp;#34;aria-label=&amp;#34;Breadcrumb&amp;#34;&amp;gt;&amp;lt;olclass=&amp;#34;breadcrumb__list&amp;#34;&amp;gt;&amp;lt;liclass=&amp;#34;breadcrumb__item&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;breadcrumb__link&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;breadcrumb__item&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;breadcrumb__link&amp;#34;&amp;gt;Brands&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;breadcrumb__item&amp;#34;aria-current=&amp;#34;page&amp;#34;&amp;gt;Lee&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;/nav&amp;gt;  On dark backgrounds Home  Brands  Lee    &amp;lt;navclass=&amp;#34;breadcrumb breadcrumb--light&amp;#34;role=&amp;#34;navigation&amp;#34;aria-label=&amp;#34;Breadcrumb&amp;#34;&amp;gt;... &amp;lt;/nav&amp;gt;  Accessibility and internationalization The aria-label=&amp;quot;Breadcrumb&amp;quot; is a translatable string. So for the Dutch this can be aria-label=&amp;quot;kruimelpad&amp;quot;.
+aria-current=&amp;quot;page&amp;quot; is this NOT. That&amp;rsquo;s a fixed token.</description>
+    </item>
+    
+    <item>
+      <title>App Icons</title>
+      <link>https://fannypack.persgroep.net/modules/app-icons/</link>
+      <pubDate>Fri, 06 Oct 2017 08:16:56 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/app-icons/</guid>
+      <description>App icons Representation of an internal application without the application name visible. Because this has role=&amp;quot;img&amp;quot; you must provide aria-label=&amp;quot;&amp;quot; with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a simple graphic logo.
+T E   A E   W   T T   S M   S    &amp;lt;divclass=&amp;#34;app-icon app-icon--lumberjack-red&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;app-icon app-icon--spring-green&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Article Editor&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;A&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;app-icon app-icon--lavender-blue&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Workflow&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;W&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;app-icon app-icon--turquoise-blue&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Timey Mc Timeface&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;app-icon app-icon--steel-blue&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Site Management&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;app-icon app-icon--green-yellow&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Search&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  Sizing T E   T E   T E    &amp;lt;divclass=&amp;#34;app-icon app-icon--lumberjack-red&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;app-icon app-icon--large app-icon--lumberjack-red&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;app-icon app-icon--xlarge app-icon--lumberjack-red&amp;#34;role=&amp;#34;img&amp;#34;aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  With application names As we provide visible description of the logo, the way the aria attributes are arranged has changed.</description>
+    </item>
+    
+    <item>
+      <title>Icons</title>
+      <link>https://fannypack.persgroep.net/modules/icons/</link>
+      <pubDate>Thu, 05 Oct 2017 16:39:45 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/icons/</guid>
+      <description>Icons We use Material Icons from Google. All available icons are listed there, click them to get the instructions.
+Note instead of &amp;lt;i&amp;gt; we use &amp;lt;span&amp;gt; to wrap the icons. That&amp;rsquo;s semantically more correct.
+face favorite person notifications  &amp;lt;spanclass=&amp;#34;material-icons&amp;#34;&amp;gt;face&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;material-icons&amp;#34;&amp;gt;favorite&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;material-icons&amp;#34;&amp;gt;person&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;material-icons&amp;#34;&amp;gt;notifications&amp;lt;/span&amp;gt;  Sizing, states and coloring These icons were designed to follow the material design guidelines and they look best when using the recommended icon sizes (24px) (For Fannypack we use it mostly at 16px!</description>
+    </item>
+    
+    <item>
+      <title>Buttons</title>
+      <link>https://fannypack.persgroep.net/modules/buttons/</link>
+      <pubDate>Thu, 05 Oct 2017 16:29:36 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/buttons/</guid>
+      <description> Buttons Default Primary Secondary  &amp;lt;buttonclass=&amp;#34;button button--default&amp;#34;type=&amp;#34;button&amp;#34;&amp;gt;Default&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--primary&amp;#34;type=&amp;#34;button&amp;#34;&amp;gt;Primary&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--secondary&amp;#34;type=&amp;#34;button&amp;#34;&amp;gt;Secondary&amp;lt;/button&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Toolbar</title>
+      <link>https://fannypack.persgroep.net/modules/toolbar/</link>
+      <pubDate>Tue, 03 Oct 2017 15:10:21 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/toolbar/</guid>
+      <description> Toolbar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facere dolorum expedita quas totam natus explicabo id pariatur, doloremque ipsam!
+Home  Brands  Lee    Save    &amp;lt;divclass=&amp;#34;fp-example&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;toolbar toolbar--dark&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;toolbar__section&amp;#34;&amp;gt;&amp;lt;!-- some component here --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;toolbar__section&amp;#34;&amp;gt;&amp;lt;!-- another component here --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  Home  Brands  Lee    Save    </description>
+    </item>
+    
+    <item>
+      <title>Index</title>
+      <link>https://fannypack.persgroep.net/modules/</link>
+      <pubDate>Mon, 02 Oct 2017 14:42:50 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/</guid>
+      <description>Modules Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ipsam?</description>
+    </item>
+    
+    <item>
+      <title>Forms</title>
+      <link>https://fannypack.persgroep.net/modules/forms/</link>
+      <pubDate>Mon, 02 Oct 2017 14:34:21 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/forms/</guid>
+      <description>Forms Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quam!
+Name  Comment (optional) A short help text for a textarea.   Reset Send    &amp;lt;formaction=&amp;#34;&amp;#34;method=&amp;#34;&amp;#34;class=&amp;#34;form&amp;#34;&amp;gt;&amp;lt;fieldsetclass=&amp;#34;form__group&amp;#34;&amp;gt;&amp;lt;labelfor=&amp;#34;nameid&amp;#34;class=&amp;#34;form__label&amp;#34;&amp;gt;Name&amp;lt;/label&amp;gt;&amp;lt;inputid=&amp;#34;inputid&amp;#34;name=&amp;#34;inputname&amp;#34;type=&amp;#34;text&amp;#34;class=&amp;#34;form__field&amp;#34;/&amp;gt;&amp;lt;/fieldset&amp;gt;&amp;lt;fieldsetclass=&amp;#34;form__group&amp;#34;&amp;gt;&amp;lt;labelfor=&amp;#34;textareid&amp;#34;class=&amp;#34;form__label&amp;#34;&amp;gt;Comment &amp;lt;spanclass=&amp;#34;form__label-meta&amp;#34;&amp;gt;(optional)&amp;lt;/span&amp;gt;&amp;lt;/label&amp;gt;&amp;lt;spanclass=&amp;#34;form__helptext&amp;#34;id=&amp;#34;textareahelptext&amp;#34;&amp;gt;A short help text for a textarea.&amp;lt;/span&amp;gt;&amp;lt;textareaname=&amp;#34;textareaname&amp;#34;id=&amp;#34;textareaid&amp;#34;class=&amp;#34;form__textarea&amp;#34;aria-describedby=&amp;#34;textareahelptext&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt;&amp;lt;/fieldset&amp;gt;&amp;lt;divclass=&amp;#34;form__actions&amp;#34;&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--default&amp;#34;type=&amp;#34;reset&amp;#34;&amp;gt;Reset&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--primary&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Send&amp;lt;/button&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/form&amp;gt;  About labels and placeholders Always use a label with your form elements. Don&amp;rsquo;t use the placeholder attribute as a subsitute for a label. The placeholder attribute isn&amp;rsquo;t meant to give an extensive description.</description>
+    </item>
+    
+  </channel>
+</rss>

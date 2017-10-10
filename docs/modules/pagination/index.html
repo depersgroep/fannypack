@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js theme-fp-docs">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/fannypack.css" />
+	<link rel="stylesheet" href="/css/docs.css" />
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+	<div class="site-header__section">
+		<a href="/" class="app-icon app-icon--neon-pink" aria-labelledby="app-icon-name">
+			<div class="app-icon__logo" aria-hidden="true">
+				<span class="app-icon__character">F</span>
+				<span class="app-icon__character">P</span>
+			</div>
+			<span class="app-icon__name" id="app-icon-name">Fannypack</span>
+		</a>
+	</div>
+</header>
+
+
+<main class="fp-main-container" role="main">
+	<div class="fp-drawer">
+	
+	
+
+<nav class="fp-nav" role="navigation">
+	<ul class="fp-nav__list">
+	
+		
+		<li class="fp-nav__item">
+			
+
+<a class="fp-nav__link " title="Layout" href="/">
+	
+	Layout
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Grid" href="/layout/grid/">
+	
+	Grid
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Typography" href="/layout/typography/">
+	
+	Typography
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li class="fp-nav__item">
+			
+
+<a class="fp-nav__link " title="Modules" href="/modules/">
+	
+	Modules
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Alerts" href="/modules/alert/">
+	
+	Alerts
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="App Icons" href="/modules/app-icons/">
+	
+	App Icons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
+	
+	Breadcrumb
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Buttons" href="/modules/buttons/">
+	
+	Buttons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Forms" href="/modules/forms/">
+	
+	Forms
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Icons" href="/modules/icons/">
+	
+	Icons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link is-active" title="Pagination" href="/modules/pagination/">
+	
+	Pagination
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Tables" href="/modules/tables/">
+	
+	Tables
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Toolbar" href="/modules/toolbar/">
+	
+	Toolbar
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+	</ul>
+</nav>
+
+	
+</div>
+
+
+	<article class="fp-article">
+		
+
+<h1 id="pagination">Pagination</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex delectus, nisi, et possimus eius vero. Soluta sint quasi molestias doloribus.</p>
+
+<div class="fp-example">
+    <nav class="pagination" role="navigation" aria-label="Pagination">
+        <ol class="pagination__list">
+            <li class="pagination__item pagination__item--previous">
+                <a href="#" class="pagination__link" aria-label="Go to previous page, page 1">Previous</a>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Go to page 1">1</a>
+            </li>
+            <li class="pagination__item is-active">
+                <span class="pagination__link" aria-label="Current page, page 2" aria-current="true">2</span>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Go to page 3">3</a>
+            </li>
+            <li class="pagination__item pagination__item--dummy">
+                <span class="pagination__link" aria-hidden="true">&hellip;</span>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Go to last page, page 15">15</a>
+            </li>
+            <li class="pagination__item pagination__item--next">
+                <a href="#" class="pagination__link" aria-label="Go to next page, page 2">Next</a>
+            </li>
+        </ol>
+    </nav>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;navigation&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Pagination&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">ol</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__list&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item pagination__item--previous&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Go to previous page, page 1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Previous</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Go to page 1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item is-active&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Current page, page 2&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-current</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;true&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Go to page 3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">3</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item pagination__item--dummy&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-hidden</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;true&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">…</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Go to last page, page 15&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">15</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item pagination__item--next&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Go to next page, page 2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Next</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">ol</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="disabled-states">Disabled states</h2>
+
+<p>You can disable pagination items with <code>.is-disabled</code> or <code>.js-is-disabled</code>. You also need to change some WAI-ARIA attributes and (optionally) change the tag from <code>&lt;a&gt;</code> to <code>&lt;span&gt;</code>.</p>
+
+<div class="fp-example">
+    <nav class="pagination" role="navigation" aria-label="Pagination">
+        <ol class="pagination__list">
+            <li class="pagination__item pagination__item--previous is-disabled">
+                <span class="pagination__link" aria-hidden="true">Previous</span>
+            </li>
+            <li class="pagination__item is-active">
+                <a href="#" class="pagination__link" aria-label="Current page, page 1" aria-current="true">1</a>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Go to page 2">2</a>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Go to page 3">3</a>
+            </li>
+            <li class="pagination__item pagination__item--dummy">
+                <span class="pagination__link" aria-hidden="true">&hellip;</span>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link" aria-label="Go to last page, page 15">15</a>
+            </li>
+            <li class="pagination__item pagination__item--next">
+                <a href="#" class="pagination__link" aria-label="Go to next page, page 2">Next</a>
+            </li>
+        </ol>
+    </nav>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;navigation&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Pagination&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">ol</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__list&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item pagination__item--previous is-disabled&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-hidden</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;true&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Previous</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__item is-active&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;pagination__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Current page, page 1&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-current</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;true&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		...
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">ol</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+	</article>
+</main>
+
+</body>
+</html>
+

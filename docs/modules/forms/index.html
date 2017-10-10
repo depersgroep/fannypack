@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js theme-fp-docs">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/fannypack.css" />
+	<link rel="stylesheet" href="/css/docs.css" />
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+	<div class="site-header__section">
+		<a href="/" class="app-icon app-icon--neon-pink" aria-labelledby="app-icon-name">
+			<div class="app-icon__logo" aria-hidden="true">
+				<span class="app-icon__character">F</span>
+				<span class="app-icon__character">P</span>
+			</div>
+			<span class="app-icon__name" id="app-icon-name">Fannypack</span>
+		</a>
+	</div>
+</header>
+
+
+<main class="fp-main-container" role="main">
+	<div class="fp-drawer">
+	
+	
+
+<nav class="fp-nav" role="navigation">
+	<ul class="fp-nav__list">
+	
+		
+		<li class="fp-nav__item">
+			
+
+<a class="fp-nav__link " title="Layout" href="/">
+	
+	Layout
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Grid" href="/layout/grid/">
+	
+	Grid
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Typography" href="/layout/typography/">
+	
+	Typography
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li class="fp-nav__item">
+			
+
+<a class="fp-nav__link " title="Modules" href="/modules/">
+	
+	Modules
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Alerts" href="/modules/alert/">
+	
+	Alerts
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="App Icons" href="/modules/app-icons/">
+	
+	App Icons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
+	
+	Breadcrumb
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Buttons" href="/modules/buttons/">
+	
+	Buttons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link is-active" title="Forms" href="/modules/forms/">
+	
+	Forms
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Icons" href="/modules/icons/">
+	
+	Icons
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Pagination" href="/modules/pagination/">
+	
+	Pagination
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Tables" href="/modules/tables/">
+	
+	Tables
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Toolbar" href="/modules/toolbar/">
+	
+	Toolbar
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+	</ul>
+</nav>
+
+	
+</div>
+
+
+	<article class="fp-article">
+		
+
+<h1 id="forms">Forms</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quam!</p>
+
+<div class="fp-example">
+    <form action="" method="" class="form">
+        <fieldset class="form__group">
+            <label for="inputid" class="form__label">Name</label>
+            <input id="inputid" name="inputid" type="text" class="form__field" />
+        </fieldset>
+        <fieldset class="form__group">
+            <label for="textareaid" class="form__label">Comment <span class="form__label-meta">(optional)</span></label>
+            <span class="form__helptext" id="textareahelptext">A short help text for a textarea.</span>
+            <textarea name="textareaname" id="textareaid" class="form__textarea" aria-describedby="textareahelptext"></textarea>
+        </fieldset>
+        <div class="form__actions">
+            <button class="button button--default" type="reset">Reset</button>
+            <button class="button button--primary" type="submit">Send</button>
+        </div>
+    </form>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">form</span><span class="s1f40"> </span><span class="s7d1">action</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s7d1">method</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nameid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputname&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;textareid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Comment </span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label-meta&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">(optional)</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__helptext&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;textareahelptext&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">A short help text for a textarea.</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">textarea</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;textareaname&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;textareaid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__textarea&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;textareahelptext&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">textarea</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__actions&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">button</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--default&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;reset&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Reset</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">button</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">button</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--primary&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;submit&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Send</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">button</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">form</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="about-labels-and-placeholders">About labels and placeholders</h3>
+
+<p><strong>Always</strong> use a <code>label</code> with your form elements. Don&rsquo;t use the <code>placeholder</code> attribute as a subsitute for a <code>label</code>. The <code>placeholder</code> attribute isn&rsquo;t meant to give an extensive description. It&rsquo;s meant to be a guideline or a hint.</p>
+
+<div class="fp-example">
+    <div class="form__group">
+        <input type="email" class="form__field" placeholder="e-mail address" />
+    </div>
+    <div class="form__group">
+        <label class="form__label" for="emailplaceholder">E-mail</label>
+        <input type="email" class="form__field" id="emailplaceholder" placeholder="john@example.com" />
+    </div>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1770">&lt;!-- BAD --&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;email&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;e-mail address&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1770">&lt;!-- GOOD --&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;email&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">E-mail</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;email&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;email&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;john@example.com&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="form-elements">Form elements</h2>
+
+<p>Form elements should always be wrapped by <code>.form__group</code>. This comes in handy when you want to implement <strong>validation</strong> later. This wrapper can be a <code>&lt;div&gt;</code> or a <code>&lt;fieldset&gt;</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nameid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputname&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nameid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputname&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="date-input">Date input</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="dateid" class="form__label">Date</label>
+        <input type="date" id="dateid" name="datename" class="form__field" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;dateid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Date</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;date&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;dateid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;datename&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="search-field">Search field</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="searchid" class="form__label">Search</label>
+        <input type="search" class="form__field" id="searchid" name="searchname" placeholder="Search query here" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;searchid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Search</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;search&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;searchid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;searchname&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Search query here&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="telephone-number-input">Telephone number input</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="telephoneid" class="form__label">Telephone</label>
+        <input type="tel" class="form__field" id="telephoneid" name="telephonename" placeholder="+3235551234" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Telephone</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;tel&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonename&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;+3235551234&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="number-input">Number input</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="numberid" class="form__label">Number</label>
+        <input type="number" id="numberid" name="numbername" class="form__field" step="3" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;numberid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Number</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;number&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;numberid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;numbername&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">step</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;3&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="email-input">Email input</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="emailid" class="form__label">Email</label>
+        <input type="email" id="emailid" name="emailname" class="form__field" placeholder="john@example.com" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Email</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;email&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailname&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;john@example.com&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="file-upload">File upload</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="fileid" class="form__label">File</label>
+        <input type="file" id="fileid" name="filename" class="form__field" accept="image/*" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;fileid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">File</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;file&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;fileid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;filename&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">accept</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;image/*&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="password-field">Password field</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="passwordid" class="form__label">Password</label>
+        <input type="password" id="passwordid" name="passwordname" class="form__field" placeholder="yourS4fePassw0rd" value="MyPassword" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Password</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;password&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordname&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;yourS4fePassw0rd&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;MyPassw0rd&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="colorpicker">Colorpicker</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="colorid" class="form__label">Colorpicker</label>
+        <input type="color" id="colorid" name="colorname" class="form__field" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;colorid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Colorpicker</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;color&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;colorid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;colorname&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="checkboxes-and-radio-buttons">Checkboxes and radio buttons</h3>
+
+<p>By default checkboxes and radio buttons are stacked.</p>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <legend class="form__label" id="brandpicker">Choose a brand</legend>
+        <div class="form__checkbox">
+            <label class="form__checkbox__label">
+                <input type="checkbox" class="form__checkbox__input" value="Levis" aria-describedby="brandpicker" /> Levis
+            </label>
+        </div>
+        <div class="form__checkbox">
+            <label class="form__checkbox__label">
+                <input type="checkbox" class="form__checkbox__input" value="Lee" checked="checked" aria-describedby="brandpicker" /> Lee
+            </label>
+        </div>
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;brandpicker&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Choose a brand</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;checkbox&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Levis&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;brandpicker&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> Levis
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;checkbox&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Lee&#34;</span><span class="s1f40"> </span><span class="s7d1">checked</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;checked&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;brandpicker&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> Lee
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<div class="fp-example">
+    <fieldset class="form__group">
+        <legend class="form__label" id="happiness">Are you happy?</legend>
+        <div class="form__radio">
+            <label class="form__radio__label">
+                <input type="radio" name="happiness" class="form__radio__input" value="yes" aria-describedby="happiness" /> Yes
+            </label>
+        </div>
+        <div class="form__radio">
+            <label class="form__radio__label">
+                <input type="radio" name="happiness" class="form__radio__input" value="no" aria-describedby="happiness" /> No
+            </label>
+        </div>
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1f40"> </span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Are you happy?</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;radio&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;yes&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> Yes
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;radio&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;no&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> No
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<p>If you add modifier <code>.form__checkbox--inline</code> or <code>.form__radio--inline</code> they will display inline.</p>
+
+<div class="fp-example">
+    <legend class="form__label" id="brandpicker2">Choose a brand</legend>
+    <div class="form__checkbox form__checkbox--inline">
+        <label class="form__checkbox__label">
+            <input type="checkbox" class="form__checkbox__input" value="Levis" aria-describedby="brandpicker2" /> Levis
+        </label>
+    </div>
+    <div class="form__checkbox form__checkbox--inline">
+        <label class="form__checkbox__label">
+            <input type="checkbox" class="form__checkbox__input" value="Lee" checked="checked" aria-describedby="brandpicker2" /> Lee
+        </label>
+    </div>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;brandpicker2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Choose a brand</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox form__checkbox--inline&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;checkbox&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Levis&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;brandpicker2&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> Levis
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox form__checkbox--inline&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;checkbox&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__checkbox__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Lee&#34;</span><span class="s1f40"> </span><span class="s7d1">checked</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;checked&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;brandpicker2&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> Lee
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<div class="fp-example">
+    <fieldset class="form__group">
+        <legend class="form__label" id="happiness2">Are you happy?</legend>
+        <div class="form__radio form__radio--inline">
+            <label class="form__radio__label">
+                <input type="radio" name="happiness2" class="form__radio__input" value="yes" aria-describedby="happiness2" /> Yes
+            </label>
+        </div>
+        <div class="form__radio form__radio--inline">
+            <label class="form__radio__label">
+                <input type="radio" name="happiness2" class="form__radio__input" value="no" aria-describedby="happiness2" /> No
+            </label>
+        </div>
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Are you happy?</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio form__radio--inline&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;radio&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness2&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;yes&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness2&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> Yes
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio form__radio--inline&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;radio&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness2&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__radio__input&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;no&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;happiness2&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40"> No
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h3 id="selects">Selects</h3>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="themepicker" class="form__label">Pick a theme</label>
+        <select name="themepicker" id="themepicker" class="form__field">
+            <optgroup label="code">
+                <option value="monokia">Monokai</option>
+                <option value="">Manni</option>
+            </optgroup>
+            <optgroup label="events" disabled="disabled">
+                <option value="">Xmas</option>
+                <option value="">Easter</option>
+            </optgroup>
+        </select>
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;themepicker&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Pick a theme</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">select</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;themepicker&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;themepicker&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">optgroup</span><span class="s1f40"> </span><span class="s7d1">label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;code&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Monokai</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Manni</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">optgroup</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">optgroup</span><span class="s1f40"> </span><span class="s7d1">label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;events&#34;</span><span class="s1f40"> </span><span class="s7d1">disabled</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;disabled&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Xmas</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Easter</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">optgroup</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">select</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="countrypicker" class="form__label">Select your favorite countries</label>
+        <select name="countrypicker" id="countrypicker" class="form__field" multiple="multiple">
+            <option value="">Belgium</option>
+            <option value="">Netherlands</option>
+            <option value="">France</option>
+            <option value="">Germany</option>
+            <option value="">United Kingdom</option>
+            <option value="">Spain</option>
+            <option value="">Norway</option>
+            <option value="">Luxembourg</option>
+            <option value="">Denmark</option>
+            <option value="">Sweden</option>
+        </select>
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;countrypicker&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Select your favorite countries</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">select</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;countrypicker&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;countrypicker&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">multiple</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;multiple&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Belgium</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Netherlands</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">option</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	...
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">select</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="disabled-and-readonly-states">Disabled and readonly states</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ipsum.</p>
+
+<div class="fp-example">
+    <div class="form__group">
+        <label for="disabledinput">Disabled input</label>
+        <input type="text" id="disabledinput" class="form__field" disabled="disabled" />
+    </div>
+    <div class="form__group">
+        <label for="readonlyinput">Readonly input</label>
+        <input type="text" id="readonlyinput" class="form__field" readonly="readonly" value="Rebels Squad" />
+    </div>
+    <div class="form__group">
+        <div class="form__checkbox">
+            <label class="form__checkbox__label">
+                <input type="checkbox" class="form__checkbox__input" disabled="disabled" /> Disabled checkbox
+            </label>
+        </div>
+    </div>
+    <div class="form__group">
+        <div class="form__radio">
+            <label class="form__radio__label">
+                <input type="radio" class="form__radio__input" disabled="disabled" /> Disabled radio button
+            </label>
+        </div>
+    </div>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">disabled</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;disabled&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">readonly</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;readonly&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Rebels Squad&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="help-text">Help text</h2>
+
+<p>Sometimes a field needs extra explanation when a <code>placeholder</code> and a <code>label</code> isn&rsquo;t enough. You can do this with <code>.form__helptext</code>.</p>
+
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="telephoneid2" class="form__label">Telephone</label>
+        <span class="form__helptext" id="telephonehelptext2">Please add your area code</span>
+        <input type="tel" class="form__field" id="telephoneid2" name="telephonename2" placeholder="+3235551234" aria-describedby="telephonehelptext2" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Telephone</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__helptext&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonehelptext&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Please add your area code</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;tel&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonename&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;+3235551234&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonehelptext&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<div class="fp-example">
+    <fieldset class="form__group">
+        <label for="passwordid2" class="form__label">Password</label>
+        <span class="form__helptext">Must be at least 8 characters long and contain at least 1 digit and 1 uppercase</span>
+        <input type="password" id="passwordid2" name="passwordname2" class="form__field" placeholder="yourS4fePassw0rd" value="MyPassword" minlength="8" />
+    </fieldset>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid2&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Password</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__helptext&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Must be at least 8 characters long and contain at least 1 digit and 1 uppercase</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;password&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid2&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordname2&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;yourS4fePassw0rd&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;MyPassw0rd&#34;</span><span class="s1f40"> </span><span class="s7d1">minlength</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;8&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="validation">Validation</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, officia.</p>
+
+<div class="fp-example">
+    <fieldset class="form__group is-valid">
+        <label for="requiredinvalidinputid" class="form__label">Name</label>
+        <input id="requiredinvalidinputid" name="requiredinvalidinputid" type="text" class="form__field" required="required" />
+    </fieldset>
+
+    <fieldset class="form__group is-invalid">
+        <label for="requiredinvalidinputid" class="form__label">Name</label>
+        <input id="requiredinvalidinputid" name="requiredinvalidinputid" type="text" class="form__field" required="required" />
+        <span class="form__feedback">Please enter your name</span>
+    </fieldset>
+</div>
+
+<h2 id="layouting">Layouting</h2>
+
+<p>If you need to layout different fields according a grid pattern, you can use our <a href="/layout/grid">grid layout</a>.</p>
+
+<div class="fp-example">
+    <form action="" class="form">
+        <fieldset class="form__fieldset">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form__group">
+                        <label for="" class="form__label">First name</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form__group">
+                        <label for="" class="form__label">Last name</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form__group">
+                        <label for="" class="form__label">Address</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form__group">
+                        <label for="" class="form__label">Zip code</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form__group">
+                        <label for="" class="form__label">City</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__fieldset&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;row&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-6&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">First name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-6&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Last name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="special-cases">Special cases</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ullam distinctio enim in corporis fugit doloremque deleniti debitis ad dolores.</p>
+
+<div class="fp-example">
+    <fieldset class="form__fieldset">
+        <legend class="form__label">Pick a date</legend>
+        <div class="row">
+            <div class="col-7">
+                <div class="form__group">
+                    <input type="date" class="form__field" />
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form__joiner-text">at</div>
+            </div>
+            <div class="col-3">
+                <div class="form__group">
+                    <input type="time" class="form__field" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+	</article>
+</main>
+
+</body>
+</html>
+
