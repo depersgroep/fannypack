@@ -4,8 +4,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
 	<title>Document</title>
-	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/main.css" />
-	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/docs.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+	<link rel="stylesheet" href="/css/docs.css" />
 </head>
 <body>
 
@@ -35,14 +35,62 @@
 		<li class="fp-nav__item">
 			
 
+<a class="fp-nav__link " title="Layout" href="/">
+	
+	Layout
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Grid" href="/layout/grid/">
+	
+	Grid
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Typography" href="/layout/typography/">
+	
+	Typography
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li class="fp-nav__item">
+			
+
 <a class="fp-nav__link " title="Modules" href="/modules/">
 	
 	Modules
 </a>
 
-
 			
 			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Alerts" href="/modules/alert/">
+	
+	Alerts
+</a>
+
+				</li>
 				
 				
 				<li class="fp-nav__item">
@@ -52,7 +100,6 @@
 	
 	App Icons
 </a>
-
 
 				</li>
 				
@@ -65,7 +112,6 @@
 	Breadcrumb
 </a>
 
-
 				</li>
 				
 				
@@ -76,7 +122,6 @@
 	
 	Buttons
 </a>
-
 
 				</li>
 				
@@ -89,10 +134,6 @@
 	Forms
 </a>
 
-<ul id="scrollspy">
-</ul>
-
-
 				</li>
 				
 				
@@ -103,7 +144,6 @@
 	
 	Icons
 </a>
-
 
 				</li>
 				
@@ -116,7 +156,6 @@
 	Pagination
 </a>
 
-
 				</li>
 				
 				
@@ -128,7 +167,6 @@
 	Tables
 </a>
 
-
 				</li>
 				
 				
@@ -139,7 +177,6 @@
 	
 	Toolbar
 </a>
-
 
 				</li>
 				
@@ -555,6 +592,94 @@
         <label for="requiredinvalidinputid" class="form__label">Name</label>
         <input id="requiredinvalidinputid" name="requiredinvalidinputid" type="text" class="form__field" required="required" />
         <span class="form__feedback">Please enter your name</span>
+    </fieldset>
+</div>
+
+<h2 id="layouting">Layouting</h2>
+
+<p>If you need to layout different fields according a grid pattern, you can use our <a href="/layout/grid">grid layout</a>.</p>
+
+<div class="fp-example">
+    <form action="" class="form">
+        <fieldset class="form__fieldset">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form__group">
+                        <label for="" class="form__label">First name</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form__group">
+                        <label for="" class="form__label">Last name</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form__group">
+                        <label for="" class="form__label">Address</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form__group">
+                        <label for="" class="form__label">Zip code</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form__group">
+                        <label for="" class="form__label">City</label>
+                        <input type="text" class="form__field" />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__fieldset&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;row&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-6&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">First name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-6&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Last name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="special-cases">Special cases</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ullam distinctio enim in corporis fugit doloremque deleniti debitis ad dolores.</p>
+
+<div class="fp-example">
+    <fieldset class="form__fieldset">
+        <legend class="form__label">Pick a date</legend>
+        <div class="row">
+            <div class="col-7">
+                <div class="form__group">
+                    <input type="date" class="form__field" />
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="form__joiner-text">at</div>
+            </div>
+            <div class="col-3">
+                <div class="form__group">
+                    <input type="time" class="form__field" />
+                </div>
+            </div>
+        </div>
     </fieldset>
 </div>
 

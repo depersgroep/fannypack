@@ -4,8 +4,8 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
 	<title>Document</title>
-	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/main.css" />
-	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/docs.css" />
+	<link rel="stylesheet" href="/css/main.css" />
+	<link rel="stylesheet" href="/css/docs.css" />
 </head>
 <body>
 
@@ -35,14 +35,62 @@
 		<li class="fp-nav__item">
 			
 
+<a class="fp-nav__link " title="Layout" href="/">
+	
+	Layout
+</a>
+
+			
+			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Grid" href="/layout/grid/">
+	
+	Grid
+</a>
+
+				</li>
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Typography" href="/layout/typography/">
+	
+	Typography
+</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+		
+		<li class="fp-nav__item">
+			
+
 <a class="fp-nav__link " title="Modules" href="/modules/">
 	
 	Modules
 </a>
 
-
 			
 			<ul class="fp-nav__list">
+				
+				
+				<li class="fp-nav__item">
+					
+
+<a class="fp-nav__link " title="Alerts" href="/modules/alert/">
+	
+	Alerts
+</a>
+
+				</li>
 				
 				
 				<li class="fp-nav__item">
@@ -52,7 +100,6 @@
 	
 	App Icons
 </a>
-
 
 				</li>
 				
@@ -65,7 +112,6 @@
 	Breadcrumb
 </a>
 
-
 				</li>
 				
 				
@@ -76,7 +122,6 @@
 	
 	Buttons
 </a>
-
 
 				</li>
 				
@@ -89,7 +134,6 @@
 	Forms
 </a>
 
-
 				</li>
 				
 				
@@ -100,7 +144,6 @@
 	
 	Icons
 </a>
-
 
 				</li>
 				
@@ -113,7 +156,6 @@
 	Pagination
 </a>
 
-
 				</li>
 				
 				
@@ -125,10 +167,6 @@
 	Tables
 </a>
 
-<ul id="scrollspy">
-</ul>
-
-
 				</li>
 				
 				
@@ -139,7 +177,6 @@
 	
 	Toolbar
 </a>
-
 
 				</li>
 				
@@ -356,6 +393,40 @@
 </span><span class="s1f40">	...
 </span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
+<h2 id="simple-tables-with-key-value-pairs">Simple tables with key - value pairs</h2>
+
+<p>Sometimes all you need to display is a table with some key-value pairs as data.
+With <code>.key</code> or <code>scope=&quot;row&quot;</code> you can emphasize the key. If you need extra styling
+ for the value , just add <code>.value</code> to that cell.</p>
+
+<div class="fp-example">
+    <table class="table table--horizontal-borders">
+        <tbody>
+            <tr>
+                <td class="key">ID</td>
+                <td class="value">12345</td>
+            </tr>
+            <tr>
+                <td class="key">Last change</td>
+                <td class="value"><em>Not saved yet</em></td>
+            </tr>
+            <tr>
+                <td scope="row">Status</td>
+                <td>Draft</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;key&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Last change</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;value&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;&lt;</span><span class="s1f40"></span><span class="s7e2">em</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Not saved yet</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">em</span><span class="s1f40"></span><span class="s1388">&gt;&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1770">&lt;!-- or --&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"> </span><span class="s7d1">scope</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;row&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Status</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Draft</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">td</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">tr</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
 <h2 id="responsive-tables">Responsive tables</h2>
 
 <p>We have two solutions. Either your table scrolls <code>.table--responsive</code> or it transforms in to blocks
@@ -469,7 +540,7 @@ with the content stacked on top of each other <code>.table--transformer</code>.<
 </span><span class="s1f40">	...
 </span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">table</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
-<h2 id="tranforming-responsive-table">Tranforming responsive table</h2>
+<h2 id="transforming-responsive-table">Transforming responsive table</h2>
 
 <p>This requires a little more work than just css. You need to add the required
 attributes to make this work and be accessible.</p>
