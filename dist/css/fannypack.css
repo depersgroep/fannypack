@@ -488,6 +488,30 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/Source-Sans-Pro/SourceSansPro-Regular.eot") format("embedded-opentype"), url("../fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf.woff2") format("woff2"), url("../fonts/Source-Sans-Pro/SourceSansPro-Regular.otf.woff") format("woff"), url("../fonts/Source-Sans-Pro/SourceSansPro-Regular.otf") format("opentype"), url("../fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/Source-Sans-Pro/SourceSansPro-Semibold.eot") format("embedded-opentype"), url("../fonts/Source-Sans-Pro/SourceSansPro-Semibold.ttf.woff2") format("woff2"), url("../fonts/Source-Sans-Pro/SourceSansPro-Semibold.otf.woff") format("woff"), url("../fonts/Source-Sans-Pro/SourceSansPro-Semibold.otf") format("opentype"), url("../fonts/Source-Sans-Pro/SourceSansPro-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("../fonts/Source-Sans-Pro/SourceSansPro-Bold.eot") format("embedded-opentype"), url("../fonts/Source-Sans-Pro/SourceSansPro-Bold.ttf.woff2") format("woff2"), url("../fonts/Source-Sans-Pro/SourceSansPro-Bold.otf.woff") format("woff"), url("../fonts/Source-Sans-Pro/SourceSansPro-Bold.otf") format("opentype"), url("../fonts/Source-Sans-Pro/SourceSansPro-Bold.ttf") format("truetype");
+}
+
 html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -536,8 +560,120 @@ code {
   font-size: 90%;
 }
 
+.text--success {
+  color: #2ecc40;
+}
+
+.text--warning {
+  color: #ffdc00;
+}
+
+.text--error {
+  color: #ff4136;
+}
+
+.text--muted {
+  color: #9e9e9e;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.row::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+[class^="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 .container {
   padding: 20px;
+}
+
+.alert {
+  margin-bottom: 20px;
+  padding: 16px 20px 20px;
+}
+
+.alert--error {
+  background-color: #ff4136;
+}
+
+.alert--success {
+  background-color: #2ecc40;
+}
+
+.alert--warning {
+  background-color: #ffdc00;
+}
+
+.alert__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.alert__text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.alert__text:last-of-type {
+  margin-bottom: 0;
 }
 
 .app-icon,
@@ -632,6 +768,25 @@ code {
   font-weight: bold;
 }
 
+.app-icon__img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 10px auto auto;
+}
+
+.app-icon--large .app-icon__img {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.app-icon--xlarge .app-icon__img {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+}
+
 .breadcrumb {
   color: #9e9e9e;
 }
@@ -689,6 +844,7 @@ code {
   border: 0;
   border-radius: 17.5px;
   background-color: #ccc;
+  font-family: Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -716,14 +872,15 @@ code {
   margin-bottom: 20px;
 }
 
-.form__group {
-  margin-bottom: 20px;
+.form__fieldset {
   padding: 0;
   border: 0;
 }
 
-.form__group:last-child {
-  margin-bottom: 0;
+.form__group {
+  margin-bottom: 20px;
+  padding: 0;
+  border: 0;
 }
 
 .form__label {
@@ -851,6 +1008,11 @@ input[type="color"].form__field {
 
 .form__actions {
   text-align: right;
+}
+
+.form__joiner-text {
+  padding-top: 4px;
+  text-align: center;
 }
 
 .site-header {
@@ -1391,6 +1553,10 @@ input[type="color"].form__field {
 }
 
 .table td[scope] {
+  font-weight: bold;
+}
+
+.table .key {
   font-weight: bold;
 }
 

@@ -58,11 +58,20 @@
   margin-bottom: 20px;
 }
 
+.fp-example--grid [class^="col-"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  white-space: nowrap;
+}
+
 .theme-fp-docs {
   background-color: #eee;
 }
 
 .fp-main-container {
+  position: relative;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -75,9 +84,11 @@
 }
 
 .fp-drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 262px;
   padding: 20px;
-  float: left;
 }
 
 @media only screen and (max-width: 800px) {
@@ -105,21 +116,26 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-weight: bold;
 }
 
 .fp-nav__list .fp-nav__list {
   margin-top: 10px;
   padding-left: 15px;
   border-left: 2px solid #fc569f;
+  font-weight: normal;
 }
 
 .fp-nav__item {
   display: block;
 }
 
+.fp-nav > .fp-nav__list > .fp-nav__item + .fp-nav__item {
+  margin-top: 10px;
+}
+
 .fp-nav__link {
   display: block;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -132,6 +148,11 @@
   color: #f012be;
 }
 
-.fp-nav__list .fp-nav__list .fp-nav__link {
-  font-weight: normal;
+.fp-transparent-bg {
+  background-clip: border-box;
+  background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.0980392) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.0980392) 75%, rgba(0, 0, 0, 0.0980392) 0);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  background-origin: padding-box;
 }

@@ -20,7 +20,7 @@
   "license": "ISC",
   "homepage": "https://github.com/joggink/fannypack#readme",
   "clean": [
-    "static/"
+    "dist/"
   ],
   "js": {
     "files": [
@@ -33,15 +33,15 @@
           "src/js/modules/*.js",
           "src/js/vendor/picturefill.js"
         ],
-        "dest": "static/js/",
-        "file": "styleguide.js"
+        "dest": "dist/js/",
+        "file": "fannypack.js"
       },
       {
         "src": [
           "src/js/config/*.js"
         ],
-        "dest": "static/js/",
-        "file": "main-head.js"
+        "dest": "dist/js/",
+        "file": "fannypack-head.js"
       }
     ],
     "hint": {
@@ -57,18 +57,27 @@
     "files": [
       {
         "src": "src/sass/**/*.scss",
-        "dest": "static/css/",
-        "file": "main.css"
+        "dest": "dist/css",
+        "file": "fannypack.css"
+      },
+      {
+        "src": "hugo/src/sass/**/*.scss",
+        "dest": "hugo/dist/css",
+        "file": "docs.css"
       }
     ],
     "hint": {
       "src": [
         "src/sass/**/*.scss",
         "!./src/sass/base/_normalize.scss",
-        "!./src/sass/modules/_syntax.scss"
+        "!./src/sass/modules/_syntax.scss",
+        "hugo/src/sass/**/*.scss"
       ]
     },
-    "watch": "src/sass/**/*.scss",
+    "watch": [
+      "src/sass/**/*.scss",
+      "hugo/src/sass/**/*.scss"
+    ],
     "autoprefixer": {
       "browsers": [
         "Firefox >=27",
@@ -81,19 +90,19 @@
     }
   },
   "img": {
-    "src": "src/img/**/*",
-    "dest": "static/",
-    "watch": "src/img/**/*"
+    "src": "hugo/src/img/**/*",
+    "dest": "hugo/dist/",
+    "watch": "hugo/src/img/**/*"
   },
   "fonts": {
     "src": "src/fonts/**/*",
-    "dest": "static/",
+    "dest": "dist/",
     "watch": "src/fonts/**/*"
   },
   "git": {
     "hooks": {
       "precommit": {
-        "src": "scripts/.pre-commit",
+        "src": ".hooks/.pre-commit",
         "dest": ".git/hooks/pre-commit"
       }
     }
