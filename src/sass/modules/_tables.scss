@@ -6,28 +6,39 @@
 
 // scss-lint:disable NestingDepth
 
+// mandatory wrapper if you want your table to be "responsive"
+.table__wrapper {
+	overflow-x: auto;
+}
+
 .table {
 	width: 100%;
+	max-width: 100%;
 	border-collapse: collapse;
+	overflow-x: auto;
 
 	th,
 	td {
 		padding: $half-spacing-unit;
 		vertical-align: top;
+
+		&[scope] {
+			font-weight: bold;
+		}
 	}
 
 	th {
 		text-align: left;
 	}
 
-	td {
-		&[scope] {
-			font-weight: bold;
-		}
-	}
-
 	.key {
 		font-weight: bold;
+	}
+}
+
+caption {
+	@include mq-max(799px) {
+		text-align: left;
 	}
 }
 
@@ -53,7 +64,7 @@
 		border-bottom: 1px solid $table-border-color;
 	}
 
-	th {
+	thead th {
 		border-bottom-width: 2px;
 	}
 }
@@ -65,12 +76,14 @@
 		}
 	}
 
-	tr {
+	tbody tr {
+		th,
 		td {
 			background-color: $white;
 		}
 
 		&:nth-child(even) {
+			th,
 			td {
 				background-color: $silver;
 			}
@@ -78,22 +91,13 @@
 	}
 }
 
-.table--responsive {
-	@include mq-max(799px) {
-		display: block;
-		overflow-x: auto;
-	}
-
-	caption {
-		@include mq-max(799px) {
-			text-align: left;
-		}
-	}
-}
-
+//==============================================================================
+// RESPONSIVE TABLE THAT BECOMES STACKED ON SMALL SCREENS
+//==============================================================================
 .table--transformer {
 	@include mq-max(799px) {
 		display: block;
+		overflow-x: visible;
 	}
 
 	caption,
@@ -114,6 +118,7 @@
 		}
 	}
 
+	th,
 	td {
 		&:empty {
 			@include mq-max(799px) {
@@ -132,6 +137,7 @@
 	}
 
 	&.table--bordered {
+		th,
 		td {
 			@include mq-max(799px) {
 				border: 0;

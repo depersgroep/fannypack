@@ -1,3 +1,4 @@
+baseURL= "https://fannypack.persgroep.be"
 archetypeDir = "hugo/archetypes"
 contentDir = "hugo/content"
 themesDir = "hugo/themes"
@@ -5,7 +6,7 @@ staticDir = "./dist"
 publishDir = "./docs"
 languageCode = "en-us"
 title = "Fannypack"
-theme = "dpp"
+theme = "fannypack"
 metadataformat = "toml"
 
 # Enable Google Analytics by entering your tracking id

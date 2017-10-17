@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////////////////////////////////
+// NAVIGATION
+//
+// description
+////////////////////////////////////////////////////////////////////////////////
+
+.nav {
+	//
+}
+
+.nav--vertical {
+	display: block;
+}
+
+.nav--sticky {
+	@supports (position: sticky) {
+		position: sticky;
+		top: ($site-header-height + $double-spacing-unit);
+		left: 0;
+		width: 100%;
+	}
+}
+
+.nav__list {
+	@include unstyled-list;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: baseline;
+	height: 100%;
+	font-weight: bold;
+
+	.nav--vertical & {
+		display: block;
+
+		// nested
+		.nav__list {
+			margin-top: $base-spacing-unit;
+			padding-left: ($base-spacing-unit * 1.5);
+			font-weight: normal;
+		}
+	}
+}
+
+.nav__item {
+	display: block;
+
+	& + & {
+		margin-left: $double-spacing-unit;
+	}
+
+	.nav--vertical  & {
+		+ .nav__item {
+			margin-left: 0;
+		}
+	}
+
+	.nav--vertical > .nav__list > & + & {
+		margin-top: $base-spacing-unit;
+	}
+}
+
+.nav__link {
+	display: block;
+	// color: $dusk-purple;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		// color: $pink-orange;
+	}
+
+	&.is-active {
+		// color: $midnight-blue;
+	}
+}

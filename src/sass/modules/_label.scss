@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// LABELS
+//
+// description
+////////////////////////////////////////////////////////////////////////////////
+
+
+.label {
+	@include font-smoothing(default);
+	display: inline-block;
+	padding: .2em .6em;
+	border-radius: $border-radius-base;
+	background-color: $silver;
+	font-size: 80%;
+	font-weight: 600;
+	white-space: nowrap;
+	vertical-align: baseline;
+
+	// if the label is actually a link
+	&[href] {
+		color: $text-color;
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			background-color: $iron;
+		}
+	}
+}
+
+.label--success {
+	background-color: $label-success-bg;
+
+	&,
+	&[href] {
+		color: $white;
+	}
+
+	&[href] {
+		&:focus,
+		&:hover {
+			background-color: mix($black, $label-success-bg, 7.5%);
+		}
+	}
+}
+
+.label--warning {
+	background-color: $label-warning-bg;
+
+	&[href] {
+		&:focus,
+		&:hover {
+			background-color: mix($black, $label-warning-bg, 5%);
+		}
+	}
+}
+
+.label--error {
+	background-color: $label-error-bg;
+	color: $white;
+
+	&,
+	&[href] {
+		color: $white;
+	}
+
+	&[href] {
+		&:focus,
+		&:hover {
+			background-color: mix($black, $label-error-bg, 15%);
+		}
+	}
+}

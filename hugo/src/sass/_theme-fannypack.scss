@@ -1,0 +1,117 @@
+////////////////////////////////////////////////////////////////////////////////
+// THEME: FANNYPACK
+//
+// description:
+// Fluo, 80s retro style for Fannypack documentation
+////////////////////////////////////////////////////////////////////////////////
+
+.theme-fp {
+	background: #0f004d;
+	// background: linear-gradient(135deg, #0f004d 26%, #100634 44%, #54037e 49%, #a734c7 50%, #7b0093 50%, #8a1f7d 61%, #aa4277 72%, #d8756d 79%, #f89966 87%, #ffa165 89%, #e17757 89%, #f97f58 100%);
+	background-attachment: fixed;
+	background: linear-gradient(135deg, #0f004d 0%,#54037e 50%,#8a1f7d 50%,#d8756d 100%);
+
+	.site-header {
+		border-bottom: 0;
+		background-color: $transparent;
+
+		.app-icon__name {
+			color: $hot-sauce-yellow;
+		}
+	}
+
+	.site-header__section {
+		&:nth-child(2) {
+			margin-left: ($double-spacing-unit * 3);
+		}
+	}
+
+	.hero-unit {
+		margin-bottom: ($double-spacing-unit * 4);
+		text-align: center;
+	}
+
+	.hero-unit__title {
+		margin-bottom: 0;
+		color: rgba($hot-sauce-green, .33);
+		font-size: 10vw;
+		letter-spacing: .1em;
+		text-shadow: rgba($hot-sauce-red, .33) .05em .05em 0;
+	}
+
+	.hero-unit__body {
+		color: $hot-sauce-yellow;
+		font-size: $font-size-h2;
+		line-height: 1.2;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-family: 'Arial Black', Arial, sans-serif;
+		text-transform: uppercase;
+	}
+
+	.fp-example {
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-family: $sans-serif;
+		}
+	}
+
+	.nav--sticky {
+		@supports (position: sticky) {
+			top: ($site-header-height + $double-spacing-unit);
+		}
+	}
+
+	.nav__list {
+		@include font-smoothing(default);
+		font-family: 'Courier New', monospace;
+
+		// nested
+		.nav__list {
+			margin-top: $base-spacing-unit;
+			padding-left: ($base-spacing-unit * 1.5);
+			border-left: 2px solid $neon-pink;
+			font-weight: normal;
+		}
+	}
+
+	.nav__item {
+		display: block;
+
+	}
+
+	.nav--vertical > .nav__list > .nav__item + .nav__item {
+		margin-top: $base-spacing-unit;
+		margin-left: 0;
+	}
+
+	.nav__link {
+		color: $neon-blue;
+
+		&:focus,
+		&:hover {
+			color: $hot-sauce-magenta;
+		}
+
+		&.is-active {
+			color: $hot-sauce-yellow;
+		}
+	}
+}
+
+.theme-fp-homepage {
+	body {
+		color: $fp-text-color;
+	}
+
+	.chroma {
+		background-color: $hot-sauce-yellow;
+		box-shadow: $hot-sauce-magenta -10px 10px 0;
+	}
+}

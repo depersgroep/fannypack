@@ -1,6 +1,6 @@
 {{ $currentMenuEntry := .Scratch.Get "currentMenuEntry" }}
 {{ $isCurrent := eq .Permalink ($currentMenuEntry.URL | absURL | printf "%s") }}
-<a class="fp-nav__link {{ if $isCurrent }}is-active{{ end }}" title="{{ $currentMenuEntry.Name }}" href="{{ $currentMenuEntry.URL | relURL}}">
+<a class="nav__link {{ if $isCurrent }}is-active{{ end }}" title="{{ $currentMenuEntry.Name }}" href="{{ $currentMenuEntry.URL | relURL}}">
 	{{ $currentMenuEntry.Pre }}
 	{{ $currentMenuEntry.Name }}
 </a>

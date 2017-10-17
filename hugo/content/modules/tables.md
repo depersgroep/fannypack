@@ -1,55 +1,58 @@
 +++
 title = "Tables"
 date = 2017-10-06T14:38:47+02:00
-[menu.main]
+[menu.docs]
 parent = "Modules"
 +++
 
 # Tables
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam. Deleniti minima veniam maxime sit eius, delectus necessitatibus, doloremque maiores!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga obcaecati alias molestiae voluptatem vitae architecto totam tempore ab necessitatibus ipsum?
 
 <div class="fp-example">
-	<table class="table">
-		<caption>Fannypack lovers</caption>
-		<thead>
-			<tr>
-				<th scope="col">#</th>
-				<th scope="col">First name</th>
-				<th scope="col">Last name</th>
-				<th scope="col">Role</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td scope="row">1</td>
-				<td>Gwendolyn</td>
-				<td>Matthys</td>
-				<td>Visual designer</td>
-			</tr>
-			<tr>
-				<td scope="row">2</td>
-				<td>Yannick</td>
-				<td>Van Avermaet</td>
-				<td>Frontend Architect</td>
-			</tr>
-			<tr>
-				<td scope="row">3</td>
-				<td>Jochen</td>
-				<td>Vandendriessche</td>
-				<td>Frontend developer</td>
-			</tr>
-			<tr>
-				<td scope="row">4</td>
-				<td>Gregory </td>
-				<td>Van Looy</td>
-				<td>Frontend developer</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="table-wrapper">
+		<table class="table">
+			<caption>Fannypack lovers</caption>
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">First name</th>
+					<th scope="col">Last name</th>
+					<th scope="col">Role</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td>Gwendolyn</td>
+					<td>Matthys</td>
+					<td>Visual designer</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>Yannick</td>
+					<td>Van Avermaet</td>
+					<td>Frontend Architect</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Jochen</td>
+					<td>Vandendriessche</td>
+					<td>Frontend developer</td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>Gregory </td>
+					<td>Van Looy</td>
+					<td>Frontend developer</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 
 ```html
+
 <table class="table">
 	<caption>Fannypack lovers</caption>
 	<thead>
@@ -62,7 +65,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam.
 	</thead>
 	<tbody>
 		<tr>
-			<td scope="row">1</td>
+			<th scope="row">1</th>
 			<td>Gwendolyn</td>
 			<td>Matthys</td>
 			<td>Visual designer</td>
@@ -70,7 +73,30 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam.
 		...
 	</tbody>
 </table>
+</div>
 ```
+
+<table class="table table--horizontal-borders">
+	<thead>
+		<tr>
+			<th>Selector / Attribute</th>
+			<th></th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>&lt;th scope="col"&gt;</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>For a11y</td>
+		</tr>
+		<tr>
+			<td><code>&lt;th scope="row"&gt;</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>For a11y. <code>&lt;td&gt;</code> with <code>scope=""</code> is <strong>obsolete in HTML5</strong>. Only use it on <code>th</code></td>
+		</tr>
+	</tbody>
+</table>
 
 ## Borders everywhere
 
@@ -87,25 +113,25 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam.
 		</thead>
 		<tbody>
 			<tr>
-				<td scope="row">1</td>
+				<th scope="row">1</th>
 				<td>Gwendolyn</td>
 				<td>Matthys</td>
 				<td>Visual designer</td>
 			</tr>
 			<tr>
-				<td scope="row">2</td>
+				<th scope="row">2</th>
 				<td>Yannick</td>
 				<td>Van Avermaet</td>
 				<td>Frontend Architect</td>
 			</tr>
 			<tr>
-				<td scope="row">3</td>
+				<th scope="row">3</th>
 				<td>Jochen</td>
 				<td>Vandendriessche</td>
 				<td>Frontend developer</td>
 			</tr>
 			<tr>
-				<td scope="row">4</td>
+				<th scope="row">4</th>
 				<td>Gregory </td>
 				<td>Van Looy</td>
 				<td>Frontend developer</td>
@@ -135,25 +161,25 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam.
 		</thead>
 		<tbody>
 			<tr>
-				<td scope="row">1</td>
+				<th scope="row">1</th>
 				<td>Gwendolyn</td>
 				<td>Matthys</td>
 				<td>Visual designer</td>
 			</tr>
 			<tr>
-				<td scope="row">2</td>
+				<th scope="row">2</th>
 				<td>Yannick</td>
 				<td>Van Avermaet</td>
 				<td>Frontend Architect</td>
 			</tr>
 			<tr>
-				<td scope="row">3</td>
+				<th scope="row">3</th>
 				<td>Jochen</td>
 				<td>Vandendriessche</td>
 				<td>Frontend developer</td>
 			</tr>
 			<tr>
-				<td scope="row">4</td>
+				<th scope="row">4</th>
 				<td>Gregory </td>
 				<td>Van Looy</td>
 				<td>Frontend developer</td>
@@ -183,25 +209,25 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, numquam.
 		</thead>
 		<tbody>
 			<tr>
-				<td scope="row">1</td>
+				<th scope="row">1</th>
 				<td>Gwendolyn</td>
 				<td>Matthys</td>
 				<td>Visual designer</td>
 			</tr>
 			<tr>
-				<td scope="row">2</td>
+				<th scope="row">2</th>
 				<td>Yannick</td>
 				<td>Van Avermaet</td>
 				<td>Frontend Architect</td>
 			</tr>
 			<tr>
-				<td scope="row">3</td>
+				<th scope="row">3</th>
 				<td>Jochen</td>
 				<td>Vandendriessche</td>
 				<td>Frontend developer</td>
 			</tr>
 			<tr>
-				<td scope="row">4</td>
+				<th scope="row">4</th>
 				<td>Gregory </td>
 				<td>Van Looy</td>
 				<td>Frontend developer</td>
@@ -234,7 +260,7 @@ With `.key` or `scope="row"` you can emphasize the key. If you need extra stylin
 				<td class="value"><em>Not saved yet</em></td>
 			</tr>
 			<tr>
-				<td scope="row">Status</td>
+				<th scope="row">Status</th>
 				<td>Draft</td>
 			</tr>
 		</tbody>
@@ -248,128 +274,148 @@ With `.key` or `scope="row"` you can emphasize the key. If you need extra stylin
 </tr>
 <!-- or -->
 <tr>
-	<td scope="row">Status</td>
+	<th scope="row">Status</th>
 	<td>Draft</td>
 </tr>
 ```
 
 ## Responsive tables
 
-We have two solutions. Either your table scrolls `.table--responsive` or it transforms in to blocks
-with the content stacked on top of each other `.table--transformer`.
+Making a table responsive (with overflow) is very easy. Just add a `div.table__wrapper` around the <code>table</code>. If the content or the vast number of cells don't fit the container, you get horizontal scrollbars. This is done with `overflow`.
 
-### Responsive
-
-Resize your browser to see the result.
+**Resize your browser to see the result.**
 
 <div class="fp-example">
-	<table class="table table--bordered table--responsive">
-		<caption>Responsive table</caption>
-		<thead>
-			<tr>
-				<th>#</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-				<th>table heading</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td scope="row">1</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-			</tr>
-			<tr>
-				<td scope="row">2</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-			</tr>
-			<tr>
-				<td scope="row">3</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-			</tr>
-			<tr>
-				<td scope="row">4</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-			</tr>
-			<tr>
-				<td scope="row">5</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-			</tr>
-			<tr>
-				<td scope="row">6</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-				<td>table cell</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="table__wrapper">
+		<table class="table table--bordered">
+			<caption>Standard Responsive table</caption>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+					<th>table heading</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1</h>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+					<td>table cell</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 
 ```html
-<table class="table table--bordered table--responsive">
-	...
-</table>
+<div class="table__wrapper">
+	<table class="table table--bordered">
+		...
+	</table>
+</div>
 ```
 
+<table class="table table--horizontal-borders">
+	<thead>
+		<tr>
+			<th>Selector</th>
+			<th></th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>.table__wrapper</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>Wrapping <code>div</code> that adds horizontal scrollbars with <code>overflow-x: auto</code></td>
+		</tr>
+	</tbody>
+</table>
+
 ## Transforming responsive table
+
+On smaller screens the table transforms to blocks that are stacked and with accessible titles.
 
 This requires a little more work than just css. You need to add the required
 attributes to make this work and be accessible.
@@ -387,25 +433,25 @@ attributes to make this work and be accessible.
 		</thead>
 		<tbody>
 			<tr>
-				<td scope="row" data-title="No.">1</td>
+				<th scope="row" data-title="No.">1</th>
 				<td data-title="First name">Gwendolyn</td>
 				<td data-title="Last name">Matthys</td>
 				<td data-title="Role">Visual designer</td>
 			</tr>
 			<tr>
-				<td scope="row" data-title="No.">2</td>
+				<th scope="row" data-title="No.">2</th>
 				<td data-title="First name">Yannick</td>
 				<td data-title="Last name">Van Avermaet</td>
 				<td data-title="Role">Frontend Architect</td>
 			</tr>
 			<tr>
-				<td scope="row" data-title="No.">3</td>
+				<th scope="row" data-title="No.">3</th>
 				<td data-title="First name">Jochen</td>
 				<td data-title="Last name">Vandendriessche</td>
 				<td data-title="Role">Frontend developer</td>
 			</tr>
 			<tr>
-				<td scope="row" data-title="No.">4</td>
+				<th scope="row" data-title="No.">4</th>
 				<td data-title="First name">Gregory </td>
 				<td data-title="Last name">Van Looy</td>
 				<td data-title="Role">Frontend developer</td>
@@ -415,7 +461,7 @@ attributes to make this work and be accessible.
 </div>
 
 ```html
-<table class="table table--striped table--transformer">
+<table class="table table--bordered table--transformer">
 	<caption>Transforming responsive table</caption>
 	<thead>
 		<tr>
@@ -427,7 +473,7 @@ attributes to make this work and be accessible.
 	</thead>
 	<tbody>
 		<tr>
-			<td scope="row" data-title="No.">1</td>
+			<th scope="row" data-title="No.">1</th>
 			<td data-title="First name">Gwendolyn</td>
 			<td data-title="Last name">Matthys</td>
 			<td data-title="Role">Visual designer</td>
@@ -436,3 +482,25 @@ attributes to make this work and be accessible.
 	</tbody>
 </table>
 ```
+
+<table class="table table--horizontal-borders">
+	<thead>
+		<tr>
+			<th>Selector / Attribute</th>
+			<th></th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>.table--transformer</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>Modifier class</td>
+		</tr>
+		<tr>
+			<td><code>data-title=""</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>Creates a label for the corresponding value. Needs to be the same as the matching <code>th</code></td>
+		</tr>
+	</tbody>
+</table>

@@ -1,7 +1,7 @@
 +++
 title = "Pagination"
 date = 2017-10-06T10:47:45+02:00
-[menu.main]
+[menu.docs]
 parent = 'Modules'
 +++
 

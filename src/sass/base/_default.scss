@@ -45,3 +45,20 @@ code {
 	color: $navy;
 	font-size: 90%;
 }
+
+a {
+	color: $link-color;
+
+	&:visited {
+		color: $link-visited-color;
+	}
+
+	&:focus,
+	&:hover {
+		color: $link-hover-color;
+	}
+
+	&:active {
+		color: $link-active-color;
+	}
+}

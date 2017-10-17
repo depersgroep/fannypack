@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// FANNYPACK LOGO
+//
+// description:
+// svg logo
+////////////////////////////////////////////////////////////////////////////////
+
+.fp-logo {
+	//
+}
+
+.fp-logo__group {
+	//
+	&--fanny {
+		//
+	}
+
+	&--pack {
+		fill: $hot-sauce-magenta;
+	}
+}
+
+.fp-logo__char {
+	.fp-logo__group--fanny & {
+		fill: $hot-sauce-blue;
+	}
+
+	.fp-logo__group--pack & {
+		fill: $hot-sauce-magenta;
+	}
+
+	&.f {
+		//
+	}
+
+	&.a {
+		//
+	}
+
+	&.n {
+		//
+	}
+
+	&.y {
+		//
+	}
+
+	&.p {
+		//
+	}
+
+	&.c {
+		//
+	}
+
+	&.k {
+		//
+	}
+}

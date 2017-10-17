@@ -8,6 +8,20 @@
 
 @import 'grid';
 
+.layout--fixed-header {
+	body {
+		padding-top: $site-header-height;
+	}
+}
+
+.fp-main-container {
+	.layout--fixed-header & {
+		position: relative;
+		min-height: calc(100vh - #{$site-header-height});
+		z-index: 1;
+	}
+}
+
 .container {
 	padding: $double-spacing-unit;
 }

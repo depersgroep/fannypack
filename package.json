@@ -20,7 +20,8 @@
   "license": "ISC",
   "homepage": "https://github.com/joggink/fannypack#readme",
   "clean": [
-    "dist/"
+    "dist/",
+    "hugo/dist/"
   ],
   "js": {
     "files": [
@@ -62,7 +63,7 @@
       },
       {
         "src": "hugo/src/sass/**/*.scss",
-        "dest": "hugo/dist/css",
+        "dest": "dist/css",
         "file": "docs.css"
       }
     ],
@@ -90,9 +91,9 @@
     }
   },
   "img": {
-    "src": "hugo/src/img/**/*",
-    "dest": "hugo/dist/",
-    "watch": "hugo/src/img/**/*"
+    "src": "hugo/src/img/*",
+    "dest": "dist/",
+    "watch": "hugo/src/img/*"
   },
   "fonts": {
     "src": "src/fonts/**/*",

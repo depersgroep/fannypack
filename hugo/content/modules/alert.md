@@ -1,7 +1,7 @@
 +++
 title = "Alerts"
 date = 2017-10-09T11:39:15+02:00
-[menu.main]
+[menu.docs]
 parent = "Modules"
 +++
 # Alerts

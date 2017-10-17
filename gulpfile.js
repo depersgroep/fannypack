@@ -89,7 +89,7 @@ gulp.task('imgbuild', function() {
 
 	return gulp.src(pkg.img.src)
 		.pipe(copy(pkg.img.dest, {
-			'prefix': 1
+			'prefix': 2
 		})) // needs to be copy, not just ".dest" as mac often throws errors when the folder doesn't exist
 		.pipe(notify({
 			'message': 'IMG build complete',

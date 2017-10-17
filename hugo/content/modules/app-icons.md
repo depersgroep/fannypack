@@ -1,7 +1,7 @@
 +++
 title = "App Icons"
 date = 2017-10-06T08:16:56+02:00
-[menu.main]
+[menu.docs]
 parent = "Modules"
 +++
 
@@ -82,6 +82,33 @@ Representation of an internal application **without** the application name visib
 	</div>
 </div>
 ```
+
+<table class="table table--horizontal-borders">
+	<thead>
+		<tr>
+			<th>Attribute</th>
+			<th></th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>role="img</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>It looks like an image but it's not.</td>
+		</tr>
+		<tr>
+			<td><code>aria-label</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>Only when there's <strong>no visible</strong> title. Short title or name on <code>.app-icon</code></td>
+		</tr>
+		<tr>
+			<td><code>aria-hidden="true"</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>On <code>.app-icon__logo</code></td>
+		</tr>
+	</tbody>
+</table>
 
 ## Sizing
 
@@ -183,6 +210,28 @@ As we provide visible description of the logo, the way the **aria** attributes a
 	<span class="app-icon__name" id="app-icon-name1">Temptation Editor</span>
 </div>
 ```
+
+<table class="table table--horizontal-borders">
+	<thead>
+		<tr>
+			<th>Attribute</th>
+			<th></th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>aria-labelledby</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>Matches the <code>id</code> of <code>.app-icon__name</code></td>
+		</tr>
+		<tr>
+			<td><code>aria-hidden="true"</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>On <code>.app-icon__logo</code></td>
+		</tr>
+	</tbody>
+</table>
 
 ## With a link
 

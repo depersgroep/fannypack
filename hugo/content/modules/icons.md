@@ -1,7 +1,7 @@
 +++
 title = "Icons"
 date = 2017-10-05T16:39:45+02:00
-[menu.main]
+[menu.docs]
 parent = "Modules"
 +++
 

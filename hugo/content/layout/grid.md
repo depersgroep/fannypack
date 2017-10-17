@@ -2,7 +2,7 @@
 title: Grid
 date: 2017-10-09T10:08:25+02:00
 menu:
-  main:
+  docs:
     parent: Layout
 ---
 
@@ -12,7 +12,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nam illum c
 
 
 <div class="fp-example fp-example--grid">
-	<div class="row">
+	<div class="grid">
 		<div class="col-1">.col-1</div>
 		<div class="col-1">.col-1</div>
 		<div class="col-1">.col-1</div>
@@ -26,28 +26,28 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nam illum c
 		<div class="col-1">.col-1</div>
 		<div class="col-1">.col-1</div>
 	</div>
-	<div class="row">
+	<div class="grid">
 		<div class="col-8">.col-8</div>
 		<div class="col-4">.col-4</div>
 	</div>
-	<div class="row">
+	<div class="grid">
 		<div class="col-4">.col-4</div>
 		<div class="col-4">.col-4</div>
 		<div class="col-4">.col-4</div>
 	</div>
-	<div class="row">
+	<div class="grid">
 		<div class="col-6">.col-6</div>
 		<div class="col-6">.col-6</div>
 	</div>
 </div>
 
 ```html
-<div class="row">
+<div class="grid">
 	<div class="col-4">.col-4</div>
 	<div class="col-4">.col-4</div>
 	<div class="col-4">.col-4</div>
 </div>
-<div class="row">
+<div class="grid">
 	<div class="col-6">.col-6</div>
 	<div class="col-6">.col-6</div>
 </div>
@@ -60,7 +60,7 @@ It will calculate the widths based on the available width of its wrapper.
 
 ```html
 <div class="container">
-	<div class="row">
+	<div class="grid">
 		<div class="col-4">.col-4</div>
 		<div class="col-4">.col-4</div>
 		<div class="col-4">.col-4</div>
@@ -69,7 +69,7 @@ It will calculate the widths based on the available width of its wrapper.
 
 <!-- or -->
 <div class="some-random-module">
-	<div class="row">
+	<div class="grid">
 		<div class="col-4">.col-4</div>
 		<div class="col-4">.col-4</div>
 		<div class="col-4">.col-4</div>

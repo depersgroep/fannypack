@@ -1,7 +1,7 @@
 +++
 title = "Typography"
 date = 2017-10-09T13:02:58+02:00
-[menu.main]
+[menu.docs]
 parent = "Layout"
 +++
 

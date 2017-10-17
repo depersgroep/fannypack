@@ -11,6 +11,7 @@
 }
 
 .form__fieldset {
+	margin-bottom: $double-spacing-unit;
 	padding: 0;
 	border: 0;
 }
@@ -155,9 +156,33 @@ input[type="color"].form__field {
 }
 
 //==============================================================================
+// FORM GRIDS with fallback
+//==============================================================================
+.form__flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+.form__box {
+	&:first-child {
+		flex-grow: 3;
+	}
+
+	&:last-child {
+		flex-grow: 2;
+	}
+}
+
+.form__box--joiner {
+	padding-right: $double-spacing-unit;
+	padding-left: $double-spacing-unit;
+}
+
+//==============================================================================
 // HELPERS for additional text
 //==============================================================================
 .form__joiner-text {
-	padding-top: 4px;
 	text-align: center;
 }

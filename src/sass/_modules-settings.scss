@@ -10,7 +10,7 @@
 //==============================================================================
 // GRID
 //==============================================================================
-$grid-spacing-unit: $base-spacing-unit !default;
+$grid-spacing-unit: $double-spacing-unit !default;
 
 //==============================================================================
 // ALERTS
@@ -115,5 +115,12 @@ $pagination-disabled-color: $aluminum !default;
 // TABLES
 //==============================================================================
 $table-border-color: $border-color !default;
+
+//==============================================================================
+// LABELS
+//==============================================================================
+$label-success-bg: $success-color !default;
+$label-error-bg: $error-color !default;
+$label-warning-bg: $warning-color !default;
 
 // scss-lint:enable SpaceAfterVariableName
