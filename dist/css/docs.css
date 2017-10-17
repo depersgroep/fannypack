@@ -12,9 +12,9 @@
 
 .theme-fp {
   background: #0f004d;
-  background-attachment: fixed;
   background: -webkit-linear-gradient(315deg, #0f004d 0%, #54037e 50%, #8a1f7d 50%, #d8756d 100%);
   background: linear-gradient(135deg, #0f004d 0%, #54037e 50%, #8a1f7d 50%, #d8756d 100%);
+  background-attachment: fixed;
 }
 
 .theme-fp .site-header {
@@ -113,6 +113,10 @@
 .theme-fp-homepage .chroma {
   background-color: #fdf035;
   box-shadow: #ea168c -10px 10px 0;
+}
+
+.svg-elem {
+  opacity: .88;
 }
 
 .app-icon--neon-pink .app-icon__logo {

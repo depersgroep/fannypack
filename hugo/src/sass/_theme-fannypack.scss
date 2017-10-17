@@ -7,9 +7,8 @@
 
 .theme-fp {
 	background: #0f004d;
-	// background: linear-gradient(135deg, #0f004d 26%, #100634 44%, #54037e 49%, #a734c7 50%, #7b0093 50%, #8a1f7d 61%, #aa4277 72%, #d8756d 79%, #f89966 87%, #ffa165 89%, #e17757 89%, #f97f58 100%);
-	background-attachment: fixed;
 	background: linear-gradient(135deg, #0f004d 0%,#54037e 50%,#8a1f7d 50%,#d8756d 100%);
+	background-attachment: fixed;
 
 	.site-header {
 		border-bottom: 0;
@@ -114,4 +113,8 @@
 		background-color: $hot-sauce-yellow;
 		box-shadow: $hot-sauce-magenta -10px 10px 0;
 	}
+}
+
+.svg-elem {
+	opacity: .88;
 }
