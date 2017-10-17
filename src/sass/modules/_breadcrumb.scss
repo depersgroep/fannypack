@@ -37,6 +37,10 @@
 .breadcrumb__link {
 	color: inherit;
 
+	&:visited {
+		color: inherit;
+	}
+
 	&:focus,
 	&:hover {
 		color: $text-color;

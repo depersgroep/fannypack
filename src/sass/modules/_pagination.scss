@@ -44,13 +44,6 @@
 		border-right: 0;
 	}
 
-	&:focus,
-	&:hover {
-		border-color: $pagination-hover-bg;
-		background-color: $pagination-hover-bg;
-		color: $white;
-	}
-
 	&.is-active,
 	&.js-is-active {
 		border-color: $pagination-active-border-color;
@@ -106,6 +99,16 @@
 		line-height: nth($pagination-item-dimension, 2);
 	}
 
+	&:visited {
+		color: inherit;
+	}
+
+	&:focus,
+	&:hover {
+		border-color: $pagination-hover-bg;
+		background-color: $pagination-hover-bg;
+		color: $white;
+	}
 
 	.pagination__item--previous & {
 		&::before {

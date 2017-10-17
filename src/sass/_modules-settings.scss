@@ -15,11 +15,11 @@ $grid-spacing-unit: $double-spacing-unit !default;
 //==============================================================================
 // ALERTS
 //==============================================================================
-$alert-error-bg: $error-color !default;
+$alert-error-bg: mix($white, $error-color, 50%) !default;
 
-$alert-warning-bg: $warning-color !default;
+$alert-warning-bg: mix($white, $warning-color, 50%) !default;
 
-$alert-success-bg: $success-color !default;
+$alert-success-bg: mix($white, $success-color, 50%) !default;
 
 //==============================================================================
 // FORMS

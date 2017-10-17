@@ -178,3 +178,10 @@
 	background-size: 20px 20px;
 	background-origin: padding-box;
 }
+
+.fonda {
+	width: 66vw;
+	height: auto;
+	float: left;
+	shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
+}

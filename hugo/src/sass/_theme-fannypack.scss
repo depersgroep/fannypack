@@ -26,11 +26,16 @@
 	}
 
 	.hero-unit {
+		max-width: 1200px;
+		margin-top: ($double-spacing-unit * 4);
+		margin-right: auto;
 		margin-bottom: ($double-spacing-unit * 4);
+		margin-left: auto;
 		text-align: center;
 	}
 
 	.hero-unit__title {
+		margin-top: 0;
 		margin-bottom: 0;
 		color: rgba($hot-sauce-green, .33);
 		font-size: 10vw;
@@ -107,6 +112,10 @@
 .theme-fp-homepage {
 	body {
 		color: $fp-text-color;
+	}
+
+	.fp-main-container {
+		max-width: none;
 	}
 
 	.chroma {

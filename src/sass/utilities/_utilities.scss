@@ -10,3 +10,7 @@
 .sr-only {
 	@include visually-hidden;
 }
+
+.clearfix {
+	@include clearfix;
+}
