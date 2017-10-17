@@ -1,3 +1,11 @@
+.fp-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .fp-logo__group--pack {
   fill: #ea168c;
 }
@@ -31,11 +39,16 @@
 }
 
 .theme-fp .hero-unit {
+  max-width: 1200px;
+  margin-top: 80px;
+  margin-right: auto;
   margin-bottom: 80px;
+  margin-left: auto;
   text-align: center;
 }
 
 .theme-fp .hero-unit__title {
+  margin-top: 0;
   margin-bottom: 0;
   color: rgba(24, 167, 84, 0.33);
   font-size: 10vw;
@@ -108,6 +121,10 @@
 
 .theme-fp-homepage body {
   color: #fef9ae;
+}
+
+.theme-fp-homepage .fp-main-container {
+  max-width: none;
 }
 
 .theme-fp-homepage .chroma {
@@ -293,4 +310,12 @@
   background-position: 0 0, 10px 10px;
   background-size: 20px 20px;
   background-origin: padding-box;
+}
+
+.fonda {
+  width: 66vw;
+  height: auto;
+  float: left;
+  -webkit-shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
+  shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
 }
