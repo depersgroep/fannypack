@@ -3,90 +3,99 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/layout/typography/</loc>
+    <loc>https://fannypack.persgroep.be/modules/labels/</loc>
+    <lastmod>2017-10-16T14:57:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.be/</loc>
     <lastmod>2017-10-09T13:02:58+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/alert/</loc>
+    <loc>https://fannypack.persgroep.be/layout/typography/</loc>
+    <lastmod>2017-10-09T13:02:58+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.be/modules/alert/</loc>
     <lastmod>2017-10-09T11:39:15+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/layout/grid/</loc>
+    <loc>https://fannypack.persgroep.be/layout/grid/</loc>
     <lastmod>2017-10-09T10:08:25+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/tables/</loc>
+    <loc>https://fannypack.persgroep.be/modules/tables/</loc>
     <lastmod>2017-10-06T14:38:47+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/pagination/</loc>
+    <loc>https://fannypack.persgroep.be/modules/pagination/</loc>
     <lastmod>2017-10-06T10:47:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/breadcrumb/</loc>
+    <loc>https://fannypack.persgroep.be/modules/breadcrumb/</loc>
     <lastmod>2017-10-06T10:13:41+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/app-icons/</loc>
+    <loc>https://fannypack.persgroep.be/modules/app-icons/</loc>
     <lastmod>2017-10-06T08:16:56+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/icons/</loc>
+    <loc>https://fannypack.persgroep.be/modules/icons/</loc>
     <lastmod>2017-10-05T16:39:45+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/buttons/</loc>
+    <loc>https://fannypack.persgroep.be/modules/buttons/</loc>
     <lastmod>2017-10-05T16:29:36+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/toolbar/</loc>
+    <loc>https://fannypack.persgroep.be/modules/toolbar/</loc>
     <lastmod>2017-10-03T15:10:21+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/</loc>
+    <loc>https://fannypack.persgroep.be/layout/</loc>
     <lastmod>2017-10-02T14:42:50+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/modules/forms/</loc>
+    <loc>https://fannypack.persgroep.be/modules/</loc>
+    <lastmod>2017-10-02T14:42:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.be/modules/forms/</loc>
     <lastmod>2017-10-02T14:34:21+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://fannypack.persgroep.be/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://fannypack.persgroep.be/layout/</loc>
     <lastmod>2017-10-09T13:02:58+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/layout/</loc>
-    <lastmod>2017-10-09T13:02:58+02:00</lastmod>
+    <loc>https://fannypack.persgroep.be/modules/</loc>
+    <lastmod>2017-10-16T14:57:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/modules/</loc>
-    <lastmod>2017-10-09T11:39:15+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
+    <loc>https://fannypack.persgroep.be/tags/</loc>
     <priority>0</priority>
   </url>
   

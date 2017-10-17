@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js theme-fp-docs">
+<html lang="en" class="no-js theme-fp layout--fixed-header layout--drawer">
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
-	<title>Document</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Forms</title>
 	<link rel="stylesheet" href="/css/fannypack.css" />
 	<link rel="stylesheet" href="/css/docs.css" />
 </head>
@@ -28,26 +29,26 @@
 	
 	
 
-<nav class="fp-nav" role="navigation">
-	<ul class="fp-nav__list">
+<nav class="nav nav--vertical nav--sticky" role="navigation">
+	<ul class="nav__list">
 	
 		
-		<li class="fp-nav__item">
+		<li class="nav__item">
 			
 
-<a class="fp-nav__link " title="Layout" href="/">
+<a class="nav__link " title="Layout" href="/">
 	
 	Layout
 </a>
 
 			
-			<ul class="fp-nav__list">
+			<ul class="nav__list">
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Grid" href="/layout/grid/">
+<a class="nav__link " title="Grid" href="/layout/grid/">
 	
 	Grid
 </a>
@@ -55,10 +56,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Typography" href="/layout/typography/">
+<a class="nav__link " title="Typography" href="/layout/typography/">
 	
 	Typography
 </a>
@@ -70,22 +71,22 @@
 		</li>
 	
 		
-		<li class="fp-nav__item">
+		<li class="nav__item">
 			
 
-<a class="fp-nav__link " title="Modules" href="/modules/">
+<a class="nav__link " title="Modules" href="/">
 	
 	Modules
 </a>
 
 			
-			<ul class="fp-nav__list">
+			<ul class="nav__list">
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Alerts" href="/modules/alert/">
+<a class="nav__link " title="Alerts" href="/modules/alert/">
 	
 	Alerts
 </a>
@@ -93,10 +94,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="App Icons" href="/modules/app-icons/">
+<a class="nav__link " title="App Icons" href="/modules/app-icons/">
 	
 	App Icons
 </a>
@@ -104,10 +105,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
+<a class="nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
 	
 	Breadcrumb
 </a>
@@ -115,10 +116,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Buttons" href="/modules/buttons/">
+<a class="nav__link " title="Buttons" href="/modules/buttons/">
 	
 	Buttons
 </a>
@@ -126,10 +127,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link is-active" title="Forms" href="/modules/forms/">
+<a class="nav__link is-active" title="Forms" href="/modules/forms/">
 	
 	Forms
 </a>
@@ -137,10 +138,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Icons" href="/modules/icons/">
+<a class="nav__link " title="Icons" href="/modules/icons/">
 	
 	Icons
 </a>
@@ -148,10 +149,21 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Pagination" href="/modules/pagination/">
+<a class="nav__link " title="Labels" href="/modules/labels/">
+	
+	Labels
+</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+<a class="nav__link " title="Pagination" href="/modules/pagination/">
 	
 	Pagination
 </a>
@@ -159,10 +171,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Tables" href="/modules/tables/">
+<a class="nav__link " title="Tables" href="/modules/tables/">
 	
 	Tables
 </a>
@@ -170,10 +182,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Toolbar" href="/modules/toolbar/">
+<a class="nav__link " title="Toolbar" href="/modules/toolbar/">
 	
 	Toolbar
 </a>
@@ -253,7 +265,7 @@
 </div>
 <h2 id="form-elements">Form elements</h2>
 
-<p>Form elements should always be wrapped by <code>.form__group</code>. This comes in handy when you want to implement <strong>validation</strong> later. This wrapper can be a <code>&lt;div&gt;</code> or a <code>&lt;fieldset&gt;</code>.</p>
+<p>Form elements can be wrapped by <code>.form__group</code>. This comes in handy when you want to implement <strong>validation</strong> later. This wrapper can be a <code>&lt;div&gt;</code> or a <code>&lt;fieldset&gt;</code>. It also adds spacing. If you don&rsquo;t need the spacing and validation can be done on other elements, you can ommit this.</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nameid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;inputname&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
@@ -291,12 +303,27 @@
 <div class="fp-example">
     <fieldset class="form__group">
         <label for="telephoneid" class="form__label">Telephone</label>
-        <input type="tel" class="form__field" id="telephoneid" name="telephonename" placeholder="+3235551234" />
+        <input type="tel" class="form__field" id="telephoneid" name="telephonename"/>
     </fieldset>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Telephone</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;tel&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonename&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;+3235551234&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;tel&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonename&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>placeholder</code></td>
+            <td><span class="text--error">Not allowed for a11y reasons</span>, use <code>.form__help-text</code> if you want to explain the pattern. See <a href="#help-text">help text section</a></td>
+        </tr>
+    </tbody>
+</table>
+
 <h3 id="number-input">Number input</h3>
 
 <div class="fp-example">
@@ -313,12 +340,27 @@
 <div class="fp-example">
     <fieldset class="form__group">
         <label for="emailid" class="form__label">Email</label>
-        <input type="email" id="emailid" name="emailname" class="form__field" placeholder="john@example.com" />
+        <input type="email" id="emailid" name="emailname" class="form__field" />
     </fieldset>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Email</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;email&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailname&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;john@example.com&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;email&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;emailname&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>placeholder</code></td>
+            <td class="text--error">Not allowed for a11y reasons</td>
+        </tr>
+    </tbody>
+</table>
+
 <h3 id="file-upload">File upload</h3>
 
 <div class="fp-example">
@@ -335,12 +377,27 @@
 <div class="fp-example">
     <fieldset class="form__group">
         <label for="passwordid" class="form__label">Password</label>
-        <input type="password" id="passwordid" name="passwordname" class="form__field" placeholder="yourS4fePassw0rd" value="MyPassword" />
+        <input type="password" id="passwordid" name="passwordname" class="form__field" value="MyPassword" />
     </fieldset>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Password</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;password&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordname&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;yourS4fePassw0rd&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;MyPassw0rd&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;password&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordname&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>placeholder</code></td>
+            <td class="text--error">Not allowed for a11y reasons</td>
+        </tr>
+    </tbody>
+</table>
+
 <h3 id="colorpicker">Colorpicker</h3>
 
 <div class="fp-example">
@@ -412,6 +469,31 @@
 </span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>id</code></td>
+            <td>On <code>legend</code>, needs to be unique</td>
+        </tr>
+        <tr>
+            <td><code>aria-describedby</code></td>
+            <td>Value has to be the same as the <code>id</code> on <code>legend</code></td>
+        </tr>
+        <tr>
+            <td><code>placeholder</code></td>
+            <td class="text--error">Not allowed for a11y reasons</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 id="inline-checkboxes-and-radio-buttons">Inline checkboxes and radio buttons</h3>
+
 <p>If you add modifier <code>.form__checkbox--inline</code> or <code>.form__radio--inline</code> they will display inline.</p>
 
 <div class="fp-example">
@@ -560,23 +642,23 @@
     <fieldset class="form__group">
         <label for="telephoneid2" class="form__label">Telephone</label>
         <span class="form__helptext" id="telephonehelptext2">Please add your area code</span>
-        <input type="tel" class="form__field" id="telephoneid2" name="telephonename2" placeholder="+3235551234" aria-describedby="telephonehelptext2" />
+        <input type="tel" class="form__field" id="telephoneid2" name="telephonename2" aria-describedby="telephonehelptext2" />
     </fieldset>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Telephone</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__helptext&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonehelptext&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Please add your area code</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;tel&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonename&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;+3235551234&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonehelptext&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;tel&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephoneid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonename&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-describedby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;telephonehelptext&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
 <div class="fp-example">
     <fieldset class="form__group">
         <label for="passwordid2" class="form__label">Password</label>
         <span class="form__helptext">Must be at least 8 characters long and contain at least 1 digit and 1 uppercase</span>
-        <input type="password" id="passwordid2" name="passwordname2" class="form__field" placeholder="yourS4fePassw0rd" value="MyPassword" minlength="8" />
+        <input type="password" id="passwordid2" name="passwordname2" class="form__field" value="" minlength="8" />
     </fieldset>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid2&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Password</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__helptext&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Must be at least 8 characters long and contain at least 1 digit and 1 uppercase</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;password&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid2&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordname2&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">placeholder</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;yourS4fePassw0rd&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;MyPassw0rd&#34;</span><span class="s1f40"> </span><span class="s7d1">minlength</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;8&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;password&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordid2&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;passwordname2&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">value</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;&#34;</span><span class="s1f40"> </span><span class="s7d1">minlength</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;8&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
 <h2 id="validation">Validation</h2>
 
@@ -584,8 +666,8 @@
 
 <div class="fp-example">
     <fieldset class="form__group is-valid">
-        <label for="requiredinvalidinputid" class="form__label">Name</label>
-        <input id="requiredinvalidinputid" name="requiredinvalidinputid" type="text" class="form__field" required="required" />
+        <label for="requiredvalidinputid" class="form__label">Name</label>
+        <input id="requiredvalidinputid" name="requiredvalidinputid" type="text" class="form__field" required="required" />
     </fieldset>
 
     <fieldset class="form__group is-invalid">
@@ -594,6 +676,43 @@
         <span class="form__feedback">Please enter your name</span>
     </fieldset>
 </div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group is-valid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;requiredvalidinputid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;requiredvalidinputid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;requiredvalidinputid&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">required</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;required&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__group is-invalid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;requiredinvalidinputid&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;requiredinvalidinputid&#34;</span><span class="s1f40"> </span><span class="s7d1">name</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;requiredinvalidinputid&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;text&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">required</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;required&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__feedback&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Please enter your name</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Selector</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.is-invalid</code></td>
+            <td>Gives visual feedback with the error state</td>
+        </tr>
+        <tr>
+            <td><code>.js-is-invalid</code></td>
+            <td>Use the <code>.js-</code> prefix when you toggle these classes with JavaScript</td>
+        </tr>
+        <tr>
+            <td><code>.is-valid</code></td>
+            <td>Gives visual feedback with the success state</td>
+        </tr>
+        <tr>
+            <td><code>.js-is-valid</code></td>
+            <td>Use the <code>.js-</code> prefix when you toggle these classes with JavaScript</td>
+        </tr>
+    </tbody>
+</table>
 
 <h2 id="layouting">Layouting</h2>
 
@@ -660,28 +779,60 @@
 </div>
 <h2 id="special-cases">Special cases</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ullam distinctio enim in corporis fugit doloremque deleniti debitis ad dolores.</p>
+<p>If you want more flexibility and let the browser handle the layout, replace the floating column structure
+with a flexbox layout.</p>
+
+<p>An example with a datepicker and time input.</p>
 
 <div class="fp-example">
     <fieldset class="form__fieldset">
-        <legend class="form__label">Pick a date</legend>
-        <div class="row">
-            <div class="col-7">
-                <div class="form__group">
-                    <input type="date" class="form__field" />
-                </div>
+        <legend class="form__label">Pick a date and time</legend>
+        <div class="form__flex">
+            <div class="form__box">
+                <input type="date" class="form__field" aria-label="Choose a date" />
             </div>
-            <div class="col-2">
-                <div class="form__joiner-text">at</div>
+            <div class="form__box form__box--joiner">
+                <div class="form__joiner-text" role="presentation">at</div>
             </div>
-            <div class="col-3">
-                <div class="form__group">
-                    <input type="time" class="form__field" />
-                </div>
+            <div class="form__box">
+                <input type="time" class="form__field" aria-label="Enter a time" />
             </div>
         </div>
     </fieldset>
 </div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__fieldset&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__label&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Pick a date and time</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">legend</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__flex&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__box&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;date&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Choose a date&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__box form__box--joiner&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__joiner-text&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;presentation&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">at</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__box&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;time&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;form__field&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Enter a time&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">fieldset</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Selector</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.form__flex</code></td>
+            <td>Creates a flexbox layout</td>
+        </tr>
+        <tr>
+            <td><code>.form__box</code></td>
+            <td>The flex items. Nest other form components in this element.</td>
+        </tr>
+    </tbody>
+</table>
 
 	</article>
 </main>

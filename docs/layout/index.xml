@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Layouts on Fannypack</title>
-    <link>/layout/</link>
+    <link>https://fannypack.persgroep.be/layout/</link>
     <description>Recent content in Layouts on Fannypack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Oct 2017 13:02:58 +0200</lastBuildDate>
     
-	<atom:link href="/layout/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fannypack.persgroep.be/layout/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Typography</title>
-      <link>/layout/typography/</link>
+      <link>https://fannypack.persgroep.be/layout/typography/</link>
       <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
       
-      <guid>/layout/typography/</guid>
+      <guid>https://fannypack.persgroep.be/layout/typography/</guid>
       <description>Typography Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam totam quos odit nulla ab pariatur dolorem id quasi dicta.
 Font The base font-family for Fannypack is Source Sans Pro in 3 styles: regular, semi-bold and bold.
 Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading Unordered list  list item list item list item  nested list item   list item  Ordered list  list item list item list item  nested list item   list item  Mixed nested lists  list item list item list item  nested list item   list item   list item list item list item  nested list item   list item  Paragraph text with lorem ipsum dolor sit amet, m2 consectetur adipisicing elit8.</description>
@@ -24,12 +24,21 @@ Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading U
     
     <item>
       <title>Grid</title>
-      <link>/layout/grid/</link>
+      <link>https://fannypack.persgroep.be/layout/grid/</link>
       <pubDate>Mon, 09 Oct 2017 10:08:25 +0200</pubDate>
       
-      <guid>/layout/grid/</guid>
+      <guid>https://fannypack.persgroep.be/layout/grid/</guid>
       <description>Grid Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nam illum corporis unde sequi placeat fugiat suscipit aliquam asperiores minima.
-.col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1  .col-8 .col-4  .col-4 .col-4 .col-4  .col-6 .col-6   &amp;lt;divclass=&amp;#34;row&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;row&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;col-6&amp;#34;&amp;gt;.col-6&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-6&amp;#34;&amp;gt;.col-6&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  Containers When using grid for page layout, your grid will usually be nested inside a .container but you can also use grids in other modules without the .</description>
+.col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1  .col-8 .col-4  .col-4 .col-4 .col-4  .col-6 .col-6   &amp;lt;divclass=&amp;#34;grid&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-4&amp;#34;&amp;gt;.col-4&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;grid&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;col-6&amp;#34;&amp;gt;.col-6&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-6&amp;#34;&amp;gt;.col-6&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;  Containers When using grid for page layout, your grid will usually be nested inside a .container but you can also use grids in other modules without the .</description>
+    </item>
+    
+    <item>
+      <title>Layout</title>
+      <link>https://fannypack.persgroep.be/layout/</link>
+      <pubDate>Mon, 02 Oct 2017 14:42:50 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.be/layout/</guid>
+      <description>Layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ipsam?</description>
     </item>
     
   </channel>

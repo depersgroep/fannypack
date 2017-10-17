@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js theme-fp-docs">
+<html lang="en" class="no-js theme-fp layout--fixed-header layout--drawer">
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1" />
-	<title>Document</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Toolbar</title>
 	<link rel="stylesheet" href="/css/fannypack.css" />
 	<link rel="stylesheet" href="/css/docs.css" />
 </head>
@@ -28,26 +29,26 @@
 	
 	
 
-<nav class="fp-nav" role="navigation">
-	<ul class="fp-nav__list">
+<nav class="nav nav--vertical nav--sticky" role="navigation">
+	<ul class="nav__list">
 	
 		
-		<li class="fp-nav__item">
+		<li class="nav__item">
 			
 
-<a class="fp-nav__link " title="Layout" href="/">
+<a class="nav__link " title="Layout" href="/">
 	
 	Layout
 </a>
 
 			
-			<ul class="fp-nav__list">
+			<ul class="nav__list">
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Grid" href="/layout/grid/">
+<a class="nav__link " title="Grid" href="/layout/grid/">
 	
 	Grid
 </a>
@@ -55,10 +56,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Typography" href="/layout/typography/">
+<a class="nav__link " title="Typography" href="/layout/typography/">
 	
 	Typography
 </a>
@@ -70,22 +71,22 @@
 		</li>
 	
 		
-		<li class="fp-nav__item">
+		<li class="nav__item">
 			
 
-<a class="fp-nav__link " title="Modules" href="/modules/">
+<a class="nav__link " title="Modules" href="/">
 	
 	Modules
 </a>
 
 			
-			<ul class="fp-nav__list">
+			<ul class="nav__list">
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Alerts" href="/modules/alert/">
+<a class="nav__link " title="Alerts" href="/modules/alert/">
 	
 	Alerts
 </a>
@@ -93,10 +94,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="App Icons" href="/modules/app-icons/">
+<a class="nav__link " title="App Icons" href="/modules/app-icons/">
 	
 	App Icons
 </a>
@@ -104,10 +105,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
+<a class="nav__link " title="Breadcrumb" href="/modules/breadcrumb/">
 	
 	Breadcrumb
 </a>
@@ -115,10 +116,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Buttons" href="/modules/buttons/">
+<a class="nav__link " title="Buttons" href="/modules/buttons/">
 	
 	Buttons
 </a>
@@ -126,10 +127,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Forms" href="/modules/forms/">
+<a class="nav__link " title="Forms" href="/modules/forms/">
 	
 	Forms
 </a>
@@ -137,10 +138,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Icons" href="/modules/icons/">
+<a class="nav__link " title="Icons" href="/modules/icons/">
 	
 	Icons
 </a>
@@ -148,10 +149,21 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Pagination" href="/modules/pagination/">
+<a class="nav__link " title="Labels" href="/modules/labels/">
+	
+	Labels
+</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+<a class="nav__link " title="Pagination" href="/modules/pagination/">
 	
 	Pagination
 </a>
@@ -159,10 +171,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link " title="Tables" href="/modules/tables/">
+<a class="nav__link " title="Tables" href="/modules/tables/">
 	
 	Tables
 </a>
@@ -170,10 +182,10 @@
 				</li>
 				
 				
-				<li class="fp-nav__item">
+				<li class="nav__item">
 					
 
-<a class="fp-nav__link is-active" title="Toolbar" href="/modules/toolbar/">
+<a class="nav__link is-active" title="Toolbar" href="/modules/toolbar/">
 	
 	Toolbar
 </a>
@@ -196,7 +208,7 @@
 
 <h1 id="toolbar">Toolbar</h1>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facere dolorum expedita quas totam natus explicabo id pariatur, doloremque ipsam!</p>
+<p>Toolbars use flexbox the way it&rsquo;s meant to be, for UI layout and not for Grid layout.</p>
 
 <div class="fp-example">
     <div class="toolbar">
@@ -218,17 +230,47 @@
         </div>
     </div>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;fp-example&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar toolbar--dark&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">			</span><span class="s1770">&lt;!-- some component here --&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">			</span><span class="s1770">&lt;!-- another component here --&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;breadcrumb&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;navigation&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Breadcrumb&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">ol</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;breadcrumb__list&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;breadcrumb__item&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">					</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;breadcrumb__link&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Home</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;breadcrumb__item&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">					</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;breadcrumb__link&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Brands</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;breadcrumb__item&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Lee</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">ol</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">button</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--primary&#34;</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;submit&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Save</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">button</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Selector</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.toolbar__section</code></td>
+            <td>Place your components here. You can add as many of these sections as you want.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="dark-version">Dark version</h2>
+
+<p>We only control the background-color with CSS. We have no styling control of the content. If you need
+white text on this dark background, make sure you add the necessary modifiers on that module.</p>
+
+<p>In the example below, we&rsquo;ve included a <a href="/modules/breadcrumb">breadcrumb</a> with a modifier: <code>.breadcrumb--light</code></p>
+
 <div class="fp-example">
     <div class="toolbar toolbar--dark">
         <div class="toolbar__section">
@@ -249,7 +291,15 @@
         </div>
     </div>
 </div>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar toolbar--dark&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1770">&lt;!-- some component here that has legible text on a dark background --&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;toolbar__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1770">&lt;!-- another component here with a modifier --&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
 	</article>
 </main>
 
