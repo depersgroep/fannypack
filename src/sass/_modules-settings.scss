@@ -94,6 +94,21 @@ $button-primary-bg: #47a0c3 !default;
 $button-primary-hover-bg: darken($button-primary-bg, 15%) !default;
 $button-primary-color: $white !default;
 
+// success
+$button-success-bg: $success-color !default;
+$button-success-hover-bg: darken($button-success-bg, 15%) !default;
+$button-success-color: $white !default;
+
+// warning
+$button-warning-bg: $warning-color !default;
+$button-warning-hover-bg: darken($button-warning-bg, 15%) !default;
+$button-warning-color: $black !default;
+
+// error
+$button-error-bg: $error-color !default;
+$button-error-hover-bg: darken($button-error-bg, 15%) !default;
+$button-error-color: $white !default;
+
 //==============================================================================
 // ICONS
 //==============================================================================
@@ -122,5 +137,12 @@ $table-border-color: $border-color !default;
 $label-success-bg: $success-color !default;
 $label-error-bg: $error-color !default;
 $label-warning-bg: $warning-color !default;
+
+//==============================================================================
+// NAVIGATION
+//==============================================================================
+$nav-link-color: $aluminum !default;
+$nav-link-hover-color: $link-color !default;
+$nav-link-active-color: $black !default;
 
 // scss-lint:enable SpaceAfterVariableName

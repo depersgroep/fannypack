@@ -4,7 +4,7 @@
 // description
 ////////////////////////////////////////////////////////////////////////////////
 
-// scss-lint:disable NestingDepth
+// scss-lint:disable NestingDepth, SelectorDepth
 
 // mandatory wrapper if you want your table to be "responsive"
 .table__wrapper {
@@ -152,4 +152,4 @@ caption {
 	}
 }
 
-// scss-lint:enable NestingDepth
+// scss-lint:enable NestingDepth, SelectorDepth

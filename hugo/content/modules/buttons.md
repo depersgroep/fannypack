@@ -11,11 +11,17 @@ parent = "Modules"
 <div class="fp-example">
 	<button class="button button--default" type="button">Default</button>
 	<button class="button button--primary" type="submit">Primary</button>
+	<button class="button button--success" type="button">Success</button>
+	<button class="button button--warning" type="submit">Warning</button>
+	<button class="button button--error" type="submit">Error</button>
 </div>
 
 ```html
 <button class="button button--default" type="button">Default</button>
 <button class="button button--primary" type="submit">Primary</button>
+<button class="button button--success" type="button">Success</button>
+<button class="button button--warning" type="submit">Warning</button>
+<button class="button button--error" type="submit">Error</button>
 ```
 
 <table class="table table--horizontal-borders">
@@ -34,3 +40,20 @@ parent = "Modules"
 		</tr>
 	</tbody>
 </table>
+
+## States
+
+If the states are toggled with extra classes you can add `.has-`, or with JavaScript `.js-has-` state classes.
+
+<div class="fp-example">
+	<button class="button button--default has-success" type="button">Default has Success</button>
+	<button class="button button--primary js-has-warning" type="submit">Primary has Warning</button>
+	<button class="button button--primary js-has-error" type="submit">Primary has Error</button>
+</div>
+
+```html
+<button class="button button--default has-success" type="button">Default has Success</button>
+<button class="button button--primary js-has-warning" type="submit">Primary has Warning</button>
+<button class="button button--primary js-has-error" type="submit">Primary has Error</button>
+```
+

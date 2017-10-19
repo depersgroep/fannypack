@@ -83,7 +83,11 @@
 			padding: $base-spacing-unit;
 			border: 1px solid $border-color;
 			background-color: $evil-gray;
-			white-space: nowrap;
+			// white-space: nowrap;
+		}
+
+		.grid {
+			margin-bottom: $double-spacing-unit;
 		}
 	}
 }
@@ -98,6 +102,7 @@
 
 	.layout--drawer & {
 		@supports (display: grid) {
+			// scss-lint:disable PropertySpelling
 			display: grid;
 			grid-gap: 0;
 			grid-template-columns: $drawer-width calc(100% - #{$drawer-width});
@@ -138,21 +143,22 @@
 		margin-left: $drawer-width;
 		background-color: $white;
 
-		&::before {
-			position: absolute;
-			top: -60px;
-			left: 0;
-			display: block;
-			width: 100%;
-			height: 60px;
-			background-color: $white;
-			clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
-			content: '';
-		}
-
 		@include mq-max(800px) {
 			margin-left: 0;
 		}
+
+		&::before {
+			display: block;
+			position: absolute;
+			top: -60px;
+			left: 0;
+			width: 100%;
+			height: 60px;
+			background-color: $white;
+			content: '';
+			clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+		}
+
 
 		@supports (display: grid) {
 			margin-left: 0;
@@ -161,12 +167,12 @@
 		> h1 {
 			display: block;
 			margin-top: -90px;
-			float: left;
 			padding-right: $double-spacing-unit;
 			padding-left: $double-spacing-unit;
-			background-color: $hot-sauce-yellow;
-			color: #0f004d;
+			float: left;
 			transform: rotate(-4.33deg);
+			background-color: $hot-sauce-yellow;
+			color: $bg-gradient-dark-blue;
 		}
 	}
 }

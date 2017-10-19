@@ -16,35 +16,27 @@
 	float: left;
 }
 
-
 @for $i from 1 through 12 {
 	.col-#{$i} {
 		width: percentage($i / 12);
 	}
 }
 
-//==============================================================================
-// If browsersd supports grid layout, we use the cascade in our advantage
-//==============================================================================
+// If browser supports grid layout, we use the cascade in our advantage
+
 @supports (display: grid) {
+	// scss-lint:disable PropertySpelling
 	.grid {
-		// scss-lint:disable PropertySpelling
 		display: grid;
 		margin-right: 0;
 		margin-left: 0;
 		grid-gap: $double-spacing-unit;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		grid-template-columns: repeat(12, minmax(0, 1fr));
 
 		&::after {
 			content: none;
 		}
 	}
-
-	// @for $i from 1 through 12 {
-	// 	.grid--#{$i} {
-	// 		grid-template-columns: repeat(auto-fill, #{$i}fr);
-	// 	}
-	// }
 
 	[class^="col-"] {
 		width: auto;
@@ -52,10 +44,14 @@
 		padding-left: 0;
 	}
 
-	// @for $i from 1 through 12 {
-	// 	.col-#{$i} {
-	// 		width: auto;
-	// 	}
-	// }
+	.col-2 {
+		grid-column: auto / span 2;
+	}
+
+	@for $i from 2 through 12 {
+		.col-#{$i} {
+			grid-column: auto / span #{$i};
+		}
+	}
 }
 

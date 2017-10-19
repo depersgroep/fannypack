@@ -1,21 +1,11 @@
-{{ $currentNode := . }}
+{{ $currentPage:= . }}
 
-<nav class="nav" role="navigation">
+<nav class="nav fp-nav" role="navigation">
 	<ul class="nav__list">
 	{{ range .Site.Menus.main.ByWeight }}
 		{{ $.Scratch.Set "currentMenuEntry" . }}
 		<li class="nav__item">
-			{{ partial "nav-link" $currentNode }}
-			{{ if .HasChildren }}
-			<ul class="nav__list">
-				{{ range .Children }}
-				{{ $.Scratch.Set "currentMenuEntry" . }}
-				<li class="nav__item">
-					{{ partial "nav-link" $currentNode }}
-				</li>
-				{{ end }}
-			</ul>
-			{{ end }}
+			{{ partial "nav-link" $currentPage }}
 		</li>
 	{{ end }}
 	</ul>

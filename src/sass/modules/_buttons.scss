@@ -34,3 +34,42 @@
 		background-color: $button-primary-hover-bg;
 	}
 }
+
+//==============================================================================
+// STATES
+//==============================================================================
+.button--success,
+.button.has-success,
+.button.js-has-success {
+	background-color: $button-success-bg;
+	color: $button-success-color;
+
+	&:focus,
+	&:hover {
+		background-color: $button-success-hover-bg;
+	}
+}
+
+.button--warning,
+.button.has-warning,
+.button.js-has-warning {
+	background-color: $button-warning-bg;
+	color: $button-warning-color;
+
+	&:focus,
+	&:hover {
+		background-color: $button-warning-hover-bg;
+	}
+}
+
+.button--error,
+.button.has-error,
+.button.js-has-error {
+	background-color: $button-error-bg;
+	color: $button-error-color;
+
+	&:focus,
+	&:hover {
+		background-color: $button-error-hover-bg;
+	}
+}

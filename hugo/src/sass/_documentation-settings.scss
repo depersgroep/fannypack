@@ -16,6 +16,10 @@ $midnight-blue: #5355ac !default;
 $dusk-purple: #b260b6 !default;
 $pink-orange: #f5b795 !default;
 
+
+//==============================================================================
+// THEME: FANNYPACK
+//==============================================================================
 // Fannypacks 80s color palette
 //  Inspired by `Beastie Boys' Hot Sauce Committee Pt Two` album cover
 $hot-sauce-blue: #199dcd !default;
@@ -25,6 +29,11 @@ $hot-sauce-orange: #ef592f !default;
 $hot-sauce-magenta: #ea168c !default;
 $hot-sauce-light-blue: #71cff4 !default;
 $hot-sauce-yellow: #fdf035 !default;
+
+$bg-gradient-dark-blue: #0f004d !default;
+$bg-gradient-blueish-purple: #54037e !default;
+$bg-gradient-magenta: #8a1f7d !default;
+$bg-gradient-orange: #d8756d !default;
 
 $fp-text-color: mix($white, $hot-sauce-yellow, 60%);
 

@@ -12,25 +12,25 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex delectus, nisi, et 
 <div class="fp-example">
 	<nav class="pagination" role="navigation" aria-label="Pagination">
 		<ol class="pagination__list">
-			<li class="pagination__item pagination__item--previous">
+			<li class="pagination__item pagination__item--previous" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to previous page, page 1">Previous</a>
 			</li>
-			<li class="pagination__item">
+			<li class="pagination__item" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to page 1">1</a>
 			</li>
-			<li class="pagination__item is-active">
+			<li class="pagination__item is-active" role="none">
 				<span class="pagination__link" aria-label="Current page, page 2" aria-current="true">2</span>
 			</li>
-			<li class="pagination__item">
+			<li class="pagination__item" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to page 3">3</a>
 			</li>
-			<li class="pagination__item pagination__item--dummy">
+			<li class="pagination__item pagination__item--dummy" role="none">
 				<span class="pagination__link" aria-hidden="true">&hellip;</span>
 			</li>
-			<li class="pagination__item">
+			<li class="pagination__item" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to last page, page 15">15</a>
 			</li>
-			<li class="pagination__item pagination__item--next">
+			<li class="pagination__item pagination__item--next" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to next page, page 2">Next</a>
 			</li>
 		</ol>
@@ -40,25 +40,25 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex delectus, nisi, et 
 ```html
 <nav class="pagination" role="navigation" aria-label="Pagination">
 	<ol class="pagination__list">
-		<li class="pagination__item pagination__item--previous">
+		<li class="pagination__item pagination__item--previous" role="none">
 			<a href="#" class="pagination__link" aria-label="Go to previous page, page 1">Previous</a>
 		</li>
-		<li class="pagination__item">
+		<li class="pagination__item" role="none">
 			<a href="#" class="pagination__link" aria-label="Go to page 1">1</a>
 		</li>
-		<li class="pagination__item is-active">
+		<li class="pagination__item is-active" role="none">
 			<span class="pagination__link" aria-label="Current page, page 2" aria-current="true">2</span>
 		</li>
-		<li class="pagination__item">
+		<li class="pagination__item" role="none">
 			<a href="#" class="pagination__link" aria-label="Go to page 3">3</a>
 		</li>
-		<li class="pagination__item pagination__item--dummy">
+		<li class="pagination__item pagination__item--dummy" role="none">
 			<span class="pagination__link" aria-hidden="true">&hellip;</span>
 		</li>
-		<li class="pagination__item">
+		<li class="pagination__item" role="none">
 			<a href="#" class="pagination__link" aria-label="Go to last page, page 15">15</a>
 		</li>
-		<li class="pagination__item pagination__item--next">
+		<li class="pagination__item pagination__item--next" role="none">
 			<a href="#" class="pagination__link" aria-label="Go to next page, page 2">Next</a>
 		</li>
 	</ol>
@@ -72,25 +72,25 @@ You can disable pagination items with `.is-disabled` or `.js-is-disabled`. You a
 <div class="fp-example">
 	<nav class="pagination" role="navigation" aria-label="Pagination">
 		<ol class="pagination__list">
-			<li class="pagination__item pagination__item--previous is-disabled">
+			<li class="pagination__item pagination__item--previous is-disabled" role="none">
 				<span class="pagination__link" aria-hidden="true">Previous</span>
 			</li>
-			<li class="pagination__item is-active">
+			<li class="pagination__item is-active" role="none">
 				<a href="#" class="pagination__link" aria-label="Current page, page 1" aria-current="true">1</a>
 			</li>
-			<li class="pagination__item">
+			<li class="pagination__item" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to page 2">2</a>
 			</li>
-			<li class="pagination__item">
+			<li class="pagination__item" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to page 3">3</a>
 			</li>
-			<li class="pagination__item pagination__item--dummy">
+			<li class="pagination__item pagination__item--dummy" role="none">
 				<span class="pagination__link" aria-hidden="true">&hellip;</span>
 			</li>
-			<li class="pagination__item">
+			<li class="pagination__item" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to last page, page 15">15</a>
 			</li>
-			<li class="pagination__item pagination__item--next">
+			<li class="pagination__item pagination__item--next" role="none">
 				<a href="#" class="pagination__link" aria-label="Go to next page, page 2">Next</a>
 			</li>
 		</ol>
@@ -100,10 +100,10 @@ You can disable pagination items with `.is-disabled` or `.js-is-disabled`. You a
 ```html
 <nav class="pagination" role="navigation" aria-label="Pagination">
 	<ol class="pagination__list">
-		<li class="pagination__item pagination__item--previous is-disabled">
+		<li class="pagination__item pagination__item--previous is-disabled" role="none">
 			<span class="pagination__link" aria-hidden="true">Previous</span>
 		</li>
-		<li class="pagination__item is-active">
+		<li class="pagination__item is-active" role="none">
 			<a href="#" class="pagination__link" aria-label="Current page, page 1" aria-current="true">1</a>
 		</li>
 		...

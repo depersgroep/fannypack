@@ -62,15 +62,19 @@
 
 .nav__link {
 	display: block;
-	// color: $dusk-purple;
+	color: $nav-link-color;
 	text-decoration: none;
+
+	&:visited {
+		color: $nav-link-color;
+	}
 
 	&:focus,
 	&:hover {
-		// color: $pink-orange;
+		color: $nav-link-hover-color;
 	}
 
-	&.is-active {
-		// color: $midnight-blue;
+	.is-active > & {
+		color: $nav-link-active-color;
 	}
 }

@@ -21,3 +21,7 @@ pygmentsCodeFences = true
 	smartDashes = false
 	latexDashes = false
 	extensions = ["noIntraEmphasis"]
+
+[[menu.main]]
+	name = "Documentation"
+	url = "/modules/"

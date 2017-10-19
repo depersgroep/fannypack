@@ -1,17 +1,17 @@
-{{ $currentNode := . }}
+{{ $currentPage := . }}
 
-<nav class="nav nav--vertical nav--sticky" role="navigation">
+<nav class="nav nav--vertical nav--sticky fp-nav" role="navigation">
 	<ul class="nav__list">
 	{{ range .Site.Menus.docs.ByWeight }}
-		{{ $.Scratch.Set "currentMenuEntry" . }}
-		<li class="nav__item">
-			{{ partial "nav-link" $currentNode }}
+	{{ $.Scratch.Set "currentMenuEntry" . }}
+		<li class="nav__item{{if or ($currentPage.HasMenuCurrent "docs" .) ($currentPage.IsMenuCurrent "docs" .) }} is-active{{ end }}">
+			{{ partial "nav-link" $currentPage }}
 			{{ if .HasChildren }}
 			<ul class="nav__list">
 				{{ range .Children }}
 				{{ $.Scratch.Set "currentMenuEntry" . }}
-				<li class="nav__item">
-					{{ partial "nav-link" $currentNode }}
+				<li class="nav__item{{if $currentPage.IsMenuCurrent "docs" . }} is-active{{ end }}">
+					{{ partial "nav-link" $currentPage }}
 				</li>
 				{{ end }}
 			</ul>

@@ -5,9 +5,12 @@
 // Fluo, 80s retro style for Fannypack documentation
 ////////////////////////////////////////////////////////////////////////////////
 
+// scss-lint:disable SelectorDepth
+
 .theme-fp {
-	background: #0f004d;
-	background: linear-gradient(135deg, #0f004d 0%,#54037e 50%,#8a1f7d 50%,#d8756d 100%);
+	// scss-lint:disable DuplicateProperty
+	background: $bg-gradient-dark-blue; // fallback
+	background: linear-gradient(135deg, $bg-gradient-dark-blue 0%, $bg-gradient-blueish-purple 50%, $bg-gradient-magenta 50%, $bg-gradient-orange 100%);
 	background-attachment: fixed;
 
 	.site-header {
@@ -16,6 +19,10 @@
 
 		.app-icon__name {
 			color: $hot-sauce-yellow;
+		}
+
+		.fp-nav {
+			font-size: $font-size-large;
 		}
 	}
 
@@ -66,13 +73,13 @@
 		}
 	}
 
-	.nav--sticky {
+	.fp-nav .nav--sticky {
 		@supports (position: sticky) {
 			top: ($site-header-height + $double-spacing-unit);
 		}
 	}
 
-	.nav__list {
+	.fp-drawer .nav__list {
 		@include font-smoothing(default);
 		font-family: 'Courier New', monospace;
 
@@ -85,26 +92,26 @@
 		}
 	}
 
-	.nav__item {
+	.fp-nav .nav__item {
 		display: block;
 
+		&.is-active > .nav__link {
+			color: $hot-sauce-yellow;
+		}
 	}
 
+	// scss-lint:disable SelectorDepth
 	.nav--vertical > .nav__list > .nav__item + .nav__item {
 		margin-top: $base-spacing-unit;
 		margin-left: 0;
 	}
 
-	.nav__link {
+	.fp-nav .nav__link {
 		color: $neon-blue;
 
 		&:focus,
 		&:hover {
 			color: $hot-sauce-magenta;
-		}
-
-		&.is-active {
-			color: $hot-sauce-yellow;
 		}
 	}
 }
@@ -127,3 +134,5 @@
 .svg-elem {
 	opacity: .88;
 }
+
+// scss-lint:enable SelectorDepth
