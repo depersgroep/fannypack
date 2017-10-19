@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js theme-fp layout--fixed-header layout--drawer">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Navigation</title>
+	<link rel="stylesheet" href="/css/fannypack.css" />
+	<link rel="stylesheet" href="/css/docs.css" />
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+	<div class="site-header__section">
+		<a href="/" class="app-icon app-icon--neon-pink" aria-labelledby="app-icon-name">
+			<div class="app-icon__logo" aria-hidden="true">
+				<span class="app-icon__character">F</span>
+				<span class="app-icon__character">P</span>
+			</div>
+			<span class="app-icon__name" id="app-icon-name">Fannypack</span>
+		</a>
+	</div>
+</header>
+
+
+<main class="fp-main-container" role="main">
+	<div class="fp-drawer">
+	
+	
+
+<nav class="nav nav--vertical nav--sticky fp-nav" role="navigation">
+	<ul class="nav__list">
+	
+	
+		<li class="nav__item">
+			
+
+
+<a class="nav__link" title="Layout" href="/">Layout</a>
+
+			
+			<ul class="nav__list">
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Grid" href="/layout/grid/">Grid</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Typography" href="/layout/typography/">Typography</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+	
+		<li class="nav__item is-active">
+			
+
+
+<a class="nav__link" title="Modules" href="/modules/">Modules</a>
+
+			
+			<ul class="nav__list">
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Alerts" href="/modules/alert/">Alerts</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="App Icons" href="/modules/app-icons/">App Icons</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Breadcrumb" href="/modules/breadcrumb/">Breadcrumb</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Buttons" href="/modules/buttons/">Buttons</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Forms" href="/modules/forms/">Forms</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Icons" href="/modules/icons/">Icons</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Labels" href="/modules/labels/">Labels</a>
+
+				</li>
+				
+				
+				<li class="nav__item is-active">
+					
+
+
+<a class="nav__link" title="Navigation" href="/modules/navigation/" aria-current="page">Navigation</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Pagination" href="/modules/pagination/">Pagination</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Tables" href="/modules/tables/">Tables</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Toolbar" href="/modules/toolbar/">Toolbar</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+	</ul>
+</nav>
+
+	
+</div>
+
+
+	<article class="fp-article">
+		
+
+<h1 id="navigation">Navigation</h1>
+
+<p>Standard horizontal navigation. Mostly used in the heading.</p>
+
+<div class="fp-example">
+    <nav class="nav" role="navigation" aria-label="Primary navigation">
+        <ul class="nav__list">
+            <li class="nav__item" role="none">
+                <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item" role="none">
+                <a href="#" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item is-active" role="none">
+                <a href="#" class="nav__link" aria-current="page">About</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;navigation&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Primary navigation&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">ul</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__list&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__item&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__link&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Home</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__item&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__link&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Products</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__item is-active&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-current</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;page&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">About</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">ul</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Selector</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>role="navigation"</code></td>
+            <td><span class="label label--warning">Required</span></td>
+            <td>For a11y</td>
+        </tr>
+        <tr>
+            <td><code>aria-label="Primary navigation"</code></td>
+            <td><span class="label label--warning">Required</span></td>
+            <td>To make a distinction with the <code>&lt;nav&gt;</code> used in <a href="/modules/breadcrumb">breadcrumbs</a> or <a href="/modules/pagination">pagination</a>. Translate this string to your current locale.</td>
+        </tr>
+        <tr>
+            <td><code>aria-current="page"</code></td>
+            <td><span class="label label--warning">Required</span></td>
+            <td>Only required if one of the links matches the current page.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="vertically-stacked">Vertically stacked</h2>
+
+<div class="fp-example">
+    <nav class="nav nav--vertical" role="navigation" aria-label="Primary navigation">
+        <ul class="nav__list">
+            <li class="nav__item" role="none">
+                <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item" role="none">
+                <a href="#" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item is-active" role="none">
+                <a href="#" class="nav__link" aria-current="page">About</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav nav--vertical&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;navigation&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Primary navigation&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">ul</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__list&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__item&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__link&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Home</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__item&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__link&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Products</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__item is-active&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;nav__link&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-current</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;page&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">About</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">li</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">ul</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">nav</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+	</article>
+</main>
+
+</body>
+</html>
+

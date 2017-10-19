@@ -696,8 +696,8 @@ a:active {
     margin-right: 0;
     margin-left: 0;
     grid-gap: 20px;
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    -ms-grid-columns: (minmax(0, 1fr))[12];
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 
   .grid::after {
@@ -708,6 +708,78 @@ a:active {
     width: auto;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .col-2 {
+    -ms-grid-column-span: 2;
+    -ms-grid-column: auto;
+    grid-column: auto / span 2;
+  }
+
+  .col-2 {
+    -ms-grid-column-span: 2;
+    -ms-grid-column: auto;
+    grid-column: auto/span 2;
+  }
+
+  .col-3 {
+    -ms-grid-column-span: 3;
+    -ms-grid-column: auto;
+    grid-column: auto/span 3;
+  }
+
+  .col-4 {
+    -ms-grid-column-span: 4;
+    -ms-grid-column: auto;
+    grid-column: auto/span 4;
+  }
+
+  .col-5 {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: auto;
+    grid-column: auto/span 5;
+  }
+
+  .col-6 {
+    -ms-grid-column-span: 6;
+    -ms-grid-column: auto;
+    grid-column: auto/span 6;
+  }
+
+  .col-7 {
+    -ms-grid-column-span: 7;
+    -ms-grid-column: auto;
+    grid-column: auto/span 7;
+  }
+
+  .col-8 {
+    -ms-grid-column-span: 8;
+    -ms-grid-column: auto;
+    grid-column: auto/span 8;
+  }
+
+  .col-9 {
+    -ms-grid-column-span: 9;
+    -ms-grid-column: auto;
+    grid-column: auto/span 9;
+  }
+
+  .col-10 {
+    -ms-grid-column-span: 10;
+    -ms-grid-column: auto;
+    grid-column: auto/span 10;
+  }
+
+  .col-11 {
+    -ms-grid-column-span: 11;
+    -ms-grid-column: auto;
+    grid-column: auto/span 11;
+  }
+
+  .col-12 {
+    -ms-grid-column-span: 12;
+    -ms-grid-column: auto;
+    grid-column: auto/span 12;
   }
 }
 
@@ -949,6 +1021,54 @@ a:active {
 .button--primary:focus,
 .button--primary:hover {
   background-color: #2f748f;
+}
+
+.button--success,
+.button.has-success,
+.button.js-has-success {
+  background-color: #2ecc40;
+  color: #fff;
+}
+
+.button--success:focus,
+.button--success:hover,
+.button.has-success:focus,
+.button.has-success:hover,
+.button.js-has-success:focus,
+.button.js-has-success:hover {
+  background-color: #208e2c;
+}
+
+.button--warning,
+.button.has-warning,
+.button.js-has-warning {
+  background-color: #ffdc00;
+  color: #000;
+}
+
+.button--warning:focus,
+.button--warning:hover,
+.button.has-warning:focus,
+.button.has-warning:hover,
+.button.js-has-warning:focus,
+.button.js-has-warning:hover {
+  background-color: #b39a00;
+}
+
+.button--error,
+.button.has-error,
+.button.js-has-error {
+  background-color: #ff4136;
+  color: #fff;
+}
+
+.button--error:focus,
+.button--error:hover,
+.button.has-error:focus,
+.button.has-error:hover,
+.button.js-has-error:focus,
+.button.js-has-error:hover {
+  background-color: #e90d00;
 }
 
 .form {
@@ -1361,7 +1481,21 @@ input[type="color"].form__field {
 
 .nav__link {
   display: block;
+  color: #9e9e9e;
   text-decoration: none;
+}
+
+.nav__link:visited {
+  color: #9e9e9e;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  color: #0074d9;
+}
+
+.is-active > .nav__link {
+  color: #000;
 }
 
 .pagination__list {
