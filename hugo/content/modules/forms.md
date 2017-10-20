@@ -582,7 +582,7 @@ If you need to layout different fields according a grid pattern, you can use our
 <div class="fp-example">
 	<form action="" class="form">
 		<fieldset class="form__fieldset">
-			<div class="row">
+			<div class="grid">
 				<div class="col-6">
 					<div class="form__group">
 						<label for="" class="form__label">First name</label>
@@ -598,7 +598,7 @@ If you need to layout different fields according a grid pattern, you can use our
 			</div>
 		</fieldset>
 		<fieldset class="form__fieldset">
-			<div class="row">
+			<div class="grid">
 				<div class="col-4">
 					<div class="form__group">
 						<label for="" class="form__label">Address</label>
@@ -624,7 +624,7 @@ If you need to layout different fields according a grid pattern, you can use our
 
 ```html
 <fieldset class="form__fieldset">
-	<div class="row">
+	<div class="grid">
 		<div class="col-6">
 			<div class="form__group">
 				<label for="" class="form__label">First name</label>
