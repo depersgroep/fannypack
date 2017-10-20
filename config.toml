@@ -5,6 +5,7 @@ themesDir = "hugo/themes"
 staticDir = "./dist"
 publishDir = "./docs"
 languageCode = "en-us"
+canonifyURLs = true
 title = "Fannypack"
 theme = "fannypack"
 metadataformat = "toml"
