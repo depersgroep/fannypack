@@ -294,12 +294,14 @@
     <thead>
         <tr>
             <th>Attribute</th>
+            <th></th>
             <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><code>placeholder</code></td>
+            <td><span class="label label--error">Forbidden</span></td>
             <td><span class="text--error">Not allowed for a11y reasons</span>, use <code>.form__help-text</code> if you want to explain the pattern. See <a href="#help-text">help text section</a></td>
         </tr>
     </tbody>
@@ -331,12 +333,14 @@
     <thead>
         <tr>
             <th>Attribute</th>
+            <th></th>
             <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><code>placeholder</code></td>
+            <td><span class="label label--error">Forbidden</span></td>
             <td class="text--error">Not allowed for a11y reasons</td>
         </tr>
     </tbody>
@@ -368,12 +372,14 @@
     <thead>
         <tr>
             <th>Attribute</th>
+            <th></th>
             <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td><code>placeholder</code></td>
+            <td><span class="label label--error">Forbidden</span></td>
             <td class="text--error">Not allowed for a11y reasons</td>
         </tr>
     </tbody>
@@ -465,10 +471,6 @@
         <tr>
             <td><code>aria-describedby</code></td>
             <td>Value has to be the same as the <code>id</code> on <code>legend</code></td>
-        </tr>
-        <tr>
-            <td><code>placeholder</code></td>
-            <td class="text--error">Not allowed for a11y reasons</td>
         </tr>
     </tbody>
 </table>
@@ -697,7 +699,7 @@
 
 <h2 id="layouting">Layouting</h2>
 
-<p>If you need to layout different fields according a grid pattern, you can use our <a href="https://joggink.com/fannypack/layout/grid">grid layout</a>.</p>
+<p>If you need to layout different fields according a grid pattern, you can use our <a href="https://joggink.com/fannypack/layout/grid/">grid layout</a>.</p>
 
 <div class="fp-example">
     <form action="" class="form">
@@ -760,8 +762,7 @@
 </div>
 <h2 id="special-cases">Special cases</h2>
 
-<p>If you want more flexibility and let the browser handle the layout, replace the floating column structure
-with a flexbox layout.</p>
+<p>If you want more flexibility, vertical alignment and let the browser handle the layout, replace the grid layout with a flexbox layout.</p>
 
 <p>An example with a datepicker and time input.</p>
 

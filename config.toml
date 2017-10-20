@@ -25,4 +25,4 @@ pygmentsCodeFences = true
 
 [[menu.main]]
 	name = "Documentation"
-	url = "/modules/"
+	url = "/layout/grid"

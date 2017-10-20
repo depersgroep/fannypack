@@ -70,7 +70,7 @@ Toolbars use flexbox the way it's meant to be, for UI layout and not for Grid la
 We only control the background-color with CSS. We have no styling control of the content. If you need
 white text on this dark background, make sure you add the necessary modifiers on that module.
 
-In the example below, we've included a [breadcrumb](/modules/breadcrumb) with a modifier: `.breadcrumb--light`
+In the example below, we've included a [breadcrumb]({{< ref "/modules/breadcrumb.md" >}}) with a modifier: `.breadcrumb--light`
 
 <div class="fp-example">
 	<div class="toolbar toolbar--dark">

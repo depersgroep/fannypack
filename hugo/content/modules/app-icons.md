@@ -7,7 +7,7 @@ parent = "Modules"
 
 # App icons
 
-Representation of an internal application **without** the application name visible. Because this has `role="img"` you **must provide** `aria-label=""` with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a [simple graphic logo](#graphic-logo).
+Representation of an internal application **without** the application name visible. Because this has `role="img"` you **must provide** `aria-label=""` with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a [simple graphic logo]({{< relref "#graphic-logo" >}}).
 
 <div class="fp-example fp-example--app-icons">
 	<div class="app-icon app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">

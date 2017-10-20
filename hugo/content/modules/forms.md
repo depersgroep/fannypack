@@ -129,12 +129,14 @@ Form elements can be wrapped by `.form__group`. This comes in handy when you wan
 	<thead>
 		<tr>
 			<th>Attribute</th>
+			<th></th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td><code>placeholder</code></td>
+			<td><span class="label label--error">Forbidden</span></td>
 			<td><span class="text--error">Not allowed for a11y reasons</span>, use <code>.form__help-text</code> if you want to explain the pattern. See <a href="#help-text">help text section</a></td>
 		</tr>
 	</tbody>
@@ -172,12 +174,14 @@ Form elements can be wrapped by `.form__group`. This comes in handy when you wan
 	<thead>
 		<tr>
 			<th>Attribute</th>
+			<th></th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td><code>placeholder</code></td>
+			<td><span class="label label--error">Forbidden</span></td>
 			<td class="text--error">Not allowed for a11y reasons</td>
 		</tr>
 	</tbody>
@@ -215,12 +219,14 @@ Form elements can be wrapped by `.form__group`. This comes in handy when you wan
 	<thead>
 		<tr>
 			<th>Attribute</th>
+			<th></th>
 			<th>Description</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td><code>placeholder</code></td>
+			<td><span class="label label--error">Forbidden</span></td>
 			<td class="text--error">Not allowed for a11y reasons</td>
 		</tr>
 	</tbody>
@@ -321,10 +327,6 @@ By default checkboxes and radio buttons are stacked.
 		<tr>
 			<td><code>aria-describedby</code></td>
 			<td>Value has to be the same as the <code>id</code> on <code>legend</code></td>
-		</tr>
-		<tr>
-			<td><code>placeholder</code></td>
-			<td class="text--error">Not allowed for a11y reasons</td>
 		</tr>
 	</tbody>
 </table>
@@ -577,7 +579,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, officia.
 
 ## Layouting
 
-If you need to layout different fields according a grid pattern, you can use our [grid layout](/layout/grid).
+If you need to layout different fields according a grid pattern, you can use our [grid layout]({{< ref "/layout/grid.md" >}}).
 
 <div class="fp-example">
 	<form action="" class="form">
@@ -643,8 +645,7 @@ If you need to layout different fields according a grid pattern, you can use our
 
 ## Special cases
 
-If you want more flexibility and let the browser handle the layout, replace the floating column structure
-with a flexbox layout.
+If you want more flexibility, vertical alignment and let the browser handle the layout, replace the grid layout with a flexbox layout.
 
 An example with a datepicker and time input.
 
