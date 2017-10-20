@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Fannypack</title>
-    <link>https://fannypack.rebel.persgroep.cloud/categories/</link>
+    <link>https://joggink.com/fannypack/categories/</link>
     <description>Recent content in Categories on Fannypack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://fannypack.rebel.persgroep.cloud/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joggink.com/fannypack/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

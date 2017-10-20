@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Layouts on Fannypack</title>
-    <link>https://fannypack.rebel.persgroep.cloud/layout/</link>
+    <link>https://joggink.com/fannypack/layout/</link>
     <description>Recent content in Layouts on Fannypack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Oct 2017 13:02:58 +0200</lastBuildDate>
     
-	<atom:link href="https://fannypack.rebel.persgroep.cloud/layout/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://joggink.com/fannypack/layout/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Typography</title>
-      <link>https://fannypack.rebel.persgroep.cloud/layout/typography/</link>
+      <link>https://joggink.com/fannypack/layout/typography/</link>
       <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
       
-      <guid>https://fannypack.rebel.persgroep.cloud/layout/typography/</guid>
+      <guid>https://joggink.com/fannypack/layout/typography/</guid>
       <description>Typography Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam totam quos odit nulla ab pariatur dolorem id quasi dicta.
 Font The base font-family for Fannypack is Source Sans Pro in 3 styles: regular, semi-bold and bold.
 Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading Unordered list  list item list item list item  nested list item   list item  Ordered list  list item list item list item  nested list item   list item  Mixed nested lists  list item list item list item  nested list item   list item   list item list item list item  nested list item   list item  Paragraph text with lorem ipsum dolor sit amet, m2 consectetur adipisicing elit8.</description>
@@ -24,20 +24,20 @@ Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading U
     
     <item>
       <title>Grid</title>
-      <link>https://fannypack.rebel.persgroep.cloud/layout/grid/</link>
+      <link>https://joggink.com/fannypack/layout/grid/</link>
       <pubDate>Mon, 09 Oct 2017 10:08:25 +0200</pubDate>
       
-      <guid>https://fannypack.rebel.persgroep.cloud/layout/grid/</guid>
+      <guid>https://joggink.com/fannypack/layout/grid/</guid>
       <description>Grid We have a standard 12 column grid for you available. You can do any combination of columns as long as the total of each (virtual) row is 12.
 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1  .col-2 .col-2 .col-2 .col-2 .col-2 .col-2  .col-3 .col-3 .col-3 .col-3  .col-4 .col-4 .col-4  .col-5 .col-5 .col-2  .col-6 .col-6  .col-7 .col-5  .col-8 .</description>
     </item>
     
     <item>
       <title>Layout</title>
-      <link>https://fannypack.rebel.persgroep.cloud/layout/</link>
+      <link>https://joggink.com/fannypack/layout/</link>
       <pubDate>Mon, 02 Oct 2017 14:42:50 +0200</pubDate>
       
-      <guid>https://fannypack.rebel.persgroep.cloud/layout/</guid>
+      <guid>https://joggink.com/fannypack/layout/</guid>
       <description>Layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ipsam?</description>
     </item>
     
