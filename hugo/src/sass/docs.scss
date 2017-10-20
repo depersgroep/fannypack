@@ -86,8 +86,31 @@
 			// white-space: nowrap;
 		}
 
-		.grid {
+		[class^="grid"] {
 			margin-bottom: $double-spacing-unit;
+		}
+	}
+
+	&--grid-float {
+		@supports (display: grid) {
+			.grid {
+				@include clearfix;
+				display: block;
+			}
+
+			[class^="col-"] {
+				float: left;
+			}
+
+			@for $i from 1 through 12 {
+				.col-#{$i} {
+					width: percentage($i / 12);
+				}
+			}
+
+			.col--clear {
+				clear: left;
+			}
 		}
 	}
 }
@@ -111,6 +134,10 @@
 			&::after {
 				content: none;
 			}
+
+			@include mq-max($bp-medium - 1) {
+				display: block;
+			}
 		}
 	}
 }
@@ -123,7 +150,7 @@
 	padding: $double-spacing-unit;
 	// float: left;
 
-	@include mq-max(800px) {
+	@include mq-max($bp-medium - 1) {
 		display: none;
 	}
 
@@ -143,7 +170,7 @@
 		margin-left: $drawer-width;
 		background-color: $white;
 
-		@include mq-max(800px) {
+		@include mq-max($bp-medium - 1) {
 			margin-left: 0;
 		}
 

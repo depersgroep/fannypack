@@ -10,16 +10,70 @@
 	margin-left: ($grid-spacing-unit * -1);
 }
 
+.grid--medium {
+	@include mq-max($bp-medium - 1) {
+		margin-right: 0;
+		margin-left: 0;
+
+		&::after {
+			content: none;
+		}
+	}
+}
+
+.grid--small {
+	@include mq-max($bp-small - 1) {
+		margin-right: 0;
+		margin-left: 0;
+
+		&::after {
+			content: none;
+		}
+	}
+}
+
 [class^="col-"] {
 	padding-right: $grid-spacing-unit;
 	padding-left: $grid-spacing-unit;
 	float: left;
+
+	.grid--medium & {
+		@include mq-max($bp-medium - 1) {
+			padding-right: 0;
+			padding-left: 0;
+			float: none;
+		}
+	}
+
+	.grid--small & {
+		@include mq-max($bp-small - 1) {
+			padding-right: 0;
+			padding-left: 0;
+			float: none;
+		}
+	}
 }
 
 @for $i from 1 through 12 {
 	.col-#{$i} {
 		width: percentage($i / 12);
+
+		.grid--medium & {
+			@include mq-max($bp-medium - 1) {
+				width: auto;
+			}
+		}
+
+		.grid--small & {
+			@include mq-max($bp-small - 1) {
+				width: auto;
+			}
+		}
 	}
+}
+
+.col--clear {
+	clear: left;
 }
 
 // If browser supports grid layout, we use the cascade in our advantage
@@ -38,20 +92,33 @@
 		}
 	}
 
+	.grid--medium {
+		@include mq-max($bp-medium - 1) {
+			display: block;
+		}
+	}
+
+	.grid--small {
+		@include mq-max($bp-small - 1) {
+			display: block;
+		}
+	}
+
 	[class^="col-"] {
 		width: auto;
 		padding-right: 0;
 		padding-left: 0;
-	}
-
-	.col-2 {
-		grid-column: auto / span 2;
+		grid-column-start: auto;
 	}
 
 	@for $i from 2 through 12 {
 		.col-#{$i} {
-			grid-column: auto / span #{$i};
+			grid-column-end: span #{$i};
 		}
+	}
+
+	.col--clear {
+		clear: none;
 	}
 }
 

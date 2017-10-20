@@ -115,4 +115,10 @@ $double-spacing-unit: ($base-spacing-unit * 2) !default;
 $border-radius-base : 2px !default;
 $border-radius-large : ($border-radius-base * 2) !default;
 
+//==============================================================================
+// BREAKPOINTS
+//==============================================================================
+$bp-small: 480px !default;
+$bp-medium: 720px !default;
+
 // scss-lint:enable SpaceAfterVariableName
