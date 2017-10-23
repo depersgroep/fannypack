@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Templates on Fannypack</title>
-    <link>https://fannypack.rebels.persgroep.cloud/templates/</link>
+    <link>/templates/</link>
     <description>Recent content in Templates on Fannypack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Oct 2017 09:19:17 +0200</lastBuildDate>
     
-	<atom:link href="https://fannypack.rebels.persgroep.cloud/templates/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/templates/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Base</title>
-      <link>https://fannypack.rebels.persgroep.cloud/templates/base/</link>
+      <link>/templates/base/</link>
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
       
-      <guid>https://fannypack.rebels.persgroep.cloud/templates/base/</guid>
+      <guid>/templates/base/</guid>
       <description> Base template Default layout, header and a .container for your content.
   Selector  Description     .container Required First child in .main-container    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;container&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; </description>
     </item>
     
     <item>
       <title>Drawer</title>
-      <link>https://fannypack.rebels.persgroep.cloud/templates/drawer/</link>
+      <link>/templates/drawer/</link>
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
       
-      <guid>https://fannypack.rebels.persgroep.cloud/templates/drawer/</guid>
+      <guid>/templates/drawer/</guid>
       <description>Drawer template Example template with a drawer. A drawer is an auto-collapsible sidebar with navigational elements. You see this pattern often in dashboards.
   Selector  Description     .layout--drawer Required On the html tag   .drawer Required First child in .main-container   .drawer__section Optional Place your navigational elements in here.    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js layout--drawer&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer__section&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer__section-title&amp;#34;&amp;gt;...&amp;lt;/div&amp;gt;&amp;lt;!-- navigational elements here --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;  Long filler text Some lomg filler text to demo the scrolling behaviour.</description>
     </item>
     
     <item>
       <title>Fixed header</title>
-      <link>https://fannypack.rebels.persgroep.cloud/templates/fixed-header/</link>
+      <link>/templates/fixed-header/</link>
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
       
-      <guid>https://fannypack.rebels.persgroep.cloud/templates/fixed-header/</guid>
+      <guid>/templates/fixed-header/</guid>
       <description>Fixed header template When scrolling the page, your header wil be fixed at the top and always visible.
 You can combine this with other .layout-- modifiers. So &amp;lt;html class=&amp;quot;layout--drawer layout--fixed-header&amp;quot;&amp;gt; is valid and will work.
   Selector  Description     .layout--fixed-header Required On the html tag    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js layout--fixed-header&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;container&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;  Here&amp;rsquo;s some text filler to demo the fixed header. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</description>
@@ -44,10 +44,10 @@ You can combine this with other .layout-- modifiers. So &amp;lt;html class=&amp;
     
     <item>
       <title>Two col</title>
-      <link>https://fannypack.rebels.persgroep.cloud/templates/2col/</link>
+      <link>/templates/2col/</link>
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
       
-      <guid>https://fannypack.rebels.persgroep.cloud/templates/2col/</guid>
+      <guid>/templates/2col/</guid>
       <description>2 col template 1 column for the main content and a sidebar for some complementary content about the main content.   Sidebar Here some complementary info about the main article.
    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;container&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;grid&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;col-8&amp;#34;&amp;gt;&amp;lt;!-- or any other .col-X --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;col-6&amp;#34;&amp;gt;&amp;lt;!-- or any other .col-X --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; </description>
     </item>
