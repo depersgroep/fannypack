@@ -83,6 +83,7 @@
 .theme-fp .fp-example h3,
 .theme-fp .fp-example h4 {
   font-family: "Source Sans Pro", Arial, sans-serif;
+  text-transform: none;
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {

@@ -1,4 +1,4 @@
-baseURL= "https://joggink.com/fannypack"
+baseURL= "https://fannypack.rebels.persgroep.cloud"
 archetypeDir = "hugo/archetypes"
 contentDir = "hugo/content"
 themesDir = "hugo/themes"

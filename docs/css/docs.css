@@ -25,6 +25,10 @@
   background-attachment: fixed;
 }
 
+.theme-fp body {
+  background-color: transparent;
+}
+
 .theme-fp .site-header {
   border-bottom: 0;
   background-color: transparent;
@@ -79,6 +83,7 @@
 .theme-fp .fp-example h3,
 .theme-fp .fp-example h4 {
   font-family: "Source Sans Pro", Arial, sans-serif;
+  text-transform: none;
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
@@ -88,9 +93,6 @@
 }
 
 .theme-fp .fp-drawer .nav__list {
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: subpixel-antialiased;
-  font-smooth: auto;
   font-family: 'Courier New', monospace;
 }
 
@@ -136,8 +138,10 @@
   box-shadow: #ea168c -10px 10px 0;
 }
 
-.svg-elem {
-  opacity: .88;
+.layout--fixed-header .fp-main-container {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  z-index: 1;
 }
 
 .app-icon--neon-pink .app-icon__logo {
@@ -394,9 +398,16 @@
 }
 
 .fonda {
-  width: 66vw;
+  width: 33vw;
   height: auto;
   float: left;
-  -webkit-shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
-  shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
+  opacity: .88;
+}
+
+@supports ((-webkit-shape-outside: polygon(0% 0)) or (shape-outside: polygon(0% 0))) {
+  .fonda {
+    width: 66vw;
+    -webkit-shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
+    shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
+  }
 }

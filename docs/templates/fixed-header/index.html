@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js layout--fixed-header">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Fixed header</title>
+	<link rel="stylesheet" href="../../css/fannypack.css" />
+	<link rel="stylesheet" href="../../css/docs.css" />
+</head>
+<body>
+
+
+<header class="site-header" role="banner">
+	<div class="site-header__section">
+		<a href="../../" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+			<div class="app-icon__logo" aria-hidden="true">
+				<span class="app-icon__character">J</span>
+				<span class="app-icon__character">D</span>
+			</div>
+			<span class="app-icon__name" id="app-icon-name">Your App Name</span>
+		</a>
+	</div>
+	<div class="site-header__section site-header__section--last">
+		<a href="../../layout/grid/">Back to docs</a>
+	</div>
+</header>
+
+
+<main class="main-container" role="main">
+	<div class="main-content">
+		<div class="container">
+			
+
+<h1 id="fixed-header-template">Fixed header template</h1>
+
+<p>When scrolling the page, your header wil be fixed at the top and always visible.</p>
+
+<p>You can combine this with other <code>.layout--</code> modifiers.
+So <code>&lt;html class=&quot;layout--drawer layout--fixed-header&quot;&gt;</code> is valid and will work.</p>
+
+<table class="table table--horizontal-borders">
+    <thead>
+        <tr>
+            <th>Selector</th>
+            <th></th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>.layout--fixed-header</code></td>
+            <td><span class="label label--warning">Required</span></td>
+            <td>On the <code>html</code> tag</code></td>
+        </tr>
+    </tbody>
+</table>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1770">&lt;!DOCTYPE html&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">html</span><span class="s1f40"> </span><span class="s7d1">lang</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;en&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;no-js layout--fixed-header&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">head</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">head</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">body</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">header</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;site-header&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">header</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">main</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;main-container&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;main&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;main-content&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;container&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">				...
+</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">main</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">body</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">html</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
+<h2 id="here-s-some-text-filler-to-demo-the-fixed-header">Here&rsquo;s some text filler to demo the fixed header.</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima mollitia reprehenderit voluptatum nostrum ipsam et id, aliquid quasi, similique quaerat animi. Magnam, fugit. Facere repellat corrupti, ipsam. Ullam nihil aliquam molestiae sunt placeat cumque culpa explicabo exercitationem perferendis, nisi illo vel quibusdam, eaque doloremque soluta perspiciatis ad at sequi non eveniet fuga aperiam. Reiciendis, error. Totam, ut necessitatibus rerum voluptatibus. Eaque hic exercitationem vitae. Libero maiores doloribus quidem culpa sapiente, praesentium vero perferendis impedit sed. Aspernatur perferendis et repellat temporibus modi.</p>
+
+<p>Itaque, soluta? Quod eligendi laudantium a, in vero libero aliquam nihil dolorem, dolorum debitis magnam, fugiat doloremque accusamus animi aut excepturi sapiente iste alias. Hic optio mollitia nam quidem nobis modi nisi qui officiis, perferendis ab. Cum, provident porro repellendus ipsam, consectetur a quae atque voluptate obcaecati neque asperiores assumenda earum adipisci rem ea et accusantium impedit hic itaque, dolores fugit aliquam! Aperiam sequi id corporis, a vel doloremque saepe quibusdam possimus quas nostrum quia repellat vero reiciendis, eos perferendis distinctio nam.</p>
+
+<p>Repellendus aperiam, dicta minima fugit ullam similique. Voluptates dolorem fugiat ipsa perferendis velit ab, fugit quod praesentium illum nisi, laudantium consequuntur! Praesentium excepturi atque, alias nulla quod perspiciatis itaque omnis voluptate. Sapiente facilis adipisci optio et excepturi.</p>
+
+		</div>
+	</div>
+</main>
+
+</body>
+</html>
+

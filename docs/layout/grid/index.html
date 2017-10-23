@@ -47,7 +47,7 @@
 					
 
 
-<a class="nav__link" title="Grid" href="../../layout/grid/">Grid</a>
+<a class="nav__link" title="Grid" href="../../layout/grid/" aria-current="page">Grid</a>
 
 				</li>
 				
@@ -170,6 +170,56 @@
 
 
 <a class="nav__link" title="Toolbar" href="../../modules/toolbar/">Toolbar</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
+	
+	
+		<li class="nav__item">
+			
+
+
+<a class="nav__link" title="Templates" href="../../">Templates</a>
+
+			
+			<ul class="nav__list">
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Base" href="../../templates/base/">Base</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Drawer" href="../../templates/drawer/">Drawer</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Fixed header" href="../../templates/fixed-header/">Fixed header</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Two col" href="../../templates/2col/">Two col</a>
 
 				</li>
 				
@@ -463,6 +513,24 @@ It will calculate the widths based on the available width of its wrapper.</p>
 </span><span class="s1f40">	...
 </span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
 </div>
+<h2 id="nested-grids">Nested grids</h2>
+
+<p>Nested grid are supported. Go nuts!</p>
+
+<div class="fp-example fp-example--grid">
+    <div class="grid">
+        <div class="col-6">
+            .col-6 with a nested grid
+            <div class="grid">
+                <div class="col-4">.col-4</div>
+                <div class="col-4">.col-4</div>
+                <div class="col-4">.col-4</div>
+            </div>
+        </div>
+        <div class="col-6">.col-6</div>
+    </div>
+</div>
+
 <h2 id="conclusion">Conclusion:</h2>
 
 <p>This is production ready code. Please use this in your project.</p>
