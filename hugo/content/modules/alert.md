@@ -6,7 +6,7 @@ parent = "Modules"
 +++
 # Alerts
 
-Be brief in your description text, one paragraph should be more than enought to get your feedback across to the user.
+Be brief in your description text, one paragraph should be more than enough to get your feedback across to the user.
 
 <div class="fp-example">
 	<div class="alert alert--error" role="alert" aria-describedby="alertdescription1" aria-live="assertive">

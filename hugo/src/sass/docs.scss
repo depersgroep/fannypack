@@ -213,10 +213,12 @@
 }
 
 .fonda {
+	position: relative;
 	width: 33vw;
 	height: auto;
 	float: left;
 	opacity: .88;
+	z-index: -1;
 
 	@supports (shape-outside: polygon(0% 0)) {
 		width: 66vw;

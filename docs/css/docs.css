@@ -138,6 +138,12 @@
   box-shadow: #ea168c -10px 10px 0;
 }
 
+.theme-fp-404 {
+  background: #4a34b0;
+  background: -webkit-linear-gradient(bottom, #4a34b0 0%, #281c5c 19%, #07060b 38%, #fb0e0e 48%, #fff 51%, #b20d0e 51%, #b20d0e 53%, #8e0d0e 53%, #8e0d0e 55%, #700b0e 55%, #58090d 57%, #43080d 57%, #06050c 63%, #211c78 100%);
+  background: linear-gradient(0deg, #4a34b0 0%, #281c5c 19%, #07060b 38%, #fb0e0e 48%, #fff 51%, #b20d0e 51%, #b20d0e 53%, #8e0d0e 53%, #8e0d0e 55%, #700b0e 55%, #58090d 57%, #43080d 57%, #06050c 63%, #211c78 100%);
+}
+
 .layout--fixed-header .fp-main-container {
   position: relative;
   min-height: calc(100vh - 70px);
@@ -398,10 +404,12 @@
 }
 
 .fonda {
+  position: relative;
   width: 33vw;
   height: auto;
   float: left;
   opacity: .88;
+  z-index: -1;
 }
 
 @supports ((-webkit-shape-outside: polygon(0% 0)) or (shape-outside: polygon(0% 0))) {
