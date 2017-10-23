@@ -29,4 +29,8 @@
 	& + & {
 		margin-left: $double-spacing-unit;
 	}
+
+	& + &--last {
+		margin-left: auto;
+	}
 }

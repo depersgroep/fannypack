@@ -22,7 +22,7 @@ body {
 }
 
 body {
-	@include font-smoothing(on);
+	// @include font-smoothing(on);
 	background-color: $body-bg;
 	color: $text-color;
 	font-family: $sans-serif;

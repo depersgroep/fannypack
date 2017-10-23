@@ -531,9 +531,6 @@ body {
 }
 
 body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smooth: always;
   background-color: #ddd;
   color: #404040;
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -981,9 +978,8 @@ a:active {
   padding-top: 70px;
 }
 
-.layout--fixed-header .fp-main-container {
+.layout--fixed-header .main-container {
   position: relative;
-  min-height: calc(100vh - 70px);
   z-index: 1;
 }
 
@@ -1017,20 +1013,56 @@ a:active {
 }
 
 .alert {
+  position: relative;
   margin-bottom: 20px;
-  padding: 16px 20px 20px;
+  padding-left: 80px;
 }
 
-.alert--error {
+.alert__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+}
+
+.alert__icon > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -24px;
+  margin-left: -24px;
+}
+
+.alert--error .alert__icon {
   background-color: #ffa09b;
 }
 
-.alert--success {
+.alert--success .alert__icon {
   background-color: #97e6a0;
 }
 
-.alert--warning {
+.alert--warning .alert__icon {
   background-color: #ffee80;
+}
+
+.alert__body {
+  padding: 16px 20px 20px;
+  border: 2px solid #ddd;
+  border-left-width: 0;
+  background-color: #fff;
+}
+
+.alert--error .alert__body {
+  border-color: #ffa09b;
+}
+
+.alert--success .alert__body {
+  border-color: #97e6a0;
+}
+
+.alert--warning .alert__body {
+  border-color: #ffee80;
 }
 
 .alert__title {
@@ -1555,6 +1587,10 @@ input[type="color"].form__field {
   margin-left: 20px;
 }
 
+.site-header__section + .site-header__section--last {
+  margin-left: auto;
+}
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -1583,18 +1619,26 @@ input[type="color"].form__field {
 }
 
 .mi--18 {
+  width: 18px;
+  height: 18px;
   font-size: 18px;
 }
 
 .mi--24 {
+  width: 24px;
+  height: 24px;
   font-size: 24px;
 }
 
 .mi--36 {
+  width: 36px;
+  height: 36px;
   font-size: 36px;
 }
 
 .mi--48 {
+  width: 48px;
+  height: 48px;
   font-size: 48px;
 }
 
@@ -1755,11 +1799,11 @@ input[type="color"].form__field {
 
 .nav__link:focus,
 .nav__link:hover {
-  color: #0074d9;
+  color: #000;
 }
 
 .is-active > .nav__link {
-  color: #000;
+  color: #0074d9;
 }
 
 .nav--light .nav__link {
@@ -1772,11 +1816,11 @@ input[type="color"].form__field {
 
 .nav--light .nav__link:focus,
 .nav--light .nav__link:hover {
-  color: #0074d9;
+  color: #fff;
 }
 
 .nav--light .is-active > .nav__link {
-  color: #fff;
+  color: #0074d9;
 }
 
 .pagination__list {

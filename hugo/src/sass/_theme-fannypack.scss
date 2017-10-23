@@ -84,7 +84,7 @@
 	}
 
 	.fp-drawer .nav__list {
-		@include font-smoothing(default);
+		// @include font-smoothing(default);
 		font-family: 'Courier New', monospace;
 
 		// nested
@@ -135,8 +135,12 @@
 	}
 }
 
-.svg-elem {
-	opacity: .88;
+.fp-main-container {
+	.layout--fixed-header & {
+		position: relative;
+		min-height: calc(100vh - #{$site-header-height});
+		z-index: 1;
+	}
 }
 
 // scss-lint:enable SelectorDepth

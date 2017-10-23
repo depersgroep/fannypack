@@ -6,21 +6,69 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .alert {
+	position: relative; // positioning context
 	margin-bottom: $double-spacing-unit;
+	padding-left: 80px;
+}
+
+.alert__icon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 80px;
+
+	> * {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -24px;
+		margin-left: -24px;
+	}
+
+	.alert--error & {
+		background-color: $alert-error-bg;
+	}
+
+	.alert--success & {
+		background-color: $alert-success-bg;
+	}
+
+	.alert--warning & {
+		background-color: $alert-warning-bg;
+	}
+}
+
+.alert__body {
 	padding: 16px $double-spacing-unit $double-spacing-unit;
+	border: 2px solid $border-color;
+	border-left-width: 0;
+	background-color: $white;
+
+	.alert--error & {
+		border-color: $alert-error-bg;
+	}
+
+	.alert--success & {
+		border-color: $alert-success-bg;
+	}
+
+	.alert--warning & {
+		border-color: $alert-warning-bg;
+	}
 }
 
-.alert--error {
-	background-color: $alert-error-bg;
-}
+// .alert--error {
+// 	background-color: $alert-error-bg;
+// }
 
-.alert--success {
-	background-color: $alert-success-bg;
-}
+// .alert--success {
+// 	background-color: $alert-success-bg;
+// }
 
-.alert--warning {
-	background-color: $alert-warning-bg;
-}
+// .alert--warning {
+// 	background-color: $alert-warning-bg;
+// }
 
 .alert__title {
 	margin-top: 0;
