@@ -1,10 +1,9 @@
----
-title: Grid
-date: 2017-10-09T10:08:25+02:00
-menu:
-  docs:
-    parent: Layout
----
++++
+title = "Grid"
+date = 2017-10-09T10:08:25+02:00
+[menu.docs]
+parent = "Layout"
++++
 
 # Grid
 
@@ -302,6 +301,24 @@ The default grid is completely fluid and has no breakpoints. If you need differe
 	...
 </div>
 ```
+
+## Nested grids
+
+Nested grid are supported. Go nuts!
+
+<div class="fp-example fp-example--grid">
+	<div class="grid">
+		<div class="col-6">
+			.col-6 with a nested grid
+			<div class="grid">
+				<div class="col-4">.col-4</div>
+				<div class="col-4">.col-4</div>
+				<div class="col-4">.col-4</div>
+			</div>
+		</div>
+		<div class="col-6">.col-6</div>
+	</div>
+</div>
 
 ## Conclusion:
 
