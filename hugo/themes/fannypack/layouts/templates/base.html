@@ -1,0 +1,13 @@
+{{ partial "head-templates" . }}
+
+{{ partial "header-templates" . }}
+
+<main class="main-container" role="main">
+	<div class="main-content">
+		<div class="container">
+			{{ .Content }}
+		</div>
+	</div>
+</main>
+
+{{ partial "footer" . }}

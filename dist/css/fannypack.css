@@ -534,6 +534,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smooth: always;
+  background-color: #ddd;
   color: #404040;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 16px;
@@ -576,6 +577,7 @@ textarea {
 }
 
 pre {
+  white-space: pre;
   -moz-tab-size: 4;
   tab-size: 4;
 }
@@ -589,6 +591,11 @@ code {
   background-color: #ddd;
   color: #001f3f;
   font-size: 90%;
+  white-space: nowrap;
+}
+
+pre code {
+  white-space: pre;
 }
 
 a {
@@ -981,6 +988,31 @@ a:active {
 }
 
 .container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.layout--drawer body {
+  min-height: 100vh;
+}
+
+.layout--drawer .main-container {
+  position: relative;
+  min-height: calc(100vh - 70px);
+  padding-left: 40px;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 720px) {
+  .layout--drawer .main-container {
+    padding-left: 262px;
+  }
+}
+
+.layout--drawer .main-content {
   padding: 20px;
 }
 
@@ -1200,6 +1232,20 @@ a:active {
   margin-left: 10px;
 }
 
+.button + .button--block {
+  margin-left: 0;
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+.button--block + .button--block {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
 .button--primary {
   background-color: #47a0c3;
   color: #fff;
@@ -1256,6 +1302,37 @@ a:active {
 .button.js-has-error:focus,
 .button.js-has-error:hover {
   background-color: #e90d00;
+}
+
+.drawer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  padding: 20px;
+  background-color: #222;
+  color: #ddd;
+  overflow: auto;
+}
+
+@media only screen and (min-width: 720px) {
+  .drawer {
+    width: 262px;
+  }
+}
+
+.drawer__section {
+  padding: 20px 0;
+}
+
+.drawer__section-title {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #666;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .form {
@@ -1683,6 +1760,23 @@ input[type="color"].form__field {
 
 .is-active > .nav__link {
   color: #000;
+}
+
+.nav--light .nav__link {
+  color: #9e9e9e;
+}
+
+.nav--light .nav__link:visited {
+  color: #9e9e9e;
+}
+
+.nav--light .nav__link:focus,
+.nav--light .nav__link:hover {
+  color: #0074d9;
+}
+
+.nav--light .is-active > .nav__link {
+  color: #fff;
 }
 
 .pagination__list {

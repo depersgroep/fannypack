@@ -23,5 +23,50 @@
 }
 
 .container {
+	max-width: $container-max-width;
+	margin-right: auto;
+	margin-left: auto;
 	padding: $double-spacing-unit;
+	background-color: $container-bg;
+}
+
+.layout--drawer {
+	body {
+		min-height: 100vh;
+	}
+
+	.main-container {
+		position: relative; // postioning context for the drawer
+		min-height: calc(100vh - #{$site-header-height});
+		padding-left: nth($drawer-width, 1); // for the drawer
+		background-color: $container-bg;
+
+		@include mq-min($bp-medium) {
+			padding-left: nth($drawer-width, 2);
+		}
+
+	// 	@supports (display: grid) {
+	// 		// scss-lint:disable PropertySpelling
+	// 		display: grid;
+	// 		grid-gap: 0;
+	// 		grid-template-columns: $drawer-width calc(100% - #{$drawer-width});
+	// 		grid-template-rows: auto;
+
+	// 		&::after {
+	// 			content: none;
+	// 		}
+
+	// 		@include mq-max($bp-medium - 1) {
+	// 			display: block;
+	// 		}
+	// 	}
+	}
+
+	.main-content {
+		padding: $double-spacing-unit; // margin fixer
+	}
+
+	// .drawer {
+	// 	//
+	// }
 }

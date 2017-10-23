@@ -57,3 +57,32 @@ If the states are toggled with extra classes you can add `.has-`, or with JavaSc
 <button class="button button--primary js-has-error" type="submit">Primary has Error</button>
 ```
 
+## Full width
+
+<div class="fp-example">
+	<button class="button button--block button--default" type="submit">Default</button>
+	<button class="button button--block button--primary" type="submit">Primary</button>
+</div>
+
+```html
+<button class="button button--block button--default" type="submit">Default</button>
+<button class="button button--block button--primary" type="submit">Primary</button>
+```
+
+<table class="table table--horizontal-borders">
+	<thead>
+		<tr>
+			<th>Selector</th>
+			<th></th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>.button--block</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>Modifier class</td>
+		</tr>
+	</tbody>
+</table>
+

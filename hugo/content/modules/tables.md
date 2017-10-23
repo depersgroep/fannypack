@@ -93,7 +93,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga obcaecati alias m
 		<tr>
 			<td><code>&lt;th scope="row"&gt;</code></td>
 			<td><span class="label label--warning">Required</span></td>
-			<td>For a11y. <code>&lt;td&gt;</code> with <code>scope=""</code> is <strong>obsolete in HTML5</strong>. Only use it on <code>th</code></td>
+			<td>For a11y. <code>&lt;td&gt;</code> with <code>scope=""</code> is <strong>obsolete in HTML5</strong>. Only use it on <code>th</code>. If the first cell of your row doesn't have a scope relation to the other cells, use <code>td</code> without <code>scope</code></td>
 		</tr>
 	</tbody>
 </table>

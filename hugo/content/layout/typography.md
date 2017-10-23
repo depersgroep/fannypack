@@ -72,9 +72,16 @@ The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com
 
 	<p>Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
 
+<pre>Some
+	text in pre
+
+</pre>
+
 <pre><code>.kitchen-sink {
 	display: block;
 }</code></pre>
+
+<code>&lt;code&gt;</code>
 
 	<h3>Horizontal rule</h3>
 	<hr/>

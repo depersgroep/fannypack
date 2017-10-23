@@ -77,4 +77,22 @@
 	.is-active > & {
 		color: $nav-link-active-color;
 	}
+
+	// on dark backgrounds
+	.nav--light & {
+		color: $nav-light-link-color;
+
+		&:visited {
+			color: $nav-light-link-color;
+		}
+
+		&:focus,
+		&:hover {
+			color: $nav-light-link-hover-color;
+		}
+	}
+
+	.nav--light .is-active > & {
+		color: $nav-light-link-active-color;
+	}
 }

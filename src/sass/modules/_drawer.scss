@@ -1,0 +1,39 @@
+////////////////////////////////////////////////////////////////////////////////
+// DRAWER
+//
+// description:
+// a auto-collapsable sidebar to use in a webapp: e.g. a dashboard
+////////////////////////////////////////////////////////////////////////////////
+
+.drawer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: nth($drawer-width, 1);
+	height: 100%;
+	padding: $double-spacing-unit;
+	background-color: $drawer-bg;
+	color: $silver;
+	overflow: auto;
+
+	@include mq-min($bp-medium) {
+		width: nth($drawer-width, 2);
+	}
+
+	// @supports (display: grid) {
+	// 	position: static;
+	// }
+}
+
+.drawer__section {
+	padding: $double-spacing-unit 0;
+}
+
+.drawer__section-title {
+	margin-bottom: $double-spacing-unit;
+	padding-bottom: $base-spacing-unit;
+	border-bottom: 1px solid $steel;
+	font-weight: bold;
+	text-transform: uppercase;
+}

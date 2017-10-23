@@ -8,6 +8,12 @@
 // scss-lint:disable SpaceAfterVariableName
 
 //==============================================================================
+// CONTAINER
+//==============================================================================
+$container-max-width: 1200px !default;
+$container-bg: $white !default;
+
+//==============================================================================
 // GRID
 //==============================================================================
 $grid-spacing-unit: $double-spacing-unit !default;
@@ -144,5 +150,16 @@ $label-warning-bg: $warning-color !default;
 $nav-link-color: $aluminum !default;
 $nav-link-hover-color: $link-color !default;
 $nav-link-active-color: $black !default;
+
+// on dark backgrounds
+$nav-light-link-color: $aluminum !default;
+$nav-light-link-hover-color: $link-color !default;
+$nav-light-link-active-color: $white !default;
+
+//==============================================================================
+// DRAWER
+//==============================================================================
+$drawer-width: 40px, 262px !default;
+$drawer-bg: $almost-black !default;
 
 // scss-lint:enable SpaceAfterVariableName

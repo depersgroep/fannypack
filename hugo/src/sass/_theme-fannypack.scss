@@ -13,6 +13,10 @@
 	background: linear-gradient(135deg, $bg-gradient-dark-blue 0%, $bg-gradient-blueish-purple 50%, $bg-gradient-magenta 50%, $bg-gradient-orange 100%);
 	background-attachment: fixed;
 
+	body {
+		background-color: $transparent;
+	}
+
 	.site-header {
 		border-bottom: 0;
 		background-color: $transparent;
