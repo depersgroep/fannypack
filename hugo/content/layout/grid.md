@@ -178,7 +178,7 @@ This is done with pure CSS magic
 
 ### Fallbacks for older browsers
 
-If your browser doesn't support `display: grid;` we automatically fallback to float based layout. Just make sure the total of columns, on each virtual row, is 12 so they wrap.
+If your browser doesn't support `display: grid;` we automatically fall back to float based layout. Just make sure the total of columns, on each virtual row, is 12 so they wrap.
 
 Only pitfall is when your columns don't have equal heights, which happens quite regularly. With wrapping floats you can end up with a column being stuck by another one that's higher.
 

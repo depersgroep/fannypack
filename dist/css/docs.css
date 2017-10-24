@@ -29,20 +29,20 @@
   background-color: transparent;
 }
 
-.theme-fp .site-header {
+.theme-fp body > .site-header {
   border-bottom: 0;
   background-color: transparent;
 }
 
-.theme-fp .site-header .app-icon__name {
+.theme-fp body > .site-header .app-icon__name {
   color: #fdf035;
 }
 
-.theme-fp .site-header .fp-nav {
+.theme-fp body > .site-header .fp-nav {
   font-size: 1.125em;
 }
 
-.theme-fp .site-header__section:nth-child(2) {
+.theme-fp body > .site-header .site-header__section:nth-child(2) {
   margin-left: 60px;
 }
 
@@ -286,6 +286,10 @@
   .fp-example--grid-float .col--clear {
     clear: left;
   }
+}
+
+.fp-example > .site-header {
+  position: static;
 }
 
 .fp-main-container {

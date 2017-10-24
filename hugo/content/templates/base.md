@@ -23,7 +23,7 @@ Default layout, header and a `.container` for your content.
 		<tr>
 			<td><code>.container</code></td>
 			<td><span class="label label--warning">Required</span></td>
-			<td>First child in <code>.main-container</code></td>
+			<td>First child in <code>.main-content</code>. Has a <code>max-width</code>.</td>
 		</tr>
 	</tbody>
 </table>

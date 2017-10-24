@@ -8,31 +8,31 @@
 // scss-lint:disable SelectorDepth
 
 .theme-fp {
-	// scss-lint:disable DuplicateProperty
+	// scss-lint:disable DuplicateProperty, NestingDepth
 	background: $bg-gradient-dark-blue; // fallback
 	background: linear-gradient(135deg, $bg-gradient-dark-blue 0%, $bg-gradient-blueish-purple 50%, $bg-gradient-magenta 50%, $bg-gradient-orange 100%);
 	background-attachment: fixed;
 
 	body {
 		background-color: $transparent;
-	}
 
-	.site-header {
-		border-bottom: 0;
-		background-color: $transparent;
+		> .site-header {
+			border-bottom: 0;
+			background-color: $transparent;
 
-		.app-icon__name {
-			color: $hot-sauce-yellow;
-		}
+			.app-icon__name {
+				color: $hot-sauce-yellow;
+			}
 
-		.fp-nav {
-			font-size: $font-size-large;
-		}
-	}
+			.fp-nav {
+				font-size: $font-size-large;
+			}
 
-	.site-header__section {
-		&:nth-child(2) {
-			margin-left: ($double-spacing-unit * 3);
+			.site-header__section {
+				&:nth-child(2) {
+					margin-left: ($double-spacing-unit * 3);
+				}
+			}
 		}
 	}
 
