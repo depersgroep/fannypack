@@ -159,7 +159,8 @@ $nav-light-link-active-color: $link-color !default;
 //==============================================================================
 // DRAWER
 //==============================================================================
-$drawer-width: 40px, 262px !default;
+$drawer-width: 262px !default;
 $drawer-bg: $almost-black !default;
-
+$drawer-line-color : $black !default;
+$drawer-light-line-color : $white !default;
 // scss-lint:enable SpaceAfterVariableName

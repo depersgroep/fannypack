@@ -35,12 +35,8 @@
 	.main-container {
 		position: relative; // postioning context for the drawer
 		min-height: calc(100vh - #{$site-header-height});
-		padding-left: nth($drawer-width, 1); // for the drawer
+		// padding-left: $drawer-width; // for the drawer
 		background-color: $container-bg;
-
-		@include mq-min($bp-medium) {
-			padding-left: nth($drawer-width, 2);
-		}
 
 	// 	@supports (display: grid) {
 	// 		// scss-lint:disable PropertySpelling
@@ -59,8 +55,27 @@
 	// 	}
 	}
 
+	.site-header {
+		padding-left: 60px; // room for the drawer toggle
+	}
+
 	.main-content {
 		padding: $double-spacing-unit; // margin fixer
+	}
+
+	.drawer__checkbox + .drawer__menu + .drawer + .main-content {
+		// margin-left: 0;
+
+		@include mq-min($bp-medium) {
+			margin-left: $drawer-width;
+			transition: margin-left .3s ease-in-out;
+		}
+	}
+
+	.drawer__checkbox:checked + .drawer__menu + .drawer + .main-content {
+		@include mq-min($bp-medium) {
+			margin-left: 0;
+		}
 	}
 
 	// .drawer {

@@ -18,7 +18,7 @@
       
       <guid>/templates/base/</guid>
       <description> Base template Default layout, header and a .container for your content.
-  Selector  Description     .container Required First child in .main-container    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;container&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; </description>
+  Selector  Description     .container Required First child in .main-content. Has a max-width.    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;container&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; </description>
     </item>
     
     <item>
@@ -27,8 +27,8 @@
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
       
       <guid>/templates/drawer/</guid>
-      <description>Drawer template Example template with a drawer. A drawer is an auto-collapsible sidebar with navigational elements. You see this pattern often in dashboards.
-  Selector  Description     .layout--drawer Required On the html tag   .drawer Required First child in .main-container   .drawer__section Optional Place your navigational elements in here.    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js layout--drawer&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer__section&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer__section-title&amp;#34;&amp;gt;...&amp;lt;/div&amp;gt;&amp;lt;!-- navigational elements here --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;  Long filler text Some lomg filler text to demo the scrolling behaviour.</description>
+      <description>Drawer template Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements. You see this pattern often in dashboards. Toggling the drawer is done with the checkbox hack
+  Selector  Description     .layout--drawer Required On the html tag   .drawer__checkbox Required The checkbox hack   .drawer__menu Required The clickbale region that holds the hamburger icon   .</description>
     </item>
     
     <item>
@@ -163,6 +163,17 @@ face favorite person notifications  &amp;lt;spanclass=&amp;#34;material-icons&am
       <guid>/modules/buttons/</guid>
       <description>Buttons Default Primary Success Warning Error  &amp;lt;buttonclass=&amp;#34;button button--default&amp;#34;type=&amp;#34;button&amp;#34;&amp;gt;Default&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--primary&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Primary&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--success&amp;#34;type=&amp;#34;button&amp;#34;&amp;gt;Success&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--warning&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Warning&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--error&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Error&amp;lt;/button&amp;gt;    Selector  Description     type=&#34;&#34; Required don&#39;t forget the type attribute. Requires one of the following values: [&#34;submit&#34;, &#34;button&#34;, &#34;reset&#34;]    States If the states are toggled with extra classes you can add .has-, or with JavaScript .js-has- state classes.
 Default has Success Primary has Warning Primary has Error  &amp;lt;buttonclass=&amp;#34;button button--default has-success&amp;#34;type=&amp;#34;button&amp;#34;&amp;gt;Default has Success&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--primary js-has-warning&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Primary has Warning&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--primary js-has-error&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Primary has Error&amp;lt;/button&amp;gt;  Full width Default Primary  &amp;lt;buttonclass=&amp;#34;button button--block button--default&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Default&amp;lt;/button&amp;gt;&amp;lt;buttonclass=&amp;#34;button button--block button--primary&amp;#34;type=&amp;#34;submit&amp;#34;&amp;gt;Primary&amp;lt;/button&amp;gt;    Selector  Description     .</description>
+    </item>
+    
+    <item>
+      <title>Header</title>
+      <link>/modules/header/</link>
+      <pubDate>Thu, 05 Oct 2017 16:29:36 +0200</pubDate>
+      
+      <guid>/modules/header/</guid>
+      <description>Header Your site&amp;rsquo;s main header. A place for your app logo and maybe some navigation.
+Layout is done with flexbox. Flexbox is made for handling vertical alignment and dividing elements across the available space without the need of floats.
+J D  Your App Name     &amp;lt;headerclass=&amp;#34;site-header&amp;#34;role=&amp;#34;banner&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;site-header__section&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;/&amp;#34;class=&amp;#34;app-icon app-icon--lavender-blue&amp;#34;aria-labelledby=&amp;#34;app-icon-name&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;app-icon__logo&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;J&amp;lt;/span&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__character&amp;#34;&amp;gt;D&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;spanclass=&amp;#34;app-icon__name&amp;#34;id=&amp;#34;app-icon-name&amp;#34;&amp;gt;Your App Name&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/header&amp;gt;    Selector  Description     role=&#34;banner&#34; Required For a11y   .</description>
     </item>
     
     <item>

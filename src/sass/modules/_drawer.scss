@@ -5,20 +5,105 @@
 // a auto-collapsable sidebar to use in a webapp: e.g. a dashboard
 ////////////////////////////////////////////////////////////////////////////////
 
+//==============================================================================
+// CHECKBOX HACK
+//==============================================================================
+.drawer__checkbox {
+	@include visually-hidden;
+}
+
+.drawer__menu {
+	display: block;
+	position: absolute;
+	top: -50px;
+	left: $base-spacing-unit;
+	width: 32px;
+	height: 32px;
+	padding: $half-spacing-unit;
+	cursor: pointer;
+
+	&::after {
+		position: absolute;
+		top: 50%;
+		right: -2px;
+		left: auto;
+		width: 0;
+		height: 0;
+		margin-top: -4px;
+		border-width: 4px 0 4px 4px;
+		border-style: solid;
+		border-color: $transparent $transparent $transparent $link-color;
+		content: '';
+
+		@include mq-min($bp-medium) {
+			right: auto;
+			left: -2px;
+			border-width: 4px 4px 4px 0;
+			border-color: $transparent $link-color $transparent $transparent;
+		}
+	}
+
+	.drawer__checkbox:checked + & {
+		&::after {
+			right: auto;
+			left: -2px;
+			border-width: 4px 4px 4px 0;
+			border-color: $transparent $link-color $transparent $transparent;
+
+			@include mq-min($bp-medium) {
+				right: -2px;
+				left: auto;
+				border-width: 4px 0 4px 4px;
+				border-color: $transparent $transparent $transparent $link-color;
+			}
+		}
+	}
+}
+
+.drawer__menu-line {
+	display: block;
+	width: 100%;
+	height: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: $drawer-line-color;
+
+	&:first-of-type {
+		margin-top: 4px;
+	}
+
+	.drawer__menu--light & {
+		background-color: $drawer-light-line-color;
+	}
+}
+
+
+//==============================================================================
+// THE ACTUAL DRAWER
+//==============================================================================
 .drawer {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
-	width: nth($drawer-width, 1);
+	left: ($drawer-width * -1);
+	width: $drawer-width;
 	height: 100%;
 	padding: $double-spacing-unit;
+	transition: left .3s ease-in-out;
 	background-color: $drawer-bg;
 	color: $silver;
 	overflow: auto;
 
 	@include mq-min($bp-medium) {
-		width: nth($drawer-width, 2);
+		left: 0;
+	}
+
+	.drawer__checkbox:checked + .drawer__menu + & {
+		left: 0;
+
+		@include mq-min($bp-medium) {
+			left: ($drawer-width * -1);
+		}
 	}
 
 	// @supports (display: grid) {

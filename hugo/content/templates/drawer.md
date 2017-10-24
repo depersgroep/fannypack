@@ -9,7 +9,7 @@ parent = "Templates"
 
 # Drawer template
 
-Example template with a **drawer**. A drawer is an auto-collapsible sidebar with navigational elements. You see this pattern often in dashboards.
+Example template with a **drawer**. A drawer is an (auto-) collapsible sidebar with navigational elements. You see this pattern often in dashboards. Toggling the drawer is done with the checkbox hack
 
 <table class="table table--horizontal-borders">
 	<thead>
@@ -24,6 +24,16 @@ Example template with a **drawer**. A drawer is an auto-collapsible sidebar with
 			<td><code>.layout--drawer</code></td>
 			<td><span class="label label--warning">Required</span></td>
 			<td>On the <code>html</code> tag</td>
+		</tr>
+		<tr>
+			<td><code>.drawer__checkbox</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>The checkbox hack</code></td>
+		</tr>
+		<tr>
+			<td><code>.drawer__menu</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>The clickbale region that holds the hamburger icon</code></td>
 		</tr>
 		<tr>
 			<td><code>.drawer</code></td>
@@ -46,6 +56,12 @@ Example template with a **drawer**. A drawer is an auto-collapsible sidebar with
 <body>
 	<header class="site-header">...</header>
 	<main class="main-container" role="main">
+		<input type="checkbox" class="drawer__checkbox" id="drawer__checkbox" />
+		<label for="drawer__checkbox" class="drawer__menu" role="button" aria-label="Menu">
+			<span class="drawer__menu-line" role="none"></span>
+			<span class="drawer__menu-line" role="none"></span>
+			<span class="drawer__menu-line" role="none"></span>
+		</label>
 		<div class="drawer">
 			<div class="drawer__section">
 				<div class="drawer__section-title">...</div>

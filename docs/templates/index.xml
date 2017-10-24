@@ -18,7 +18,7 @@
       
       <guid>/templates/base/</guid>
       <description> Base template Default layout, header and a .container for your content.
-  Selector  Description     .container Required First child in .main-container    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;container&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; </description>
+  Selector  Description     .container Required First child in .main-content. Has a max-width.    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;container&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt; </description>
     </item>
     
     <item>
@@ -27,8 +27,8 @@
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
       
       <guid>/templates/drawer/</guid>
-      <description>Drawer template Example template with a drawer. A drawer is an auto-collapsible sidebar with navigational elements. You see this pattern often in dashboards.
-  Selector  Description     .layout--drawer Required On the html tag   .drawer Required First child in .main-container   .drawer__section Optional Place your navigational elements in here.    &amp;lt;!DOCTYPE html&amp;gt;&amp;lt;htmllang=&amp;#34;en&amp;#34;class=&amp;#34;no-js layout--drawer&amp;#34;&amp;gt;&amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;headerclass=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt;&amp;lt;mainclass=&amp;#34;main-container&amp;#34;role=&amp;#34;main&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer__section&amp;#34;&amp;gt;&amp;lt;divclass=&amp;#34;drawer__section-title&amp;#34;&amp;gt;...&amp;lt;/div&amp;gt;&amp;lt;!-- navigational elements here --&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;divclass=&amp;#34;main-content&amp;#34;&amp;gt;... &amp;lt;/div&amp;gt;&amp;lt;/main&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;  Long filler text Some lomg filler text to demo the scrolling behaviour.</description>
+      <description>Drawer template Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements. You see this pattern often in dashboards. Toggling the drawer is done with the checkbox hack
+  Selector  Description     .layout--drawer Required On the html tag   .drawer__checkbox Required The checkbox hack   .drawer__menu Required The clickbale region that holds the hamburger icon   .</description>
     </item>
     
     <item>

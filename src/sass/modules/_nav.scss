@@ -95,4 +95,10 @@
 	.nav--light .is-active > & {
 		color: $nav-light-link-active-color;
 	}
+
+	.nav--vertical & {
+		.material-icons {
+			margin-right: $base-spacing-unit;
+		}
+	}
 }
