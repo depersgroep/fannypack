@@ -29,7 +29,7 @@ We use [Material Icons](https://material.io/icons/) from Google. All available i
 
 These icons were designed to follow the material design guidelines and they look best when using the recommended icon sizes (24px) (**For Fannypack we use it mostly at 16px!**) and colors.
 
-Icons inherit the style properties, like `color` and `font-size`, of their parent or ancestors. This makes it a lot easier to use and to control with css instead of using extra classes on the icon. But if you need to set a specific color without css we've got you covered.
+Icons inherit the style properties, like `color` and `font-size`, of their parent or ancestors. This makes it a lot easier to use and to control with CSS instead of using extra classes on the icon. But if you need to set a specific color without CSS we've got you covered.
 
 The styles below make it easy to apply our recommended sizes, colors, and activity states.
 
@@ -80,7 +80,7 @@ When using the icon in a standalone situation, so no other descriptive text or l
 <span class="sr-only">translation of "save" goes here</span>
 ```
 
-`aria-hidden="true"` will hide the entire tag from screenreaders or other assistive technology. Screenreaders will read the content from `.sr-only` but that content is visually hidden for regular users.
+`aria-hidden="true"` will hide the entire tag from screen readers or other assistive technology. Screenreaders will read the content from `.sr-only` but that content is visually hidden for regular users.
 
 <div class="fp-example">
 	<span class="material-icons" aria-hidden="true">save</span>

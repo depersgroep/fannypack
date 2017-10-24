@@ -203,7 +203,7 @@ Only pitfall is when your columns don't have equal heights, which happens quite 
 	</div>
 </div>
 
-If you wan't to prevent this you need to add class `.col--clear` to each **13th** col
+If you want to prevent this you need to add class `.col--clear` to each **13th** col
 
 **Emulating floats:** this grid doesn't use `display: grid;` in the example below.
 
@@ -225,7 +225,7 @@ If you wan't to prevent this you need to add class `.col--clear` to each **13th*
 		<div class="col-4">.col-4</div>
 		<div class="col-3 col--clear">.col-3.col--clear</div>
 		<div class="col-3">.col-3</div>
-		<div class="col-3">another higher col that doesnt'break layout</div>
+		<div class="col-3">another higher col that doesn't break layout</div>
 		<div class="col-3">.col-3</div>
 		<div class="col-5 col--clear">.col-5.col--clear</div>
 		<div class="col-5">.col-5</div>
@@ -246,7 +246,7 @@ If you wan't to prevent this you need to add class `.col--clear` to each **13th*
 	<!-- another float clearer fallback because this is col 13 (8 + 4 = 12) -->
 	<div class="col-3 col--clear">.col-3.col--clear</div>
 	<div class="col-3">.col-3</div>
-	<div class="col-3">another higher col that doesnt'break layout</div>
+	<div class="col-3">another higher col that doesn't break layout</div>
 	<div class="col-3">.col-3</div>
 	<!-- another float clearer fallback because this is col 13 (3 + 3 + 3 + 3 = 12) -->
 	<div class="col-5 col--clear">.col-5.col--clear</div>

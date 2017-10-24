@@ -69,7 +69,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quam!
 
 ## Form elements
 
-Form elements can be wrapped by `.form__group`. This comes in handy when you want to implement **validation** later. This wrapper can be a `<div>` or a `<fieldset>`. It also adds spacing. If you don't need the spacing and validation can be done on other elements, you can ommit this.
+Form elements can be wrapped by `.form__group`. This comes in handy when you want to implement **validation** later. This wrapper can be a `<div>` or a `<fieldset>`. It also adds spacing. If you don't need the spacing and validation can be done on other elements, you can omit this.
 
 ```html
 <div class="form__group">
@@ -232,11 +232,11 @@ Form elements can be wrapped by `.form__group`. This comes in handy when you wan
 	</tbody>
 </table>
 
-### Colorpicker
+### Color picker
 
 <div class="fp-example">
 	<fieldset class="form__group">
-		<label for="colorid" class="form__label">Colorpicker</label>
+		<label for="colorid" class="form__label">Color picker</label>
 		<input type="color" id="colorid" name="colorname" class="form__field" />
 	</fieldset>
 </div>
@@ -647,7 +647,7 @@ If you need to layout different fields according a grid pattern, you can use our
 
 If you want more flexibility, vertical alignment and let the browser handle the layout, replace the grid layout with a flexbox layout.
 
-An example with a datepicker and time input.
+An example with a date picker and time input.
 
 <div class="fp-example">
 	<fieldset class="form__fieldset">

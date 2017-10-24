@@ -417,7 +417,7 @@ Making a table responsive (with overflow) is very easy. Just add a `div.table__w
 
 On smaller screens the table transforms to blocks that are stacked and with accessible titles.
 
-This requires a little more work than just css. You need to add the required
+This requires a little more work than just CSS. You need to add the required
 attributes to make this work and be accessible.
 
 <div class="fp-example">
