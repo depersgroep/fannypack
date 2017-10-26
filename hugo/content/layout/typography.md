@@ -7,7 +7,9 @@ parent = "Layout"
 
 # Typography
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam totam quos odit nulla ab pariatur dolorem id quasi dicta.
+> Type is a beautiful group of letters, not a group of beautiful letters.
+
+*- Matthew Carter*
 
 ## Font
 
@@ -71,6 +73,12 @@ The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com
 	</ol>
 
 	<p>Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
+
+	<h4>Blockquote</h4>
+
+	<blockquote cite="https://www.goodreads.com/quotes/tag/typography">
+		<p>Type is a beautiful group of letters, not a group of beautiful letters.</p>
+	</blockquote>
 
 <pre>Some
 	text in pre

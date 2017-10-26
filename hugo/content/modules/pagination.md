@@ -7,7 +7,7 @@ parent = 'Modules'
 
 # Pagination
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex delectus, nisi, et possimus eius vero. Soluta sint quasi molestias doloribus.
+If you have a lot of content, pagination can be a solution to divide it smaller portions.
 
 <div class="fp-example">
 	<nav class="pagination" role="navigation" aria-label="Pagination">
