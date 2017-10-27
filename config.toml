@@ -1,4 +1,4 @@
-baseURL= "/"
+baseURL= "https://fannypack.persgroep.net"
 archetypeDir = "hugo/archetypes"
 contentDir = "hugo/content"
 themesDir = "hugo/themes"

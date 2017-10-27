@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Layouts on Fannypack</title>
-    <link>/layout/</link>
+    <link>https://fannypack.persgroep.net/layout/</link>
     <description>Recent content in Layouts on Fannypack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 09 Oct 2017 13:02:58 +0200</lastBuildDate>
     
-	<atom:link href="/layout/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fannypack.persgroep.net/layout/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Typography</title>
-      <link>/layout/typography/</link>
+      <link>https://fannypack.persgroep.net/layout/typography/</link>
       <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
       
-      <guid>/layout/typography/</guid>
+      <guid>https://fannypack.persgroep.net/layout/typography/</guid>
       <description>Typography  Type is a beautiful group of letters, not a group of beautiful letters.
  - Matthew Carter
 Font The base font-family for Fannypack is Source Sans Pro in 3 styles: regular, semi-bold and bold.
@@ -25,20 +25,20 @@ Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading U
     
     <item>
       <title>Grid</title>
-      <link>/layout/grid/</link>
+      <link>https://fannypack.persgroep.net/layout/grid/</link>
       <pubDate>Mon, 09 Oct 2017 10:08:25 +0200</pubDate>
       
-      <guid>/layout/grid/</guid>
+      <guid>https://fannypack.persgroep.net/layout/grid/</guid>
       <description>Grid We have a standard 12 column grid for you available. You can do any combination of columns as long as the total of each (virtual) row is 12.
 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1  .col-2 .col-2 .col-2 .col-2 .col-2 .col-2  .col-3 .col-3 .col-3 .col-3  .col-4 .col-4 .col-4  .col-5 .col-5 .col-2  .col-6 .col-6  .col-7 .col-5  .col-8 .</description>
     </item>
     
     <item>
       <title>Layout</title>
-      <link>/layout/</link>
+      <link>https://fannypack.persgroep.net/layout/</link>
       <pubDate>Mon, 02 Oct 2017 14:42:50 +0200</pubDate>
       
-      <guid>/layout/</guid>
+      <guid>https://fannypack.persgroep.net/layout/</guid>
       <description>Layout Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ipsam?</description>
     </item>
     
