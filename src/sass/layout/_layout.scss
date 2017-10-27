@@ -15,7 +15,7 @@
 
 	.main-container {
 		position: relative;
-		z-index: 1;
+		// NO Z-INDEX !!!!!
 	}
 }
 
@@ -77,8 +77,4 @@
 			margin-left: 0;
 		}
 	}
-
-	// .drawer {
-	// 	//
-	// }
 }

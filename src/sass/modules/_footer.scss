@@ -1,0 +1,20 @@
+////////////////////////////////////////////////////////////////////////////////
+// FOOTER
+//
+// description:
+// global site's footer
+////////////////////////////////////////////////////////////////////////////////
+
+.site-footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	padding: $double-spacing-unit;
+}
+
+.site-footer__section {
+	& + & {
+		margin-left: $double-spacing-unit;
+	}
+}

@@ -1,6 +1,7 @@
 +++
 title = "Icons"
 date = 2017-10-05T16:39:45+02:00
+modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
 +++

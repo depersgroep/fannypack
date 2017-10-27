@@ -1,6 +1,7 @@
 +++
 title = "Toolbar"
 date = 2017-10-03T15:10:21+02:00
+modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
 +++

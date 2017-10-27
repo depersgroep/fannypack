@@ -1,31 +1,27 @@
-{{ partial "head" . }}
+{{define "main"}}
+<article class="fp-article">
+	<div class="hero-unit" role="banner">
+		<h1 class="hero-unit__title" aria-label="{{.Title}}">{{ partial "fanny" . }}</h1>
+	</div>
+	<div class="clearfix">
+		{{ partial "fonda" .}}
+		<div>
+			<p class="hero-unit__body">An open source HTML and CSS toolkit. With prebuilt modules and a responsive design you can build the most awesome sites and applications. <!-- Give it an extra boost with <a href="#">Buckle</a>, our custom made <em>&ldquo;pub-sub&rdquo;</em> JavaScript framework. --></p>
 
-{{ partial "header" . }}
+			<p class="hero-unit__body">Built with <a href="https://smacss.com">SMACSS</a>, <a href="http://getbem.com/">BEM</a>, <a href="https://www.w3.org/TR/wai-aria-1.1/">WAI-ARIA</a>.</p>
 
-<main class="fp-main-container" role="main">
-	<article class="fp-article">
-		<div class="hero-unit" role="banner">
-			<h1 class="hero-unit__title" aria-label="{{.Title}}">{{ partial "fanny" . }}</h1>
-		</div>
-		<div class="clearfix">
-			{{ partial "fonda" .}}
-			<div>
-				<p class="hero-unit__body">An open source HTML and CSS toolkit. With prebuilt modules and a responsive design you can build the most awesome sites and applications. Give it an extra boost with <a href="#">Buckle</a>, our custom made <em>&ldquo;pub-sub&rdquo;</em> JavaScript framework.</p>
+			<h2>Getting started</h2>
 
-				<p class="hero-unit__body">Built with <a href="https://smacss.com">SMACSS</a>, <a href="http://getbem.com/">BEM</a>, <a href="https://www.w3.org/TR/wai-aria-1.1/">WAI-ARIA</a>.</p>
+			<p>Include the following code snippet in your <code>head</code></p>
 
-				<h2>Getting started</h2>
-
-				<p>Include the following code snippet in your <code>head</code></p>
-
-				<div class="highlight">
+			<div class="highlight">
+}
 <pre class="chroma"><code class="language-html" data-lang="html">&lt;link rel="stylesheet" href="{{ "dist/fannypack.css" | absURL }}" /&gt;</code></pre>
-				</div>
-
-				<p>Go on, read our <a href="{{ "/layout/grid" | relURL }}">docs</a> and start implementing those first modules.</p>
 			</div>
-		</div>
-	</article>
-</main>
 
-{{ partial "footer" . }}
+			<p>Go on, read our <a href="{{ "/layout/grid" | relURL }}">docs</a> and start implementing those first modules.</p>
+		</div>
+	</div>
+</article>
+{{ end }}
+

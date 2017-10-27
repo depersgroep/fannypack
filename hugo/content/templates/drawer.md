@@ -3,6 +3,7 @@ title = "Drawer"
 date = 2017-10-23T09:19:17+02:00
 type = "templates"
 layout = "drawer"
+modifiers = ["layout--drawer", "layout--fixed-header"]
 [menu.docs]
 parent = "Templates"
 +++
@@ -24,6 +25,11 @@ Example template with a **drawer**. A drawer is an (auto-) collapsible sidebar w
 			<td><code>.layout--drawer</code></td>
 			<td><span class="label label--warning">Required</span></td>
 			<td>On the <code>html</code> tag</td>
+		</tr>
+		<tr>
+			<td><code>.layout--fixed-header</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>On the <code>html</code> tag.</td>
 		</tr>
 		<tr>
 			<td><code>.drawer__checkbox</code></td>

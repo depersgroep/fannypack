@@ -18,35 +18,35 @@
   fill: #ea168c;
 }
 
-.theme-fp {
+.theme--fp {
   background: #0f004d;
   background: -webkit-linear-gradient(315deg, #0f004d 0%, #54037e 50%, #8a1f7d 50%, #d8756d 100%);
   background: linear-gradient(135deg, #0f004d 0%, #54037e 50%, #8a1f7d 50%, #d8756d 100%);
   background-attachment: fixed;
 }
 
-.theme-fp body {
+.theme--fp body {
   background-color: transparent;
 }
 
-.theme-fp body > .site-header {
+.theme--fp body > .site-header {
   border-bottom: 0;
   background-color: transparent;
 }
 
-.theme-fp body > .site-header .app-icon__name {
+.theme--fp body > .site-header .app-icon__name {
   color: #fdf035;
 }
 
-.theme-fp body > .site-header .fp-nav {
+.theme--fp body > .site-header .fp-nav {
   font-size: 1.125em;
 }
 
-.theme-fp body > .site-header .site-header__section:nth-child(2) {
+.theme--fp body > .site-header .site-header__section:nth-child(2) {
   margin-left: 60px;
 }
 
-.theme-fp .hero-unit {
+.theme--fp .hero-unit {
   max-width: 1200px;
   margin-top: 80px;
   margin-right: auto;
@@ -55,7 +55,7 @@
   text-align: center;
 }
 
-.theme-fp .hero-unit__title {
+.theme--fp .hero-unit__title {
   margin-top: 0;
   margin-bottom: 0;
   color: rgba(24, 167, 84, 0.33);
@@ -64,81 +64,89 @@
   text-shadow: rgba(234, 32, 45, 0.33) 0.05em 0.05em 0;
 }
 
-.theme-fp .hero-unit__body {
+.theme--fp .hero-unit__body {
   color: #fdf035;
   font-size: 2em;
   line-height: 1.2;
 }
 
-.theme-fp h1,
-.theme-fp h2,
-.theme-fp h3,
-.theme-fp h4 {
+.theme--fp h1,
+.theme--fp h2,
+.theme--fp h3,
+.theme--fp h4 {
   font-family: 'Arial Black', Arial, sans-serif;
   text-transform: uppercase;
 }
 
-.theme-fp .fp-example h1,
-.theme-fp .fp-example h2,
-.theme-fp .fp-example h3,
-.theme-fp .fp-example h4 {
+.theme--fp .fp-example h1,
+.theme--fp .fp-example h2,
+.theme--fp .fp-example h3,
+.theme--fp .fp-example h4 {
   font-family: "Source Sans Pro", Arial, sans-serif;
   text-transform: none;
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
-  .theme-fp .fp-nav .nav--sticky {
+  .theme--fp .fp-nav .nav--sticky {
     top: 90px;
   }
 }
 
-.theme-fp .fp-drawer .nav__list {
+.theme--fp .fp-drawer .nav__list {
   font-family: 'Courier New', monospace;
 }
 
-.theme-fp .fp-drawer .nav__list .nav__list {
+.theme--fp .fp-drawer .nav__list .nav__list {
   margin-top: 10px;
   padding-left: 15px;
   border-left: 2px solid #fc569f;
   font-weight: normal;
 }
 
-.theme-fp .fp-nav .nav__item {
+.theme--fp .fp-nav .nav__item {
   display: block;
 }
 
-.theme-fp .fp-nav .nav__item.is-active > .nav__link {
+.theme--fp .fp-nav .nav__item.is-active > .nav__link {
   color: #fdf035;
 }
 
-.theme-fp .nav--vertical > .nav__list > .nav__item + .nav__item {
+.theme--fp .nav--vertical > .nav__list > .nav__item + .nav__item {
   margin-top: 10px;
   margin-left: 0;
 }
 
-.theme-fp .fp-nav .nav__link {
+.theme--fp .fp-nav .nav__link {
   color: #0dd5fc;
 }
 
-.theme-fp .fp-nav .nav__link:focus,
-.theme-fp .fp-nav .nav__link:hover {
+.theme--fp .fp-nav .nav__link:focus,
+.theme--fp .fp-nav .nav__link:hover {
   color: #ea168c;
 }
 
-.theme-fp-homepage body {
+.theme--fp .site-footer {
   color: #fef9ae;
 }
 
-.theme-fp-homepage .fp-main-container {
+.theme--fp .site-footer svg {
+  fill: #199dcd;
+}
+
+.theme--fp-homepage body {
+  color: #fef9ae;
+}
+
+.theme--fp-homepage .fp-main-container {
   max-width: none;
 }
 
-.theme-fp-homepage .chroma {
+.theme--fp-homepage .chroma {
   background-color: #fdf035;
   box-shadow: #ea168c -10px 10px 0;
 }
 
-.theme-fp-404 {
+.theme--fp-404 {
   background: #4a34b0;
   background: -webkit-linear-gradient(bottom, #4a34b0 0%, #281c5c 19%, #07060b 38%, #fb0e0e 48%, #fff 51%, #b20d0e 51%, #b20d0e 53%, #8e0d0e 53%, #8e0d0e 55%, #700b0e 55%, #58090d 57%, #43080d 57%, #06050c 63%, #211c78 100%);
   background: linear-gradient(0deg, #4a34b0 0%, #281c5c 19%, #07060b 38%, #fb0e0e 48%, #fff 51%, #b20d0e 51%, #b20d0e 53%, #8e0d0e 53%, #8e0d0e 55%, #700b0e 55%, #58090d 57%, #43080d 57%, #06050c 63%, #211c78 100%);
@@ -422,4 +430,13 @@
     -webkit-shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
     shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
   }
+}
+
+.site-footer svg {
+  display: inline-block;
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: #9e9e9e;
 }

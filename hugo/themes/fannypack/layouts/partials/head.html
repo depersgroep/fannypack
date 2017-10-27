@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js theme-fp theme-fp-homepage">
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>{{.Title}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+	{{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+	<title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+
+	<meta name="robots" content="index, follow">
+	{{ with .Site.Params.description }}
+	<meta name="description" content="{{ . }}">
+	{{ end }}
+	<link rel="canonical" href="{{ .Permalink }}">
+	{{ with .Site.Params.author }}
+	<meta name="author" content="{{ . }}">
+	{{ end }}
+
 	<link rel="stylesheet" href="{{ "css/fannypack.css" | absURL }}" />
 	<link rel="stylesheet" href="{{ "css/docs.css" | absURL }}" />
+
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/google_analytics_async.html" . }}
 </head>
-<body>

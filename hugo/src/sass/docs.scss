@@ -229,3 +229,14 @@
 		shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
 	}
 }
+
+.site-footer {
+	svg {
+		display: inline-block;
+		width: 24px;
+		height: auto;
+		margin-right: $base-spacing-unit;
+		vertical-align: middle;
+		fill: $aluminum;
+	}
+}

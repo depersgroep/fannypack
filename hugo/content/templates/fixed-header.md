@@ -2,7 +2,7 @@
 title = "Fixed header"
 date = 2017-10-23T09:19:17+02:00
 type = "templates"
-layout = "fixed-header"
+modifiers = ["layout--fixed-header"]
 [menu.docs]
 parent = "Templates"
 +++

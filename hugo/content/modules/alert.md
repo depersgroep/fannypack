@@ -1,6 +1,7 @@
 +++
 title = "Alerts"
 date = 2017-10-09T11:39:15+02:00
+modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
 +++

@@ -7,7 +7,7 @@
 
 // scss-lint:disable SelectorDepth
 
-.theme-fp {
+.theme--fp {
 	// scss-lint:disable DuplicateProperty, NestingDepth
 	background: $bg-gradient-dark-blue; // fallback
 	background: linear-gradient(135deg, $bg-gradient-dark-blue 0%, $bg-gradient-blueish-purple 50%, $bg-gradient-magenta 50%, $bg-gradient-orange 100%);
@@ -119,9 +119,17 @@
 			color: $hot-sauce-magenta;
 		}
 	}
+
+	.site-footer {
+		color: $fp-text-color;
+
+		svg {
+			fill: $hot-sauce-blue;
+		}
+	}
 }
 
-.theme-fp-homepage {
+.theme--fp-homepage {
 	body {
 		color: $fp-text-color;
 	}
@@ -136,7 +144,7 @@
 	}
 }
 
-.theme-fp-404 {
+.theme--fp-404 {
 	// scss-lint:disable ColorVariable, DuplicateProperty
 	background: #4a34b0;
 	background: linear-gradient(0deg, #4a34b0 0%, #281c5c 19%, #07060b 38%, #fb0e0e 48%, #fff 51%, #b20d0e 51%, #b20d0e 53%, #8e0d0e 53%, #8e0d0e 55%, #700b0e 55%, #58090d 57%, #43080d 57%, #06050c 63%, #211c78 100%);

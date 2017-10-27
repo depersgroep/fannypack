@@ -14,13 +14,14 @@
 
 .drawer__menu {
 	display: block;
-	position: absolute;
-	top: -50px;
+	position: fixed;
+	top: $double-spacing-unit;
 	left: $base-spacing-unit;
 	width: 32px;
 	height: 32px;
 	padding: $half-spacing-unit;
 	cursor: pointer;
+	z-index: 2; // same as .site-header
 
 	&::after {
 		position: absolute;
@@ -82,8 +83,8 @@
 // THE ACTUAL DRAWER
 //==============================================================================
 .drawer {
-	position: absolute;
-	top: 0;
+	position: fixed;
+	top: $site-header-height;
 	bottom: 0;
 	left: ($drawer-width * -1);
 	width: $drawer-width;

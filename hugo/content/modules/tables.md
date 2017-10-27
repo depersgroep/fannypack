@@ -1,6 +1,7 @@
 +++
 title = "Tables"
 date = 2017-10-06T14:38:47+02:00
+modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
 +++

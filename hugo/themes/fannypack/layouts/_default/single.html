@@ -1,12 +1,7 @@
-{{ partial "head-docs" . }}
+{{ define "main" }}
+{{ partial "drawer-docs" . }}
+<article class="fp-article">
+	{{ .Content }}
+</article>
+{{ end }}
 
-{{ partial "header-docs" . }}
-
-<main class="fp-main-container" role="main">
-	{{ partial "drawer-docs" . }}
-	<article class="fp-article">
-		{{ .Content }}
-	</article>
-</main>
-
-{{ partial "footer" . }}

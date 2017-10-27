@@ -2,7 +2,6 @@
 title = "Base"
 date = 2017-10-23T09:19:17+02:00
 type = "templates"
-layout = "base"
 [menu.docs]
 parent = "Templates"
 +++

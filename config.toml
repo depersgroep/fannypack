@@ -1,4 +1,4 @@
-baseURL= "https://fannypack.persgroep.net"
+baseURL= "https://fannypack.persgroep.net/"
 archetypeDir = "hugo/archetypes"
 contentDir = "hugo/content"
 themesDir = "hugo/themes"
@@ -9,7 +9,9 @@ relativeURLs = true
 canonifyURLs = true
 title = "Fannypack"
 theme = "fannypack"
-metadataformat = "toml"
+metaDataFormat = "toml"
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
 
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
@@ -18,6 +20,14 @@ googleAnalytics = ""
 
 pygmentsUseClasses=true
 pygmentsCodeFences = true
+
+[params]
+	favicon = ""
+	description = "An open source HTML and CSS toolkit. With prebuilt modules and a responsive design you can build the most awesome sites and applications."
+	facebook = ""
+	twitter = "https://twitter.com/Fannypack"
+	github = "https://github.com/depersgroep/fannypack"
+	images = [""]
 
 [blackfriday]
 	smartDashes = false

@@ -1,8 +1,8 @@
 +++
 title = "Two col"
 date = 2017-10-23T09:19:17+02:00
-type = "templates"
-layout = "fixed-header"
+modifiers = ["layout--fixed-header"]
+type= "templates"
 [menu.docs]
 parent = "Templates"
 +++

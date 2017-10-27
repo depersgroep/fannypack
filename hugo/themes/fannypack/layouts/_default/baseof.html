@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}" class="no-js{{ with .Params.modifiers }}{{ range $.Params.modifiers }} {{ . }}{{ end }}{{ end }}{{ block "modifiers" . }} {{ end }}">
+
+{{ partial "head" . }}
+
+{{ if eq .Section "templates" }}
+{{ $.Scratch.Set "container" "main-container"}}
+{{ partial "header-templates" . }}
+{{ else }}
+{{ $.Scratch.Set "container" "fp-main-container"}}
+{{ partial "header" . }}
+{{ end }}
+
+<body>
+<main class="{{ $.Scratch.Get "container" }}" role="main">
+	{{ block "main" . }}
+	{{ partial "drawer-docs" . }}
+	<article class="fp-article">
+		{{ .Content }}
+	</article>
+	{{ end }}
+</main>
+
+{{ if ne .Section "templates" }}
+{{ partial "footer" . }}
+{{ end }}
+
+</body>
+</html>

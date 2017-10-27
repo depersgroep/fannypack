@@ -1,2 +1,12 @@
-</body>
-</html>
+<footer class="site-footer" role="contentinfo">
+	<div class="site-footer__section">
+		{{ partial "svgs/dp.svg" }}
+		An Open Source project by De Persgroep
+	</div>
+	<div class="site-footer__section">
+		{{ with .Site.Params.github }}
+		<a href="{{ . }}">{{ partial "svgs/github.svg" }}Source code at GitHub</a>
+		{{ end }}
+		 under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> license
+	</div>
+</footer>

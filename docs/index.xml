@@ -28,7 +28,7 @@
       
       <guid>https://fannypack.persgroep.net/templates/drawer/</guid>
       <description>Drawer template Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements. You see this pattern often in dashboards. Toggling the drawer is done with the checkbox hack
-  Selector  Description     .layout--drawer Required On the html tag   .drawer__checkbox Required The checkbox hack   .drawer__menu Required The clickbale region that holds the hamburger icon   .</description>
+  Selector  Description     .layout--drawer Required On the html tag   .layout--fixed-header Required On the html tag.   .drawer__checkbox Required The checkbox hack   .drawer__menu Required The clickbale region that holds the hamburger icon   .</description>
     </item>
     
     <item>
