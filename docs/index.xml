@@ -69,7 +69,8 @@ default success warning error  &amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;l
       <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
       
       <guid>/layout/typography/</guid>
-      <description>Typography Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam totam quos odit nulla ab pariatur dolorem id quasi dicta.
+      <description>Typography  Type is a beautiful group of letters, not a group of beautiful letters.
+ - Matthew Carter
 Font The base font-family for Fannypack is Source Sans Pro in 3 styles: regular, semi-bold and bold.
 Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading Unordered list  list item list item list item  nested list item   list item  Ordered list  list item list item list item  nested list item   list item  Mixed nested lists  list item list item list item  nested list item   list item   list item list item list item  nested list item   list item  Paragraph text with lorem ipsum dolor sit amet, m2 consectetur adipisicing elit8.</description>
     </item>
@@ -111,7 +112,7 @@ Fannypack lovers   # First name Last name Role     1 Gwendolyn Matthys Visual de
       <pubDate>Fri, 06 Oct 2017 10:47:45 +0200</pubDate>
       
       <guid>/modules/pagination/</guid>
-      <description>Pagination Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex delectus, nisi, et possimus eius vero. Soluta sint quasi molestias doloribus.
+      <description>Pagination If you have a lot of content, pagination can be a solution to divide it smaller portions.
 Previous  1  2  3  &amp;hellip;  15  Next     &amp;lt;navclass=&amp;#34;pagination&amp;#34;role=&amp;#34;navigation&amp;#34;aria-label=&amp;#34;Pagination&amp;#34;&amp;gt;&amp;lt;olclass=&amp;#34;pagination__list&amp;#34;&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item pagination__item--previous&amp;#34;role=&amp;#34;none&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to previous page, page 1&amp;#34;&amp;gt;Previous&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item&amp;#34;role=&amp;#34;none&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to page 1&amp;#34;&amp;gt;1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item is-active&amp;#34;role=&amp;#34;none&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Current page, page 2&amp;#34;aria-current=&amp;#34;true&amp;#34;&amp;gt;2&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item&amp;#34;role=&amp;#34;none&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to page 3&amp;#34;&amp;gt;3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item pagination__item--dummy&amp;#34;role=&amp;#34;none&amp;#34;&amp;gt;&amp;lt;spanclass=&amp;#34;pagination__link&amp;#34;aria-hidden=&amp;#34;true&amp;#34;&amp;gt;…&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item&amp;#34;role=&amp;#34;none&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to last page, page 15&amp;#34;&amp;gt;15&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;liclass=&amp;#34;pagination__item pagination__item--next&amp;#34;role=&amp;#34;none&amp;#34;&amp;gt;&amp;lt;ahref=&amp;#34;#&amp;#34;class=&amp;#34;pagination__link&amp;#34;aria-label=&amp;#34;Go to next page, page 2&amp;#34;&amp;gt;Next&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;/nav&amp;gt;  Disabled states You can disable pagination items with .</description>
     </item>
     
