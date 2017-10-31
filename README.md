@@ -15,7 +15,7 @@ To run a local server and start developing, open up 2 teminal windows and run th
 $ cd fannypack && hugo server
 
 # in window 2 - build & watch the assets for changes (css, fonts, img, ...)
-$cd fannypack && gulp
+$ cd fannypack && gulp
 ```
 
 ## Pushing code
