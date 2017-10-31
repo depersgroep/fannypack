@@ -1,6 +1,7 @@
 +++
 title = "Header"
 date = 2017-10-05T16:29:36+02:00
+description = "The site's header"
 modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
@@ -15,7 +16,7 @@ Layout is done with `flexbox`. Flexbox is made for handling vertical alignment a
 <div class="fp-example">
 	<header class="site-header" role="banner">
 		<div class="site-header__section">
-			<a href="/" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+			<a href="/" class="app-icon app-icon--lavender-blue" role="img" aria-labelledby="app-icon-name">
 				<div class="app-icon__logo" aria-hidden="true">
 					<span class="app-icon__character">J</span>
 					<span class="app-icon__character">D</span>
@@ -29,7 +30,7 @@ Layout is done with `flexbox`. Flexbox is made for handling vertical alignment a
 ```html
 <header class="site-header" role="banner">
 	<div class="site-header__section">
-		<a href="/" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+		<a href="/" class="app-icon app-icon--lavender-blue" role="img" aria-labelledby="app-icon-name">
 			<div class="app-icon__logo" aria-hidden="true">
 				<span class="app-icon__character">J</span>
 				<span class="app-icon__character">D</span>
@@ -67,7 +68,7 @@ Layout is done with `flexbox`. Flexbox is made for handling vertical alignment a
 <div class="fp-example">
 	<header class="site-header" role="banner">
 		<div class="site-header__section">
-			<a href="/" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+			<a href="/" class="app-icon app-icon--lavender-blue" role="img"  aria-labelledby="app-icon-name">
 				<div class="app-icon__logo" aria-hidden="true">
 					<span class="app-icon__character">J</span>
 					<span class="app-icon__character">D</span>
@@ -123,7 +124,7 @@ You can place sections at the opposite site of the header.
 <div class="fp-example">
 	<header class="site-header" role="banner">
 		<div class="site-header__section">
-			<a href="/" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+			<a href="/" class="app-icon app-icon--lavender-blue" role="img" aria-labelledby="app-icon-name">
 				<div class="app-icon__logo" aria-hidden="true">
 					<span class="app-icon__character">J</span>
 					<span class="app-icon__character">D</span>

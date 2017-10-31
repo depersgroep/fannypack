@@ -1,6 +1,7 @@
 +++
 title = "App Icons"
 date = 2017-10-06T08:16:56+02:00
+description = "Logo's for the apps."
 modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"

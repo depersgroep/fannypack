@@ -1,6 +1,7 @@
 +++
 title = "Tables"
 date = 2017-10-06T14:38:47+02:00
+description = "Tabular data isn't dead!"
 modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
@@ -53,7 +54,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga obcaecati alias m
 </div>
 
 ```html
-
 <table class="table">
 	<caption>Fannypack lovers</caption>
 	<thead>
@@ -74,7 +74,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga obcaecati alias m
 		...
 	</tbody>
 </table>
-</div>
 ```
 
 <table class="table table--horizontal-borders">

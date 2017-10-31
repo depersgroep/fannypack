@@ -1253,21 +1253,25 @@ a:active {
 }
 
 .button {
+  display: inline-block;
   height: 35px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
   -webkit-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out;
   border: 0;
   border-radius: 17.5px;
   background-color: #ccc;
+  color: #404040;
   font-family: Arial, sans-serif;
   font-weight: bold;
+  line-height: 35px;
+  text-decoration: none;
 }
 
 .button:focus,
 .button:hover {
   background-color: #a6a6a6;
+  color: #404040;
 }
 
 .button + .button {
@@ -1296,6 +1300,7 @@ a:active {
 .button--primary:focus,
 .button--primary:hover {
   background-color: #2f748f;
+  color: #fff;
 }
 
 .button--success,
@@ -1312,6 +1317,7 @@ a:active {
 .button.js-has-success:focus,
 .button.js-has-success:hover {
   background-color: #208e2c;
+  color: #fff;
 }
 
 .button--warning,
@@ -1327,7 +1333,8 @@ a:active {
 .button.has-warning:hover,
 .button.js-has-warning:focus,
 .button.js-has-warning:hover {
-  background-color: #b39a00;
+  background-color: #d9bb00;
+  color: #000;
 }
 
 .button--error,
@@ -1344,6 +1351,7 @@ a:active {
 .button.js-has-error:focus,
 .button.js-has-error:hover {
   background-color: #e90d00;
+  color: #fff;
 }
 
 .drawer__checkbox {

@@ -298,6 +298,7 @@
 
 .fp-example > .site-header {
   position: static;
+  padding-left: 20px;
 }
 
 .fp-main-container {

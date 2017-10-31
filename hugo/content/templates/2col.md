@@ -1,6 +1,7 @@
 +++
 title = "Two col"
 date = 2017-10-23T09:19:17+02:00
+description = "A two column layout, 1 column for the content and a sidebar for complementary content."
 modifiers = ["layout--fixed-header"]
 type= "templates"
 [menu.docs]

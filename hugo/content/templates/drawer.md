@@ -1,6 +1,7 @@
 +++
 title = "Drawer"
 date = 2017-10-23T09:19:17+02:00
+description = "Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements."
 type = "templates"
 layout = "drawer"
 modifiers = ["layout--drawer", "layout--fixed-header"]

@@ -10,7 +10,7 @@
 
 	<meta name="robots" content="index, follow">
 	
-	<meta name="description" content="An open source HTML and CSS toolkit. With prebuilt modules and a responsive design you can build the most awesome sites and applications.">
+	<meta name="description" content="Styles for the available buttons.">
 	
 	<link rel="canonical" href="https://fannypack.persgroep.net/modules/buttons/">
 	
@@ -19,8 +19,7 @@
 	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/docs.css" />
 
 	<meta property="og:title" content="Buttons" />
-<meta property="og:description" content="Buttons Default Primary Success Warning Error  &lt;buttonclass=&#34;button button--default&#34;type=&#34;button&#34;&gt;Default&lt;/button&gt;&lt;buttonclass=&#34;button button--primary&#34;type=&#34;submit&#34;&gt;Primary&lt;/button&gt;&lt;buttonclass=&#34;button button--success&#34;type=&#34;button&#34;&gt;Success&lt;/button&gt;&lt;buttonclass=&#34;button button--warning&#34;type=&#34;submit&#34;&gt;Warning&lt;/button&gt;&lt;buttonclass=&#34;button button--error&#34;type=&#34;submit&#34;&gt;Error&lt;/button&gt;    Selector  Description     type=&#34;&#34; Required don&#39;t forget the type attribute. Requires one of the following values: [&#34;submit&#34;, &#34;button&#34;, &#34;reset&#34;]    States If the states are toggled with extra classes you can add .has-, or with JavaScript .js-has- state classes.
-Default has Success Primary has Warning Primary has Error  &lt;buttonclass=&#34;button button--default has-success&#34;type=&#34;button&#34;&gt;Default has Success&lt;/button&gt;&lt;buttonclass=&#34;button button--primary js-has-warning&#34;type=&#34;submit&#34;&gt;Primary has Warning&lt;/button&gt;&lt;buttonclass=&#34;button button--primary js-has-error&#34;type=&#34;submit&#34;&gt;Primary has Error&lt;/button&gt;  Full width Default Primary  &lt;buttonclass=&#34;button button--block button--default&#34;type=&#34;submit&#34;&gt;Default&lt;/button&gt;&lt;buttonclass=&#34;button button--block button--primary&#34;type=&#34;submit&#34;&gt;Primary&lt;/button&gt;    Selector  Description     ." />
+<meta property="og:description" content="Styles for the available buttons." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://fannypack.persgroep.net/modules/buttons/" />
 
@@ -356,6 +355,23 @@ Default has Success Primary has Warning Primary has Error  &lt;buttonclass=&#34;
     </tbody>
 </table>
 
+<h2 id="links">Links</h2>
+
+<p>Even links can be turned into buttons.</p>
+
+<div class="fp-example">
+    <a href="#" class="button button--default">Default</a>
+    <a href="#" class="button button--primary">Primary</a>
+    <a href="#" class="button button--success">Success</a>
+    <a href="#" class="button button--warning">Warning</a>
+    <a href="#" class="button button--error">Error</a>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--default&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Default</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--primary&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Primary</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--success&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Success</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--warning&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Warning</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;#&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button button--error&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">Error</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+</div>
 </article>
 
 </main>

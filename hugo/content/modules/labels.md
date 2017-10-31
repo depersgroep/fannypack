@@ -1,6 +1,7 @@
 +++
 title = "Labels"
 date = 2017-10-16T14:57:22+02:00
+description = "Giving a visual representation to small pieces of content"
 modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"

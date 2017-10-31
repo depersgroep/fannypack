@@ -6,8 +6,12 @@
 	<title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
 
 	<meta name="robots" content="index, follow">
+	{{ with .Page.Params.description }}
+	<meta name="description" content="{{ . }}">
+	{{ else }}
 	{{ with .Site.Params.description }}
 	<meta name="description" content="{{ . }}">
+	{{ end }}
 	{{ end }}
 	<link rel="canonical" href="{{ .Permalink }}">
 	{{ with .Site.Params.author }}

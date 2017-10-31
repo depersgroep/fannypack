@@ -1,6 +1,7 @@
 +++
 title = "Fixed header"
 date = 2017-10-23T09:19:17+02:00
+description = "When scrolling the page, your header wil be fixed at the top and always visible."
 type = "templates"
 modifiers = ["layout--fixed-header"]
 [menu.docs]

@@ -5,19 +5,23 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .button {
+	display: inline-block; // if the .button is a <a href="">
 	height: $button-height;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 0 15px;
 	transition: background-color .15s ease-in-out;
 	border: 0;
 	border-radius: $button-border-radius;
 	background-color: $button-default-bg;
+	color: $button-default-color;
 	font-family: $button-font;
 	font-weight: bold;
+	line-height: $button-height;
+	text-decoration: none; // if the .button is a <a href="">
 
 	&:focus,
 	&:hover {
 		background-color: $button-default-hover-bg;
+		color: $button-default-hover-color;
 	}
 
 	& + & {
@@ -46,6 +50,7 @@
 	&:focus,
 	&:hover {
 		background-color: $button-primary-hover-bg;
+		color: $button-primary-hover-color;
 	}
 }
 
@@ -61,6 +66,7 @@
 	&:focus,
 	&:hover {
 		background-color: $button-success-hover-bg;
+		color: $button-primary-hover-color;
 	}
 }
 
@@ -73,6 +79,7 @@
 	&:focus,
 	&:hover {
 		background-color: $button-warning-hover-bg;
+		color: $button-warning-hover-color;
 	}
 }
 
@@ -85,5 +92,6 @@
 	&:focus,
 	&:hover {
 		background-color: $button-error-hover-bg;
+		color: $button-error-hover-color;
 	}
 }

@@ -10,7 +10,7 @@
 
 	<meta name="robots" content="index, follow">
 	
-	<meta name="description" content="An open source HTML and CSS toolkit. With prebuilt modules and a responsive design you can build the most awesome sites and applications.">
+	<meta name="description" content="The site&#39;s header">
 	
 	<link rel="canonical" href="https://fannypack.persgroep.net/modules/header/">
 	
@@ -19,9 +19,7 @@
 	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/docs.css" />
 
 	<meta property="og:title" content="Header" />
-<meta property="og:description" content="Header Your site&rsquo;s main header. A place for your app logo and maybe some navigation.
-Layout is done with flexbox. Flexbox is made for handling vertical alignment and dividing elements across the available space without the need of floats.
-J D  Your App Name     &lt;headerclass=&#34;site-header&#34;role=&#34;banner&#34;&gt;&lt;divclass=&#34;site-header__section&#34;&gt;&lt;ahref=&#34;/&#34;class=&#34;app-icon app-icon--lavender-blue&#34;aria-labelledby=&#34;app-icon-name&#34;&gt;&lt;divclass=&#34;app-icon__logo&#34;aria-hidden=&#34;true&#34;&gt;&lt;spanclass=&#34;app-icon__character&#34;&gt;J&lt;/span&gt;&lt;spanclass=&#34;app-icon__character&#34;&gt;D&lt;/span&gt;&lt;/div&gt;&lt;spanclass=&#34;app-icon__name&#34;id=&#34;app-icon-name&#34;&gt;Your App Name&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;/header&gt;    Selector  Description     role=&#34;banner&#34; Required For a11y   ." />
+<meta property="og:description" content="The site&#39;s header" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://fannypack.persgroep.net/modules/header/" />
 
@@ -295,7 +293,7 @@ J D  Your App Name     &lt;headerclass=&#34;site-header&#34;role=&#34;banner&#34
 <div class="fp-example">
     <header class="site-header" role="banner">
         <div class="site-header__section">
-            <a href="../../" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+            <a href="../../" class="app-icon app-icon--lavender-blue" role="img" aria-labelledby="app-icon-name">
                 <div class="app-icon__logo" aria-hidden="true">
                     <span class="app-icon__character">J</span>
                     <span class="app-icon__character">D</span>
@@ -307,7 +305,7 @@ J D  Your App Name     &lt;headerclass=&#34;site-header&#34;role=&#34;banner&#34
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">header</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;site-header&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;banner&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;site-header__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;/&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;app-icon app-icon--lavender-blue&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-labelledby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;app-icon-name&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
+</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">a</span><span class="s1f40"> </span><span class="s7d1">href</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;/&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;app-icon app-icon--lavender-blue&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;img&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-labelledby</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;app-icon-name&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;app-icon__logo&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-hidden</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;true&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;app-icon__character&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">J</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
 </span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;app-icon__character&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">D</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
@@ -344,7 +342,7 @@ J D  Your App Name     &lt;headerclass=&#34;site-header&#34;role=&#34;banner&#34
 <div class="fp-example">
     <header class="site-header" role="banner">
         <div class="site-header__section">
-            <a href="../../" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+            <a href="../../" class="app-icon app-icon--lavender-blue" role="img"  aria-labelledby="app-icon-name">
                 <div class="app-icon__logo" aria-hidden="true">
                     <span class="app-icon__character">J</span>
                     <span class="app-icon__character">D</span>
@@ -397,7 +395,7 @@ J D  Your App Name     &lt;headerclass=&#34;site-header&#34;role=&#34;banner&#34
 <div class="fp-example">
     <header class="site-header" role="banner">
         <div class="site-header__section">
-            <a href="../../" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+            <a href="../../" class="app-icon app-icon--lavender-blue" role="img" aria-labelledby="app-icon-name">
                 <div class="app-icon__logo" aria-hidden="true">
                     <span class="app-icon__character">J</span>
                     <span class="app-icon__character">D</span>

@@ -1,6 +1,7 @@
 +++
 title = "Base"
 date = 2017-10-23T09:19:17+02:00
+description = "Default layout, header and a container for your content."
 type = "templates"
 [menu.docs]
 parent = "Templates"

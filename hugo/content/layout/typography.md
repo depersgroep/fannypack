@@ -1,6 +1,7 @@
 +++
 title = "Typography"
 date = 2017-10-09T13:02:58+02:00
+description = "Typographic information and kitchen sink for Fannypack"
 modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Layout"

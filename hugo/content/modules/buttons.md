@@ -1,6 +1,7 @@
 +++
 title = "Buttons"
 date = 2017-10-05T16:29:36+02:00
+description = "Styles for the available buttons."
 modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
@@ -87,3 +88,23 @@ If the states are toggled with extra classes you can add `.has-`, or with JavaSc
 	</tbody>
 </table>
 
+## Links
+
+Even links can be turned into buttons.
+
+<div class="fp-example">
+	<a href="#" class="button button--default">Default</a>
+	<a href="#" class="button button--primary">Primary</a>
+	<a href="#" class="button button--success">Success</a>
+	<a href="#" class="button button--warning">Warning</a>
+	<a href="#" class="button button--error">Error</a>
+</div>
+
+
+```html
+<a href="#" class="button button--default">Default</a>
+<a href="#" class="button button--primary">Primary</a>
+<a href="#" class="button button--success">Success</a>
+<a href="#" class="button button--warning">Warning</a>
+<a href="#" class="button button--error">Error</a>
+```

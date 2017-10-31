@@ -94,26 +94,32 @@ $button-font: Arial, sans-serif !default;
 // default
 $button-default-bg: $iron !default;
 $button-default-hover-bg: darken($button-default-bg, 15%) !default;
+$button-default-color: $text-color !default;
+$button-default-hover-color: $text-color !default;
 
 // primary
 $button-primary-bg: #47a0c3 !default;
 $button-primary-hover-bg: darken($button-primary-bg, 15%) !default;
 $button-primary-color: $white !default;
+$button-primary-hover-color: $white !default;
 
 // success
 $button-success-bg: $success-color !default;
 $button-success-hover-bg: darken($button-success-bg, 15%) !default;
 $button-success-color: $white !default;
+$button-success-hover-color: $white !default;
 
 // warning
 $button-warning-bg: $warning-color !default;
-$button-warning-hover-bg: darken($button-warning-bg, 15%) !default;
+$button-warning-hover-bg: darken($button-warning-bg, 7.5%) !default;
 $button-warning-color: $black !default;
+$button-warning-hover-color: $black !default;
 
 // error
 $button-error-bg: $error-color !default;
 $button-error-hover-bg: darken($button-error-bg, 15%) !default;
 $button-error-color: $white !default;
+$button-error-hover-color: $white !default;
 
 //==============================================================================
 // ICONS
