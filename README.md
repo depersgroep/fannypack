@@ -11,7 +11,7 @@ Fannypack runs on [Hugo](https://gohugo.io/), a static site generator and [Gulp]
 To run a local server and start developing, open up 2 teminal windows and run the following commands
 
 ```bash
-# in window 1 - run a local developement server and watch the files for changes
+# in window 1 - run a local development server and watch the files for changes
 $ cd fannypack && hugo server
 
 # in window 2 - build & watch the assets for changes (css, fonts, img, ...)
