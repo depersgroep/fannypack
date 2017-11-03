@@ -4,28 +4,27 @@ An open source HTML and CSS toolkit. With prebuilt modules and a responsive desi
 
 Built with **SMACSS, BEM and WAI-ARIA**.
 
-## Local development
+## Development
 
 Fannypack runs on [Hugo](https://gohugo.io/), a static site generator and [Gulp](https://gulpjs.com/) as task manager.
 
-To run a local server and start developing, open up 2 teminal windows and run the following commands
+### Dependencies
+- NodeJS v6.X & NPM: https://nodejs.org/dist/latest-v6.x/
+- Hugo: https://gohugo.io/getting-started/installing/
+
+### Run local
 
 ```bash
-# in window 1 - run a local development server and watch the files for changes
-$ cd fannypack && hugo server
-
-# in window 2 - build & watch the assets for changes (css, fonts, img, ...)
-$ cd fannypack && gulp
+# start hugo server and build/watch static files with gulp
+npm run develop
 ```
 
 ## Pushing code
 
 Before you can push your code, you need to build the static site.
 
-The build command:
-
 ```bash
-$ hugo
+npm run build
 ```
 
 Fannypack maintainers can now push the code to the remote `master` branch. This will trigger an auto-deploy.
