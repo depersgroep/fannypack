@@ -18,6 +18,10 @@
 	line-height: $button-height;
 	text-decoration: none; // if the .button is a <a href="">
 
+	&:visited {
+		color: $button-default-color;
+	}
+
 	&:focus,
 	&:hover {
 		background-color: $button-default-hover-bg;
@@ -47,6 +51,10 @@
 	background-color: $button-primary-bg;
 	color: $button-primary-color;
 
+	&:visited {
+		color: $button-primary-color;
+	}
+
 	&:focus,
 	&:hover {
 		background-color: $button-primary-hover-bg;
@@ -63,6 +71,10 @@
 	background-color: $button-success-bg;
 	color: $button-success-color;
 
+	&:visited {
+		color: $button-success-color;
+	}
+
 	&:focus,
 	&:hover {
 		background-color: $button-success-hover-bg;
@@ -76,6 +88,10 @@
 	background-color: $button-warning-bg;
 	color: $button-warning-color;
 
+	&:visited {
+		color: $button-warning-color;
+	}
+
 	&:focus,
 	&:hover {
 		background-color: $button-warning-hover-bg;
@@ -88,6 +104,10 @@
 .button.js-has-error {
 	background-color: $button-error-bg;
 	color: $button-error-color;
+
+	&:visited {
+		color: $button-error-color;
+	}
 
 	&:focus,
 	&:hover {

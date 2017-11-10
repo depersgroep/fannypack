@@ -1268,6 +1268,10 @@ a:active {
   text-decoration: none;
 }
 
+.button:visited {
+  color: #404040;
+}
+
 .button:focus,
 .button:hover {
   background-color: #a6a6a6;
@@ -1297,6 +1301,10 @@ a:active {
   color: #fff;
 }
 
+.button--primary:visited {
+  color: #fff;
+}
+
 .button--primary:focus,
 .button--primary:hover {
   background-color: #2f748f;
@@ -1307,6 +1315,12 @@ a:active {
 .button.has-success,
 .button.js-has-success {
   background-color: #2ecc40;
+  color: #fff;
+}
+
+.button--success:visited,
+.button.has-success:visited,
+.button.js-has-success:visited {
   color: #fff;
 }
 
@@ -1327,6 +1341,12 @@ a:active {
   color: #000;
 }
 
+.button--warning:visited,
+.button.has-warning:visited,
+.button.js-has-warning:visited {
+  color: #000;
+}
+
 .button--warning:focus,
 .button--warning:hover,
 .button.has-warning:focus,
@@ -1341,6 +1361,12 @@ a:active {
 .button.has-error,
 .button.js-has-error {
   background-color: #ff4136;
+  color: #fff;
+}
+
+.button--error:visited,
+.button.has-error:visited,
+.button.js-has-error:visited {
   color: #fff;
 }
 
