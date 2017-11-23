@@ -115,8 +115,8 @@
     "eslint": "^3.12.2",
     "eslint-config-persgroep": "1.0.0",
     "event-stream": "^3.3.4",
+    "file-exists": "^1.0.0",
     "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-bless": "^3.2.0",
     "gulp-cached": "^1.1.1",
@@ -126,12 +126,12 @@
     "gulp-imagemin": "^3.1.1",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "gulp-scss-lint": "^0.4.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.8",
-    "file-exists": "^1.0.0",
     "imagemin-pngquant": "^5.0.0"
   }
 }
