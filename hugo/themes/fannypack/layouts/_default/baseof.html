@@ -4,15 +4,13 @@
 {{ partial "head" . }}
 
 {{ if eq .Section "templates" }}
-{{ $.Scratch.Set "container" "main-container"}}
 {{ partial "header-templates" . }}
 {{ else }}
-{{ $.Scratch.Set "container" "fp-main-container"}}
 {{ partial "header" . }}
 {{ end }}
 
 <body>
-<main class="{{ $.Scratch.Get "container" }}" role="main">
+<main class="main-container" role="main">
 	{{ block "main" . }}
 	{{ partial "drawer-docs" . }}
 	<article class="fp-article">

@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Modules"
 +++
 
-# Icons
-
 We use [Material Icons](https://material.io/icons/) from Google. All available icons are listed there, click them to get the instructions.
 
 **Note** instead of `<i>` we use `<span>` to wrap the icons. That's semantically more correct.

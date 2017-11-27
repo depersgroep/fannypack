@@ -26,6 +26,7 @@
 
 
 <meta property="article:published_time" content="2017-10-09T10:08:25&#43;02:00"/>
+
 <meta property="article:modified_time" content="2017-10-09T10:08:25&#43;02:00"/>
 
 
@@ -42,7 +43,6 @@
 
 	<link rel="shortcut icon" type="image/png" href="https://fannypack.persgroep.net/img/favicon.png" >
 </head>
-
 
 
 
@@ -63,24 +63,27 @@
 
 
 <body>
-<main class="fp-main-container" role="main">
+<main class="main-container" role="main">
 	
-<div class="fp-drawer">
+<input type="checkbox" class="drawer__checkbox" id="drawer__checkbox" />
+<label for="drawer__checkbox" tabindex="0" class="drawer__menu" role="button" aria-label="Menu">
+	<span class="drawer__menu-line" role="none presentation"></span>
+	<span class="drawer__menu-line" role="none presentation"></span>
+	<span class="drawer__menu-line" role="none presentation"></span>
+</label>
+
+<div class="drawer">
 	
 	
 
-<nav class="nav nav--vertical nav--sticky fp-nav" role="navigation">
+<nav class="nav nav--vertical" role="navigation">
 	<ul class="nav__list">
 	
 	
-		<li class="nav__item is-active">
+		<li class="nav__item">
+			<span class="nav__title">Layout</span>
 			
-
-
-<a class="nav__link" title="Layout" href="../../">Layout</a>
-
-			
-			<ul class="nav__list">
+			<ul class="nav__list nav__list--nested">
 				
 				
 				<li class="nav__item is-active">
@@ -91,28 +94,15 @@
 
 				</li>
 				
-				
-				<li class="nav__item">
-					
-
-
-<a class="nav__link" title="Typography" href="../../layout/typography/">Typography</a>
-
-				</li>
-				
 			</ul>
 			
 		</li>
 	
 	
 		<li class="nav__item">
+			<span class="nav__title">Modules</span>
 			
-
-
-<a class="nav__link" title="Modules" href="../../modules/">Modules</a>
-
-			
-			<ul class="nav__list">
+			<ul class="nav__list nav__list--nested">
 				
 				
 				<li class="nav__item">
@@ -228,13 +218,37 @@
 	
 	
 		<li class="nav__item">
+			<span class="nav__title">Style</span>
 			
+			<ul class="nav__list nav__list--nested">
+				
+				
+				<li class="nav__item">
+					
 
 
-<a class="nav__link" title="Templates" href="../../">Templates</a>
+<a class="nav__link" title="Color" href="../../style/color/">Color</a>
 
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Typography" href="../../style/typography/">Typography</a>
+
+				</li>
+				
+			</ul>
 			
-			<ul class="nav__list">
+		</li>
+	
+	
+		<li class="nav__item">
+			<span class="nav__title">Templates</span>
+			
+			<ul class="nav__list nav__list--nested">
 				
 				
 				<li class="nav__item">
@@ -283,10 +297,12 @@
 </div>
 
 
-<article class="fp-article">
-	
-
-<h1 id="grid">Grid</h1>
+<div class="main-content">
+	<header class="page-header">
+		<h1>Grid</h1>
+	</header>
+	<div class="main-content__inner">
+		
 
 <p>We have a standard <strong>12 column grid</strong> for you available. You can do <strong>any combination of columns</strong> as long as the total of each (virtual) row is 12.</p>
 
@@ -354,40 +370,50 @@
         <div class="col-1">.col-1</div>
     </div>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-4</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-4</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-4</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-6&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-6</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-6&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-6</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-7&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-7</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-4</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-6<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-6<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-7&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-7<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-1&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-1<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
 </div>
 <h2 id="containers">Containers</h2>
 
 <p>When using grid for page layout, your grid will usually be nested inside a <code>.container</code> but you can also use grids in other modules without the <code>.container</code>.
 It will calculate the widths based on the available width of its wrapper.</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;container&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1770">&lt;!-- or --&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;some-random-module&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="c">&lt;!-- or --&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;some-random-module&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
 </div>
 <h2 id="grid-vs-float-based-columns">Grid vs. float-based columns</h2>
 
@@ -396,51 +422,66 @@ It will calculate the widths based on the available width of its wrapper.</p>
 <h3 id="old-school-example-code">Old school example code</h3>
 
 <p>Don&rsquo;t use this example</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;container&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;row&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-6&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;row&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		...
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		...
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
 </div>
 <p>With <strong>CSS Grid Layout</strong> there&rsquo;s no need to clear the floats and also no need to think one-dimensional with <strong>rows</strong></p>
 
 <h3 id="modern-example">Modern example</h3>
 
 <p>Use this instead</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
 </div>
 <p>This is done with pure CSS magic</p>
-<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="s1388">@</span><span class="s3e8">supports</span><span class="s1f40"> </span><span class="sfa0">(</span><span class="s7e2">display</span><span class="sfa0">:</span><span class="s1f40"> </span><span class="s7e2">grid</span><span class="sfa0">)</span><span class="s1f40"> </span><span class="s1388">{</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">.</span><span class="s7d4">grid</span><span class="s1f40"> </span><span class="s1388">{</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s3e8">display</span><span class="s1f40"></span><span class="s1388">:</span><span class="s1f40"> </span><span class="s3e8">grid</span><span class="s1388">;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s3e8">grid-gap</span><span class="s1f40"></span><span class="s1388">:</span><span class="s1f40"> </span><span class="sc80">20</span><span class="s3e8">px</span><span class="s1388">;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s3e8">grid-template-columns</span><span class="s1f40"></span><span class="s1388">:</span><span class="s1f40"> </span><span class="s7d9">repeat</span><span class="s1388">(</span><span class="sc80">12</span><span class="s1388">,</span><span class="s1f40"> </span><span class="s7d9">minmax</span><span class="s1388">(</span><span class="sc80">0</span><span class="s1388">,</span><span class="s1f40"> </span><span class="sc80">1</span><span class="s7d0">fr</span><span class="s1388">));</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">}</span><span class="s1f40">
-</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="sfa0">[</span><span class="s7e2">class</span><span class="sfa0">^=</span><span class="sc1c">&#34;col-&#34;</span><span class="sfa0">]</span><span class="s1f40"> </span><span class="s1388">{</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s7d0">grid-colum-start</span><span class="s1f40"></span><span class="s1388">:</span><span class="s1f40"> </span><span class="s3e8">auto</span><span class="s1388">;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">}</span><span class="s1f40">
-</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1770">/* col dimensions */</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">.</span><span class="s7d4">col-2</span><span class="s1f40"> </span><span class="s1388">{</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s3e8">grid-column-end</span><span class="s1f40"></span><span class="s1388">:</span><span class="s1f40"> </span><span class="s7d0">span</span><span class="s1f40"> </span><span class="sc80">2</span><span class="s1388">;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">}</span><span class="s1f40">
-</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">.</span><span class="s7d4">col-3</span><span class="s1f40"> </span><span class="s1388">{</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s3e8">grid-column-end</span><span class="s1f40"></span><span class="s1388">:</span><span class="s1f40"> </span><span class="s7d0">span</span><span class="s1f40"> </span><span class="sc80">3</span><span class="s1388">;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">}</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="sfa0">...</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">}</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span><span class="lnt">16</span><span class="lnt">17</span><span class="lnt">18</span><span class="lnt">19</span><span class="lnt">20</span><span class="lnt">21</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">@</span><span class="k">supports</span> <span class="o">(</span><span class="nt">display</span><span class="o">:</span> <span class="nt">grid</span><span class="o">)</span> <span class="p">{</span>
+	<span class="p">.</span><span class="nc">grid</span> <span class="p">{</span>
+		<span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
+		<span class="k">grid-gap</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+		<span class="k">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="n">fr</span><span class="p">));</span>
+	<span class="p">}</span>
+
+	<span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;col-&#34;</span><span class="o">]</span> <span class="p">{</span>
+		<span class="n">grid-colum-start</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="c">/* col dimensions */</span>
+	<span class="p">.</span><span class="nc">col-2</span> <span class="p">{</span>
+		<span class="k">grid-column-end</span><span class="p">:</span> <span class="n">span</span> <span class="mi">2</span><span class="p">;</span>
+	<span class="p">}</span>
+
+	<span class="p">.</span><span class="nc">col-3</span> <span class="p">{</span>
+		<span class="k">grid-column-end</span><span class="p">:</span> <span class="n">span</span> <span class="mi">3</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="o">...</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
 </div>
 <h3 id="fallbacks-for-older-browsers">Fallbacks for older browsers</h3>
 
@@ -498,25 +539,30 @@ It will calculate the widths based on the available width of its wrapper.</p>
         <div class="col-2">.col-2</div>
     </div>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-1</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-1&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">higher col doesn&#39;t break layout</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1770">&lt;!-- repeat until you got 12 cols --&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1770">&lt;!-- float clearer fallback because this is col 13 (1 + 1 + ...) --&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-8 col--clear&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-8.col--clear</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-4</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1770">&lt;!-- another float clearer fallback because this is col 13 (8 + 4 = 12) --&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3 col--clear&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-3.col--clear</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-3</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">another higher col that doesn&#39;t break layout</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-3</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1770">&lt;!-- another float clearer fallback because this is col 13 (3 + 3 + 3 + 3 = 12) --&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-5 col--clear&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-5.col--clear</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-5&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-5</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span><span class="lnt">16</span><span class="lnt">17</span><span class="lnt">18</span><span class="lnt">19</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-1&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-1<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-1&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-1<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-1&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-1<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-1&#34;</span><span class="p"></span><span class="p">&gt;</span>higher col doesn&#39;t break layout<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="c">&lt;!-- repeat until you got 12 cols --&gt;</span>
+	<span class="c">&lt;!-- float clearer fallback because this is col 13 (1 + 1 + ...) --&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-8 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-8.col--clear<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="c">&lt;!-- another float clearer fallback because this is col 13 (8 + 4 = 12) --&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3.col--clear<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>another higher col that doesn&#39;t break layout<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="c">&lt;!-- another float clearer fallback because this is col 13 (3 + 3 + 3 + 3 = 12) --&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-5 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-5.col--clear<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-5&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-5<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
 </div>
 <h2 id="grids-and-breakpoints">Grids and breakpoints</h2>
 
@@ -555,16 +601,36 @@ It will calculate the widths based on the available width of its wrapper.</p>
         <div class="col-6">.col-6</div>
     </div>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid grid--small&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	...
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid grid--medium&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	...
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid grid--small&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	...
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid grid--medium&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	...
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
-<h2 id="nested-grids">Nested grids</h2>
+</div>
+<h2 id="offsetting-columns">Offsetting columns</h2>
 
-<p>Nested grid are supported. Go nuts!</p>
+<div class="fp-example fp-example--grid">
+    <div class="grid">
+        <div class="col-6 col--offset-3">.col-6.col--offset-3</div>
+        <div class="col-3">.col-3</div>
+    </div>
+</div>
+```html
+<div class="grid">
+	<div class="col-6 col--offset-3">.col-6.col--offset-3</div>
+	<div class="col-3">.col-3</div>
+</div>
+```
+
+## Nested grids
+
+Nested grid are supported. Go nuts!
 
 <div class="fp-example fp-example--grid">
     <div class="grid">
@@ -579,10 +645,23 @@ It will calculate the widths based on the available width of its wrapper.</p>
         <div class="col-6">.col-6</div>
     </div>
 </div>
+```html
+<div class="grid">
+	<div class="col-6">
+		.col-6 with a nested grid
+		<div class="grid">
+			<div class="col-4">.col-4</div>
+			<div class="col-4">.col-4</div>
+			<div class="col-4">.col-4</div>
+		</div>
+	</div>
+	<div class="col-6">.col-6</div>
+</div>
+```
 
-<h2 id="conclusion">Conclusion:</h2>
+## Conclusion:
 
-<p>This is production ready code. Please use this in your project.</p>
+This is production ready code. Please use this in your project.
 
 <div class="fp-example fp-example--grid">
     <div class="grid">
@@ -603,23 +682,28 @@ It will calculate the widths based on the available width of its wrapper.</p>
         <div class="col-2">.col-2</div>
     </div>
 </div>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;grid&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">higher col doesn&#39;t break layout</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-8 col--clear&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-8.col--clear</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-4&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-4</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3 col--clear&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-3.col--clear</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-3</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">another higher col that doesnt&#39;break layout</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-3&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-3</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-5 col--clear&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-5.col--clear</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-5&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-5</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;col-2&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">.col-2</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span><span class="lnt">16</span><span class="lnt">17</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>higher col doesn&#39;t break layout<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-8 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-8.col--clear<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3.col--clear<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>another higher col that doesnt&#39;break layout<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-5 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-5.col--clear<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-5&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-5<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
 </div>
 <table class="table table--horizontal-borders">
     <thead>
@@ -638,7 +722,8 @@ It will calculate the widths based on the available width of its wrapper.</p>
     </tbody>
 </table>
 
-</article>
+	</div>
+</div>
 
 </main>
 

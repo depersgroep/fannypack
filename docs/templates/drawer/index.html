@@ -26,6 +26,7 @@
 
 
 <meta property="article:published_time" content="2017-10-23T09:19:17&#43;02:00"/>
+
 <meta property="article:modified_time" content="2017-10-23T09:19:17&#43;02:00"/>
 
 
@@ -42,7 +43,6 @@
 
 	<link rel="shortcut icon" type="image/png" href="https://fannypack.persgroep.net/img/favicon.png" >
 </head>
-
 
 
 
@@ -68,10 +68,11 @@
 	
 <input type="checkbox" class="drawer__checkbox" id="drawer__checkbox" />
 <label for="drawer__checkbox" tabindex="0" class="drawer__menu" role="button" aria-label="Menu">
-	<span class="drawer__menu-line" role="none"></span>
-	<span class="drawer__menu-line" role="none"></span>
-	<span class="drawer__menu-line" role="none"></span>
+	<span class="drawer__menu-line" role="none presentation"></span>
+	<span class="drawer__menu-line" role="none presentation"></span>
+	<span class="drawer__menu-line" role="none presentation"></span>
 </label>
+
 <div class="drawer">
 	<div class="drawer__section">
 		<div class="drawer__section-title" id="drawer-admin">Admin</div>
@@ -159,30 +160,35 @@
         </tr>
     </tbody>
 </table>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="s1770">&lt;!DOCTYPE html&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">html</span><span class="s1f40"> </span><span class="s7d1">lang</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;en&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;no-js layout--drawer&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">head</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">head</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">body</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">header</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;site-header&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">header</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">main</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;main-container&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;main&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">input</span><span class="s1f40"> </span><span class="s7d1">type</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;checkbox&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__checkbox&#34;</span><span class="s1f40"> </span><span class="s7d1">id</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__checkbox&#34;</span><span class="s1f40"> </span><span class="s1388">/</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"> </span><span class="s7d1">for</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__checkbox&#34;</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__menu&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;button&#34;</span><span class="s1f40"> </span><span class="s7d1">aria-label</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;Menu&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__menu-line&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__menu-line&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__menu-line&#34;</span><span class="s1f40"> </span><span class="s7d1">role</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;none&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">span</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">label</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__section&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">				</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;drawer__section-title&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">...</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">				</span><span class="s1770">&lt;!-- navigational elements here --&gt;</span><span class="s1f40">
-</span><span class="s1f40">			</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"> </span><span class="s7d1">class</span><span class="sfa0">=</span><span class="s1f40"></span><span class="sc1c">&#34;main-content&#34;</span><span class="s1388"></span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">			...
-</span><span class="s1f40">		</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">div</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40">	</span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">main</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">body</span><span class="s1f40"></span><span class="s1388">&gt;</span><span class="s1f40">
-</span><span class="s1f40"></span><span class="s1388">&lt;</span><span class="s1f40"></span><span class="s1388">/</span><span class="s1f40"></span><span class="s7e2">html</span><span class="s1f40"></span><span class="s1388">&gt;</span></code></pre>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span><span class="lnt">16</span><span class="lnt">17</span><span class="lnt">18</span><span class="lnt">19</span><span class="lnt">20</span><span class="lnt">21</span><span class="lnt">22</span><span class="lnt">23</span><span class="lnt">24</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;no-js layout--drawer&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;site-header&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">header</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">main</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;main-container&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;main&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer__checkbox&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;drawer__checkbox&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;drawer__checkbox&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer__menu&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Menu&#34;</span><span class="p"></span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer__menu-line&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer__menu-line&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer__menu-line&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer&#34;</span><span class="p"></span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer__section&#34;</span><span class="p"></span><span class="p">&gt;</span>
+				<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;drawer__section-title&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+				<span class="c">&lt;!-- navigational elements here --&gt;</span>
+			<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;main-content&#34;</span><span class="p"></span><span class="p">&gt;</span>
+			...
+		<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">main</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
 </div>
 <h2 id="long-filler-text">Long filler text</h2>
 

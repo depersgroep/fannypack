@@ -6,7 +6,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
 +++
-# Alerts
 
 Be brief in your description text, one paragraph should be more than enough to get your feedback across to the user.
 

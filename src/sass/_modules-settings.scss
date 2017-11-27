@@ -153,8 +153,8 @@ $label-warning-bg: $warning-color !default;
 //==============================================================================
 // NAVIGATION
 //==============================================================================
-$nav-link-color: $aluminum !default;
-$nav-link-hover-color: $black !default;
+$nav-link-color: $dark !default;
+$nav-link-hover-color: $link-color !default;
 $nav-link-active-color: $link-color !default;
 
 // on dark backgrounds
@@ -166,7 +166,7 @@ $nav-light-link-active-color: $link-color !default;
 // DRAWER
 //==============================================================================
 $drawer-width: 262px !default;
-$drawer-bg: $almost-black !default;
+$drawer-bg: $white !default;
 $drawer-line-color : $black !default;
 $drawer-light-line-color : $white !default;
 // scss-lint:enable SpaceAfterVariableName

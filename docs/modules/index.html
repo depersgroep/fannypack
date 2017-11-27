@@ -28,6 +28,7 @@
 
 
 <meta property="article:published_time" content="2017-10-02T14:42:50&#43;02:00"/>
+
 <meta property="article:modified_time" content="2017-10-02T14:42:50&#43;02:00"/>
 
 
@@ -44,7 +45,6 @@
 
 	<link rel="shortcut icon" type="image/png" href="https://fannypack.persgroep.net/img/favicon.png" >
 </head>
-
 
 
 
@@ -65,24 +65,27 @@
 
 
 <body>
-<main class="fp-main-container" role="main">
+<main class="main-container" role="main">
 	
-<div class="fp-drawer">
+<input type="checkbox" class="drawer__checkbox" id="drawer__checkbox" />
+<label for="drawer__checkbox" tabindex="0" class="drawer__menu" role="button" aria-label="Menu">
+	<span class="drawer__menu-line" role="none presentation"></span>
+	<span class="drawer__menu-line" role="none presentation"></span>
+	<span class="drawer__menu-line" role="none presentation"></span>
+</label>
+
+<div class="drawer">
 	
 	
 
-<nav class="nav nav--vertical nav--sticky fp-nav" role="navigation">
+<nav class="nav nav--vertical" role="navigation">
 	<ul class="nav__list">
 	
 	
 		<li class="nav__item">
+			<span class="nav__title">Layout</span>
 			
-
-
-<a class="nav__link" title="Layout" href="../">Layout</a>
-
-			
-			<ul class="nav__list">
+			<ul class="nav__list nav__list--nested">
 				
 				
 				<li class="nav__item">
@@ -93,28 +96,15 @@
 
 				</li>
 				
-				
-				<li class="nav__item">
-					
-
-
-<a class="nav__link" title="Typography" href="../layout/typography/">Typography</a>
-
-				</li>
-				
 			</ul>
 			
 		</li>
 	
 	
-		<li class="nav__item is-active">
+		<li class="nav__item">
+			<span class="nav__title">Modules</span>
 			
-
-
-<a class="nav__link" title="Modules" href="../modules/" aria-current="page">Modules</a>
-
-			
-			<ul class="nav__list">
+			<ul class="nav__list nav__list--nested">
 				
 				
 				<li class="nav__item">
@@ -230,13 +220,37 @@
 	
 	
 		<li class="nav__item">
+			<span class="nav__title">Style</span>
 			
+			<ul class="nav__list nav__list--nested">
+				
+				
+				<li class="nav__item">
+					
 
 
-<a class="nav__link" title="Templates" href="../">Templates</a>
+<a class="nav__link" title="Color" href="../style/color/">Color</a>
 
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Typography" href="../style/typography/">Typography</a>
+
+				</li>
+				
+			</ul>
 			
-			<ul class="nav__list">
+		</li>
+	
+	
+		<li class="nav__item">
+			<span class="nav__title">Templates</span>
+			
+			<ul class="nav__list nav__list--nested">
 				
 				
 				<li class="nav__item">
@@ -285,14 +299,19 @@
 </div>
 
 
-<article class="fp-article">
-	
+<div class="main-content">
+	<header class="page-header">
+		<h1>Modules</h1>
+	</header>
+	<div class="main-content__inner">
+		
 
 <h1 id="modules">Modules</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, ipsam?</p>
 
-</article>
+	</div>
+</div>
 
 </main>
 

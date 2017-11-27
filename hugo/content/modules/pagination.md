@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = 'Modules'
 +++
 
-# Pagination
-
 If you have a lot of content, pagination can be a solution to divide it smaller portions.
 
 <div class="fp-example">

@@ -72,11 +72,11 @@ pre {
 
 code {
 	@include font-smoothing(default);
-	padding: .2em .4em;
+	padding: 0 $half-spacing-unit;
 	border-radius: $border-radius-base;
 	background-color: $silver;
-	color: $navy;
-	font-size: 90%;
+	color: $slate;
+	font-size: $font-size-medium;
 	white-space: nowrap;
 
 	pre & {

@@ -1,6 +1,6 @@
 {{ $currentPage:= . }}
 
-<nav class="nav fp-nav" role="navigation">
+<nav class="nav" role="navigation">
 	<ul class="nav__list">
 	{{ range .Site.Menus.main.ByWeight }}
 		{{ $.Scratch.Set "currentMenuEntry" . }}

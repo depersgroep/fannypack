@@ -5,157 +5,35 @@
 // Fluo, 80s retro style for Fannypack documentation
 ////////////////////////////////////////////////////////////////////////////////
 
-// scss-lint:disable SelectorDepth
-
 .theme--fp {
-	// scss-lint:disable DuplicateProperty, NestingDepth
-	background: $bg-gradient-dark-blue; // fallback
-	background: linear-gradient(135deg, $bg-gradient-dark-blue 0%, $bg-gradient-blueish-purple 50%, $bg-gradient-magenta 50%, $bg-gradient-orange 100%);
-	background-attachment: fixed;
-
-	body {
-		background-color: $transparent;
-
-		> .site-header {
-			border-bottom: 0;
-			background-color: $transparent;
-
-			.app-icon__name {
-				color: $hot-sauce-yellow;
-			}
-
-			.fp-nav {
-				font-size: $font-size-large;
-			}
-
-			.site-header__section {
-				&:nth-child(2) {
-					margin-left: ($double-spacing-unit * 3);
-				}
-			}
-		}
+	.main-content {
+		padding-top: 0;
 	}
 
-	.hero-unit {
-		max-width: 1200px;
-		margin-top: ($double-spacing-unit * 4);
+	.main-content__inner {
+		max-width: (764px + $drawer-width + ($double-spacing-unit * 2));
 		margin-right: auto;
-		margin-bottom: ($double-spacing-unit * 4);
 		margin-left: auto;
-		text-align: center;
-	}
 
-	.hero-unit__title {
-		margin-top: 0;
-		margin-bottom: 0;
-		color: rgba($hot-sauce-green, .33);
-		font-size: 10vw;
-		letter-spacing: .1em;
-		text-shadow: rgba($hot-sauce-red, .33) .05em .05em 0;
-	}
-
-	.hero-unit__body {
-		color: $hot-sauce-yellow;
-		font-size: $font-size-h2;
-		line-height: 1.2;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4 {
-		font-family: 'Arial Black', Arial, sans-serif;
-		text-transform: uppercase;
-	}
-
-	.fp-example {
-		h1,
-		h2,
-		h3,
-		h4 {
-			font-family: $sans-serif;
-			text-transform: none;
+		@include mq-min(764px + ($drawer-width * 2) + ($double-spacing-unit * 2)) {
+			max-width: none;
+			padding-right: 132px;
+			padding-left: 132px;
 		}
 	}
 
-	.fp-nav .nav--sticky {
-		@supports (position: sticky) {
-			top: ($site-header-height + $double-spacing-unit);
-		}
-	}
+	.page-header {
+		margin: 0 ($double-spacing-unit * -1) $double-spacing-unit;
+		padding: ($base-spacing-unit * 5) $double-spacing-unit;
+		background-color: $dark;
+		color: $white;
 
-	.fp-drawer .nav__list {
-		// @include font-smoothing(default);
-		font-family: 'Courier New', monospace;
-
-		// nested
-		.nav__list {
-			margin-top: $base-spacing-unit;
-			padding-left: ($base-spacing-unit * 1.5);
-			border-left: 2px solid $neon-pink;
-			font-weight: normal;
-		}
-	}
-
-	.fp-nav .nav__item {
-		display: block;
-
-		&.is-active > .nav__link {
-			color: $hot-sauce-yellow;
-		}
-	}
-
-	// scss-lint:disable SelectorDepth
-	.nav--vertical > .nav__list > .nav__item + .nav__item {
-		margin-top: $base-spacing-unit;
-		margin-left: 0;
-	}
-
-	.fp-nav .nav__link {
-		color: $neon-blue;
-
-		&:focus,
-		&:hover {
-			color: $hot-sauce-magenta;
-		}
-	}
-
-	.site-footer {
-		color: $fp-text-color;
-
-		svg {
-			fill: $hot-sauce-blue;
+		h1 {
+			max-width: 48rem;
+			margin-top: 0;
+			margin-right: auto;
+			margin-bottom: 0;
+			margin-left: auto;
 		}
 	}
 }
-
-.theme--fp-homepage {
-	body {
-		color: $fp-text-color;
-	}
-
-	.fp-main-container {
-		max-width: none;
-	}
-
-	.chroma {
-		background-color: $hot-sauce-yellow;
-		box-shadow: $hot-sauce-magenta -10px 10px 0;
-	}
-}
-
-.theme--fp-404 {
-	// scss-lint:disable ColorVariable, DuplicateProperty
-	background: #4a34b0;
-	background: linear-gradient(0deg, #4a34b0 0%, #281c5c 19%, #07060b 38%, #fb0e0e 48%, #fff 51%, #b20d0e 51%, #b20d0e 53%, #8e0d0e 53%, #8e0d0e 55%, #700b0e 55%, #58090d 57%, #43080d 57%, #06050c 63%, #211c78 100%);
-}
-
-.fp-main-container {
-	.layout--fixed-header & {
-		position: relative;
-		min-height: calc(100vh - #{$site-header-height});
-		z-index: 1;
-	}
-}
-
-// scss-lint:enable SelectorDepth

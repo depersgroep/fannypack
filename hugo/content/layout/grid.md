@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Layout"
 +++
 
-# Grid
-
 We have a standard **12 column grid** for you available. You can do **any combination of columns** as long as the total of each (virtual) row is 12.
 
 
@@ -304,9 +302,107 @@ The default grid is completely fluid and has no breakpoints. If you need differe
 </div>
 ```
 
+## Offsetting columns
+
+Offsetting columns in a CSS Grid is tricky. It works the other way around. Instead of defining how many cols there are between adjacent columns, the offset determines how many columns (starting from the outer left edge) should be skipped. So you'll have to do some math yourself, knowing we have a total of 12 columns.
+
+So if you give an offset of 8 with `.col--offset-8`, your column will start on the 9th grid item, no matter if there are any other columns preceding. See example below.
+
+
+<div class="fp-example fp-example--grid fp-example--grid-visible">
+	<div class="grid">
+		<div class="col-1 col--dashed">1</div>
+		<div class="col-1 col--dashed">2</div>
+		<div class="col-1 col--dashed">3</div>
+		<div class="col-6">.col-6.col--offset-3</div>
+		<div class="col-3">.col-3</div>
+		<div class="col-1 col--dashed col--clear">1</div>
+		<div class="col-1 col--dashed">2</div>
+		<div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
+		<div class="col-1 col--dashed">7</div>
+		<div class="col-1 col--dashed">8</div>
+		<div class="col-3 col--grid-offset-8">.col-3.col--offset-8</div>
+		<div class="col-1 col--dashed">12</div>
+	</div>
+</div>
+
+```html
+<div class="grid">
+	<div class="col-6 col--offset-3">.col-6.col--offset-3</div>
+	<div class="col-3">.col-3</div>
+	<div class="col-4 col--offset-2 col--clear">.col-4.col--offset-2</div>
+	<div class="col-3 col--offset-8">.col-3.col--offset-8</div>
+</div>
+```
+
+If your math doesn't work out and your offsets collide with grid items that are already occupied, the faulty one will wrap to a new row.
+
+E.g. the 6th column is alreay occupied by the first box, and your second box has an offset of 5 ( = starting on the 6th column). He can't construct that grid row, so he starts a new one. See example below
+
+<div class="fp-example fp-example--grid fp-example--grid-visible">
+	<div class="grid">
+		<div class="col-1 col--dashed">1</div>
+		<div class="col-1 col--dashed">2</div>
+		<div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
+		<div class="col-1 col--dashed">7</div>
+		<div class="col-1 col--dashed">8</div>
+		<div class="col-1 col--dashed">9</div>
+		<div class="col-1 col--dashed">10</div>
+		<div class="col-1 col--dashed">11</div>
+		<div class="col-1 col--dashed">12</div>
+		<div class="col-1 col--dashed col--clear">1</div>
+		<div class="col-1 col--dashed">2</div>
+		<div class="col-1 col--dashed">3</div>
+		<div class="col-1 col--dashed">4</div>
+		<div class="col-1 col--dashed">5</div>
+		<div class="col-3 col--grid-offset-5">.col-3.col--offset-5</div>
+		<div class="col-1 col--dashed">9</div>
+		<div class="col-1 col--dashed">10</div>
+		<div class="col-1 col--dashed">11</div>
+		<div class="col-1 col--dashed">12</div>
+	</div>
+</div>
+
+```html
+<div class="grid">
+	<div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
+	<div class="col-3 col--grid-offset-5">.col-3.col--offset-5</div>
+</div>
+```
+
+### Offsets and float-based grids
+
+If you have to support browsers that don't understand CSS Grid Layout, you have to add an extra class. The offset calculation with this class is done the old-fashioned way. If you want an offset of 2 columns, you add `.col--float-offset-2`. No special math needed here.
+
+<div class="fp-example fp-example--grid fp-example--grid-visible">
+	<div class="grid">
+		<div class="col-1 col--dashed">1</div>
+		<div class="col-1 col--dashed">2</div>
+		<div class="col-1 col--dashed">3</div>
+		<div class="col-6">.col-6.col--offset-3</div>
+		<div class="col-3">.col-3</div>
+		<div class="col-1 col--dashed col--clear">1</div>
+		<div class="col-1 col--dashed">2</div>
+		<div class="col-4">.col-4.col--grid-offset-2.col--float-offset-2</div>
+		<div class="col-1 col--dashed">7</div>
+		<div class="col-1 col--dashed">8</div>
+		<div class="col-3">.col-3.col--grid-offset-8.col--float-offset-2</div>
+		<div class="col-1 col--dashed">12</div>
+	</div>
+</div>
+
+```html
+<div class="grid">
+	<div class="col-6 col--grid-offset-3 col--float-offset-3">...</div>
+	<div class="col-3">...</div>
+	<div class="col-4 col--grid-offset-2 col--float-offset-2 col--clear">...</div>
+	<div class="col-3 col--grid-offset-8 col--float-offset-2">...</div>
+</div>
+```
+
 ## Nested grids
 
-Nested grid are supported. Go nuts!
+Nested grids are supported. Go nuts!
 
 <div class="fp-example fp-example--grid">
 	<div class="grid">
@@ -321,6 +417,20 @@ Nested grid are supported. Go nuts!
 		<div class="col-6">.col-6</div>
 	</div>
 </div>
+
+```html
+<div class="grid">
+	<div class="col-6">
+		.col-6 with a nested grid
+		<div class="grid">
+			<div class="col-4">.col-4</div>
+			<div class="col-4">.col-4</div>
+			<div class="col-4">.col-4</div>
+		</div>
+	</div>
+	<div class="col-6">.col-6</div>
+</div>
+```
 
 ## Conclusion:
 
@@ -343,6 +453,8 @@ This is production ready code. Please use this in your project.
 		<div class="col-5 col--clear">.col-5.col--clear</div>
 		<div class="col-5">.col-5</div>
 		<div class="col-2">.col-2</div>
+		<div class="col-4 col--grid-offset-2 col--float-offset-2 col--clear">.col-4.col--grid-offset-2.col--float-offset-2.col--clear</div>
+		<div class="col-3 col--grid-offset-8 col--float-offset-2">.col-3.col--grid-offset-8.col--float-offset-2</div>
 	</div>
 </div>
 
@@ -363,6 +475,8 @@ This is production ready code. Please use this in your project.
 	<div class="col-5 col--clear">.col-5.col--clear</div>
 	<div class="col-5">.col-5</div>
 	<div class="col-2">.col-2</div>
+	<div class="col-4 col--grid-offset-2 col--float-offset-2 col--clear">.col-4.col--grid-offset-2.col--float-offset-2.col--clear</div>
+	<div class="col-3 col--grid-offset-8 col--float-offset-2">.col-3.col--grid-offset-8.col--float-offset-2</div>
 </div>
 ```
 

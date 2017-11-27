@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Modules"
 +++
 
-# Tables
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga obcaecati alias molestiae voluptatem vitae architecto totam tempore ab necessitatibus ipsum?
 
 <div class="fp-example">

@@ -6,22 +6,10 @@
     <description>Recent content in Layouts on Fannypack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Oct 2017 13:02:58 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 09 Oct 2017 10:08:25 +0200</lastBuildDate>
     
 	<atom:link href="https://fannypack.persgroep.net/layout/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Typography</title>
-      <link>https://fannypack.persgroep.net/layout/typography/</link>
-      <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
-      
-      <guid>https://fannypack.persgroep.net/layout/typography/</guid>
-      <description>Typography  Type is a beautiful group of letters, not a group of beautiful letters.
- - Matthew Carter
-Font The base font-family for Fannypack is Source Sans Pro in 3 styles: regular, semi-bold and bold.
-Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading Unordered list  list item list item list item  nested list item   list item  Ordered list  list item list item list item  nested list item   list item  Mixed nested lists  list item list item list item  nested list item   list item   list item list item list item  nested list item   list item  Paragraph text with lorem ipsum dolor sit amet, m2 consectetur adipisicing elit8.</description>
-    </item>
     
     <item>
       <title>Grid</title>
@@ -29,8 +17,8 @@ Kitchen sink H1 heading H2 heading H3 heading H4 heading H5 heading H6 heading U
       <pubDate>Mon, 09 Oct 2017 10:08:25 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/layout/grid/</guid>
-      <description>Grid We have a standard 12 column grid for you available. You can do any combination of columns as long as the total of each (virtual) row is 12.
-.col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1  .col-2 .col-2 .col-2 .col-2 .col-2 .col-2  .col-3 .col-3 .col-3 .col-3  .col-4 .col-4 .col-4  .col-5 .col-5 .col-2  .col-6 .col-6  .col-7 .col-5  .col-8 .</description>
+      <description>We have a standard 12 column grid for you available. You can do any combination of columns as long as the total of each (virtual) row is 12.
+.col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1 .col-1  .col-2 .col-2 .col-2 .col-2 .col-2 .col-2  .col-3 .col-3 .col-3 .col-3  .col-4 .col-4 .col-4  .col-5 .col-5 .col-2  .col-6 .col-6  .col-7 .col-5  .col-8 .col-4  .</description>
     </item>
     
     <item>

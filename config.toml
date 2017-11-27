@@ -18,8 +18,10 @@ googleAnalytics = ""
 
 # disableLiveReload = true
 
-pygmentsUseClasses=true
+pygmentsUseClasses = true
 pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+pygmentsOptions = "linenos=table"
 
 [params]
 	favicon = ""

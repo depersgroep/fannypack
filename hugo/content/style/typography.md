@@ -4,30 +4,30 @@ date = 2017-10-09T13:02:58+02:00
 description = "Typographic information and kitchen sink for Fannypack"
 modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
-parent = "Layout"
+parent = "Style"
 +++
-
-# Typography
-
-> Type is a beautiful group of letters, not a group of beautiful letters.
-
-*- Matthew Carter*
 
 ## Font
 
-The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) in 3 styles: regular, <span style="font-weight: 600;">semi-bold</span> and <strong>bold</strong>.
+The font used is **Source Sans Pro**, a sans-serif typeface intended to work well in user interfaces. It's available for free [from the Google Fonts library](https://fonts.google.com/specimen/Source+Sans+Pro).
 
 ## Kitchen sink
 
 <div class="fp-example fp-example--kitchen-sink">
-	<h1>H1 heading</h1>
-	<h2>H2 heading</h2>
-	<h3>H3 heading</h3>
-	<h4>H4 heading</h4>
-	<h5>H5 heading</h5>
-	<h6>H6 heading</h6>
+	<p><small class="text--muted">h1</small></p>
+	<h1>h1 heading</h1>
+	<p><small class="text--muted">h2</small></p>
+	<h2>h2 heading</h2>
+	<p><small class="text--muted">h3</small></p>
+	<h3>h3 heading</h3>
+	<p><small class="text--muted">h4</small></p>
+	<h4>h4 heading</h4>
+	<p><small class="text--muted">h5</small></p>
+	<h5>h5 heading</h5>
+	<p><small class="text--muted">h6</small></p>
+	<h6>h6 heading</h6>
 
-	<h3>Unordered list</h3>
+	<p><small class="text--muted">Unordered list</small></p>
 	<ul>
 		<li>list item</li>
 		<li>list item</li>
@@ -39,7 +39,7 @@ The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com
 		<li>list item</li>
 	</ul>
 
-	<h3>Ordered list</h3>
+	<p><small class="text--muted">Ordered list</small></p>
 	<ol>
 		<li>list item</li>
 		<li>list item</li>
@@ -51,7 +51,7 @@ The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com
 		<li>list item</li>
 	</ol>
 
-	<h3>Mixed nested lists</h3>
+	<p><small class="text--muted">Nested lists</small></p>
 	<ul>
 		<li>list item</li>
 		<li>list item</li>
@@ -73,10 +73,16 @@ The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com
 		</li>
 		<li>list item</li>
 	</ol>
+
+	<p><small class="text--muted">Large body text</small></p>
+
+	<p class="text--large">Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
+
+	<p><small class="text--muted">Default body text</small></p>
 
 	<p>Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
 
-	<h4>Blockquote</h4>
+	<p><small class="text--muted">Blockquote</small></p>
 
 	<blockquote cite="https://www.goodreads.com/quotes/tag/typography">
 		<p>Type is a beautiful group of letters, not a group of beautiful letters.</p>
@@ -93,7 +99,7 @@ The base font-family for Fannypack is [Source Sans Pro](https://fonts.google.com
 
 <code>&lt;code&gt;</code>
 
-	<h3>Horizontal rule</h3>
+	<p><small class="text--muted">Horizontal rule</small></p>
 	<hr/>
 </div>
 

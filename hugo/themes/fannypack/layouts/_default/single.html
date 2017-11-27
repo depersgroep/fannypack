@@ -1,7 +1,12 @@
 {{ define "main" }}
 {{ partial "drawer-docs" . }}
-<article class="fp-article">
-	{{ .Content }}
-</article>
+<div class="main-content">
+	<header class="page-header">
+		<h1>{{ .Title }}</h1>
+	</header>
+	<div class="main-content__inner">
+		{{ .Content }}
+	</div>
+</div>
 {{ end }}
 

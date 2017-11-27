@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Modules"
 +++
 
-# Breadcrumb
-
 <div class="fp-example">
 	<nav class="breadcrumb" role="navigation" aria-label="Breadcrumb">
 		<ol class="breadcrumb__list">

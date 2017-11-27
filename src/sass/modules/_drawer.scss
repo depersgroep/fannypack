@@ -88,9 +88,9 @@
 	bottom: 0;
 	left: ($drawer-width * -1);
 	width: $drawer-width;
-	height: 100%;
-	padding: $double-spacing-unit;
+	padding: $double-spacing-unit ($base-spacing-unit * 6);
 	transition: left .3s ease-in-out;
+	border-right: 1px solid $border-color;
 	background-color: $drawer-bg;
 	color: $silver;
 	overflow: auto;

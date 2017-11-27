@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Modules"
 +++
 
-# Labels
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum corrupti tenetur neque ipsa delectus sapiente consequuntur reiciendis deserunt aspernatur.
 
 <div class="fp-example">

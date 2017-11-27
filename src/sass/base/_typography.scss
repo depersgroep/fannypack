@@ -20,3 +20,8 @@
 .text--muted {
 	color: $muted-color;
 }
+
+.text--large {
+	font-size: $font-size-large;
+	line-height: $line-height-large;
+}

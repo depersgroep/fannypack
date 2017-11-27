@@ -1,4 +1,5 @@
-<div class="fp-drawer">
+{{ partial "hamburger" }}
+<div class="drawer">
 	{{ if gt (len .Site.Menus.docs) 0 }}
 	{{ partial "nav-docs" . }}
 	{{ end }}

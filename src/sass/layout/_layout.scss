@@ -36,7 +36,7 @@
 		position: relative; // postioning context for the drawer
 		min-height: calc(100vh - #{$site-header-height});
 		// padding-left: $drawer-width; // for the drawer
-		background-color: $container-bg;
+		// background-color: $container-bg;
 
 	// 	@supports (display: grid) {
 	// 		// scss-lint:disable PropertySpelling

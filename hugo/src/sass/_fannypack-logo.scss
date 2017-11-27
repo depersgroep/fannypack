@@ -20,17 +20,17 @@
 	}
 
 	&--pack {
-		fill: $hot-sauce-magenta;
+		fill: rgba($black, .3);
 	}
 }
 
 .fp-logo__char {
 	.fp-logo__group--fanny & {
-		fill: $hot-sauce-blue;
+		fill: $white;
 	}
 
 	.fp-logo__group--pack & {
-		fill: $hot-sauce-magenta;
+		fill: rgba($black, .3);
 	}
 
 	&.f {

@@ -6,7 +6,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
 +++
-# Toolbar
 
 Toolbars use flexbox the way it's meant to be, for UI layout and not for Grid layout.
 

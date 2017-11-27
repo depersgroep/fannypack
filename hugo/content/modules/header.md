@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Modules"
 +++
 
-# Header
-
 Your site's main header. A place for your app logo and maybe some navigation.
 
 Layout is done with `flexbox`. Flexbox is made for handling vertical alignment and dividing elements across the available space without the need of floats.

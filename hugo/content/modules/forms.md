@@ -6,7 +6,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 [menu.docs]
 parent = "Modules"
 +++
-# Forms
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quam!
 

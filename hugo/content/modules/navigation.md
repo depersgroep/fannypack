@@ -7,8 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Modules"
 +++
 
-# Navigation
-
 Standard horizontal navigation. Mostly used in the heading.
 
 <div class="fp-example">

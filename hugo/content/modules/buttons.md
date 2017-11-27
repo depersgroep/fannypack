@@ -7,9 +7,6 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
 parent = "Modules"
 +++
 
-# Buttons
-
-
 <div class="fp-example">
 	<button class="button button--default" type="button">Default</button>
 	<button class="button button--primary" type="submit">Primary</button>
