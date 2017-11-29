@@ -633,6 +633,10 @@ a:active {
   line-height: 1.3;
 }
 
+.text--centered {
+  text-align: center;
+}
+
 .grid {
   margin-right: -20px;
   margin-left: -20px;
@@ -880,6 +884,50 @@ a:active {
   }
 }
 
+.col--float-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.col--float-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.col--float-offset-3 {
+  margin-left: 25%;
+}
+
+.col--float-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.col--float-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.col--float-offset-6 {
+  margin-left: 50%;
+}
+
+.col--float-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.col--float-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.col--float-offset-9 {
+  margin-left: 75%;
+}
+
+.col--float-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.col--float-offset-11 {
+  margin-left: 91.66667%;
+}
+
 .col--clear {
   clear: left;
 }
@@ -974,57 +1022,57 @@ a:active {
     grid-column-end: span 12;
   }
 
-  .col--offset-1 {
+  .col--grid-offset-1 {
     -ms-grid-column: 2;
     grid-column-start: 2;
   }
 
-  .col--offset-2 {
+  .col--grid-offset-2 {
     -ms-grid-column: 3;
     grid-column-start: 3;
   }
 
-  .col--offset-3 {
+  .col--grid-offset-3 {
     -ms-grid-column: 4;
     grid-column-start: 4;
   }
 
-  .col--offset-4 {
+  .col--grid-offset-4 {
     -ms-grid-column: 5;
     grid-column-start: 5;
   }
 
-  .col--offset-5 {
+  .col--grid-offset-5 {
     -ms-grid-column: 6;
     grid-column-start: 6;
   }
 
-  .col--offset-6 {
+  .col--grid-offset-6 {
     -ms-grid-column: 7;
     grid-column-start: 7;
   }
 
-  .col--offset-7 {
+  .col--grid-offset-7 {
     -ms-grid-column: 8;
     grid-column-start: 8;
   }
 
-  .col--offset-8 {
+  .col--grid-offset-8 {
     -ms-grid-column: 9;
     grid-column-start: 9;
   }
 
-  .col--offset-9 {
+  .col--grid-offset-9 {
     -ms-grid-column: 10;
     grid-column-start: 10;
   }
 
-  .col--offset-10 {
+  .col--grid-offset-10 {
     -ms-grid-column: 11;
     grid-column-start: 11;
   }
 
-  .col--offset-11 {
+  .col--grid-offset-11 {
     -ms-grid-column: 12;
     grid-column-start: 12;
   }
@@ -1047,7 +1095,6 @@ a:active {
   margin-right: auto;
   margin-left: auto;
   padding: 20px;
-  background-color: #fff;
 }
 
 .layout--drawer body {
@@ -1524,7 +1571,7 @@ a:active {
 .drawer {
   position: fixed;
   top: 70px;
-  bottom: 0;
+  bottom: 70px;
   left: -262px;
   width: 262px;
   padding: 20px 60px;
@@ -1565,25 +1612,12 @@ a:active {
 }
 
 .site-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
+  height: 70px;
   padding: 20px;
-}
-
-.site-footer__section + .site-footer__section {
-  margin-left: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 0.875em;
+  text-align: center;
 }
 
 .form {
@@ -2234,6 +2268,10 @@ input[type="color"].form__field {
   background-color: #ffffcc;
   display: block;
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* LineNumbersTable */
@@ -2637,6 +2675,10 @@ input[type="color"].form__field {
 
 .chroma {
   line-height: 1;
+}
+
+.chroma .lntd:first-of-type {
+  width: 40px;
 }
 
 .chroma code {

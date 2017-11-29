@@ -323,11 +323,7 @@
         </div>
     </form>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">method</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nameid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Name<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;inputid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;inputname&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
@@ -341,9 +337,7 @@
 		<span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;button button--default&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;reset&#34;</span><span class="p"></span><span class="p">&gt;</span>Reset<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;button button--primary&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p"></span><span class="p">&gt;</span>Send<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">form</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="about-labels-and-placeholders">About labels and placeholders</h3>
 
 <p><strong>Always</strong> use a <code>label</code> with your form elements. Don&rsquo;t use the <code>placeholder</code> attribute as a subsitute for a <code>label</code>. The <code>placeholder</code> attribute isn&rsquo;t meant to give an extensive description. It&rsquo;s meant to be a guideline or a hint.</p>
@@ -357,26 +351,16 @@
         <input type="email" class="form__field" id="emailplaceholder" placeholder="john@example.com" />
     </div>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- BAD --&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- BAD --&gt;</span>
 <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;e-mail address&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
 
 <span class="c">&lt;!-- GOOD --&gt;</span>
 <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;email&#34;</span><span class="p"></span><span class="p">&gt;</span>E-mail<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;john@example.com&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;john@example.com&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="form-elements">Form elements</h2>
 
 <p>Form elements can be wrapped by <code>.form__group</code>. This comes in handy when you want to implement <strong>validation</strong> later. This wrapper can be a <code>&lt;div&gt;</code> or a <code>&lt;fieldset&gt;</code>. It also adds spacing. If you don&rsquo;t need the spacing and validation can be done on other elements, you can omit this.</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span><span class="lnt">7</span><span class="lnt">8</span><span class="lnt">9</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nameid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Name<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;inputid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;inputname&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -384,9 +368,7 @@
 <span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;nameid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Name<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;inputid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;inputname&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="date-input">Date input</h3>
 
 <div class="fp-example">
@@ -395,14 +377,8 @@
         <input type="date" id="dateid" name="datename" class="form__field" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;dateid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Date<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dateid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;datename&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;dateid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Date<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;date&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dateid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;datename&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="search-field">Search field</h3>
 
 <div class="fp-example">
@@ -411,14 +387,8 @@
         <input type="search" class="form__field" id="searchid" name="searchname" placeholder="Search query here" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;searchid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Search<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;searchid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;searchname&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Search query here&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;searchid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Search<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;search&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;searchid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;searchname&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Search query here&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="telephone-number-input">Telephone number input</h3>
 
 <div class="fp-example">
@@ -427,14 +397,8 @@
         <input type="tel" class="form__field" id="telephoneid" name="telephonename"/>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Telephone<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;telephonename&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Telephone<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;telephonename&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <table class="table table--horizontal-borders">
     <thead>
         <tr>
@@ -460,14 +424,8 @@
         <input type="number" id="numberid" name="numbername" class="form__field" step="3" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;numberid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Number<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;number&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;numberid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;numbername&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">step</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;numberid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Number<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;number&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;numberid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;numbername&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">step</span><span class="o">=</span><span class="s">&#34;3&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="email-input">Email input</h3>
 
 <div class="fp-example">
@@ -476,14 +434,8 @@
         <input type="email" id="emailid" name="emailname" class="form__field" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;emailid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Email<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;emailname&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;emailid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Email<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;emailid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;emailname&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <table class="table table--horizontal-borders">
     <thead>
         <tr>
@@ -509,14 +461,8 @@
         <input type="file" id="fileid" name="filename" class="form__field" accept="image/*" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;fileid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>File<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;fileid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;filename&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">accept</span><span class="o">=</span><span class="s">&#34;image/*&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;fileid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>File<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;file&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;fileid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;filename&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">accept</span><span class="o">=</span><span class="s">&#34;image/*&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="password-field">Password field</h3>
 
 <div class="fp-example">
@@ -525,14 +471,8 @@
         <input type="password" id="passwordid" name="passwordname" class="form__field" value="MyPassword" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;passwordid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Password<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;passwordid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;passwordname&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;passwordid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Password<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;passwordid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;passwordname&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <table class="table table--horizontal-borders">
     <thead>
         <tr>
@@ -558,14 +498,8 @@
         <input type="color" id="colorid" name="colorname" class="form__field" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;colorid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Colorpicker<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;color&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;colorid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;colorname&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;colorid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Colorpicker<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;color&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;colorid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;colorname&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="checkboxes-and-radio-buttons">Checkboxes and radio buttons</h3>
 
 <p>By default checkboxes and radio buttons are stacked.</p>
@@ -585,11 +519,7 @@
         </div>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;brandpicker&#34;</span><span class="p"></span><span class="p">&gt;</span>Choose a brand<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;brandpicker&#34;</span><span class="p"></span><span class="p">&gt;</span>Choose a brand<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__label&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Levis&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;brandpicker&#34;</span> <span class="p">/</span><span class="p">&gt;</span> Levis
@@ -599,9 +529,7 @@
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__label&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Lee&#34;</span> <span class="na">checked</span><span class="o">=</span><span class="s">&#34;checked&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;brandpicker&#34;</span> <span class="p">/</span><span class="p">&gt;</span> Lee
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <div class="fp-example">
     <fieldset class="form__group">
         <legend class="form__label" id="happiness">Are you happy?</legend>
@@ -617,11 +545,7 @@
         </div>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span> <span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span> <span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;happiness&#34;</span><span class="p"></span><span class="p">&gt;</span>Are you happy?<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__radio&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__radio__label&#34;</span><span class="p"></span><span class="p">&gt;</span>
@@ -633,9 +557,7 @@
 			<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;happiness&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__radio__input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;happiness&#34;</span> <span class="p">/</span><span class="p">&gt;</span> No
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></div>
 <table class="table table--horizontal-borders">
     <thead>
         <tr>
@@ -672,11 +594,7 @@
         </label>
     </div>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;brandpicker2&#34;</span><span class="p"></span><span class="p">&gt;</span>Choose a brand<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;brandpicker2&#34;</span><span class="p"></span><span class="p">&gt;</span>Choose a brand<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox form__checkbox--inline&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__label&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Levis&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;brandpicker2&#34;</span> <span class="p">/</span><span class="p">&gt;</span> Levis
@@ -686,9 +604,7 @@
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__label&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;checkbox&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__checkbox__input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Lee&#34;</span> <span class="na">checked</span><span class="o">=</span><span class="s">&#34;checked&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;brandpicker2&#34;</span> <span class="p">/</span><span class="p">&gt;</span> Lee
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <div class="fp-example">
     <fieldset class="form__group">
         <legend class="form__label" id="happiness2">Are you happy?</legend>
@@ -704,11 +620,7 @@
         </div>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;happiness2&#34;</span><span class="p"></span><span class="p">&gt;</span>Are you happy?<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__radio form__radio--inline&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__radio__label&#34;</span><span class="p"></span><span class="p">&gt;</span>
@@ -720,9 +632,7 @@
 			<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;radio&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;happiness2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__radio__input&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;no&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;happiness2&#34;</span> <span class="p">/</span><span class="p">&gt;</span> No
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="selects">Selects</h3>
 
 <div class="fp-example">
@@ -740,11 +650,7 @@
         </select>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;themepicker&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Pick a theme<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;themepicker&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Pick a theme<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;themepicker&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;themepicker&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">optgroup</span> <span class="na">label</span><span class="o">=</span><span class="s">&#34;code&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>Monokai<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
@@ -754,9 +660,7 @@
 		<span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>Xmas<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>Easter<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">optgroup</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre></div>
 <div class="fp-example">
     <fieldset class="form__group">
         <label for="countrypicker" class="form__label">Select your favorite countries</label>
@@ -774,18 +678,12 @@
         </select>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;countrypicker&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Select your favorite countries<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;countrypicker&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Select your favorite countries<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;countrypicker&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;countrypicker&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">multiple</span><span class="o">=</span><span class="s">&#34;multiple&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>Belgium<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p"></span><span class="p">&gt;</span>Netherlands<span class="p">&lt;</span><span class="p">/</span><span class="nt">option</span><span class="p">&gt;</span>
 	...
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="disabled-and-readonly-states">Disabled and readonly states</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ipsum.</p>
@@ -814,14 +712,8 @@
         </div>
     </div>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">disabled</span><span class="o">=</span><span class="s">&#34;disabled&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">readonly</span><span class="o">=</span><span class="s">&#34;readonly&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Rebels Squad&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">disabled</span><span class="o">=</span><span class="s">&#34;disabled&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">readonly</span><span class="o">=</span><span class="s">&#34;readonly&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;Rebels Squad&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="help-text">Help text</h2>
 
 <p>Sometimes a field needs extra explanation when a <code>placeholder</code> and a <code>label</code> isn&rsquo;t enough. You can do this with <code>.form__helptext</code>.</p>
@@ -833,15 +725,9 @@
         <input type="tel" class="form__field" id="telephoneid2" name="telephonename2" aria-describedby="telephonehelptext2" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Telephone<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Telephone<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__helptext&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;telephonehelptext&#34;</span><span class="p"></span><span class="p">&gt;</span>Please add your area code<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;telephonename&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;telephonehelptext&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;tel&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;telephoneid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;telephonename&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;telephonehelptext&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <div class="fp-example">
     <fieldset class="form__group">
         <label for="passwordid2" class="form__label">Password</label>
@@ -849,15 +735,9 @@
         <input type="password" id="passwordid2" name="passwordname2" class="form__field" value="" minlength="8" />
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;passwordid2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Password<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;passwordid2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Password<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__helptext&#34;</span><span class="p"></span><span class="p">&gt;</span>Must be at least 8 characters long and contain at least 1 digit and 1 uppercase<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;passwordid2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;passwordname2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;passwordid2&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;passwordname2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">minlength</span><span class="o">=</span><span class="s">&#34;8&#34;</span> <span class="p">/</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="validation">Validation</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, officia.</p>
@@ -874,11 +754,7 @@
         <span class="form__feedback">Please enter your name</span>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group is-valid&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group is-valid&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;requiredvalidinputid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Name<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;requiredvalidinputid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;requiredvalidinputid&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">required</span><span class="o">=</span><span class="s">&#34;required&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span>
@@ -887,9 +763,7 @@
 	<span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;requiredinvalidinputid&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Name<span class="p">&lt;</span><span class="p">/</span><span class="nt">label</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;requiredinvalidinputid&#34;</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;requiredinvalidinputid&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">required</span><span class="o">=</span><span class="s">&#34;required&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__feedback&#34;</span><span class="p"></span><span class="p">&gt;</span>Please enter your name<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></div>
 <table class="table table--horizontal-borders">
     <thead>
         <tr>
@@ -963,11 +837,7 @@
         </fieldset>
     </form>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span><span class="lnt">16</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__fieldset&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__fieldset&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__group&#34;</span><span class="p"></span><span class="p">&gt;</span>
@@ -982,9 +852,7 @@
 			<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="special-cases">Special cases</h2>
 
 <p>If you want more flexibility, vertical alignment and let the browser handle the layout, replace the grid layout with a flexbox layout.</p>
@@ -1007,11 +875,7 @@
         </div>
     </fieldset>
 </div>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__fieldset&#34;</span><span class="p"></span><span class="p">&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__fieldset&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__label&#34;</span><span class="p"></span><span class="p">&gt;</span>Pick a date and time<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__flex&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__box&#34;</span><span class="p"></span><span class="p">&gt;</span>
@@ -1024,9 +888,7 @@
 			<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;time&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form__field&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Enter a time&#34;</span> <span class="p">/</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></td></tr></table>
-</div>
-</div>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></div>
 <table class="table table--horizontal-borders">
     <thead>
         <tr>
@@ -1052,20 +914,7 @@
 </main>
 
 
-<footer class="site-footer" role="contentinfo">
-	<div class="site-footer__section">
-		
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.59 149.12" class="dp-icon"><title>De Persgroep logo</title><path d="M142.21,19.95C128.06.9,101.44-4.63,75.83,3.89l0,21.6-.05.16a80.67,80.67,0,0,0-43.89,16.2C.78,65-9.29,104.07,9.38,129.18c14.14,19,40.75,24.57,66.33,16.07V145l.13.05V123.52c14.63-.7,30.19-6.07,43.87-16.24C150.82,84.16,160.88,45.05,142.21,19.95ZM45.36,123.24A33.35,33.35,0,0,1,31.3,114C15.4,96,22.43,63.79,47,42A75.6,75.6,0,0,1,75.7,25.88ZM104.61,107a75.68,75.68,0,0,1-28.66,16.13l9.28-29.78,21.06-67.56a33.46,33.46,0,0,1,14,9.28C136.21,53,129.18,85.25,104.61,107Z" /></svg>
-
-		An Open Source project by De Persgroep
-	</div>
-	<div class="site-footer__section">
-		
-		<a href="https://github.com/depersgroep/fannypack"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.58 31.77" class="github-icon"><title>Github icon</title><path d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.81.15,1.11-.35,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.31,4.31,0,0,0-1.81-2.38c-1.48-1,.11-1,.11-1a3.42,3.42,0,0,1,2.5,1.68,3.47,3.47,0,0,0,4.74,1.35,3.48,3.48,0,0,1,1-2.18C9.7,23.08,5.9,21.68,5.9,15.44a6.3,6.3,0,0,1,1.68-4.37,5.86,5.86,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.44,15.44,0,0,1,8.16,0c3.11-2.11,4.48-1.67,4.48-1.67A5.85,5.85,0,0,1,25,11.07a6.29,6.29,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.89,3.89,0,0,1,1.11,3c0,2.18,0,3.93,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z"/></svg>
-Source code at GitHub</a>
-		
-		 under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> license
-	</div>
+<footer class="site-footer" role="contentinfo">An Open Source project by De Persgroep &bull;&nbsp;<a href="https://github.com/depersgroep/fannypack">Source code at GitHub</a>  under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> license
 </footer>
 
 
