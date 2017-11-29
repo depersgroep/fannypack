@@ -48,15 +48,11 @@
 
 .fp-example {
 	padding: $double-spacing-unit;
-	// border: 1px solid $border-color;
 	border-radius: $border-radius-base;
-	// border-bottom-left-radius: 0;
-	// border-bottom-right-radius: 0;
 	background-color: $white;
 
 	+ .highlight {
 		box-shadow: inset 0 10px 5px -5px rgba($evil-gray, .4);
-		// margin-top: -1px;
 
 		.chroma {
 			margin: 0;
@@ -87,7 +83,6 @@
 			padding: $base-spacing-unit;
 			border: 1px solid $iron;
 			background-color: $evil-gray;
-			// white-space: nowrap;
 		}
 
 		[class^="grid"] {
@@ -167,7 +162,6 @@
 	left: 0;
 	width: $drawer-width;
 	padding: $double-spacing-unit;
-	// float: left;
 
 	@include mq-max($bp-medium - 1) {
 		display: none;
@@ -217,8 +211,6 @@
 			padding-left: $double-spacing-unit;
 			float: left;
 			transform: rotate(-4.33deg);
-			// background-color: $hot-sauce-yellow;
-			// color: $bg-gradient-dark-blue;
 		}
 	}
 }
@@ -328,13 +320,22 @@
 	color: $warmgrey;
 }
 
-.site-footer {
-	svg {
-		display: inline-block;
-		width: 24px;
-		height: auto;
-		margin-right: $base-spacing-unit;
-		vertical-align: middle;
-		fill: $aluminum;
+.hero-unit {
+	padding: ($base-spacing-unit * 4) 0;
+	// scss-lint:disable ColorVariable
+	background: linear-gradient(to left, #c737ea, #939efa);
+	background-color: #939efa;
+}
+
+.hero-unit__title {
+	color: $white;
+	font-size: emify(70);
+}
+
+.hero-unit__body {
+	font-size: $font-size-h4;
+
+	@include mq-min($bp-small) {
+		width: 50%;
 	}
 }

@@ -44,11 +44,23 @@
 }
 
 .theme--fp .page-header h1 {
-  max-width: 48rem;
+  max-width: 1066px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
+}
+
+@media only screen and (min-width: 1328px) {
+  .theme--fp .page-header h1 {
+    max-width: none;
+    padding-right: 132px;
+    padding-left: 132px;
+  }
+}
+
+.theme--fp-homepage body {
+  background-color: #fff;
 }
 
 .app-icon--neon-pink .app-icon__character:last-child {
@@ -401,11 +413,24 @@
   color: #9e9e9e;
 }
 
-.site-footer svg {
-  display: inline-block;
-  width: 24px;
-  height: auto;
-  margin-right: 10px;
-  vertical-align: middle;
-  fill: #9e9e9e;
+.hero-unit {
+  padding: 40px 0;
+  background: -webkit-linear-gradient(right, #c737ea, #939efa);
+  background: linear-gradient(to left, #c737ea, #939efa);
+  background-color: #939efa;
+}
+
+.hero-unit__title {
+  color: #fff;
+  font-size: 4.375em;
+}
+
+.hero-unit__body {
+  font-size: 1.3125em;
+}
+
+@media only screen and (min-width: 480px) {
+  .hero-unit__body {
+    width: 50%;
+  }
 }

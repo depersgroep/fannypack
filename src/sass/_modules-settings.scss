@@ -11,7 +11,7 @@
 // CONTAINER
 //==============================================================================
 $container-max-width: 1200px !default;
-$container-bg: $white !default;
+$container-bg: $transparent !default;
 
 //==============================================================================
 // GRID
@@ -169,4 +169,10 @@ $drawer-width: 262px !default;
 $drawer-bg: $white !default;
 $drawer-line-color : $black !default;
 $drawer-light-line-color : $white !default;
+
+//==============================================================================
+// FOOTER
+//==============================================================================
+$footer-height: 70px;
+$footer-bg: $white !default;
 // scss-lint:enable SpaceAfterVariableName

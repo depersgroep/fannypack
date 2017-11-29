@@ -6,15 +6,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .site-footer {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
+	height: $footer-height;
 	padding: $double-spacing-unit;
-}
-
-.site-footer__section {
-	& + & {
-		margin-left: $double-spacing-unit;
-	}
+	border-top: 1px solid $border-color;
+	background-color: $footer-bg;
+	font-size: $font-size-medium;
+	text-align: center;
 }

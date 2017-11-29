@@ -85,7 +85,7 @@
 .drawer {
 	position: fixed;
 	top: $site-header-height;
-	bottom: 0;
+	bottom: $footer-height;
 	left: ($drawer-width * -1);
 	width: $drawer-width;
 	padding: $double-spacing-unit ($base-spacing-unit * 6);

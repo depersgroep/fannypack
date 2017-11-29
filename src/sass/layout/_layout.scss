@@ -24,7 +24,10 @@
 	margin-right: auto;
 	margin-left: auto;
 	padding: $double-spacing-unit;
-	background-color: $container-bg;
+
+	@if type-of($container-bg) == 'color' and $container-bg != $transparent {
+		background-color: $container-bg;
+	}
 }
 
 .layout--drawer {
@@ -35,24 +38,6 @@
 	.main-container {
 		position: relative; // postioning context for the drawer
 		min-height: calc(100vh - #{$site-header-height});
-		// padding-left: $drawer-width; // for the drawer
-		// background-color: $container-bg;
-
-	// 	@supports (display: grid) {
-	// 		// scss-lint:disable PropertySpelling
-	// 		display: grid;
-	// 		grid-gap: 0;
-	// 		grid-template-columns: $drawer-width calc(100% - #{$drawer-width});
-	// 		grid-template-rows: auto;
-
-	// 		&::after {
-	// 			content: none;
-	// 		}
-
-	// 		@include mq-max($bp-medium - 1) {
-	// 			display: block;
-	// 		}
-	// 	}
 	}
 
 	.site-header {
@@ -64,8 +49,6 @@
 	}
 
 	.drawer__checkbox + .drawer__menu + .drawer + .main-content {
-		// margin-left: 0;
-
 		@include mq-min($bp-medium) {
 			margin-left: $drawer-width;
 			transition: margin-left .3s ease-in-out;

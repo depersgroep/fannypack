@@ -21,7 +21,7 @@ googleAnalytics = ""
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
-pygmentsOptions = "linenos=table"
+#pygmentsOptions = "linenos=table"
 
 [params]
 	favicon = ""

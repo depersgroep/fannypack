@@ -3,7 +3,7 @@
 /* Error */ .chroma .err { color: #aa0000; background-color: #ffaaaa; }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: 100%; overflow: auto; display: block; }
-/* LineHighlight */ .chroma .hl { background-color: #ffffcc; display: block; width: 100%; }
+/* LineHighlight */ .chroma .hl { background-color: #ffffcc; display: block; width: 100%; user-select: none;}
 /* LineNumbersTable */ .chroma .lnt { margin-right: $double-spacing-unit; padding: 1px $half-spacing-unit; color: $warmgrey; display: block; }
 /* LineNumbers */ .chroma .ln {  margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
 /* Keyword */ .chroma .k { color: #006699; font-weight: bold }
@@ -69,6 +69,12 @@
 
 .chroma {
 	line-height: 1;
+
+	.lntd {
+		&:first-of-type {
+			width: 40px;
+		}
+	}
 
 	code {
 		padding: 0;

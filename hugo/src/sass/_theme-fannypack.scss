@@ -29,11 +29,23 @@
 		color: $white;
 
 		h1 {
-			max-width: 48rem;
+			max-width: (764px + $drawer-width + ($double-spacing-unit * 2));
 			margin-top: 0;
 			margin-right: auto;
 			margin-bottom: 0;
 			margin-left: auto;
+
+			@include mq-min(764px + ($drawer-width * 2) + ($double-spacing-unit * 2)) {
+				max-width: none;
+				padding-right: 132px;
+				padding-left: 132px;
+			}
 		}
+	}
+}
+
+.theme--fp-homepage {
+	body {
+		background-color: $white;
 	}
 }
