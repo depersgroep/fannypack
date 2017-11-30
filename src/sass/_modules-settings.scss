@@ -141,7 +141,9 @@ $pagination-disabled-color: $aluminum !default;
 //==============================================================================
 // TABLES
 //==============================================================================
+$table-bg: $white !default;
 $table-border-color: $border-color !default;
+$table-row-collapsible-bg:  #e4f1f6 !default;
 
 //==============================================================================
 // LABELS
@@ -158,17 +160,22 @@ $nav-link-hover-color: $link-color !default;
 $nav-link-active-color: $link-color !default;
 
 // on dark backgrounds
-$nav-light-link-color: $aluminum !default;
+$nav-light-link-color: $white !default;
+$nav-light-link-bg: $transparent !default;
 $nav-light-link-hover-color: $white !default;
-$nav-light-link-active-color: $link-color !default;
+$nav-light-link-hover-bg: #243245 !default;
+$nav-light-link-active-color: $white !default;
+$nav-light-link-active-bg: $coolblue !default;
 
 //==============================================================================
 // DRAWER
 //==============================================================================
-$drawer-width: 262px !default;
-$drawer-bg: $white !default;
+// $drawer-width: 262px !default;
+$drawer-width: 295px !default;
+$drawer-bg: $dark !default;
 $drawer-line-color : $black !default;
 $drawer-light-line-color : $white !default;
+$drawer-section-title-color: #5c7087 !default;
 
 //==============================================================================
 // FOOTER

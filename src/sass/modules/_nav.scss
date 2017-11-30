@@ -48,7 +48,6 @@
 	}
 
 	.nav--vertical & + & {
-		margin-top: $base-spacing-unit;
 		margin-left: 0;
 	}
 }
@@ -74,6 +73,11 @@
 
 	// on dark backgrounds
 	.nav--light & {
+		padding: $base-spacing-unit ($base-spacing-unit * 1.5);
+		border-radius: $border-radius-base;
+		@if (type-of($nav-light-link-bg) == 'color' and $nav-light-link-bg != $transparent) {
+			background-color: $nav-light-link-bg;
+		}
 		color: $nav-light-link-color;
 
 		&:visited {
@@ -82,11 +86,13 @@
 
 		&:focus,
 		&:hover {
+			background-color: $nav-light-link-hover-bg;
 			color: $nav-light-link-hover-color;
 		}
 	}
 
 	.nav--light .is-active > & {
+		background-color: $nav-light-link-active-bg;
 		color: $nav-light-link-active-color;
 	}
 

@@ -23,12 +23,12 @@
 }
 
 .theme--fp .main-content__inner {
-  max-width: 1066px;
+  max-width: 1099px;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media only screen and (min-width: 1328px) {
+@media only screen and (min-width: 1394px) {
   .theme--fp .main-content__inner {
     max-width: none;
     padding-right: 132px;
@@ -44,14 +44,14 @@
 }
 
 .theme--fp .page-header h1 {
-  max-width: 1066px;
+  max-width: 1099px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
 }
 
-@media only screen and (min-width: 1328px) {
+@media only screen and (min-width: 1394px) {
   .theme--fp .page-header h1 {
     max-width: none;
     padding-right: 132px;
@@ -224,8 +224,8 @@
     display: -ms-grid;
     display: grid;
     grid-gap: 0;
-    -ms-grid-columns: 262px calc(100% - 262px);
-    grid-template-columns: 262px calc(100% - 262px);
+    -ms-grid-columns: 295px calc(100% - 295px);
+    grid-template-columns: 295px calc(100% - 295px);
     -ms-grid-rows: auto;
     grid-template-rows: auto;
   }
@@ -245,7 +245,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 262px;
+  width: 295px;
   padding: 20px;
 }
 
@@ -269,7 +269,7 @@
 .layout--drawer .fp-article {
   position: relative;
   margin-top: 80px;
-  margin-left: 262px;
+  margin-left: 295px;
   background-color: #fff;
 }
 
@@ -398,7 +398,7 @@
 
 .fp-droplet__meta {
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #dedede;
   border-top: 0;
   border-radius: 0 0 4px 4px;
   background-color: #fff;

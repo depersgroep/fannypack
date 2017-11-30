@@ -85,14 +85,13 @@
 .drawer {
 	position: fixed;
 	top: $site-header-height;
-	bottom: $footer-height;
+	bottom: 0;
 	left: ($drawer-width * -1);
 	width: $drawer-width;
-	padding: $double-spacing-unit ($base-spacing-unit * 6);
+	padding: ($base-spacing-unit * 5) ($base-spacing-unit * 3);
 	transition: left .3s ease-in-out;
 	border-right: 1px solid $border-color;
 	background-color: $drawer-bg;
-	color: $silver;
 	overflow: auto;
 
 	@include mq-min($bp-medium) {
@@ -118,8 +117,6 @@
 
 .drawer__section-title {
 	margin-bottom: $double-spacing-unit;
-	padding-bottom: $base-spacing-unit;
-	border-bottom: 1px solid $steel;
-	font-weight: bold;
-	text-transform: uppercase;
+	color: $drawer-section-title-color;
+	font-size: $font-size-medium;
 }
