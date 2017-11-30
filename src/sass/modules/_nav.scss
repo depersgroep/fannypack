@@ -12,15 +12,6 @@
 	display: block;
 }
 
-// .nav--sticky {
-// 	@supports (position: sticky) {
-// 		position: sticky;
-// 		top: ($site-header-height + $double-spacing-unit);
-// 		left: 0;
-// 		width: 100%;
-// 	}
-// }
-
 .nav__list {
 	@include unstyled-list;
 	display: flex;
@@ -36,8 +27,16 @@
 
 .nav__list--nested {
 	margin-top: $base-spacing-unit;
-	margin-bottom: ($base-spacing-unit * 4);
+	margin-bottom: $double-spacing-unit;
 	font-weight: normal;
+
+	@include mq-min($bp-small) {
+		margin-bottom: ($base-spacing-unit * 3);
+	}
+
+	@include mq-min($bp-medium) {
+		margin-bottom: ($base-spacing-unit * 4);
+	}
 }
 
 .nav__item {
@@ -105,7 +104,15 @@
 
 .nav__title {
 	display: block;
-	margin-bottom: ($base-spacing-unit * 3);
+	margin-bottom: $base-spacing-unit;
 	color: $warmgrey;
 	font-size: $font-size-medium;
+
+	@include mq-min($bp-small) {
+		margin-bottom: $double-spacing-unit;
+	}
+
+	@include mq-min($bp-medium) {
+		margin-bottom: ($base-spacing-unit * 3);
+	}
 }

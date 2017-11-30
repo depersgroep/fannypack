@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" class="no-js theme--fp layout--fixed-header layout--drawer ">
+<html lang="en-us" class="no-js theme--fp layout--fixed-header layout--sidebar ">
 
 <head>
 	<meta charset="UTF-8" />
@@ -65,14 +65,14 @@
 <body>
 <main class="main-container" role="main">
 	
-<input type="checkbox" class="drawer__checkbox" id="drawer__checkbox" />
-<label for="drawer__checkbox" tabindex="0" class="drawer__menu" role="button" aria-label="Menu">
-	<span class="drawer__menu-line" role="none presentation"></span>
-	<span class="drawer__menu-line" role="none presentation"></span>
-	<span class="drawer__menu-line" role="none presentation"></span>
+<input type="checkbox" class="sidebar__checkbox" id="sidebar__checkbox" />
+<label for="sidebar__checkbox" tabindex="0" class="sidebar__menu" role="button" aria-label="Menu">
+	<span class="sidebar__menu-line" role="none presentation"></span>
+	<span class="sidebar__menu-line" role="none presentation"></span>
+	<span class="sidebar__menu-line" role="none presentation"></span>
 </label>
 
-<div class="drawer">
+<div class="sidebar">
 	
 	
 
@@ -373,7 +373,7 @@
 
     <p><small class="text--muted">Large body text</small></p>
 
-    <p class="text--large">Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
+    <p class="lead">Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
 
     <p><small class="text--muted">Default body text</small></p>
 
@@ -406,22 +406,18 @@
 
 <div class="fp-example">
     <p class="text--success">Text in <strong>success</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-    <p>Text in <strong>success</strong> color. Lorem ipsum dolor sit amet, <span class="text--success">consectetur</span> adipisicing elit. Dolore, excepturi.</p>
     <p class="text--warning">Text in <strong>warning</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-    <p>Text in <strong>warning</strong> color. <span class="text--warning">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
     <p class="text--error">Text in <strong>error</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-    <p>Text in <strong>error</strong> color. Lorem ipsum dolor sit amet, consectetur <span class="text--error">adipisicing</span> elit. Dolore, excepturi.</p>
     <p class="text--muted">Text in <strong>muted</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-    <p>Text in <strong>muted</strong> color. Lorem ipsum dolor sit amet, consectetur <span class="text--muted">adipisicing</span> elit. Dolore, excepturi.</p>
+    <p class="text--large">Larger body text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda officia excepturi itaque temporibus vitae consectetur consequatur, ipsum inventore facere? Fugit!</p>
+    <p class="text--centered">Centered text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, maiores?</p>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--success&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>... <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--success&#34;</span><span class="p"></span><span class="p">&gt;</span>consectetur<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> ...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--warning&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>... <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--warning&#34;</span><span class="p"></span><span class="p">&gt;</span>Lorem ipsum<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> ...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--error&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>... <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--error&#34;</span><span class="p"></span><span class="p">&gt;</span>adipisicing<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> ...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--muted&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p"></span><span class="p">&gt;</span>... <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--muted&#34;</span><span class="p"></span><span class="p">&gt;</span>adipisicing<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span> ...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre></div>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--large&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text--centered&#34;</span><span class="p"></span><span class="p">&gt;</span>...<span class="p">&lt;</span><span class="p">/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre></div>
 	</div>
 </div>
 

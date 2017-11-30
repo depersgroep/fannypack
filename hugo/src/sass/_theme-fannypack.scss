@@ -24,9 +24,17 @@
 
 	.page-header {
 		margin: 0 ($double-spacing-unit * -1) $double-spacing-unit;
-		padding: ($base-spacing-unit * 5) $double-spacing-unit;
+		padding: $double-spacing-unit;
 		background-color: $dark;
 		color: $white;
+
+		@include mq-min($bp-small) {
+			padding: ($base-spacing-unit * 3) $double-spacing-unit;
+		}
+
+		@include mq-min($bp-small) {
+			padding: ($base-spacing-unit * 5) $double-spacing-unit;
+		}
 
 		h1 {
 			max-width: (764px + $drawer-width + ($double-spacing-unit * 2));

@@ -2,7 +2,7 @@
 title = "Pagination"
 date = 2017-10-06T10:47:45+02:00
 description = "Navigate between pages of related content across multiple pages"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = 'Modules'
 +++

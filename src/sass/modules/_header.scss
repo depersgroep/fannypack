@@ -16,6 +16,10 @@
 	border-bottom: 1px solid $site-header-border-color;
 	background-color: $site-header-bg;
 
+	@include mq-min($bp-small) {
+
+	}
+
 	.layout--fixed-header & {
 		position: fixed;
 		top: 0;

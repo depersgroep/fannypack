@@ -61,3 +61,47 @@
 		}
 	}
 }
+
+.layout--sidebar {
+	body {
+		min-height: 100vh;
+
+		@include mq-min($bp-medium) {
+			display: flex;
+			flex-direction: column;
+
+			@supports (display: grid) {
+				display: block;
+			}
+		}
+	}
+
+	.main-container {
+		position: relative; // postioning context for the drawer
+
+		@include mq-min($bp-medium) {
+			display: flex;
+			flex: 1 0 auto;
+			flex-direction: row;
+
+			@supports (display: grid) {
+				// scss-lint:disable PropertySpelling
+				display: grid;
+				grid-template-columns: $sidebar-width 1fr;
+			}
+		}
+	}
+
+	.main-content {
+		padding: $double-spacing-unit; // margin fixer
+
+		@include mq-min($bp-medium) {
+			flex: 1;
+			min-width: 0; // fix for `nowrap` elements, e.g. <code>, in a flexbox container
+
+			@supports (display: grid) {
+				flex: none;
+			}
+		}
+	}
+}

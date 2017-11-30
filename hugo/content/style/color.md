@@ -2,7 +2,7 @@
 title = "Color"
 date = 2017-10-09T13:02:58+02:00
 description = "Color palette"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Style"
 +++

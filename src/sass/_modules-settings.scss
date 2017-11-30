@@ -144,6 +144,7 @@ $pagination-disabled-color: $aluminum !default;
 $table-bg: $white !default;
 $table-border-color: $border-color !default;
 $table-row-collapsible-bg:  #e4f1f6 !default;
+$table-zebra-bg: $whitesmoke !default;
 
 //==============================================================================
 // LABELS
@@ -168,9 +169,17 @@ $nav-light-link-active-color: $white !default;
 $nav-light-link-active-bg: $coolblue !default;
 
 //==============================================================================
+// MENU - SIDEBAR
+//==============================================================================
+$sidebar-width: 262px !default;
+$sidebar-bg: $white !default;
+$sidebar-line-color : $black !default;
+$sidebar-light-line-color : $white !default;
+$z-index-sidebar: 5 !default;
+
+//==============================================================================
 // DRAWER
 //==============================================================================
-// $drawer-width: 262px !default;
 $drawer-width: 295px !default;
 $drawer-bg: $dark !default;
 $drawer-line-color : $black !default;

@@ -2,7 +2,7 @@
 title = "Typography"
 date = 2017-10-09T13:02:58+02:00
 description = "Typographic information and kitchen sink for Fannypack"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Style"
 +++
@@ -76,7 +76,7 @@ The font used is **Source Sans Pro**, a sans-serif typeface intended to work wel
 
 	<p><small class="text--muted">Large body text</small></p>
 
-	<p class="text--large">Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
+	<p class="lead">Paragraph text with <strong>lorem ipsum</strong> dolor sit amet, m<sup>2</sup> consectetur <a href="#">adipisicing</a> elit<sub>8</sub>. Aliquid <em>accusamus</em> quod cum dicta numquam, <small>similique</small> iure quibusdam <mark>repudiandae</mark> deleniti <code>asperiores</code>.</p>
 
 	<p><small class="text--muted">Default body text</small></p>
 
@@ -109,22 +109,18 @@ If you want to style certain parts that are not a specific part of a module, we 
 
 <div class="fp-example">
 	<p class="text--success">Text in <strong>success</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-	<p>Text in <strong>success</strong> color. Lorem ipsum dolor sit amet, <span class="text--success">consectetur</span> adipisicing elit. Dolore, excepturi.</p>
 	<p class="text--warning">Text in <strong>warning</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-	<p>Text in <strong>warning</strong> color. <span class="text--warning">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
 	<p class="text--error">Text in <strong>error</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-	<p>Text in <strong>error</strong> color. Lorem ipsum dolor sit amet, consectetur <span class="text--error">adipisicing</span> elit. Dolore, excepturi.</p>
 	<p class="text--muted">Text in <strong>muted</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
-	<p>Text in <strong>muted</strong> color. Lorem ipsum dolor sit amet, consectetur <span class="text--muted">adipisicing</span> elit. Dolore, excepturi.</p>
+	<p class="text--large">Larger body text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda officia excepturi itaque temporibus vitae consectetur consequatur, ipsum inventore facere? Fugit!</p>
+	<p class="text--centered">Centered text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, maiores?</p>
 </div>
 
 ```html
 <p class="text--success">...</p>
-<p>... <span class="text--success">consectetur</span> ...</p>
 <p class="text--warning">...</p>
-<p>... <span class="text--warning">Lorem ipsum</span> ...</p>
 <p class="text--error">...</p>
-<p>... <span class="text--error">adipisicing</span> ...</p>
 <p class="text--muted">...</p>
-<p>... <span class="text--muted">adipisicing</span> ...</p>
+<p class="text--large">...</p>
+<p class="text--centered">...</p>
 ```

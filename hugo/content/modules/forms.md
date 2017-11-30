@@ -2,7 +2,7 @@
 title = "Forms"
 date = 2017-10-02T14:34:21+02:00
 description = "Forms and form elements"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++

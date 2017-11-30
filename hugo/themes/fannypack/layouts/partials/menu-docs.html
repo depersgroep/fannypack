@@ -1,5 +1,5 @@
-{{ partial "hamburger" }}
-<div class="drawer">
+{{ partial "menu-hamburger" }}
+<div class="sidebar">
 	{{ if gt (len .Site.Menus.docs) 0 }}
 	{{ partial "nav-docs" . }}
 	{{ end }}

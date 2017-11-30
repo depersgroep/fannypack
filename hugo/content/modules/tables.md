@@ -2,7 +2,7 @@
 title = "Tables"
 date = 2017-10-06T14:38:47+02:00
 description = "Tabular data isn't dead!"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++

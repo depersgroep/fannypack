@@ -2,7 +2,7 @@
 title = "Header"
 date = 2017-10-05T16:29:36+02:00
 description = "The site's header"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++

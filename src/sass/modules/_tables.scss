@@ -61,7 +61,6 @@ caption {
 
 	caption {
 		padding: $half-spacing-unit;
-		background-color: $silver;
 	}
 
 	th,
@@ -88,9 +87,13 @@ caption {
 }
 
 .table--striped {
+	caption {
+		padding-bottom: $base-spacing-unit;
+	}
+
 	thead {
 		th {
-			background-color: $silver;
+			background-color: $table-zebra-bg;
 		}
 	}
 
@@ -103,7 +106,7 @@ caption {
 		&:nth-child(even) {
 			th,
 			td {
-				background-color: $silver;
+				background-color: $table-zebra-bg;
 			}
 		}
 	}
