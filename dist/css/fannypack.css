@@ -2342,6 +2342,19 @@ input[type="color"].form__field {
   margin: 0;
   padding: 0;
   border: 1px solid #dedede;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 480px) {
+  .panel {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .panel {
+    margin-bottom: 20px;
+  }
 }
 
 .panel__heading,
@@ -2375,11 +2388,9 @@ input[type="color"].form__field {
 legend.panel__title {
   display: block;
   width: 100%;
-  margin: 0;
   padding: 10px;
   float: left;
   border-bottom: 1px solid #dedede;
-  font-size: 1.125em;
   font-weight: bold;
 }
 

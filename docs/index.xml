@@ -111,7 +111,7 @@ error outline  Error Lorem ipsum dolor sit amet, consectetur adipisicing elit. I
       <description>Containers, or boxes, that can hold any information.
 General  This is the panel__body
    &amp;lt;div class=&amp;#34;panel&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;panel__heading&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;panel__title&amp;#34;&amp;gt;General&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;panel__body&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Using panels in forms Panels is something we use regularly in forms, when building CRUD applications, but we use the semantically correct fieldset and legend.
-General Name  Comment (optional) A short help text for a textarea.   Reset Send     &amp;lt;fieldset class=&amp;#34;panel&amp;#34;&amp;gt; &amp;lt;legend class=&amp;#34;panel__title&amp;#34;&amp;gt;General&amp;lt;/legend&amp;gt; &amp;lt;div class=&amp;#34;panel-body&amp;#34;&amp;gt; .</description>
+General Name  Comment (optional) A short help text for a textarea.   Reset Send    General Name  Comment (optional) A short help text for a textarea.</description>
     </item>
     
     <item>

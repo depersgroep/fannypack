@@ -9,6 +9,16 @@
 	margin: 0; // for <fieldset>
 	padding: 0; // for <fieldset>
 	border: 1px solid $panel-border-color;
+	background-color: $panel-bg;
+
+	@include mq-min($bp-small) {
+		margin-bottom: ($base-spacing-unit * 1.5);
+
+	}
+
+	@include mq-min($bp-small) {
+		margin-bottom: $double-spacing-unit;
+	}
 }
 
 .panel__heading,
@@ -38,11 +48,9 @@
 legend.panel__title {
 	display: block;
 	width: 100%;
-	margin: 0;
 	padding: $base-spacing-unit;
 	float: left; // hack for <legend>
 	border-bottom: 1px solid $panel-border-color;
-	font-size: $panel-title-font-size;
 	font-weight: bold;
 
 	@include mq-min($bp-small) {

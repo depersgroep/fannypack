@@ -356,10 +356,29 @@
             </div>
         </div>
     </fieldset>
+
+    <fieldset class="panel">
+        <legend class="panel__title">General</legend>
+        <div class="panel__body">
+            <div class="form__group">
+                <label for="panelinputid" class="form__label">Name</label>
+                <input id="panelinputid" name="panelinputname" type="text" class="form__field" />
+            </div>
+            <div class="form__group">
+                <label for="paneltextareid" class="form__label">Comment <span class="form__label-meta">(optional)</span></label>
+                <span class="form__helptext" id="paneltextareahelptext">A short help text for a textarea.</span>
+                <textarea name="textareaname" id="paneltextareaid" class="form__textarea" aria-describedby="paneltextareahelptext"></textarea>
+            </div>
+            <div class="form__actions">
+                <button class="button button--default" type="reset">Reset</button>
+                <button class="button button--primary" type="submit">Send</button>
+            </div>
+        </div>
+    </fieldset>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">fieldset</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">legend</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel__title&#34;</span><span class="p"></span><span class="p">&gt;</span>General<span class="p">&lt;</span><span class="p">/</span><span class="nt">legend</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel-body&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;panel__body&#34;</span><span class="p"></span><span class="p">&gt;</span>
 		...
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">fieldset</span><span class="p">&gt;</span></code></pre></div>
