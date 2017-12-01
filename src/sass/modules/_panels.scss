@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// PANELS
+//
+// description
+////////////////////////////////////////////////////////////////////////////////
+
+.panel {
+	display: block; // for <fieldset>
+	margin: 0; // for <fieldset>
+	padding: 0; // for <fieldset>
+	border: 1px solid $panel-border-color;
+}
+
+.panel__heading,
+.panel__body {
+	padding: $base-spacing-unit;
+
+	@include mq-min($bp-small) {
+		padding: ($base-spacing-unit * 1.5);
+
+	}
+
+	@include mq-min($bp-small) {
+		padding: $double-spacing-unit;
+	}
+}
+
+.panel__heading {
+	border-bottom: 1px solid $panel-border-color;
+}
+
+.panel__title {
+	margin: 0;
+	font-size: $panel-title-font-size;
+}
+
+// scss-lint:disable QualifyingElement
+legend.panel__title {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: $base-spacing-unit;
+	float: left; // hack for <legend>
+	border-bottom: 1px solid $panel-border-color;
+	font-size: $panel-title-font-size;
+	font-weight: bold;
+
+	@include mq-min($bp-small) {
+		padding: ($base-spacing-unit * 1.5);
+
+	}
+
+	@include mq-min($bp-small) {
+		padding: $double-spacing-unit;
+	}
+
+	+ .panel__body {
+		clear: both; // to clear the floating <legend>
+	}
+}
+// scss-lint:enable QualifyingElement
+
+.panel__body {
+	> *:first-child {
+		margin-top: 0;
+	}
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+}
+

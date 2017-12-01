@@ -1163,15 +1163,15 @@ a:active {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
   }
 
 @supports (display: grid) {
@@ -2337,6 +2337,76 @@ input[type="color"].form__field {
   pointer-events: none;
 }
 
+.panel {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dedede;
+}
+
+.panel__heading,
+.panel__body {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 480px) {
+  .panel__heading,
+  .panel__body {
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .panel__heading,
+  .panel__body {
+    padding: 20px;
+  }
+}
+
+.panel__heading {
+  border-bottom: 1px solid #dedede;
+}
+
+.panel__title {
+  margin: 0;
+  font-size: 1.125em;
+}
+
+legend.panel__title {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  float: left;
+  border-bottom: 1px solid #dedede;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 480px) {
+  legend.panel__title {
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  legend.panel__title {
+    padding: 20px;
+  }
+}
+
+legend.panel__title + .panel__body {
+  clear: both;
+}
+
+.panel__body > *:first-child {
+  margin-top: 0;
+}
+
+.panel__body > *:last-child {
+  margin-bottom: 0;
+}
+
 .sidebar__checkbox {
   position: absolute;
   width: 0;
@@ -2950,6 +3020,11 @@ input[type="color"].form__field {
   font-weight: normal;
 }
 
+.table th > *,
+.table td > * {
+  vertical-align: top;
+}
+
 .table th {
   text-align: left;
 }
@@ -2974,7 +3049,7 @@ input[type="color"].form__field {
 
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #dedede;
+  border: 1px solid #f0f0f0;
 }
 
 .table--bordered thead th {
@@ -2987,7 +3062,7 @@ input[type="color"].form__field {
 
 .table--horizontal-borders th,
 .table--horizontal-borders td {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .table--horizontal-borders thead th {
@@ -3061,12 +3136,12 @@ input[type="color"].form__field {
 
 @media only screen and (max-width: 799px) {
   .table--transformer.table--bordered tr:not(:last-child) {
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid #f0f0f0;
   }
 }
 
 .tr--collapsible > td {
-  background-color: #e4f1f6;
+  background-color: rgba(228, 241, 246, 0.2);
 }
 
 .toolbar {

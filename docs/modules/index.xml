@@ -34,6 +34,18 @@ error outline  Error Lorem ipsum dolor sit amet, consectetur adipisicing elit. I
     </item>
     
     <item>
+      <title>Panels</title>
+      <link>https://fannypack.persgroep.net/modules/panels/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/panels/</guid>
+      <description>Containers, or boxes, that can hold any information.
+General  This is the panel__body
+   &amp;lt;div class=&amp;#34;panel&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;panel__heading&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;panel__title&amp;#34;&amp;gt;General&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;panel__body&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Using panels in forms Panels is something we use regularly in forms, when building CRUD applications, but we use the semantically correct fieldset and legend.
+General Name  Comment (optional) A short help text for a textarea.   Reset Send     &amp;lt;fieldset class=&amp;#34;panel&amp;#34;&amp;gt; &amp;lt;legend class=&amp;#34;panel__title&amp;#34;&amp;gt;General&amp;lt;/legend&amp;gt; &amp;lt;div class=&amp;#34;panel-body&amp;#34;&amp;gt; .</description>
+    </item>
+    
+    <item>
       <title>Tables</title>
       <link>https://fannypack.persgroep.net/modules/tables/</link>
       <pubDate>Fri, 06 Oct 2017 14:38:47 +0200</pubDate>
@@ -139,7 +151,7 @@ Home  Brands  Lee    Save    &amp;lt;div class=&amp;#34;toolbar&amp;#34;&amp;gt;
       
       <guid>https://fannypack.persgroep.net/modules/forms/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quam!
-Name  Comment (optional) A short help text for a textarea.   Reset Send    &amp;lt;form action=&amp;#34;&amp;#34; method=&amp;#34;&amp;#34; class=&amp;#34;form&amp;#34;&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nameid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Name&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;inputid&amp;#34; name=&amp;#34;inputname&amp;#34; type=&amp;#34;text&amp;#34; class=&amp;#34;form__field&amp;#34; /&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;textareid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Comment &amp;lt;span class=&amp;#34;form__label-meta&amp;#34;&amp;gt;(optional)&amp;lt;/span&amp;gt;&amp;lt;/label&amp;gt; &amp;lt;span class=&amp;#34;form__helptext&amp;#34; id=&amp;#34;textareahelptext&amp;#34;&amp;gt;A short help text for a textarea.&amp;lt;/span&amp;gt; &amp;lt;textarea name=&amp;#34;textareaname&amp;#34; id=&amp;#34;textareaid&amp;#34; class=&amp;#34;form__textarea&amp;#34; aria-describedby=&amp;#34;textareahelptext&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;div class=&amp;#34;form__actions&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--default&amp;#34; type=&amp;#34;reset&amp;#34;&amp;gt;Reset&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Send&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; About labels and placeholders Always use a label with your form elements.</description>
+Name  Comment (optional) A short help text for a textarea.   Reset Send    &amp;lt;form action=&amp;#34;&amp;#34; method=&amp;#34;&amp;#34; class=&amp;#34;form&amp;#34;&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;inputid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Name&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;inputid&amp;#34; name=&amp;#34;inputname&amp;#34; type=&amp;#34;text&amp;#34; class=&amp;#34;form__field&amp;#34; /&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;textareid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Comment &amp;lt;span class=&amp;#34;form__label-meta&amp;#34;&amp;gt;(optional)&amp;lt;/span&amp;gt;&amp;lt;/label&amp;gt; &amp;lt;span class=&amp;#34;form__helptext&amp;#34; id=&amp;#34;textareahelptext&amp;#34;&amp;gt;A short help text for a textarea.&amp;lt;/span&amp;gt; &amp;lt;textarea name=&amp;#34;textareaname&amp;#34; id=&amp;#34;textareaid&amp;#34; class=&amp;#34;form__textarea&amp;#34; aria-describedby=&amp;#34;textareahelptext&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;div class=&amp;#34;form__actions&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--default&amp;#34; type=&amp;#34;reset&amp;#34;&amp;gt;Reset&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Send&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; About labels and placeholders Always use a label with your form elements.</description>
     </item>
     
   </channel>

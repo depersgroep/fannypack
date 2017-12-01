@@ -39,6 +39,10 @@
 			color: $muted-color;
 			font-weight: normal;
 		}
+
+		> * {
+			vertical-align: top; // if a child is inline-block with a different vertical-align than 'top' this fixes the misalignment of it's cell
+		}
 	}
 
 	th {
@@ -65,7 +69,7 @@ caption {
 
 	th,
 	td {
-		border: 1px solid $table-border-color;
+		border: 1px solid $table-cell-border-color;
 	}
 
 	thead th {
@@ -78,7 +82,7 @@ caption {
 
 	th,
 	td {
-		border-bottom: 1px solid $table-border-color;
+		border-bottom: 1px solid $table-cell-border-color;
 	}
 
 	thead th {
@@ -167,7 +171,7 @@ caption {
 
 		tr:not(:last-child) {
 			@include mq-max(799px) {
-				border-bottom: 1px solid $table-border-color;
+				border-bottom: 1px solid $table-cell-border-color;
 			}
 		}
 	}
