@@ -7,7 +7,7 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 parent = "Modules"
 +++
 
-Containers, or boxes, that can hold any information.
+Containers for grouped information that are part of the same subject.
 
 <div class="fp-example">
 	<div class="panel">
@@ -34,7 +34,7 @@ Containers, or boxes, that can hold any information.
 
 ## Using panels in forms
 
-Panels is something we use regularly in forms, when building CRUD applications, but we use the semantically correct `fieldset` and `legend`.
+Panels is something we use regularly in forms when building CRUD applications, but we use the semantically correct `fieldset` and `legend`.
 
 <div class="fp-example">
 	<fieldset class="panel">

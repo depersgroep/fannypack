@@ -43,6 +43,15 @@ You can combine this with other .layout-- modifiers. So &amp;lt;html class=&amp;
     </item>
     
     <item>
+      <title>Login</title>
+      <link>https://fannypack.persgroep.net/templates/login/</link>
+      <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/templates/login/</guid>
+      <description>test</description>
+    </item>
+    
+    <item>
       <title>Two col</title>
       <link>https://fannypack.persgroep.net/templates/2col/</link>
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
@@ -108,9 +117,9 @@ error outline  Error Lorem ipsum dolor sit amet, consectetur adipisicing elit. I
       <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/panels/</guid>
-      <description>Containers, or boxes, that can hold any information.
+      <description>Containers for grouped information that are part of the same subject.
 General  This is the panel__body
-   &amp;lt;div class=&amp;#34;panel&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;panel__heading&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;panel__title&amp;#34;&amp;gt;General&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;panel__body&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Using panels in forms Panels is something we use regularly in forms, when building CRUD applications, but we use the semantically correct fieldset and legend.
+   &amp;lt;div class=&amp;#34;panel&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;panel__heading&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;panel__title&amp;#34;&amp;gt;General&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;panel__body&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Using panels in forms Panels is something we use regularly in forms when building CRUD applications, but we use the semantically correct fieldset and legend.
 General Name  Comment (optional) A short help text for a textarea.   Reset Send    General Name  Comment (optional) A short help text for a textarea.</description>
     </item>
     
@@ -210,7 +219,7 @@ J D  Your App Name     &amp;lt;header class=&amp;#34;site-header&amp;#34; role=&
       <pubDate>Tue, 03 Oct 2017 15:10:21 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/toolbar/</guid>
-      <description>Toolbars use flexbox the way it&amp;rsquo;s meant to be, for UI layout and not for Grid layout.
+      <description>Toolbars use flexbox the way it&amp;rsquo;s meant to be, for UI layout and not for page layout.
 Home  Brands  Lee    Save    &amp;lt;div class=&amp;#34;toolbar&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;toolbar__section&amp;#34;&amp;gt; &amp;lt;nav class=&amp;#34;breadcrumb&amp;#34; role=&amp;#34;navigation&amp;#34; aria-label=&amp;#34;Breadcrumb&amp;#34;&amp;gt; &amp;lt;ol class=&amp;#34;breadcrumb__list&amp;#34;&amp;gt; &amp;lt;li class=&amp;#34;breadcrumb__item&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;breadcrumb__link&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;breadcrumb__item&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;breadcrumb__link&amp;#34;&amp;gt;Brands&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;breadcrumb__item&amp;#34;&amp;gt;Lee&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;toolbar__section&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Save&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Selector Description     .</description>
     </item>
     

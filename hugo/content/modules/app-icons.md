@@ -199,6 +199,20 @@ As we provide visible description of the logo, the way the **aria** attributes a
 		</div>
 		<span class="app-icon__name" id="app-icon-name4">Search</span>
 	</div>
+	<div class="app-icon app-icon--turquoise-blue app-icon--large" aria-labelledby="app-icon-name2">
+		<div class="app-icon__logo" role="img">
+			<span class="app-icon__character">T</span>
+			<span class="app-icon__character">T</span>
+		</div>
+		<span class="app-icon__name" id="app-icon-name2">Timey Mc Timeface</span>
+	</div>
+	<div class="app-icon app-icon--lumberjack-red app-icon--xlarge" aria-labelledby="app-icon-name1">
+		<div class="app-icon__logo" role="img">
+			<span class="app-icon__character">T</span>
+			<span class="app-icon__character">E</span>
+		</div>
+		<span class="app-icon__name" id="app-icon-name1">Temptation Editor</span>
+	</div>
 </div>
 
 ```html

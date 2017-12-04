@@ -15,8 +15,6 @@
 	flex-direction: row;
 	align-items: center;
 	text-decoration: none;
-	// width: 100%;
-	// height: 100%;
 }
 
 .app-icon__link {
@@ -24,6 +22,7 @@
 }
 
 .app-icon__logo {
+	flex: 0 0 $app-icon-logo-small-dimension;
 	width: $app-icon-logo-small-dimension;
 	height: $app-icon-logo-small-dimension;
 	border-radius: $app-icon-logo-small-border-radius;
@@ -34,6 +33,7 @@
 
 	// sizing
 	.app-icon--large & {
+		flex: 0 0 $app-icon-logo-large-dimension;
 		width: $app-icon-logo-large-dimension;
 		height: $app-icon-logo-large-dimension;
 		border-radius: $app-icon-logo-large-border-radius;
@@ -41,6 +41,7 @@
 	}
 
 	.app-icon--xlarge & {
+		flex: 0 0 $app-icon-logo-xlarge-dimension;
 		width: $app-icon-logo-xlarge-dimension;
 		height: $app-icon-logo-xlarge-dimension;
 		border-radius: $app-icon-logo-xlarge-border-radius;
@@ -97,6 +98,15 @@
 	color: $black;
 	font-size: $app-icon-name-font-size;
 	font-weight: bold;
+	line-height: 1.16667;
+
+	.app-icon--large & {
+		font-size: $app-icon-name-font-size-large;
+	}
+
+	.app-icon--xlarge & {
+		font-size: $app-icon-name-font-size-xlarge;
+	}
 }
 
 //==============================================================================

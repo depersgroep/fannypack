@@ -7,7 +7,7 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 parent = "Modules"
 +++
 
-Toolbars use flexbox the way it's meant to be, for UI layout and not for Grid layout.
+Toolbars use flexbox the way it's meant to be, for UI layout and not for page layout.
 
 <div class="fp-example">
 	<div class="toolbar">
