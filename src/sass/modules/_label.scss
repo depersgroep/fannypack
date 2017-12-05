@@ -8,66 +8,106 @@
 .label {
 	@include font-smoothing(default);
 	display: inline-block;
-	padding: .2em .6em;
+	padding: .115em .7125em;
+	border: 1px solid $label-outline-default-border-color;
 	border-radius: $border-radius-base;
-	background-color: $silver;
-	font-size: 80%;
-	font-weight: 600;
+	background-color: $label-default-bg;
+	color: $label-default-color;
+	font-size: $label-font-size;
+	font-weight: $label-font-weight;
 	white-space: nowrap;
 	vertical-align: baseline;
 
 	// if the label is actually a link
 	&[href] {
-		color: $text-color;
+		color: $label-default-color;
 		text-decoration: none;
 
 		&:focus,
 		&:hover {
+			border-color: $iron;
 			background-color: $iron;
+			color: $text-color;
 		}
 	}
 }
 
 .label--success {
+	border-color: $label-outline-success-border-color;
 	background-color: $label-success-bg;
+	color: $label-success-color;
 
 	&,
 	&[href] {
-		color: $white;
+		color: $label-success-color;
 	}
 
 	&[href] {
 		&:focus,
 		&:hover {
+			border-color: mix($black, $label-success-bg, 7.5%);
 			background-color: mix($black, $label-success-bg, 7.5%);
+			color: $label-success-color;
 		}
+	}
+
+	&.label--outline {
+		background-color: $label-outline-bg;
+		color: $label-outline-success-font-color;
 	}
 }
 
 .label--warning {
+	border-color: $label-outline-warning-border-color;
 	background-color: $label-warning-bg;
+	color: $label-warning-color;
+
+	&,
+	&[href] {
+		color: $label-warning-color;
+	}
 
 	&[href] {
 		&:focus,
 		&:hover {
+			border-color: mix($black, $label-warning-bg, 5%);
 			background-color: mix($black, $label-warning-bg, 5%);
+			color: $label-warning-color;
 		}
+	}
+
+	&.label--outline {
+		background-color: $label-outline-bg;
+		color: $label-outline-warning-font-color;
 	}
 }
 
 .label--error {
+	border-color: $label-outline-error-border-color;
 	background-color: $label-error-bg;
-	color: $white;
+	color: $label-error-color;
 
 	&,
 	&[href] {
-		color: $white;
+		color: $label-error-color;
 	}
 
 	&[href] {
 		&:focus,
 		&:hover {
+			border-color: mix($black, $label-error-bg, 15%);
 			background-color: mix($black, $label-error-bg, 15%);
+			color: $label-error-color;
 		}
 	}
+
+	&.label--outline {
+		background-color: $label-outline-bg;
+		color: $label-outline-error-font-color;
+	}
+}
+
+
+.label--outline {
+	background-color: $label-outline-bg;
 }

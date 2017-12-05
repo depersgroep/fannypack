@@ -39,6 +39,8 @@ $form-element-disabled-bg : $silver !default;
 $form-element-readonly-border : $iron !default;
 $form-element-readonly-bg : $silver !default;
 
+$form-field-focus-border-color: $coolblue !default;
+
 //==============================================================================
 // SITE HEADER
 //==============================================================================
@@ -152,10 +154,28 @@ $table-zebra-bg: $whitesmoke !default;
 //==============================================================================
 // LABELS
 //==============================================================================
-$label-success-bg: $success-color !default;
-$label-error-bg: $error-color !default;
-$label-warning-bg: $warning-color !default;
+$label-font-size: 87.5% !default;
+$label-font-weight: 600 !default;
 
+$label-default-bg: $silver !default;
+$label-default-color: $warmgrey !default;
+$label-outline-bg: $transparent !default;
+$label-outline-default-border-color: $label-default-bg !default;
+
+$label-success-bg: $success-color !default;
+$label-success-color: $white !default;
+$label-outline-success-border-color: $label-success-bg !default;
+$label-outline-success-font-color: $label-success-bg !default;
+
+$label-warning-bg: $warning-color !default;
+$label-warning-color: $white !default;
+$label-outline-warning-border-color: $label-warning-bg !default;
+$label-outline-warning-font-color: $label-warning-bg !default;
+
+$label-error-bg: $error-color !default;
+$label-error-color: $white !default;
+$label-outline-error-border-color: $label-error-bg !default;
+$label-outline-error-font-color: $label-error-bg !default;
 //==============================================================================
 // NAVIGATION
 //==============================================================================

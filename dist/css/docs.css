@@ -447,3 +447,77 @@
     width: 50%;
   }
 }
+
+.layout--diorama .dialog__checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.layout--diorama .dialog__toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: .2em .6em;
+  border-radius: 2px;
+  background-color: #47a0c3;
+  color: #fff;
+  z-index: 2;
+}
+
+.layout--diorama .dialog__toggle::after {
+  content: 'Show code </>';
+}
+
+.layout--diorama .dialog__checkbox:checked + .dialog__toggle {
+  top: 100px;
+  right: 60px;
+  bottom: auto;
+  left: auto;
+}
+
+@media only screen and (min-width: 1280px) {
+  .layout--diorama .dialog__checkbox:checked + .dialog__toggle {
+    right: auto;
+    right: calc(50% - 580px);
+  }
+}
+
+.layout--diorama .dialog__checkbox:checked + .dialog__toggle::after {
+  content: 'Hide code </>';
+}
+
+.layout--diorama .dialog__checkbox:checked + .dialog__toggle + .dialog {
+  display: block;
+}
+
+.layout--diorama .dialog {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 40px;
+  left: 40px;
+  max-width: 1200px;
+  max-height: 80vh;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1280px) {
+  .layout--diorama .dialog {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

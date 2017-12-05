@@ -334,20 +334,45 @@
 <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--success&#34;</span><span class="p"></span><span class="p">&gt;</span>success<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--warning&#34;</span><span class="p"></span><span class="p">&gt;</span>warning<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--error&#34;</span><span class="p"></span><span class="p">&gt;</span>error<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="outline-style">Outline style</h2>
+
+<div class="fp-example">
+    <span class="label label--outline">default</span>
+    <span class="label label--success label--outline">success</span>
+    <span class="label label--warning label--outline">warning</span>
+    <span class="label label--error label--outline">error</span>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>default<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--success label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>success<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--warning label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>warning<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--error label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>error<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="links">Links</h2>
 
 <p>Using the <code>.label</code> classes with the <code>&lt;a&gt;</code> element quickly provide <em>actionable</em> badges with hover and focus states.</p>
 
 <div class="fp-example">
-    <a href="#" class="label">default</a>
-    <a href="#" class="label label--success">success</a>
-    <a href="#" class="label label--warning">warning</a>
-    <a href="#" class="label label--error">error</a>
+    <div>
+        <a href="#" class="label">default</a>
+        <a href="#" class="label label--success">success</a>
+        <a href="#" class="label label--warning">warning</a>
+        <a href="#" class="label label--error">error</a>
+    </div>
+    <div style="margin-top: 10px;">
+        <a href="#" class="label label--outline">default</a>
+        <a href="#" class="label label--success label--outline">success</a>
+        <a href="#" class="label label--warning label--outline">warning</a>
+        <a href="#" class="label label--error label--outline">error</a>
+    </div>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label&#34;</span><span class="p"></span><span class="p">&gt;</span>default<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--success&#34;</span><span class="p"></span><span class="p">&gt;</span>success<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--warning&#34;</span><span class="p"></span><span class="p">&gt;</span>warning<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--error&#34;</span><span class="p"></span><span class="p">&gt;</span>error<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre></div>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--error&#34;</span><span class="p"></span><span class="p">&gt;</span>error<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>default<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--success label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>success<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--warning label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>warning<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;label label--error label--outline&#34;</span><span class="p"></span><span class="p">&gt;</span>error<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre></div>
 	</div>
 </div>
 
