@@ -21,7 +21,7 @@
 	th,
 	td {
 		padding: $half-spacing-unit;
-		vertical-align: top;
+		// vertical-align: top;
 
 		@include mq-min($bp-small) {
 			padding: $base-spacing-unit;
@@ -40,8 +40,9 @@
 			font-weight: normal;
 		}
 
-		> * {
-			vertical-align: top; // if a child is inline-block with a different vertical-align than 'top' this fixes the misalignment of its cell
+		> .label,
+		> .code {
+			display: inline; // if a child is inline-block with a different vertical-align than 'top' this fixes the misalignment of its cell
 		}
 	}
 

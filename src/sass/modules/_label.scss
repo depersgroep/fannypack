@@ -32,81 +32,6 @@
 	}
 }
 
-// .label--success {
-// 	border-color: $label-outline-success-border-color;
-// 	background-color: $label-success-bg;
-// 	color: $label-success-color;
-
-// 	&,
-// 	&[href] {
-// 		color: $label-success-color;
-// 	}
-
-// 	&[href] {
-// 		&:focus,
-// 		&:hover {
-// 			border-color: mix($black, $label-success-bg, 7.5%);
-// 			background-color: mix($black, $label-success-bg, 7.5%);
-// 			color: $label-success-color;
-// 		}
-// 	}
-
-// 	&.label--outline {
-// 		background-color: $label-outline-bg;
-// 		color: $label-outline-success-font-color;
-// 	}
-// }
-
-// .label--warning {
-// 	border-color: $label-outline-warning-border-color;
-// 	background-color: $label-warning-bg;
-// 	color: $label-warning-color;
-
-// 	&,
-// 	&[href] {
-// 		color: $label-warning-color;
-// 	}
-
-// 	&[href] {
-// 		&:focus,
-// 		&:hover {
-// 			border-color: mix($black, $label-warning-bg, 5%);
-// 			background-color: mix($black, $label-warning-bg, 5%);
-// 			color: $label-warning-color;
-// 		}
-// 	}
-
-// 	&.label--outline {
-// 		background-color: $label-outline-bg;
-// 		color: $label-outline-warning-font-color;
-// 	}
-// }
-
-// .label--error {
-// 	border-color: $label-outline-error-border-color;
-// 	background-color: $label-error-bg;
-// 	color: $label-error-color;
-
-// 	&,
-// 	&[href] {
-// 		color: $label-error-color;
-// 	}
-
-// 	&[href] {
-// 		&:focus,
-// 		&:hover {
-// 			border-color: mix($black, $label-error-bg, 15%);
-// 			background-color: mix($black, $label-error-bg, 15%);
-// 			color: $label-error-color;
-// 		}
-// 	}
-
-// 	&.label--outline {
-// 		background-color: $label-outline-bg;
-// 		color: $label-outline-error-font-color;
-// 	}
-// }
-
 @each $name, $color in $allcolors {
 	.label--#{$name} {
 		border-color: $color;
@@ -151,14 +76,6 @@
 	}
 }
 
-.label--primary {
-	@extend .label--coolblue;
-}
-
-.label--secondary {
-	@extend .label--slate;
-}
-
 .label--outline {
 	background-color: $label-outline-bg;
 
@@ -172,4 +89,12 @@
 			}
 		}
 	}
+}
+
+.label--primary {
+	@extend .label--coolblue;
+}
+
+.label--secondary {
+	@extend .label--slate;
 }

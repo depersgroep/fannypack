@@ -2132,7 +2132,7 @@ input[type="color"].form__field {
   text-rendering: optimizeLegibility;
   text-transform: none;
   white-space: nowrap;
-  vertical-align: -.2ex;
+  vertical-align: -.3ex;
   word-wrap: normal;
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
@@ -3853,7 +3853,6 @@ legend.panel__title + .panel__body {
 .table th,
 .table td {
   padding: 5px;
-  vertical-align: top;
 }
 
 @media only screen and (min-width: 480px) {
@@ -3881,9 +3880,11 @@ legend.panel__title + .panel__body {
   font-weight: normal;
 }
 
-.table th > *,
-.table td > * {
-  vertical-align: top;
+.table th > .label,
+.table th > .code,
+.table td > .label,
+.table td > .code {
+  display: inline;
 }
 
 .table th {
@@ -4289,6 +4290,13 @@ legend.panel__title + .panel__body {
   display: block;
   clear: both;
   content: '';
+}
+
+.unstyled-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media print {
