@@ -1880,9 +1880,18 @@ a:active {
 }
 
 .form__label {
-  display: inline-block;
+  display: block;
   margin-bottom: 5px;
   font-weight: bold;
+}
+
+legend.form__label {
+  width: 100%;
+  float: left;
+}
+
+legend.form__label + * {
+  clear: both;
 }
 
 .form__label-meta {
@@ -2101,7 +2110,7 @@ input[type="color"].form__field {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .site-header__section + .site-header__section {
