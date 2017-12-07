@@ -49,28 +49,17 @@
 	}
 
 	// coloring
-	.app-icon--lumberjack-red & {
-		background-color: $app-icon-lumberjack-red;
+
+	@each $name, $color in $customcolors {
+		.app-icon--#{$name} & {
+			background-color: $color;
+		}
 	}
 
-	.app-icon--spring-green & {
-		background-color: $app-icon-spring-green;
-	}
-
-	.app-icon--lavender-blue & {
-		background-color: $app-icon-lavender-blue;
-	}
-
-	.app-icon--turquoise-blue & {
-		background-color: $app-icon-turquoise-blue;
-	}
-
-	.app-icon--steel-blue & {
-		background-color: $app-icon-steel-blue;
-	}
-
-	.app-icon--green-yellow & {
-		background-color: $app-icon-green-yellow;
+	@each $name, $color in $additionalcolors {
+		.app-icon--#{$name} & {
+			background-color: $color;
+		}
 	}
 }
 

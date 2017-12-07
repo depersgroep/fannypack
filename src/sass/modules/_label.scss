@@ -32,82 +32,144 @@
 	}
 }
 
-.label--success {
-	border-color: $label-outline-success-border-color;
-	background-color: $label-success-bg;
-	color: $label-success-color;
+// .label--success {
+// 	border-color: $label-outline-success-border-color;
+// 	background-color: $label-success-bg;
+// 	color: $label-success-color;
 
-	&,
-	&[href] {
-		color: $label-success-color;
-	}
+// 	&,
+// 	&[href] {
+// 		color: $label-success-color;
+// 	}
 
-	&[href] {
-		&:focus,
-		&:hover {
-			border-color: mix($black, $label-success-bg, 7.5%);
-			background-color: mix($black, $label-success-bg, 7.5%);
-			color: $label-success-color;
+// 	&[href] {
+// 		&:focus,
+// 		&:hover {
+// 			border-color: mix($black, $label-success-bg, 7.5%);
+// 			background-color: mix($black, $label-success-bg, 7.5%);
+// 			color: $label-success-color;
+// 		}
+// 	}
+
+// 	&.label--outline {
+// 		background-color: $label-outline-bg;
+// 		color: $label-outline-success-font-color;
+// 	}
+// }
+
+// .label--warning {
+// 	border-color: $label-outline-warning-border-color;
+// 	background-color: $label-warning-bg;
+// 	color: $label-warning-color;
+
+// 	&,
+// 	&[href] {
+// 		color: $label-warning-color;
+// 	}
+
+// 	&[href] {
+// 		&:focus,
+// 		&:hover {
+// 			border-color: mix($black, $label-warning-bg, 5%);
+// 			background-color: mix($black, $label-warning-bg, 5%);
+// 			color: $label-warning-color;
+// 		}
+// 	}
+
+// 	&.label--outline {
+// 		background-color: $label-outline-bg;
+// 		color: $label-outline-warning-font-color;
+// 	}
+// }
+
+// .label--error {
+// 	border-color: $label-outline-error-border-color;
+// 	background-color: $label-error-bg;
+// 	color: $label-error-color;
+
+// 	&,
+// 	&[href] {
+// 		color: $label-error-color;
+// 	}
+
+// 	&[href] {
+// 		&:focus,
+// 		&:hover {
+// 			border-color: mix($black, $label-error-bg, 15%);
+// 			background-color: mix($black, $label-error-bg, 15%);
+// 			color: $label-error-color;
+// 		}
+// 	}
+
+// 	&.label--outline {
+// 		background-color: $label-outline-bg;
+// 		color: $label-outline-error-font-color;
+// 	}
+// }
+
+@each $name, $color in $allcolors {
+	.label--#{$name} {
+		border-color: $color;
+		background-color: $color;
+
+		&,
+		&[href] {
+			color: color-contrast($color);
 		}
-	}
 
-	&.label--outline {
-		background-color: $label-outline-bg;
-		color: $label-outline-success-font-color;
+		&[href] {
+			&:focus,
+			&:hover {
+				@if (saturation($color) >= (100% - $label-contrast-treshold)) {
+					border-color: desaturate($color, $label-contrast-treshold);
+					background-color: desaturate($color, $label-contrast-treshold);
+				} @else {
+					border-color: saturate($color, $label-contrast-treshold);
+					background-color: saturate($color, $label-contrast-treshold);
+				}
+
+				@if (color-contrast($color) == $black) {
+					@if (color-contrast(desaturate($color, $label-contrast-treshold)) == $black) {
+						color: color-contrast($color);
+					} @else {
+						color: invert(color-contrast($color));
+					}
+				} @else {
+					@if (color-contrast(saturate($color, $label-contrast-treshold)) == $white) {
+						color: color-contrast($color);
+					} @else {
+						color: invert(color-contrast($color));
+					}
+				}
+
+			}
+		}
+
+		&.label--outline {
+			color: $color;
+		}
 	}
 }
 
-.label--warning {
-	border-color: $label-outline-warning-border-color;
-	background-color: $label-warning-bg;
-	color: $label-warning-color;
-
-	&,
-	&[href] {
-		color: $label-warning-color;
-	}
-
-	&[href] {
-		&:focus,
-		&:hover {
-			border-color: mix($black, $label-warning-bg, 5%);
-			background-color: mix($black, $label-warning-bg, 5%);
-			color: $label-warning-color;
-		}
-	}
-
-	&.label--outline {
-		background-color: $label-outline-bg;
-		color: $label-outline-warning-font-color;
-	}
+.label--primary {
+	@extend .label--coolblue;
 }
 
-.label--error {
-	border-color: $label-outline-error-border-color;
-	background-color: $label-error-bg;
-	color: $label-error-color;
-
-	&,
-	&[href] {
-		color: $label-error-color;
-	}
-
-	&[href] {
-		&:focus,
-		&:hover {
-			border-color: mix($black, $label-error-bg, 15%);
-			background-color: mix($black, $label-error-bg, 15%);
-			color: $label-error-color;
-		}
-	}
-
-	&.label--outline {
-		background-color: $label-outline-bg;
-		color: $label-outline-error-font-color;
-	}
+.label--secondary {
+	@extend .label--slate;
 }
-
 
 .label--outline {
 	background-color: $label-outline-bg;
+
+	@each $name, $color in $allcolors {
+		&[href].label--#{$name} {
+			&:focus,
+			&:hover {
+				border-color: $color;
+				background-color: $color;
+				color: color-contrast($color);
+			}
+		}
+	}
 }

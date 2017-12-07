@@ -246,61 +246,23 @@
 	padding-top: 50%;
 	border-radius: $border-radius-large $border-radius-large 0 0;
 
-	.coolblue > & {
-		background-color: $coolblue;
+	@each $name, $color in $allcolors {
+		.#{$name} > & {
+			background-color: $color;
+		}
 	}
 
-	.duskblue > & {
-		background-color: $duskblue;
-	}
+	// @each $name, $color in $functionalcolors {
+	// 	.#{$name} > & {
+	// 		background-color: $color;
+	// 	}
+	// }
 
-	.lightbluegrey > & {
-		background-color: $lightbluegrey;
-	}
-
-	.slate > & {
-		background-color: $slate;
-	}
-
-	.dark > & {
-		background-color: $dark;
-	}
-
-	.warmgrey > & {
-		background-color: $warmgrey;
-	}
-
-	.orangepink > & {
-		background-color: $orangepink;
-	}
-
-	.lightishgreen > & {
-		background-color: $lightishgreen;
-	}
-
-	.lightishpurple > & {
-		background-color: $lightishpurple;
-	}
-
-	.cornflower > & {
-		background-color: $cornflower;
-	}
-
-	.lightteal > & {
-		background-color: $lightteal;
-	}
-
-	.sunyellow > & {
-		background-color: $sunyellow;
-	}
-
-	.apricot > & {
-		background-color: $apricot;
-	}
-
-	.lightsalmon > & {
-		background-color: $lightsalmon;
-	}
+	// @each $name, $color in $additionalcolors {
+	// 	.#{$name} > & {
+	// 		background-color: $color;
+	// 	}
+	// }
 }
 
 .fp-droplet__meta {

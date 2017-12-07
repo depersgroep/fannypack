@@ -353,28 +353,28 @@
   border-radius: 4px 4px 0 0;
 }
 
-.coolblue > .fp-droplet__color {
-  background-color: #47a0c3;
+.facebook > .fp-droplet__color {
+  background-color: #365187;
 }
 
-.duskblue > .fp-droplet__color {
-  background-color: #227393;
+.twitter > .fp-droplet__color {
+  background-color: #199bd3;
 }
 
-.lightbluegrey > .fp-droplet__color {
-  background-color: #a8cfde;
+.youtube > .fp-droplet__color {
+  background-color: #e52d27;
 }
 
-.slate > .fp-droplet__color {
-  background-color: #3c4d62;
+.instagram > .fp-droplet__color {
+  background-color: #125688;
 }
 
-.dark > .fp-droplet__color {
-  background-color: #152130;
+.spotify > .fp-droplet__color {
+  background-color: #1ed760;
 }
 
-.warmgrey > .fp-droplet__color {
-  background-color: #9e9e9e;
+.soundcloud > .fp-droplet__color {
+  background-color: #f50;
 }
 
 .orangepink > .fp-droplet__color {
@@ -407,6 +407,46 @@
 
 .lightsalmon > .fp-droplet__color {
   background-color: #ffab93;
+}
+
+.coolblue > .fp-droplet__color {
+  background-color: #47a0c3;
+}
+
+.duskblue > .fp-droplet__color {
+  background-color: #227393;
+}
+
+.lightbluegrey > .fp-droplet__color {
+  background-color: #a8cfde;
+}
+
+.slate > .fp-droplet__color {
+  background-color: #3c4d62;
+}
+
+.dark > .fp-droplet__color {
+  background-color: #152130;
+}
+
+.warmgrey > .fp-droplet__color {
+  background-color: #9e9e9e;
+}
+
+.success > .fp-droplet__color {
+  background-color: #6bd888;
+}
+
+.warning > .fp-droplet__color {
+  background-color: #ffb060;
+}
+
+.error > .fp-droplet__color {
+  background-color: #fe6c59;
+}
+
+.muted > .fp-droplet__color {
+  background-color: #9e9e9e;
 }
 
 .fp-droplet__meta {

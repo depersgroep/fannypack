@@ -67,12 +67,12 @@ $app-icon-logo-xlarge-border-radius: 12px !default;
 $app-icon-character-font-large: 32px !default;
 $app-icon-character-font-xlarge: 40px !default;
 
-$app-icon-lumberjack-red: $lumberjack-red !default;
-$app-icon-lavender-blue: $lavender-blue !default;
-$app-icon-turquoise-blue: $turquoise-blue !default;
-$app-icon-steel-blue: $steel-blue !default;
-$app-icon-green-yellow: $green-yellow !default;
-$app-icon-spring-green: $spring-green !default;
+// $app-icon-lumberjack-red: $lumberjack-red !default;
+// $app-icon-lavender-blue: $lavender-blue !default;
+// $app-icon-turquoise-blue: $turquoise-blue !default;
+// $app-icon-steel-blue: $steel-blue !default;
+// $app-icon-green-yellow: $green-yellow !default;
+// $app-icon-spring-green: $spring-green !default;
 
 //==============================================================================
 // TOOLBAR
@@ -157,25 +157,32 @@ $table-zebra-bg: $whitesmoke !default;
 $label-font-size: 87.5% !default;
 $label-font-weight: 600 !default;
 
+$label-contrast-treshold: 30% !default;
+
 $label-default-bg: $silver !default;
-$label-default-color: $warmgrey !default;
+$label-default-color: $steel !default;
 $label-outline-bg: $transparent !default;
 $label-outline-default-border-color: $label-default-bg !default;
 
-$label-success-bg: $success-color !default;
-$label-success-color: $white !default;
-$label-outline-success-border-color: $label-success-bg !default;
-$label-outline-success-font-color: $label-success-bg !default;
+// $label-success-bg: $success-color !default;
+// $label-success-color: $white !default;
+// $label-outline-success-border-color: $label-success-bg !default;
+// $label-outline-success-font-color: $label-success-bg !default;
 
-$label-warning-bg: $warning-color !default;
-$label-warning-color: $white !default;
-$label-outline-warning-border-color: $label-warning-bg !default;
-$label-outline-warning-font-color: $label-warning-bg !default;
+// $label-warning-bg: $warning-color !default;
+// $label-warning-color: $white !default;
+// $label-outline-warning-border-color: $label-warning-bg !default;
+// $label-outline-warning-font-color: $label-warning-bg !default;
 
-$label-error-bg: $error-color !default;
-$label-error-color: $white !default;
-$label-outline-error-border-color: $label-error-bg !default;
-$label-outline-error-font-color: $label-error-bg !default;
+// $label-error-bg: $error-color !default;
+// $label-error-color: $white !default;
+// $label-outline-error-border-color: $label-error-bg !default;
+// $label-outline-error-font-color: $label-error-bg !default;
+
+// $label-custom-color: $white !default;
+// $label-additional-color: $white !default;
+
+
 //==============================================================================
 // NAVIGATION
 //==============================================================================
@@ -203,23 +210,58 @@ $z-index-sidebar: 5 !default;
 //==============================================================================
 // DRAWER
 //==============================================================================
-$drawer-width: 295px !default;
-$drawer-bg: $dark !default;
-$drawer-line-color : $black !default;
-$drawer-light-line-color : $white !default;
+$drawer-width              : 295px !default;
+$drawer-bg                 : $dark !default;
+$drawer-line-color         : $black !default;
+$drawer-light-line-color   : $white !default;
 $drawer-section-title-color: #5c7087 !default;
 
 //==============================================================================
 // FOOTER
 //==============================================================================
 $footer-height: 70px;
-$footer-bg: $white !default;
+$footer-bg    : $white !default;
 
 //==============================================================================
 // PANELS
 //==============================================================================
-$panel-bg: $white !default;
-$panel-border-color: $border-color !default;
+$panel-bg             : $white !default;
+$panel-border-color   : $border-color !default;
 $panel-title-font-size: emify(18) !default;
+
+//==============================================================================
+// TABS
+//==============================================================================
+$tabs-height                           : 50px !default;
+
+$tabs-primary-tab-bg      : $whitesmoke !default;
+$tabs-primary-pane-bg     : $white !default;
+$tabs-primary-color       : $aluminum !default;
+$tabs-primary-hover-color : $coolblue !default;
+$tabs-primary-active-color: $white !default;
+$tabs-primary-active-bg   : $coolblue !default;
+
+$tabs-secondary-tab-bg      : $whitesmoke !default;
+$tabs-secondary-pane-bg     : $white !default;
+$tabs-secondary-color       : $tabs-primary-color !default;
+$tabs-secondary-hover-color : $slate !default;
+$tabs-secondary-active-color: $tabs-primary-active-color !default;
+$tabs-secondary-active-bg   : $slate !default;
+
+$tabs-alt-primary-tab-bg             : $white !default;
+$tabs-alt-primary-pane-bg            : $white !default;
+$tabs-alt-primary-color              : $aluminum !default;
+$tabs-alt-primary-hover-color        : $link-hover-color !default;
+$tabs-alt-primary-active-color       : $coolblue !default;
+$tabs-alt-primary-active-bg          : $white !default;
+$tabs-alt-primary-active-border-color: currentColor !default;
+
+$tabs-alt-secondary-tab-bg             : $white !default;
+$tabs-alt-secondary-pane-bg            : $white !default;
+$tabs-alt-secondary-color              : $aluminum !default;
+$tabs-alt-secondary-hover-color        : $slate !default;
+$tabs-alt-secondary-active-color       : $slate !default;
+$tabs-alt-secondary-active-bg          : $tabs-alt-primary-active-bg !default;
+$tabs-alt-secondary-active-border-color: $tabs-alt-primary-active-border-color !default;
 
 // scss-lint:enable SpaceAfterVariableName
