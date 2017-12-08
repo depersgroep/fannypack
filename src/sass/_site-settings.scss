@@ -108,15 +108,17 @@ $additionalcolors: map-merge((
 $success-color   : $lightishgreen !default;
 $warning-color   : $apricot !default;
 $error-color     : $orangepink !default;
+$info-color      : $coolblue !default;
 $muted-color     : $warmgrey !default;
 
 // functional colors
 $functionalcolors: () !default;
 $functionalcolors: map-merge((
-	'success'   : $lightishgreen,
-	'warning'   : $apricot,
-	'error'   : $orangepink,
-	'muted'   : $warmgrey
+	'success': $lightishgreen,
+	'warning': $apricot,
+	'error'  : $orangepink,
+	'info'   : $coolblue,
+	'muted'  : $warmgrey
 	), $functionalcolors);
 
 $allcolors: map-merge($customcolors, $functionalcolors) !default;

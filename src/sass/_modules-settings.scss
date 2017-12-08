@@ -21,11 +21,13 @@ $grid-spacing-unit: $double-spacing-unit !default;
 //==============================================================================
 // ALERTS
 //==============================================================================
-$alert-error-bg: mix($white, $error-color, 50%) !default;
+$alert-error-bg: tint($error-color, 50%) !default;
 
-$alert-warning-bg: mix($white, $warning-color, 50%) !default;
+$alert-warning-bg: tint($warning-color, 50%) !default;
 
-$alert-success-bg: mix($white, $success-color, 50%) !default;
+$alert-success-bg: tint($success-color, 50%) !default;
+
+$alert-info-bg: tint($primary-color, 50%) !default;
 
 //==============================================================================
 // FORMS
@@ -66,13 +68,6 @@ $app-icon-logo-xlarge-border-radius: 12px !default;
 
 $app-icon-character-font-large: 32px !default;
 $app-icon-character-font-xlarge: 40px !default;
-
-// $app-icon-lumberjack-red: $lumberjack-red !default;
-// $app-icon-lavender-blue: $lavender-blue !default;
-// $app-icon-turquoise-blue: $turquoise-blue !default;
-// $app-icon-steel-blue: $steel-blue !default;
-// $app-icon-green-yellow: $green-yellow !default;
-// $app-icon-spring-green: $spring-green !default;
 
 //==============================================================================
 // TOOLBAR
@@ -163,25 +158,6 @@ $label-default-bg: $silver !default;
 $label-default-color: $steel !default;
 $label-outline-bg: $transparent !default;
 $label-outline-default-border-color: $label-default-bg !default;
-
-// $label-success-bg: $success-color !default;
-// $label-success-color: $white !default;
-// $label-outline-success-border-color: $label-success-bg !default;
-// $label-outline-success-font-color: $label-success-bg !default;
-
-// $label-warning-bg: $warning-color !default;
-// $label-warning-color: $white !default;
-// $label-outline-warning-border-color: $label-warning-bg !default;
-// $label-outline-warning-font-color: $label-warning-bg !default;
-
-// $label-error-bg: $error-color !default;
-// $label-error-color: $white !default;
-// $label-outline-error-border-color: $label-error-bg !default;
-// $label-outline-error-font-color: $label-error-bg !default;
-
-// $label-custom-color: $white !default;
-// $label-additional-color: $white !default;
-
 
 //==============================================================================
 // NAVIGATION

@@ -104,9 +104,11 @@ h6 heading Unordered list
       <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/alert/</guid>
-      <description>Be brief in your description text, one paragraph should be more than enough to get your feedback across to the user.
-error outline  Error Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.
-  warning  Warning Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</description>
+      <description>Error! Major alert. Click here
+  Warning! Something&#39;s up. Click here
+  Success! You successfully did something. Click here
+  Attention! This alert needs your attention. Click here
+   &amp;lt;!-- ERROR --&amp;gt; &amp;lt;div class=&amp;#34;alert alert--condensed alert--error&amp;#34; role=&amp;#34;alert&amp;#34; aria-describedby=&amp;#34;alertdescription1&amp;#34; aria-live=&amp;#34;assertive&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert__body&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;alert__title&amp;#34;&amp;gt;Error&amp;lt;/h3&amp;gt; &amp;lt;p class=&amp;#34;alert__text&amp;#34; id=&amp;#34;alertdescription1&amp;#34;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</description>
     </item>
     
     <item>

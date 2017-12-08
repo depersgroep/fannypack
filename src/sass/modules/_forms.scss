@@ -8,6 +8,10 @@
 .form {
 	width: 100%;
 	margin-bottom: $double-spacing-unit;
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .form__fieldset {

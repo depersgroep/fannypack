@@ -71,6 +71,10 @@
   }
 }
 
+.theme--fp .alert__dismiss {
+  display: block;
+}
+
 .theme--fp-homepage body {
   background-color: #fff;
 }
@@ -443,6 +447,10 @@
 
 .error > .fp-droplet__color {
   background-color: #fe6c59;
+}
+
+.info > .fp-droplet__color {
+  background-color: #47a0c3;
 }
 
 .muted > .fp-droplet__color {
