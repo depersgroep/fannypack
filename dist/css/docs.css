@@ -357,6 +357,14 @@
   border-radius: 4px 4px 0 0;
 }
 
+.primary > .fp-droplet__color {
+  background-color: #47a0c3;
+}
+
+.secondary > .fp-droplet__color {
+  background-color: #152130;
+}
+
 .facebook > .fp-droplet__color {
   background-color: #365187;
 }

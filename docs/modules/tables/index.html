@@ -127,6 +127,15 @@
 					
 
 
+<a class="nav__link" title="Boxes" href="../../modules/boxes/">Boxes</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
 <a class="nav__link" title="Breadcrumb" href="../../modules/breadcrumb/">Breadcrumb</a>
 
 				</li>
@@ -581,6 +590,52 @@ With <code>.key</code> or <code>scope=&quot;row&quot;</code> you can emphasize t
 	<span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p"></span><span class="p">&gt;</span>Status<span class="p">&lt;</span><span class="p">/</span><span class="nt">th</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">td</span><span class="p"></span><span class="p">&gt;</span>Draft<span class="p">&lt;</span><span class="p">/</span><span class="nt">td</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">tr</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="condensed-tabels">Condensed tabels</h2>
+
+<p>Table cells with less spacing</p>
+
+<div class="fp-example">
+    <table class="table table--condensed table--bordered">
+        <caption>Fannypack lovers</caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Gwendolyn</td>
+                <td>Matthys</td>
+                <td>Visual designer</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Yannick</td>
+                <td>Van Avermaet</td>
+                <td>Frontend Architect</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Jochen</td>
+                <td>Vandendriessche</td>
+                <td>Frontend developer</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Gregory </td>
+                <td>Van Looy</td>
+                <td>Frontend developer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;table table--condensed table--bordered&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	...
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="responsive-tables">Responsive tables</h2>
 
 <p>Making a table responsive (with overflow) is very easy. Just add a <code>div.table__wrapper</code> around the <code>table</code>. If the content or the vast number of cells don&rsquo;t fit the container, you get horizontal scrollbars. This is done with <code>overflow</code>.</p>

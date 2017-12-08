@@ -1650,6 +1650,133 @@ a:active {
   margin-top: 20px;
 }
 
+.box {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.box > *:first-child {
+  margin-top: 0;
+}
+
+.box > *:last-child {
+  margin-bottom: 0;
+}
+
+.box--bordered {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+}
+
+.box--primary {
+  border-color: #47a0c3;
+}
+
+.box--secondary {
+  border-color: #152130;
+}
+
+.box--facebook {
+  border-color: #365187;
+}
+
+.box--twitter {
+  border-color: #199bd3;
+}
+
+.box--youtube {
+  border-color: #e52d27;
+}
+
+.box--instagram {
+  border-color: #125688;
+}
+
+.box--spotify {
+  border-color: #1ed760;
+}
+
+.box--soundcloud {
+  border-color: #f50;
+}
+
+.box--orangepink {
+  border-color: #fe6c59;
+}
+
+.box--lightishgreen {
+  border-color: #6bd888;
+}
+
+.box--lightishpurple {
+  border-color: #ad71e2;
+}
+
+.box--cornflower {
+  border-color: #5b84f3;
+}
+
+.box--lightteal {
+  border-color: #84dcc8;
+}
+
+.box--sunyellow {
+  border-color: #ffd63e;
+}
+
+.box--apricot {
+  border-color: #ffb060;
+}
+
+.box--lightsalmon {
+  border-color: #ffab93;
+}
+
+.box--coolblue {
+  border-color: #47a0c3;
+}
+
+.box--duskblue {
+  border-color: #227393;
+}
+
+.box--lightbluegrey {
+  border-color: #a8cfde;
+}
+
+.box--slate {
+  border-color: #3c4d62;
+}
+
+.box--dark {
+  border-color: #152130;
+}
+
+.box--warmgrey {
+  border-color: #9e9e9e;
+}
+
+.box--success {
+  border-color: #6bd888;
+}
+
+.box--warning {
+  border-color: #ffb060;
+}
+
+.box--error {
+  border-color: #fe6c59;
+}
+
+.box--info {
+  border-color: #47a0c3;
+}
+
+.box--muted {
+  border-color: #9e9e9e;
+}
+
 .breadcrumb {
   color: #9e9e9e;
 }
@@ -2322,6 +2449,48 @@ input[type="color"].form__field {
   color: #404040;
 }
 
+.label--primary {
+  border-color: #47a0c3;
+  background-color: #47a0c3;
+}
+
+.label--primary,
+.label--primary[href] {
+  color: #000;
+}
+
+.label--primary[href]:focus,
+.label--primary[href]:hover {
+  border-color: #22b0e8;
+  background-color: #22b0e8;
+  color: #000;
+}
+
+.label--primary.label--outline {
+  color: #47a0c3;
+}
+
+.label--secondary {
+  border-color: #152130;
+  background-color: #152130;
+}
+
+.label--secondary,
+.label--secondary[href] {
+  color: #fff;
+}
+
+.label--secondary[href]:focus,
+.label--secondary[href]:hover {
+  border-color: #0b203a;
+  background-color: #0b203a;
+  color: #fff;
+}
+
+.label--secondary.label--outline {
+  color: #152130;
+}
+
 .label--facebook {
   border-color: #365187;
   background-color: #365187;
@@ -2861,6 +3030,20 @@ input[type="color"].form__field {
 
 .label--outline {
   background-color: transparent;
+}
+
+.label--outline[href].label--primary:focus,
+.label--outline[href].label--primary:hover {
+  border-color: #47a0c3;
+  background-color: #47a0c3;
+  color: #000;
+}
+
+.label--outline[href].label--secondary:focus,
+.label--outline[href].label--secondary:hover {
+  border-color: #152130;
+  background-color: #152130;
+  color: #fff;
 }
 
 .label--outline[href].label--facebook:focus,
@@ -4139,6 +4322,25 @@ legend.panel__title + .panel__body {
 @media only screen and (max-width: 799px) {
   .table--transformer.table--bordered tr:not(:last-child) {
     border-bottom: 1px solid #f0f0f0;
+  }
+}
+
+.table--condensed th,
+.table--condensed td {
+  padding: 2.5px;
+}
+
+@media only screen and (min-width: 480px) {
+  .table--condensed th,
+  .table--condensed td {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .table--condensed th,
+  .table--condensed td {
+    padding: 7.5px;
   }
 }
 

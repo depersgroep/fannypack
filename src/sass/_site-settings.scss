@@ -121,13 +121,22 @@ $functionalcolors: map-merge((
 	'muted'  : $warmgrey
 	), $functionalcolors);
 
-$allcolors: map-merge($customcolors, $functionalcolors) !default;
-$allcolors: map-merge($additionalcolors, $allcolors);
-$allcolors: map-merge($socialmediacolors, $allcolors);
-
 // MAIN COLORS
 $primary-color   : $coolblue !default;
 $secondary-color : $dark !default;
+
+// main colors
+$maincolors: () !default;
+$maincolors: map-merge((
+	'primary': $coolblue,
+	'secondary': $dark
+	), $maincolors);
+
+$allcolors: map-merge($customcolors, $functionalcolors) !default;
+$allcolors: map-merge($additionalcolors, $allcolors);
+$allcolors: map-merge($socialmediacolors, $allcolors);
+$allcolors: map-merge($maincolors, $allcolors);
+
 
 // human readable color formats
 $transparent     : transparent !default;

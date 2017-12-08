@@ -277,6 +277,56 @@ With `.key` or `scope="row"` you can emphasize the key. If you need extra stylin
 </tr>
 ```
 
+## Condensed tabels
+
+Table cells with less spacing
+
+<div class="fp-example">
+	<table class="table table--condensed table--bordered">
+		<caption>Fannypack lovers</caption>
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">First name</th>
+				<th scope="col">Last name</th>
+				<th scope="col">Role</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Gwendolyn</td>
+				<td>Matthys</td>
+				<td>Visual designer</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Yannick</td>
+				<td>Van Avermaet</td>
+				<td>Frontend Architect</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Jochen</td>
+				<td>Vandendriessche</td>
+				<td>Frontend developer</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>Gregory </td>
+				<td>Van Looy</td>
+				<td>Frontend developer</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+```html
+<table class="table table--condensed table--bordered">
+	...
+</table>
+```
+
 ## Responsive tables
 
 Making a table responsive (with overflow) is very easy. Just add a `div.table__wrapper` around the <code>table</code>. If the content or the vast number of cells don't fit the container, you get horizontal scrollbars. This is done with `overflow`.

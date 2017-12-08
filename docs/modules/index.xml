@@ -35,6 +35,17 @@ default success warning error primary secondary  &amp;lt;span class=&amp;#34;lab
     </item>
     
     <item>
+      <title>Boxes</title>
+      <link>https://fannypack.persgroep.net/modules/boxes/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/boxes/</guid>
+      <description>This is a box. Anything can be its content. The box anly gives padding and some extra styling.
+  &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Bordered boxes This is a bordered box. Anything can be its content. The box anly gives padding and some extra styling.
+  &amp;lt;div class=&amp;#34;box box--bordered&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Colored boxes This is a bordered box. Anything can be its content. The box anly gives padding and some extra styling.</description>
+    </item>
+    
+    <item>
       <title>Panels</title>
       <link>https://fannypack.persgroep.net/modules/panels/</link>
       <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
@@ -103,7 +114,7 @@ Home  Products  About     &amp;lt;nav class=&amp;#34;nav&amp;#34; role=&amp;#34;
       
       <guid>https://fannypack.persgroep.net/modules/app-icons/</guid>
       <description>Representation of an internal application without the application name visible. Because this has role=&amp;quot;img&amp;quot; you must provide aria-label=&amp;quot;&amp;quot; with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a simple graphic logo.
-More colors are available, see color for all available color names
+More colors are available, see color for all available color names.
 T E   A E   W   T T   S M   S M   S    &amp;lt;div class=&amp;#34;app-icon app-icon--orangepink&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--lightishgreen&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Article Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;A&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--coolblue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Workflow&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;W&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--duskblue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Timey Mc Timeface&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--lightbluegrey&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Site Management&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--slate&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Site Management&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--sunyellow&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;!</description>
     </item>
     

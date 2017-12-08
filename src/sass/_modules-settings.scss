@@ -146,6 +146,9 @@ $table-cell-border-color: #f0f0f0 !default;
 $table-row-collapsible-bg:  rgba(#e4f1f6, .2) !default;
 $table-zebra-bg: $whitesmoke !default;
 
+$table-spacing: ($base-spacing-unit * 1.5) !default;
+$table-condensed-spacing: ($table-spacing / 2) !default;
+
 //==============================================================================
 // LABELS
 //==============================================================================
@@ -208,7 +211,7 @@ $panel-title-font-size: emify(18) !default;
 //==============================================================================
 // TABS
 //==============================================================================
-$tabs-height                           : 50px !default;
+$tabs-height: 50px !default;
 
 $tabs-primary-tab-bg      : $whitesmoke !default;
 $tabs-primary-pane-bg     : $white !default;
@@ -239,5 +242,11 @@ $tabs-alt-secondary-hover-color        : $slate !default;
 $tabs-alt-secondary-active-color       : $slate !default;
 $tabs-alt-secondary-active-bg          : $tabs-alt-primary-active-bg !default;
 $tabs-alt-secondary-active-border-color: $tabs-alt-primary-active-border-color !default;
+
+//==============================================================================
+// BOXES
+//==============================================================================
+$box-border-color : $border-color !default;
+$box-border-radius: $border-radius-base !default;
 
 // scss-lint:enable SpaceAfterVariableName

@@ -77,7 +77,7 @@ default success warning error primary secondary  &amp;lt;span class=&amp;#34;lab
       <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/style/color/</guid>
-      <description> Default color palette  cool blue #47a0c3     dusk blue #227393     light blue grey #a8cfde     slate #3c4d62     dark #152130     warm grey #9e9e9e     Functional colors  success = lightish green #6bd888     warning = apricot #ffb060     error = orange pink #fe6c59     Additional colors  orange pink #fe6c59     lightish green #6bd888     lightish purple #ad71e2     cornflower #5b84f3     light teal #84dcc8     sun yellow #ffd63e     apricot #ffb060     light salmon #ffab93     Social media colors  facebook #365187     twitter #199bd3     youtube #e52d27     instagram #125688     spotify #1ed760     soundcloud #f50     </description>
+      <description> Default color palette  cool blue #47a0c3     dusk blue #227393     light blue grey #a8cfde     slate #3c4d62     dark #152130     warm grey #9e9e9e     Functional colors  success = lightish green #6bd888     warning = apricot #ffb060     error = orange pink #fe6c59     info = coolblue #47a0c3     Additional colors  orange pink #fe6c59     lightish green #6bd888     lightish purple #ad71e2     cornflower #5b84f3     light teal #84dcc8     sun yellow #ffd63e     apricot #ffb060     light salmon #ffab93     Social media colors  facebook #365187     twitter #199bd3     youtube #e52d27     instagram #125688     spotify #1ed760     soundcloud #f50     </description>
     </item>
     
     <item>
@@ -109,6 +109,17 @@ h6 heading Unordered list
   Success! You successfully did something. Click here
   Attention! This alert needs your attention. Click here
    &amp;lt;!-- ERROR --&amp;gt; &amp;lt;div class=&amp;#34;alert alert--condensed alert--error&amp;#34; role=&amp;#34;alert&amp;#34; aria-describedby=&amp;#34;alertdescription1&amp;#34; aria-live=&amp;#34;assertive&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert__body&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;alert__title&amp;#34;&amp;gt;Error&amp;lt;/h3&amp;gt; &amp;lt;p class=&amp;#34;alert__text&amp;#34; id=&amp;#34;alertdescription1&amp;#34;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</description>
+    </item>
+    
+    <item>
+      <title>Boxes</title>
+      <link>https://fannypack.persgroep.net/modules/boxes/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/boxes/</guid>
+      <description>This is a box. Anything can be its content. The box anly gives padding and some extra styling.
+  &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Bordered boxes This is a bordered box. Anything can be its content. The box anly gives padding and some extra styling.
+  &amp;lt;div class=&amp;#34;box box--bordered&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Colored boxes This is a bordered box. Anything can be its content. The box anly gives padding and some extra styling.</description>
     </item>
     
     <item>
@@ -190,7 +201,7 @@ Home  Products  About     &amp;lt;nav class=&amp;#34;nav&amp;#34; role=&amp;#34;
       
       <guid>https://fannypack.persgroep.net/modules/app-icons/</guid>
       <description>Representation of an internal application without the application name visible. Because this has role=&amp;quot;img&amp;quot; you must provide aria-label=&amp;quot;&amp;quot; with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a simple graphic logo.
-More colors are available, see color for all available color names
+More colors are available, see color for all available color names.
 T E   A E   W   T T   S M   S M   S    &amp;lt;div class=&amp;#34;app-icon app-icon--orangepink&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--lightishgreen&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Article Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;A&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--coolblue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Workflow&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;W&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--duskblue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Timey Mc Timeface&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--lightbluegrey&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Site Management&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--slate&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Site Management&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--sunyellow&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;!</description>
     </item>
     

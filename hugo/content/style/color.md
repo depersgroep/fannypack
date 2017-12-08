@@ -97,6 +97,15 @@ parent = "Style"
 			</div>
 		</div>
 	</div>
+	<div class="col-4 col--clear">
+		<div class="fp-droplet info">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">info <small class="text--muted">= coolblue</small></div>
+				<div class="fp-droplet__hex">#47a0c3</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 ## Additional colors

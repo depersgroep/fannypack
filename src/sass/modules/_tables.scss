@@ -20,15 +20,14 @@
 
 	th,
 	td {
-		padding: $half-spacing-unit;
-		// vertical-align: top;
+		padding: ($table-spacing / 3);
 
 		@include mq-min($bp-small) {
-			padding: $base-spacing-unit;
+			padding: ($table-spacing / 1.5);
 		}
 
 		@include mq-min($bp-medium) {
-			padding: ($base-spacing-unit * 1.5);
+			padding: $table-spacing;
 		}
 
 		&[scope] {
@@ -178,6 +177,20 @@ caption {
 	}
 }
 
+.table--condensed {
+	th,
+	td {
+		padding: ($table-condensed-spacing / 3);
+
+		@include mq-min($bp-small) {
+			padding: ($table-condensed-spacing / 1.5);
+		}
+
+		@include mq-min($bp-medium) {
+			padding: $table-condensed-spacing;
+		}
+	}
+}
 //==============================================================================
 // COMPLEX DATA TABLES WITH COLLAPSIBLE, NESTED TABLES
 //==============================================================================
