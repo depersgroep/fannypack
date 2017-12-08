@@ -191,13 +191,4 @@ caption {
 		}
 	}
 }
-//==============================================================================
-// COMPLEX DATA TABLES WITH COLLAPSIBLE, NESTED TABLES
-//==============================================================================
-
-.tr--collapsible {
-	> td {
-		background-color: $table-row-collapsible-bg;
-	}
-}
 // scss-lint:enable NestingDepth, SelectorDepth

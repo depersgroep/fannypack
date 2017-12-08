@@ -4344,10 +4344,6 @@ legend.panel__title + .panel__body {
   }
 }
 
-.tr--collapsible > td {
-  background-color: rgba(228, 241, 246, 0.2);
-}
-
 .tabs {
   display: -webkit-box;
   display: -webkit-flex;
