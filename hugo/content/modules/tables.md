@@ -277,7 +277,7 @@ With `.key` or `scope="row"` you can emphasize the key. If you need extra stylin
 </tr>
 ```
 
-## Condensed tabels
+## Condensed tables
 
 Table cells with less spacing
 

@@ -117,9 +117,11 @@ h6 heading Unordered list
       <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/boxes/</guid>
-      <description>This is a box. Anything can be its content. The box anly gives padding and some extra styling.
-  &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Bordered boxes This is a bordered box. Anything can be its content. The box anly gives padding and some extra styling.
-  &amp;lt;div class=&amp;#34;box box--bordered&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Colored boxes This is a bordered box. Anything can be its content. The box anly gives padding and some extra styling.</description>
+      <description>This is a box. Anything can be its content. The box only gives padding and some extra styling.
+  &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Bordered boxes This is a bordered box. Anything can be its content.
+  &amp;lt;div class=&amp;#34;box box--bordered&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Colored boxes This is a bordered box with color name &#34;orangepink&#34;
+ This is a bordered box with color name &#34;lightishgreen&#34;
+ This is a bordered box with color name &#34;</description>
     </item>
     
     <item>

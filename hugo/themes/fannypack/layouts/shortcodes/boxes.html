@@ -2,43 +2,43 @@
 {{ if eq $colorgroup "functional" }}
 	{{ range .Site.Data.colors.functional }}
 		<div class="box box--bordered box--{{ . }}">
-			<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+			<p>This is a bordered box with color name "{{ . }}"</p>
 		</div>
 	{{ end }}
 {{ else if eq $colorgroup "custom" }}
 	{{ range .Site.Data.colors.custom }}
 		<div class="box box--bordered box--{{ . }}">
-			<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+			<p>This is a bordered box with color name "{{ . }}"</p>
 		</div>
 	{{ end }}
 {{ else if eq $colorgroup "additional" }}
 	{{ range .Site.Data.colors.additional }}
 		<div class="box box--bordered box--{{ . }}">
-			<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+			<p>This is a bordered box with color name "{{ . }}"</p>
 		</div>
 	{{ end }}
 {{ else if eq $colorgroup "grayscale" }}
 	{{ range .Site.Data.colors.grayscale }}
 		<div class="box box--bordered box--{{ . }}">
-			<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+			<p>This is a bordered box with color name "{{ . }}"</p>
 		</div>
 	{{ end }}
 {{ else if eq $colorgroup "socialmedia" }}
 	{{ range .Site.Data.colors.socialmedia }}
 		<div class="box box--bordered box--{{ . }}">
-			<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+			<p>This is a bordered box with color name "{{ . }}"</p>
 		</div>
 	{{ end }}
 {{ else if eq $colorgroup "main" }}
 	{{ range .Site.Data.colors.main }}
 		<div class="box box--bordered box--{{ . }}">
-			<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+			<p>This is a bordered box with color name "{{ . }}"</p>
 		</div>
 	{{ end }}
 {{ else if eq $colorgroup "all" }}
 	{{ range .Site.Data.colors.all }}
 		<div class="box box--bordered box--{{ . }}">
-			<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+			<p>This is a bordered box with color name "{{ . }}"</p>
 		</div>
 	{{ end }}
 {{ end }}

@@ -10,7 +10,7 @@ parent = "Modules"
 
 <div class="fp-example">
 	<div class="box">
-		<p>This is a box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+		<p>This is a box. Anything can be its content. The box only gives <code>padding</code> and some extra styling.</p>
 	</div>
 </div>
 
@@ -26,7 +26,7 @@ parent = "Modules"
 
 <div class="fp-example">
 	<div class="box box--bordered">
-		<p>This is a bordered box. Anything can be its content. The box anly gives <code>padding</code> and some extra styling.</p>
+		<p>This is a bordered box. Anything can be its content.</p>
 	</div>
 </div>
 
