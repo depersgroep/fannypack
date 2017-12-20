@@ -17,16 +17,16 @@
 	position: fixed;
 	top: $double-spacing-unit;
 	left: $base-spacing-unit;
-	width: 32px;
+	width: 42px;
 	height: 32px;
-	padding: $half-spacing-unit;
+	padding: $half-spacing-unit $base-spacing-unit;
 	cursor: pointer;
-	z-index: 2; // same as .site-header
+	z-index: $drawer-hamburger-z-index; // same as .site-header
 
 	&::after {
 		position: absolute;
 		top: 50%;
-		right: -2px;
+		right: 2px;
 		left: auto;
 		width: 0;
 		height: 0;
@@ -38,7 +38,7 @@
 
 		@include mq-min($bp-medium) {
 			right: auto;
-			left: -2px;
+			left: 2px;
 			border-width: 4px 4px 4px 0;
 			border-color: $transparent $link-color $transparent $transparent;
 		}
@@ -47,12 +47,12 @@
 	.drawer__checkbox:checked + & {
 		&::after {
 			right: auto;
-			left: -2px;
+			left: 2px;
 			border-width: 4px 4px 4px 0;
 			border-color: $transparent $link-color $transparent $transparent;
 
 			@include mq-min($bp-medium) {
-				right: -2px;
+				right: 2px;
 				left: auto;
 				border-width: 4px 0 4px 4px;
 				border-color: $transparent $transparent $transparent $link-color;

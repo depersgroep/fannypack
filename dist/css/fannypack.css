@@ -1976,17 +1976,17 @@ a:active {
   position: fixed;
   top: 20px;
   left: 10px;
-  width: 32px;
+  width: 42px;
   height: 32px;
-  padding: 5px;
+  padding: 5px 10px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 5;
 }
 
 .drawer__menu::after {
   position: absolute;
   top: 50%;
-  right: -2px;
+  right: 2px;
   left: auto;
   width: 0;
   height: 0;
@@ -2000,7 +2000,7 @@ a:active {
 @media only screen and (min-width: 720px) {
   .drawer__menu::after {
     right: auto;
-    left: -2px;
+    left: 2px;
     border-width: 4px 4px 4px 0;
     border-color: transparent #47a0c3 transparent transparent;
   }
@@ -2008,14 +2008,14 @@ a:active {
 
 .drawer__checkbox:checked + .drawer__menu::after {
   right: auto;
-  left: -2px;
+  left: 2px;
   border-width: 4px 4px 4px 0;
   border-color: transparent #47a0c3 transparent transparent;
 }
 
 @media only screen and (min-width: 720px) {
   .drawer__checkbox:checked + .drawer__menu::after {
-    right: -2px;
+    right: 2px;
     left: auto;
     border-width: 4px 0 4px 4px;
     border-color: transparent transparent transparent #47a0c3;

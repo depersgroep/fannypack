@@ -49,6 +49,7 @@ $form-field-focus-border-color: $coolblue !default;
 $site-header-bg          : $white !default;
 $site-header-border-color: $border-color !default;
 $site-header-height      : 70px !default;
+$site-header-z-index     : 5 !default;
 
 //==============================================================================
 // APP ICONS
@@ -194,6 +195,7 @@ $drawer-bg                 : $dark !default;
 $drawer-line-color         : $black !default;
 $drawer-light-line-color   : $white !default;
 $drawer-section-title-color: #5c7087 !default;
+$drawer-hamburger-z-index  : $site-header-z-index !default; // same as site-header
 
 //==============================================================================
 // FOOTER
