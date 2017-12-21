@@ -74,6 +74,7 @@
 
 .nav__item {
 	display: block;
+	margin: 0;
 
 	& + & {
 		margin-left: $double-spacing-unit;
