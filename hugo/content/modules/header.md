@@ -158,7 +158,7 @@ You can place sections at the opposite site of the header.
 	<tbody>
 		<tr>
 			<td><code>.site-header__section--last</code></td>
-			<td><span class="label label--default">Optional</span></td>
+			<td><span class="label label--info">Optional</span></td>
 			<td>If you want it at the end of the header</td>
 		</tr>
 	</tbody>
@@ -179,6 +179,71 @@ This is actually [layout issue]({{< ref "templates/fixed-header.md" >}}). You ca
 	</body>
 </html>
 ```
+
+## Vertical header
+
+A fixed vertical header on the left side of your page. On mobile this wil transform to a horizontal header with an optional hamburger to show the menu.
+
+```html
+<!DOCTYPE html>
+<html lang="en" class="no-js layout--vertical-header">
+<head>...</head>
+<body>
+	<header class="site-header site-header--vertical">
+		<div class="site-header__section">
+			<!-- app icon here -->
+		</div>
+		<input type="checkbox" class="hamburger__checkbox" id="nav-toggle">
+		<label for="nav-toggle" class="hamburger" role="button" aria-label="Toggle the menu">
+			<span class="hamburger__line" role="none presentation"></span>
+			<span class="hamburger__line" role="none presentation"></span>
+			<span class="hamburger__line" role="none presentation"></span>
+		</label>
+		<nav class="nav nav--vertical">...</nav>
+	</header>
+	<main class="main-container" role="main">
+		<div class="main-content">
+			<div class="container">
+				...
+			</div>
+		</div>
+	</main>
+</body>
+</html>
+```
+
+<table class="table table--horizontal-borders">
+	<thead>
+		<tr>
+			<th>Selector</th>
+			<th></th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>.layout--vertical-header</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>On the <code>html</code> tag</code></td>
+		</tr>
+		<tr>
+			<td><code>.site-header--vertical</code></td>
+			<td><span class="label label--warning">Required</span></td>
+			<td>Modifier on <code>.site-header</code></code></td>
+		</tr>
+		<tr>
+			<td><code>.nav--vertical</code></td>
+			<td><span class="label label--info">Optional</span></td>
+			<td>Only if you need navigation in the vertical header</td>
+		</tr>
+		<tr>
+			<td><code>.hamburger</code></td>
+			<td><span class="label label--info">Optional</span></td>
+			<td>Only if you need navigation in the vertical header. This is for the mobile view only.</td>
+		</tr>
+	</tbody>
+</table>
+
 
 
 

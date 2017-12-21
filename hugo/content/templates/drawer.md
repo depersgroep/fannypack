@@ -33,14 +33,24 @@ Example template with a **drawer**. A drawer is an (auto-) collapsible sidebar w
 			<td>On the <code>html</code> tag.</td>
 		</tr>
 		<tr>
-			<td><code>.drawer__checkbox</code></td>
+			<td><code>.hamburger__checkbox</code></td>
 			<td><span class="label label--warning">Required</span></td>
 			<td>The checkbox hack</code></td>
 		</tr>
 		<tr>
-			<td><code>.drawer__menu</code></td>
+			<td><code>.hamburger</code></td>
 			<td><span class="label label--warning">Required</span></td>
 			<td>The clickbale region that holds the hamburger icon</code></td>
+		</tr>
+		<tr>
+			<td><code>.drawer__checkbox</code></td>
+			<td><span class="label label--error">Deprecated</span></td>
+			<td>Replaced by <code>.hamburger__checkbox</code></td>
+		</tr>
+		<tr>
+			<td><code>.drawer__menu</code></td>
+			<td><span class="label label--error">Deprecated</span></td>
+			<td>Replaced by <code>.hamburger</code></td>
 		</tr>
 		<tr>
 			<td><code>.drawer</code></td>
@@ -49,7 +59,7 @@ Example template with a **drawer**. A drawer is an (auto-) collapsible sidebar w
 		</tr>
 		<tr>
 			<td><code>.drawer__section</code></td>
-			<td><span class="label label--default">Optional</span></td>
+			<td><span class="label label--info">Optional</span></td>
 			<td>Place your navigational elements in here.</td>
 		</tr>
 	</tbody>
@@ -63,11 +73,11 @@ Example template with a **drawer**. A drawer is an (auto-) collapsible sidebar w
 <body>
 	<header class="site-header">...</header>
 	<main class="main-container" role="main">
-		<input type="checkbox" class="drawer__checkbox" id="drawer__checkbox" />
-		<label for="drawer__checkbox" class="drawer__menu" role="button" aria-label="Menu">
-			<span class="drawer__menu-line" role="none"></span>
-			<span class="drawer__menu-line" role="none"></span>
-			<span class="drawer__menu-line" role="none"></span>
+		<input type="checkbox" class="hamburger__checkbox" id="drawer-toggle">
+		<label for="drawer-toggle" class="hamburger" role="button" aria-label="Menu">
+			<span class="hamburger__line" role="none presentation"></span>
+			<span class="hamburger__line" role="none presentation"></span>
+			<span class="hamburger__line" role="none presentation"></span>
 		</label>
 		<div class="drawer">
 			<div class="drawer__section">

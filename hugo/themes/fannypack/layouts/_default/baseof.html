@@ -4,9 +4,13 @@
 {{ partial "head" . }}
 
 {{ if eq .Section "templates" }}
-{{ partial "header-templates" . }}
+	{{ if in .Page.Permalink "vertical" }}
+		{{ partial "header-templates" (dict "modifier" "site-header--vertical") }}
+	{{ else }}
+		{{ partial "header-templates" (dict "modifier" "") }}
+	{{ end }}
 {{ else }}
-{{ partial "header" . }}
+	{{ partial "header" . }}
 {{ end }}
 
 <body>

@@ -50,6 +50,7 @@ $site-header-bg          : $white !default;
 $site-header-border-color: $border-color !default;
 $site-header-height      : 70px !default;
 $site-header-z-index     : 5 !default;
+$site-header-vertical-width: 90px !default;
 
 //==============================================================================
 // APP ICONS
@@ -141,61 +142,71 @@ $pagination-disabled-color: $aluminum !default;
 //==============================================================================
 // TABLES
 //==============================================================================
-$table-bg: $white !default;
-$table-border-color: $border-color !default;
-$table-cell-border-color: #f0f0f0 !default;
+$table-bg                : $white !default;
+$table-border-color      : $border-color !default;
+$table-cell-border-color : #f0f0f0 !default;
 $table-row-collapsible-bg:  rgba(#e4f1f6, .2) !default;
-$table-zebra-bg: $whitesmoke !default;
+$table-zebra-bg          : $whitesmoke !default;
 
-$table-spacing: ($base-spacing-unit * 1.5) !default;
-$table-condensed-spacing: ($table-spacing / 2) !default;
+$table-spacing           : ($base-spacing-unit * 1.5) !default;
+$table-condensed-spacing : ($table-spacing / 2) !default;
 
 //==============================================================================
 // LABELS
 //==============================================================================
-$label-font-size: 87.5% !default;
-$label-font-weight: 600 !default;
+$label-font-size                   : 87.5% !default;
+$label-font-weight                 : 600 !default;
 
-$label-contrast-treshold: 30% !default;
+$label-contrast-treshold           : 30% !default;
 
-$label-default-bg: $silver !default;
-$label-default-color: $steel !default;
-$label-outline-bg: $transparent !default;
+$label-default-bg                  : $silver !default;
+$label-default-color               : $steel !default;
+$label-outline-bg                  : $transparent !default;
 $label-outline-default-border-color: $label-default-bg !default;
+
+//==============================================================================
+// HAMBURGER
+//==============================================================================
+$hamburger-dimension       : 40px !default;
+$hamburger-border-color    : $silver !default;
+$hamburger-line-color      : $hamburger-border-color !default;
+$hamburger-light-line-color: $hamburger-border-color !default;
+$hamburger-border-radius   : $border-radius-large !default;
 
 //==============================================================================
 // NAVIGATION
 //==============================================================================
-$nav-link-color: $dark !default;
-$nav-link-hover-color: $link-color !default;
-$nav-link-active-color: $link-color !default;
+$nav-link-color             : $dark !default;
+$nav-link-hover-color       : $link-color !default;
+$nav-link-active-color      : $link-color !default;
 
 // on dark backgrounds
-$nav-light-link-color: $white !default;
-$nav-light-link-bg: $transparent !default;
-$nav-light-link-hover-color: $white !default;
-$nav-light-link-hover-bg: #243245 !default;
+$nav-light-link-color       : $white !default;
+$nav-light-link-bg          : $transparent !default;
+$nav-light-link-hover-color : $white !default;
+$nav-light-link-hover-bg    : #243245 !default;
 $nav-light-link-active-color: $white !default;
-$nav-light-link-active-bg: $coolblue !default;
+$nav-light-link-active-bg   : $coolblue !default;
 
 //==============================================================================
 // MENU - SIDEBAR
 //==============================================================================
-$sidebar-width: 262px !default;
-$sidebar-bg: $white !default;
-$sidebar-line-color : $black !default;
-$sidebar-light-line-color : $white !default;
-$z-index-sidebar: 5 !default;
+$sidebar-width           : 262px !default;
+$sidebar-bg              : $white !default;
+$sidebar-line-color      : $black !default;
+$sidebar-light-line-color: $white !default;
+$z-index-sidebar         : 5 !default;
 
 //==============================================================================
 // DRAWER
 //==============================================================================
-$drawer-width              : 295px !default;
-$drawer-bg                 : $dark !default;
-$drawer-line-color         : $black !default;
-$drawer-light-line-color   : $white !default;
-$drawer-section-title-color: #5c7087 !default;
-$drawer-hamburger-z-index  : $site-header-z-index !default; // same as site-header
+$drawer-width                     : 295px !default;
+$drawer-bg                        : $dark !default;
+$drawer-hamburger-dimension       : $hamburger-dimension !default;
+$drawer-hamburger-line-color      : $hamburger-line-color !default;
+$drawer-hamburger-light-line-color: $hamburger-light-line-color !default;
+$drawer-section-title-color       : #5c7087 !default;
+$drawer-hamburger-z-index         : $site-header-z-index !default; // same as site-header
 
 //==============================================================================
 // FOOTER

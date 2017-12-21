@@ -7,6 +7,8 @@
 
 //==============================================================================
 // CHECKBOX HACK
+// DEPRECATED !!!!!
+// replaced by _hamburger.scss
 //==============================================================================
 .drawer__checkbox {
 	@include visually-hidden;
@@ -15,66 +17,31 @@
 .drawer__menu {
 	display: block;
 	position: fixed;
-	top: $double-spacing-unit;
+	top: ($base-spacing-unit * 1.5);
 	left: $base-spacing-unit;
-	width: 42px;
-	height: 32px;
+	width: $drawer-hamburger-dimension;
+	height: $drawer-hamburger-dimension;
 	padding: $half-spacing-unit $base-spacing-unit;
+	border: 1px solid $hamburger-border-color;
+	border-radius: $hamburger-border-radius;
 	cursor: pointer;
 	z-index: $drawer-hamburger-z-index; // same as .site-header
-
-	&::after {
-		position: absolute;
-		top: 50%;
-		right: 2px;
-		left: auto;
-		width: 0;
-		height: 0;
-		margin-top: -4px;
-		border-width: 4px 0 4px 4px;
-		border-style: solid;
-		border-color: $transparent $transparent $transparent $link-color;
-		content: '';
-
-		@include mq-min($bp-medium) {
-			right: auto;
-			left: 2px;
-			border-width: 4px 4px 4px 0;
-			border-color: $transparent $link-color $transparent $transparent;
-		}
-	}
-
-	.drawer__checkbox:checked + & {
-		&::after {
-			right: auto;
-			left: 2px;
-			border-width: 4px 4px 4px 0;
-			border-color: $transparent $link-color $transparent $transparent;
-
-			@include mq-min($bp-medium) {
-				right: 2px;
-				left: auto;
-				border-width: 4px 0 4px 4px;
-				border-color: $transparent $transparent $transparent $link-color;
-			}
-		}
-	}
 }
 
 .drawer__menu-line {
 	display: block;
 	width: 100%;
-	height: 3px;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	background-color: $drawer-line-color;
+	height: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: $drawer-hamburger-line-color;
 
 	&:first-of-type {
-		margin-top: 4px;
+		margin-top: 9px;
 	}
 
 	.drawer__menu--light & {
-		background-color: $drawer-light-line-color;
+		background-color: $drawer-hamburger-light-line-color;
 	}
 }
 
@@ -98,6 +65,7 @@
 		left: 0;
 	}
 
+	.hamburger__checkbox:checked + .hamburger + &,
 	.drawer__checkbox:checked + .drawer__menu + & {
 		left: 0;
 

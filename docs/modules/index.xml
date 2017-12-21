@@ -48,6 +48,16 @@ default success warning error primary secondary  &amp;lt;span class=&amp;#34;lab
     </item>
     
     <item>
+      <title>Hamburger</title>
+      <link>https://fannypack.persgroep.net/modules/hamburger/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/hamburger/</guid>
+      <description>We use this hamburger icon in the drawer and the vertical header but you can use it anywhere you need it. Styling is provided but if you need extras for positioning, you have to write it yourself.
+     &amp;lt;input type=&amp;#34;checkbox&amp;#34; class=&amp;#34;hamburger__checkbox&amp;#34; id=&amp;#34;nav-toggle&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nav-toggle&amp;#34; class=&amp;#34;hamburger&amp;#34; role=&amp;#34;button&amp;#34; aria-label=&amp;#34;Toggle the menu&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;hamburger__line&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;hamburger__line&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;hamburger__line&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt;</description>
+    </item>
+    
+    <item>
       <title>Panels</title>
       <link>https://fannypack.persgroep.net/modules/panels/</link>
       <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>

@@ -6,7 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .app-icon {
-	//
+	flex-shrink: 0;
 }
 
 .app-icon,
@@ -95,6 +95,10 @@
 
 	.app-icon--xlarge & {
 		font-size: $app-icon-name-font-size-xlarge;
+	}
+
+	.site-header--vertical & {
+		display: none;
 	}
 }
 
