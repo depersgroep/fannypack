@@ -93,9 +93,9 @@
     }
   },
   "img": {
-    "src": "hugo/src/img/*",
+    "src": "hugo/src/img/**/*",
     "dest": "dist/",
-    "watch": "hugo/src/img/*"
+    "watch": "hugo/src/img/**/*"
   },
   "fonts": {
     "src": "src/fonts/**/*",

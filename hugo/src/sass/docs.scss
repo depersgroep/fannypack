@@ -2,10 +2,8 @@
 
 @import '../../../src/sass/functions';
 @import '../../../src/sass/site-settings';
-@import 'documentation-settings';
 @import '../../../src/sass/modules-settings';
 @import '../../../src/sass/mixins/mixins';
-@import 'fannypack-logo';
 @import 'theme-fannypack';
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -224,19 +222,6 @@
 	background-origin: padding-box;
 }
 
-.fonda {
-	position: relative;
-	width: 33vw;
-	height: auto;
-	float: left;
-	opacity: .88;
-	z-index: -1;
-
-	@supports (shape-outside: polygon(0% 0)) {
-		width: 66vw;
-		shape-outside: polygon(0% 0, 28% 0, 39% 28%, 66% 28%, 72% 58%, 85% 69%, 78% 94%, 11% 94%, 11% 59%, 0% 32%);
-	}
-}
 
 .fp-droplet {
 	//
@@ -251,18 +236,6 @@
 			background-color: $color;
 		}
 	}
-
-	// @each $name, $color in $functionalcolors {
-	// 	.#{$name} > & {
-	// 		background-color: $color;
-	// 	}
-	// }
-
-	// @each $name, $color in $additionalcolors {
-	// 	.#{$name} > & {
-	// 		background-color: $color;
-	// 	}
-	// }
 }
 
 .fp-droplet__meta {
@@ -281,26 +254,6 @@
 
 .fp-droplet__hex {
 	color: $warmgrey;
-}
-
-.hero-unit {
-	padding: ($base-spacing-unit * 4) 0;
-	// scss-lint:disable ColorVariable
-	background: linear-gradient(to left, #c737ea, #939efa);
-	background-color: #939efa;
-}
-
-.hero-unit__title {
-	color: $white;
-	font-size: emify(70);
-}
-
-.hero-unit__body {
-	font-size: $font-size-h4;
-
-	@include mq-min($bp-small) {
-		width: 50%;
-	}
 }
 
 .layout--diorama {

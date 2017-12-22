@@ -54,6 +54,255 @@
 	.alert__dismiss {
 		display: block;
 	}
+
+	.hero-unit {
+		padding: 0;
+		background-color: $body-bg;
+
+		.container {
+			position: relative;
+			padding: ($base-spacing-unit * 5) 0 ($base-spacing-unit * 4);
+
+			@include mq-min($bp-small) {
+				padding-top: ($base-spacing-unit * 6);
+			}
+
+			@include mq-min($bp-medium) {
+				padding-top: ($base-spacing-unit * 12);
+			}
+		}
+	}
+
+	.hero-unit__title {
+		margin-top: 0;
+		margin-bottom: 160px;
+		font-size: emify(50);
+		text-align: center;
+
+		@include mq-min($bp-small) {
+			margin-bottom: 200px;
+			font-size: emify(70);
+		}
+
+		@include mq-min($bp-medium) {
+			margin-bottom: 210px;
+			font-size: emify(90);
+		}
+	}
+
+	.hero-unit__body {
+		font-size: $font-size-h4;
+		text-align: center;
+
+		@include mq-min($bp-small) {
+			width: 50%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	.hero-unit__svg {
+		position: absolute;
+		height: auto;
+	}
+
+	.svg-art {
+		display: none;
+
+		@include mq-min($bp-small) {
+			display: block;
+			top: 120px;
+			left: 3%;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 163px;
+		}
+
+		@include mq-min(920px) {
+			top: 163px;
+		}
+	}
+
+	.svg-check-1 {
+		top: 98px;
+		left: 33%;
+		width: 24px;
+
+		@include mq-min($bp-small) {
+			top: 260px;
+			left: 15%;
+			width: auto;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 345px;
+			left: 26%;
+		}
+	}
+
+	.svg-check-2 {
+		top: 152px;
+		right: 10%;
+		width: 30px;
+
+		@include mq-min($bp-small) {
+			top: 37px;
+			right: auto;
+			left: 19%;
+			width: auto;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 90px;
+		}
+	}
+
+	.svg-check-3 {
+		display: none;
+
+		@include mq-min($bp-medium) {
+			display: block;
+			top: 269px;
+			right: 8%;
+		}
+
+		@include mq-min(920px) {
+			right: 11%;
+		}
+	}
+
+	.svg-fannypack {
+		top: 140px;
+		left: 50%;
+		width: 50%;
+		max-width: 255px;
+		transform: translateX(-50%);
+
+		@include mq-min($bp-small) {
+			top: 200px;
+			width: auto;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 282px;
+		}
+	}
+
+	.svg-label {
+		display: none;
+
+		@include mq-min($bp-medium) {
+			display: block;
+			top: 265px;
+			left: 18%;
+		}
+
+		@include mq-min(920px) {
+			left: 14%;
+		}
+	}
+
+	.svg-panel-1 {
+		top: 18px;
+		right: 15%;
+		width: 62px;
+
+		@include mq-min($bp-small) {
+			right: auto;
+			left: 50%;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 221px;
+			left: 67%;
+		}
+	}
+
+	.svg-panel-2 {
+		display: none;
+
+		@include mq-min($bp-small) {
+			display: block;
+			top: 130px;
+			right: 22%;
+			width: 66px;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 38px;
+			right: 34%;
+			width: auto;
+		}
+	}
+
+	.svg-star-1 {
+		top: 25px;
+		left: 10%;
+		width: 33px;
+
+		@include mq-min($bp-small) {
+			top: 120px;
+			left: 32%;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 200px;
+		}
+	}
+
+	.svg-star-2 {
+		display: none;
+
+		@include mq-min($bp-small) {
+			display: block;
+			top: 200px;
+			right: 10%;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 194px;
+		}
+
+		@include mq-min(920px) {
+			right: 13%;
+		}
+	}
+
+	.svg-text {
+		display: none;
+
+		@include mq-min($bp-small) {
+			display: block;
+			top: 260px;
+			right: 11%;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 324px;
+		}
+
+		@include mq-min(920px) {
+			right: 26%;
+		}
+	}
+
+	.svg-trash {
+		top: 157px;
+		left: 10%;
+		width: 40px;
+
+		@include mq-min($bp-small) {
+			top: 80px;
+			right: 5%;
+			left: auto;
+			width: auto;
+		}
+
+		@include mq-min($bp-medium) {
+			top: 106px;
+		}
+	}
 }
 
 .theme--fp-homepage {
