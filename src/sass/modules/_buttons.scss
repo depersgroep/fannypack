@@ -7,7 +7,7 @@
 .button {
 	display: inline-block; // if the .button is a <a href="">
 	height: $button-height;
-	padding: 0 15px;
+	padding: 0 30px;
 	transition: background-color .15s ease-in-out;
 	border: 0;
 	border-radius: $button-border-radius;
@@ -114,4 +114,26 @@
 		background-color: $button-error-hover-bg;
 		color: $button-error-hover-color;
 	}
+}
+
+//==============================================================================
+// WRAPPERS
+//==============================================================================
+
+.button__group {
+	.button {
+		@include mq-max($bp-small) {
+			margin-bottom: $double-spacing-unit;
+		}
+
+		&:last-child {
+			@include mq-max($bp-small) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.button__group--centered {
+	text-align: center;
 }

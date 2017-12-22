@@ -130,13 +130,13 @@ $icon-font-path: #{$font-path}MaterialIcons !default;
 //==============================================================================
 // PAGINATION
 //==============================================================================
-$pagination-item-dimension: 30px, 60px !default;
+$pagination-item-dimension: 24px, 40px !default;
 $pagination-border-color: $border-color !default;
 $pagination-color: #152030 !default;
 $pagination-active-bg: $pagination-color !default;
 $pagination-active-border-color: $pagination-color !default;
 $pagination-hover-bg: $primary-color !default;
-$pagination-font-size: $font-size-small, emify(20);
+$pagination-font-size: $font-size-small, emify(18);
 $pagination-disabled-color: $aluminum !default;
 
 //==============================================================================

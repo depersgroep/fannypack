@@ -303,6 +303,43 @@
 			top: 106px;
 		}
 	}
+
+	.site-header__section {
+		@include mq-max($bp-small - 1) {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&:last-child {
+			display: none;
+
+			@include mq-min($bp-small) {
+				display: block;
+				margin-left: auto;
+			}
+		}
+	}
+
+	.site-header .nav__link {
+		color: $link-color;
+
+		&:visited {
+			color: $link-color;
+		}
+
+		&:focus,
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+
+	.app-icon__name {
+		margin-left: 0;
+
+		.text--muted {
+			font-weight: normal;
+		}
+	}
 }
 
 .theme--fp-homepage {

@@ -1865,7 +1865,7 @@ a:active {
 .button {
   display: inline-block;
   height: 35px;
-  padding: 0 15px;
+  padding: 0 30px;
   -webkit-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out;
   border: 0;
@@ -1988,6 +1988,22 @@ a:active {
 .button.js-has-error:hover {
   background-color: #fe290d;
   color: #fff;
+}
+
+@media only screen and (max-width: 480px) {
+  .button__group .button {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .button__group .button:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.button__group--centered {
+  text-align: center;
 }
 
 .drawer__checkbox {
@@ -3519,7 +3535,7 @@ input[type="color"].form__field {
 
 @media only screen and (min-width: 800px) {
   .pagination {
-    font-size: 1.25em;
+    font-size: 1.125em;
   }
 }
 
@@ -3538,7 +3554,6 @@ input[type="color"].form__field {
 
 .pagination__item {
   display: block;
-  border: 1px solid #dedede;
 }
 
 @media only screen and (max-width: 799px) {
@@ -3547,14 +3562,8 @@ input[type="color"].form__field {
   }
 }
 
-.pagination__item:not(:last-child) {
-  border-right: 0;
-}
-
 .pagination__item.is-active,
 .pagination__item.js-is-active {
-  border-color: #152030;
-  background-color: #152030;
   color: #fff;
 }
 
@@ -3589,27 +3598,21 @@ input[type="color"].form__field {
   }
 }
 
-.pagination__item--dummy:focus,
-.pagination__item--dummy:hover {
-  border-color: #dedede;
-  background-color: transparent;
-  color: inherit;
-}
-
 .pagination__link {
   display: block;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #dedede;
   color: inherit;
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
   text-decoration: none;
 }
 
 @media only screen and (min-width: 800px) {
   .pagination__link {
-    min-width: 60px;
-    line-height: 60px;
+    min-width: 40px;
+    line-height: 40px;
   }
 }
 
@@ -3622,6 +3625,17 @@ input[type="color"].form__field {
   border-color: #47a0c3;
   background-color: #47a0c3;
   color: #fff;
+}
+
+.pagination__item--dummy .pagination__link:focus,
+.pagination__item--dummy .pagination__link:hover {
+  border-color: #dedede;
+  background-color: transparent;
+  color: inherit;
+}
+
+.pagination__item:not(:last-child) .pagination__link {
+  border-right: 0;
 }
 
 .pagination__item--previous .pagination__link::before {
@@ -3640,6 +3654,12 @@ input[type="color"].form__field {
   line-height: 1;
   content: '\203A';
   vertical-align: text-bottom;
+}
+
+.is-active > .pagination__link,
+.js-is-active > .pagination__link {
+  border-color: #152030;
+  background-color: #152030;
 }
 
 .is-disabled .pagination__link,

@@ -39,3 +39,7 @@ pygmentsCodeFencesGuessSyntax = true
 [[menu.main]]
 	name = "Documentation"
 	url = "/layout/grid"
+
+[[menu.main]]
+	name = "Github"
+	url = "https://github.com/depersgroep/fannypack"
