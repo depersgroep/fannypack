@@ -85,4 +85,34 @@ Panels is something we use regularly in forms when building CRUD applications, b
 </fieldset>
 ```
 
+## Collapsible panels
 
+We use the checkbox hack so it's always collapsible, even without JS.
+
+<div class="fp-example">
+	<div class="panel panel--collapsible">
+		<input type="checkbox" class="panel__trigger" id="panelXtrigger" checked="checked" />
+		<label for="panelXtrigger" class="panel__toggler" aria-label="Click to toggle this panel">
+		</label>
+		<div class="panel__heading">
+			<h3 class="panel__title">Collapsible</h3>
+		</div>
+		<div class="panel__body">
+			<p>Now you see me. Now you don't.</p>
+		</div>
+	</div>
+</div>
+
+```html
+<div class="panel panel--collapsible">
+	<input type="checkbox" class="panel__trigger" id="panelXtrigger" checked="checked" />
+	<label for="panelXtrigger" class="panel__toggler" aria-label="Click to toggle this panel">
+	</label>
+	<div class="panel__heading">
+		<h3 class="panel__title">Collapsible</h3>
+	</div>
+	<div class="panel__body">
+		<p>Now you see me. Now you don't.</p>
+	</div>
+</div>
+```

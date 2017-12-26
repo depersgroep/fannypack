@@ -3748,6 +3748,65 @@ legend.panel__title + .panel__body {
   margin-bottom: 0;
 }
 
+.panel--collapsible {
+  position: relative;
+}
+
+.panel--collapsible .panel__body {
+  display: none;
+}
+
+.panel--collapsible .panel__heading {
+  padding-right: 32px;
+}
+
+.panel__trigger {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.panel__trigger:checked ~ .panel__body {
+  display: block;
+}
+
+.panel__trigger:not(:checked) ~ .panel__heading {
+  border-bottom: 0;
+}
+
+.panel__toggler {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  color: #aaa;
+  font-size: 1.5em;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.panel__toggler:hover {
+  color: #000;
+}
+
+.panel__toggler::before {
+  content: "+";
+}
+
+.panel__trigger:checked + .panel__toggler::before {
+  content: "-";
+}
+
 .sidebar__checkbox {
   position: absolute;
   width: 0;

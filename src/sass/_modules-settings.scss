@@ -221,6 +221,13 @@ $panel-bg             : $white !default;
 $panel-border-color   : $border-color !default;
 $panel-title-font-size: emify(18) !default;
 
+$panel-toggler-dimensions : 32px !default;
+$panel-toggler-font-size  : $font-size-h3 !default;
+$panel-toggler-color      : $gray !default;
+$panel-toggler-hover-color: $black !default;
+$panel-open-icon          : '+' !default;
+$panel-close-icon         : '-' !default;
+
 //==============================================================================
 // TABS
 //==============================================================================

@@ -78,3 +78,56 @@ legend.panel__title {
 	}
 }
 
+.panel--collapsible {
+	position: relative; // positioning context for the toggle
+
+	.panel__body {
+		display: none;
+	}
+
+	.panel__heading {
+		padding-right: $panel-toggler-dimensions;
+	}
+}
+// checkbox hack for collapsible panels
+.panel__trigger {
+	@include visually-hidden;
+
+	&:checked ~ {
+		.panel__body {
+			display: block;
+		}
+	}
+
+	&:not(:checked) ~ {
+		.panel__heading {
+			border-bottom: 0;
+		}
+	}
+}
+
+.panel__toggler {
+	position: absolute;
+	top: 14px;
+	right: 0;
+	width: $panel-toggler-dimensions;
+	height: $panel-toggler-dimensions;
+	color: $panel-toggler-color;
+	font-size: $panel-toggler-font-size;
+	line-height: $panel-toggler-dimensions;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		color: $panel-toggler-hover-color;
+	}
+
+	&::before {
+		content: $panel-open-icon;
+	}
+
+	.panel__trigger:checked + &::before {
+		content: $panel-close-icon;
+	}
+}
+
