@@ -8,7 +8,6 @@
 	display: flex;
 	position: relative; // to give postioning context to the panes
 	flex-wrap: wrap; // does magic of wrapping the pane to the next line
-	overflow: hidden; // to avoid vert scrollbars
 }
 
 //==============================================================================
