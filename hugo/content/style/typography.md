@@ -114,6 +114,7 @@ If you want to style certain parts that are not a specific part of a module, we 
 	<p class="text--muted">Text in <strong>muted</strong> color. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, excepturi.</p>
 	<p class="text--large">Larger body text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda officia excepturi itaque temporibus vitae consectetur consequatur, ipsum inventore facere? Fugit!</p>
 	<p class="text--centered">Centered text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, maiores?</p>
+	<p class="text--right">Right aligned text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, odit!</p>
 </div>
 
 ```html
@@ -123,4 +124,5 @@ If you want to style certain parts that are not a specific part of a module, we 
 <p class="text--muted">...</p>
 <p class="text--large">...</p>
 <p class="text--centered">...</p>
+<p class="text--right">...</p>
 ```

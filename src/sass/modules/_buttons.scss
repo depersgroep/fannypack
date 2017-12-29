@@ -62,6 +62,24 @@
 	}
 }
 
+.button--link {
+	padding-right: 0;
+	padding-left: 0;
+	background: $button-link-bg;
+	color: $button-link-color;
+	cursor: pointer;
+
+	&:visited {
+		color: $button-link-color;
+	}
+
+	&:focus,
+	&:hover {
+		background: $button-link-hover-bg;
+		color: $button-link-hover-color;
+	}
+}
+
 //==============================================================================
 // STATES
 //==============================================================================

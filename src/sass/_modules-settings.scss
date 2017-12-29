@@ -122,6 +122,12 @@ $button-error-hover-bg: darken($button-error-bg, 15%) !default;
 $button-error-color: $white !default;
 $button-error-hover-color: $white !default;
 
+// link
+$button-link-bg: none !default;
+$button-link-hover-bg: none !default;
+$button-link-color: $link-color !default;
+$button-link-hover-color: $link-hover-color !default;
+
 //==============================================================================
 // ICONS
 //==============================================================================
