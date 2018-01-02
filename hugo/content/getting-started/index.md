@@ -23,4 +23,4 @@ If you need something feel free to submit pull requests or report any bugs in ou
 
 ## Where's the Javascript
 
-We our developing a separate JS package known as **Buckle**. More info coming soon.
+We are developing a separate JS package known as **Buckle**. More info coming soon.
