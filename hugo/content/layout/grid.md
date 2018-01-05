@@ -306,7 +306,7 @@ The default grid is completely fluid and has no breakpoints. If you need differe
 
 Offsetting columns in a CSS Grid is tricky. It works the other way around. Instead of defining how many cols there are between adjacent columns, the offset determines how many columns (starting from the outer left edge) should be skipped. So you'll have to do some math yourself, knowing we have a total of 12 columns.
 
-So if you give an offset of 8 with `.col--offset-8`, your column will start on the 9th grid item, no matter if there are any other columns preceding. See example below.
+So if you give an offset of 8 with `.col--grid-offset-8`, your column will start on the 9th grid item, no matter if there are any other columns preceding. See example below.
 
 
 <div class="fp-example fp-example--grid fp-example--grid-visible">
@@ -314,24 +314,24 @@ So if you give an offset of 8 with `.col--offset-8`, your column will start on t
 		<div class="col-1 col--dashed">1</div>
 		<div class="col-1 col--dashed">2</div>
 		<div class="col-1 col--dashed">3</div>
-		<div class="col-6">.col-6.col--offset-3</div>
+		<div class="col-6">.col-6.col--grid-offset-3</div>
 		<div class="col-3">.col-3</div>
 		<div class="col-1 col--dashed col--clear">1</div>
 		<div class="col-1 col--dashed">2</div>
-		<div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
+		<div class="col-4 col--grid-offset-2">.col-4.col--grid-offset-2</div>
 		<div class="col-1 col--dashed">7</div>
 		<div class="col-1 col--dashed">8</div>
-		<div class="col-3 col--grid-offset-8">.col-3.col--offset-8</div>
+		<div class="col-3 col--grid-offset-8">.col-3.col--grid-offset-8</div>
 		<div class="col-1 col--dashed">12</div>
 	</div>
 </div>
 
 ```html
 <div class="grid">
-	<div class="col-6 col--offset-3">.col-6.col--offset-3</div>
+	<div class="col-6 col--grid-offset-3">.col-6.col--grid-offset-3</div>
 	<div class="col-3">.col-3</div>
-	<div class="col-4 col--offset-2 col--clear">.col-4.col--offset-2</div>
-	<div class="col-3 col--offset-8">.col-3.col--offset-8</div>
+	<div class="col-4 col--grid-offset-2 col--clear">.col-4.col--grid-offset-2</div>
+	<div class="col-3 col--grid-offset-8">.col-3.col--grid-offset-8</div>
 </div>
 ```
 
@@ -343,7 +343,7 @@ E.g. the 6th column is alreay occupied by the first box, and your second box has
 	<div class="grid">
 		<div class="col-1 col--dashed">1</div>
 		<div class="col-1 col--dashed">2</div>
-		<div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
+		<div class="col-4 col--grid-offset-2">.col-4.col--grid-offset-2</div>
 		<div class="col-1 col--dashed">7</div>
 		<div class="col-1 col--dashed">8</div>
 		<div class="col-1 col--dashed">9</div>
@@ -355,7 +355,7 @@ E.g. the 6th column is alreay occupied by the first box, and your second box has
 		<div class="col-1 col--dashed">3</div>
 		<div class="col-1 col--dashed">4</div>
 		<div class="col-1 col--dashed">5</div>
-		<div class="col-3 col--grid-offset-5">.col-3.col--offset-5</div>
+		<div class="col-3 col--grid-offset-5">.col-3.col--grid-offset-5</div>
 		<div class="col-1 col--dashed">9</div>
 		<div class="col-1 col--dashed">10</div>
 		<div class="col-1 col--dashed">11</div>
@@ -365,8 +365,8 @@ E.g. the 6th column is alreay occupied by the first box, and your second box has
 
 ```html
 <div class="grid">
-	<div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
-	<div class="col-3 col--grid-offset-5">.col-3.col--offset-5</div>
+	<div class="col-4 col--grid-offset-2">.col-4.col--grid-offset-2</div>
+	<div class="col-3 col--grid-offset-5">.col-3.col--grid-offset-5</div>
 </div>
 ```
 
@@ -379,7 +379,7 @@ If you have to support browsers that don't understand CSS Grid Layout, you have 
 		<div class="col-1 col--dashed">1</div>
 		<div class="col-1 col--dashed">2</div>
 		<div class="col-1 col--dashed">3</div>
-		<div class="col-6">.col-6.col--offset-3</div>
+		<div class="col-6">.col-6.col--grid-offset-3</div>
 		<div class="col-3">.col-3</div>
 		<div class="col-1 col--dashed col--clear">1</div>
 		<div class="col-1 col--dashed">2</div>
