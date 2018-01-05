@@ -8,71 +8,47 @@
 .alert {
 	position: relative; // positioning context
 	margin-bottom: $double-spacing-unit;
-	padding-left: 80px;
+	padding: $double-spacing-unit;
+	border-radius: $border-radius-base;
 }
 
+// is deprecated
 .alert__icon {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 80px;
-
-	> * {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -24px;
-		margin-left: -24px;
-	}
-
-	.alert--error & {
-		background-color: $alert-error-bg;
-	}
-
-	.alert--success & {
-		background-color: $alert-success-bg;
-	}
-
-	.alert--warning & {
-		background-color: $alert-warning-bg;
-	}
+	display: none;
 }
 
-.alert__body {
-	padding: 16px $double-spacing-unit $double-spacing-unit;
-	border: 2px solid $border-color;
-	border-left-width: 0;
-	background-color: $white;
+@each $name, $color in $functionalcolors {
+	.alert--#{$name} {
+		background-color: tint($color, 80%);
 
-	.alert--error & {
-		border-color: $alert-error-bg;
-	}
+		.alert__title {
+			color: $color;
+		}
 
-	.alert--success & {
-		border-color: $alert-success-bg;
-	}
+		a {
+			color: $color;
 
-	.alert--warning & {
-		border-color: $alert-warning-bg;
+			&:visited {
+				color: $color;
+			}
+
+			&:focus,
+			&:hover {
+				color: shade($color, 20%);
+			}
+		}
 	}
 }
-
-// .alert--error {
-// 	background-color: $alert-error-bg;
-// }
-
-// .alert--success {
-// 	background-color: $alert-success-bg;
-// }
-
-// .alert--warning {
-// 	background-color: $alert-warning-bg;
-// }
 
 .alert__title {
 	margin-top: 0;
 	margin-bottom: $base-spacing-unit;
+	font-size: 1em;
+
+	.alert--condensed & {
+		display: inline;
+		margin-right: $half-spacing-unit;
+	}
 }
 
 .alert__text {
@@ -81,5 +57,29 @@
 
 	&:last-of-type {
 		margin-bottom: 0;
+	}
+
+	.alert--condensed & {
+		display: inline;
+	}
+}
+
+.alert--dismissible {
+	padding-right: ($base-spacing-unit * 4);
+}
+
+.alert__dismiss {
+	position: absolute;
+	top: $half-spacing-unit;
+	right: $half-spacing-unit;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	background: none;
+	overflow: hidden;
+	appearance: none;
+
+	.no-js & {
+		display: none;
 	}
 }

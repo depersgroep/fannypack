@@ -93,9 +93,9 @@
     }
   },
   "img": {
-    "src": "hugo/src/img/*",
+    "src": "hugo/src/img/**/*",
     "dest": "dist/",
-    "watch": "hugo/src/img/*"
+    "watch": "hugo/src/img/**/*"
   },
   "fonts": {
     "src": "src/fonts/**/*",
@@ -120,6 +120,7 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-bless": "^3.2.0",
     "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^1.0.0",
     "gulp-eslint": "^3.0.1",
@@ -127,6 +128,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
+    "gulp-run-command": "0.0.9",
     "gulp-sass": "^3.1.0",
     "gulp-scss-lint": "^0.4.0",
     "gulp-sourcemaps": "^1.9.1",

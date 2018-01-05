@@ -20,15 +20,14 @@
 
 	th,
 	td {
-		padding: $half-spacing-unit;
-		vertical-align: top;
+		padding: ($table-spacing / 3);
 
 		@include mq-min($bp-small) {
-			padding: $base-spacing-unit;
+			padding: ($table-spacing / 1.5);
 		}
 
 		@include mq-min($bp-medium) {
-			padding: ($base-spacing-unit * 1.5);
+			padding: $table-spacing;
 		}
 
 		&[scope] {
@@ -38,6 +37,11 @@
 		&[scope=row] {
 			color: $muted-color;
 			font-weight: normal;
+		}
+
+		> .label,
+		> .code {
+			display: inline; // if a child is inline-block with a different vertical-align than 'top' this fixes the misalignment of its cell
 		}
 	}
 
@@ -61,12 +65,11 @@ caption {
 
 	caption {
 		padding: $half-spacing-unit;
-		background-color: $silver;
 	}
 
 	th,
 	td {
-		border: 1px solid $table-border-color;
+		border: 1px solid $table-cell-border-color;
 	}
 
 	thead th {
@@ -79,7 +82,7 @@ caption {
 
 	th,
 	td {
-		border-bottom: 1px solid $table-border-color;
+		border-bottom: 1px solid $table-cell-border-color;
 	}
 
 	thead th {
@@ -88,9 +91,13 @@ caption {
 }
 
 .table--striped {
+	caption {
+		padding-bottom: $base-spacing-unit;
+	}
+
 	thead {
 		th {
-			background-color: $silver;
+			background-color: $table-zebra-bg;
 		}
 	}
 
@@ -103,7 +110,7 @@ caption {
 		&:nth-child(even) {
 			th,
 			td {
-				background-color: $silver;
+				background-color: $table-zebra-bg;
 			}
 		}
 	}
@@ -164,19 +171,24 @@ caption {
 
 		tr:not(:last-child) {
 			@include mq-max(799px) {
-				border-bottom: 1px solid $table-border-color;
+				border-bottom: 1px solid $table-cell-border-color;
 			}
 		}
 	}
 }
 
-//==============================================================================
-// COMPLEX DATA TABLES WITH COLLAPSIBLE, NESTED TABLES
-//==============================================================================
+.table--condensed {
+	th,
+	td {
+		padding: ($table-condensed-spacing / 3);
 
-.tr--collapsible {
-	> td {
-		background-color: $table-row-collapsible-bg;
+		@include mq-min($bp-small) {
+			padding: ($table-condensed-spacing / 1.5);
+		}
+
+		@include mq-min($bp-medium) {
+			padding: $table-condensed-spacing;
+		}
 	}
 }
 // scss-lint:enable NestingDepth, SelectorDepth

@@ -2,7 +2,7 @@
 title = "Tables"
 date = 2017-10-06T14:38:47+02:00
 description = "Tabular data isn't dead!"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++
@@ -277,6 +277,56 @@ With `.key` or `scope="row"` you can emphasize the key. If you need extra stylin
 </tr>
 ```
 
+## Condensed tables
+
+Table cells with less spacing
+
+<div class="fp-example">
+	<table class="table table--condensed table--bordered">
+		<caption>Fannypack lovers</caption>
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">First name</th>
+				<th scope="col">Last name</th>
+				<th scope="col">Role</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Gwendolyn</td>
+				<td>Matthys</td>
+				<td>Visual designer</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Yannick</td>
+				<td>Van Avermaet</td>
+				<td>Frontend Architect</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Jochen</td>
+				<td>Vandendriessche</td>
+				<td>Frontend developer</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>Gregory </td>
+				<td>Van Looy</td>
+				<td>Frontend developer</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+```html
+<table class="table table--condensed table--bordered">
+	...
+</table>
+```
+
 ## Responsive tables
 
 Making a table responsive (with overflow) is very easy. Just add a `div.table__wrapper` around the <code>table</code>. If the content or the vast number of cells don't fit the container, you get horizontal scrollbars. This is done with `overflow`.
@@ -496,72 +546,13 @@ attributes to make this work and be accessible.
 			<td>Modifier class</td>
 		</tr>
 		<tr>
-			<td><code>data-title=""</code></td>
-			<td><span class="label label--warning">Required</span></td>
+			<td>
+				<code>data-title=""</code>
+			</td>
+			<td>
+				<span class="label label--warning">Required</span>
+			</td>
 			<td>Creates a label for the corresponding value. Needs to be the same as the matching <code>th</code></td>
 		</tr>
 	</tbody>
 </table>
-
-## Complex data tables with collapsibe, nested tables
-
-<div class="fp-example">
-	<table class="table table--bordered">
-		<thead>
-			<tr>
-				<th scope="col">ID</th>
-				<th scope="col">First name</th>
-				<th scope="col">Last name</th>
-				<th scope="col">Role</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<th scope="row">1</th>
-				<td>Gwendolyn</td>
-				<td>Matthys</td>
-				<td>Visual designer</td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>Yannick</td>
-				<td>Van Avermaet</td>
-				<td>Frontend Architect</td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>Jochen</td>
-				<td>Vandendriessche</td>
-				<td>Frontend developer</td>
-			</tr>
-			<tr class="tr--collapsible">
-				<td colspan="4">
-					<table class="table table--bordered">
-						<thead>
-							<tr>
-								<th scope="col">Timeframe</th>
-								<th scope="col">Billable hours</th>
-								<th scope="col">Budget</th>
-								<th scope="col">Status</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Week 38</td>
-								<td>32</td>
-								<td>&euro;812</td>
-								<td><span class="label label--warning">in progress</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-			</tr>
-			<tr>
-				<th scope="row">4</th>
-				<td>Gregory </td>
-				<td>Van Looy</td>
-				<td>Frontend developer</td>
-			</tr>
-		</tbody>
-	</table>
-</div>

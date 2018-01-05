@@ -28,7 +28,7 @@
       
       <guid>https://fannypack.persgroep.net/templates/drawer/</guid>
       <description>Drawer template Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements. You see this pattern often in dashboards. Toggling the drawer is done with the checkbox hack
-  Selector  Description     .layout--drawer Required On the html tag   .layout--fixed-header Required On the html tag.   .drawer__checkbox Required The checkbox hack   .drawer__menu Required The clickbale region that holds the hamburger icon   .</description>
+  Selector  Description     .layout--drawer Required On the html tag   .layout--fixed-header Required On the html tag.   .hamburger__checkbox Required The checkbox hack   .hamburger Required The clickbale region that holds the hamburger icon   .</description>
     </item>
     
     <item>
@@ -43,6 +43,15 @@ You can combine this with other .layout-- modifiers. So &amp;lt;html class=&amp;
     </item>
     
     <item>
+      <title>Login</title>
+      <link>https://fannypack.persgroep.net/templates/login/</link>
+      <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/templates/login/</guid>
+      <description>&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34; class=&amp;#34;no-js layout--diorama&amp;#34;&amp;gt; &amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt; &amp;lt;body style=&amp;#34;background-image: url(&amp;#39;img/antelopecanyon.jpg&amp;#39;);&amp;#34; data-copyright=&amp;#34;Unsplash&amp;#34; data-credit=&amp;#34;Ashim D’Silva&amp;#34;&amp;gt; &amp;lt;main class=&amp;#34;main-container&amp;#34; role=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--xlarge app-icon--lumberjack-red&amp;#34; role=&amp;#34;img&amp;#34; aria-labelledby=&amp;#34;app-icon-name&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span class=&amp;#34;app-icon__name&amp;#34; id=&amp;#34;app-icon-name&amp;#34;&amp;gt;Temptation Editor&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p&amp;gt;Sign in below with your De Persgroep account.&amp;lt;/p&amp;gt; &amp;lt;form action=&amp;#34;&amp;#34; class=&amp;#34;form&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;name&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Name&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;name&amp;#34; name=&amp;#34;name&amp;#34; type=&amp;#34;text&amp;#34; class=&amp;#34;form__field&amp;#34; required=&amp;#34;required&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;password&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Password&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; type=&amp;#34;password&amp;#34; class=&amp;#34;form__field&amp;#34; required=&amp;#34;required&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;form__checkbox&amp;#34;&amp;gt; &amp;lt;label class=&amp;#34;form__checkbox__label&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;checkbox&amp;#34; class=&amp;#34;form__checkbox__input&amp;#34; value=&amp;#34;rememberme&amp;#34; /&amp;gt;Remember me &amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form__actions&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Login&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Forgot password&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;footer class=&amp;#34;footer&amp;#34;&amp;gt; Experiencing problems or in need of assistance?</description>
+    </item>
+    
+    <item>
       <title>Two col</title>
       <link>https://fannypack.persgroep.net/templates/2col/</link>
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
@@ -53,14 +62,23 @@ You can combine this with other .layout-- modifiers. So &amp;lt;html class=&amp;
     </item>
     
     <item>
+      <title>Vertical header</title>
+      <link>https://fannypack.persgroep.net/templates/vertical-header/</link>
+      <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/templates/vertical-header/</guid>
+      <description>Vertical header template When scrolling the page, your header wil be fixed at the left and always visible. On mobile this will transform to a horizontal header with a hamburger menu.
+  Selector  Description     .layout--vertical-header Required On the html tag   .site-header--vertical Required Modifier on .site-header   .nav--vertical Optional Only if you need navigation in the vertical header   .hamburger Optional Only if you need navigation in the vertical header.</description>
+    </item>
+    
+    <item>
       <title>Labels</title>
       <link>https://fannypack.persgroep.net/modules/labels/</link>
       <pubDate>Mon, 16 Oct 2017 14:57:22 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/labels/</guid>
-      <description> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum corrupti tenetur neque ipsa delectus sapiente consequuntur reiciendis deserunt aspernatur.
-default success warning error  &amp;lt;span class=&amp;#34;label&amp;#34;&amp;gt;default&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--success&amp;#34;&amp;gt;success&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--warning&amp;#34;&amp;gt;warning&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--error&amp;#34;&amp;gt;error&amp;lt;/span&amp;gt; Links Using the .label classes with the &amp;lt;a&amp;gt; element quickly provide actionable badges with hover and focus states.
-default success warning error  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;label&amp;#34;&amp;gt;default&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;label label--success&amp;#34;&amp;gt;success&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;label label--warning&amp;#34;&amp;gt;warning&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;label label--error&amp;#34;&amp;gt;error&amp;lt;/a&amp;gt;</description>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum corrupti tenetur neque ipsa delectus sapiente consequuntur reiciendis deserunt aspernatur.
+default success warning error primary secondary  &amp;lt;span class=&amp;#34;label&amp;#34;&amp;gt;default&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--success&amp;#34;&amp;gt;success&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--warning&amp;#34;&amp;gt;warning&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--error&amp;#34;&amp;gt;error&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--primary&amp;#34;&amp;gt;primary&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--secondary&amp;#34;&amp;gt;secondary&amp;lt;/span&amp;gt; Outline style default success warning error primary secondary  &amp;lt;span class=&amp;#34;label label--outline&amp;#34;&amp;gt;default&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--success label--outline&amp;#34;&amp;gt;success&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--warning label--outline&amp;#34;&amp;gt;warning&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--error label--outline&amp;#34;&amp;gt;error&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--primary label--outline&amp;#34;&amp;gt;primary&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;label label--secondary label--outline&amp;#34;&amp;gt;secondary&amp;lt;/span&amp;gt; Links Using the .</description>
     </item>
     
     <item>
@@ -69,8 +87,7 @@ default success warning error  &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34
       <pubDate>Mon, 09 Oct 2017 13:02:58 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/style/color/</guid>
-      <description> Default color palette Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
- cool blue #47a0c3     dusk blue #227393     light blue grey #a8cfde     slate #3c4d62     dark #152130     warm grey #9e9e9e     Functional colors  orange pink #9e9e9e     lightish green #9e9e9e     Additional colors  lightish purple #9e9e9e     cornflower #9e9e9e     light teal #9e9e9e     sun yellow #9e9e9e     apricot #9e9e9e     light salmon #9e9e9e     </description>
+      <description> Default color palette  cool blue #47a0c3     dusk blue #227393     light blue grey #a8cfde     slate #3c4d62     dark #152130     warm grey #9e9e9e     Functional colors  success = lightish green #6bd888     warning = apricot #ffb060     error = orange pink #fe6c59     info = coolblue #47a0c3     Additional colors  orange pink #fe6c59     lightish green #6bd888     lightish purple #ad71e2     cornflower #5b84f3     light teal #84dcc8     sun yellow #ffd63e     apricot #ffb060     light salmon #ffab93     Social media colors  facebook #365187     twitter #199bd3     youtube #e52d27     instagram #125688     spotify #1ed760     soundcloud #f50     </description>
     </item>
     
     <item>
@@ -97,9 +114,68 @@ h6 heading Unordered list
       <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/alert/</guid>
-      <description>Be brief in your description text, one paragraph should be more than enough to get your feedback across to the user.
-error outline  Error Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.
-  warning  Warning Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</description>
+      <description>Error! Major alert. Click here
+  Warning! Something&#39;s up. Click here
+  Success! You successfully did something. Click here
+  Attention! This alert needs your attention. Click here
+   &amp;lt;!-- ERROR --&amp;gt; &amp;lt;div class=&amp;#34;alert alert--condensed alert--error&amp;#34; role=&amp;#34;alert&amp;#34; aria-describedby=&amp;#34;alertdescription1&amp;#34; aria-live=&amp;#34;assertive&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;alert__body&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;alert__title&amp;#34;&amp;gt;Error&amp;lt;/h3&amp;gt; &amp;lt;p class=&amp;#34;alert__text&amp;#34; id=&amp;#34;alertdescription1&amp;#34;&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</description>
+    </item>
+    
+    <item>
+      <title>Boxes</title>
+      <link>https://fannypack.persgroep.net/modules/boxes/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/boxes/</guid>
+      <description>This is a box. Anything can be its content. The box only gives padding and some extra styling.
+  &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Bordered boxes This is a bordered box. Anything can be its content.
+  &amp;lt;div class=&amp;#34;box box--bordered&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; Colored boxes This is a bordered box with color name &#34;orangepink&#34;
+ This is a bordered box with color name &#34;lightishgreen&#34;
+ This is a bordered box with color name &#34;</description>
+    </item>
+    
+    <item>
+      <title>Hamburger</title>
+      <link>https://fannypack.persgroep.net/modules/hamburger/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/hamburger/</guid>
+      <description>We use this hamburger icon in the drawer and the vertical header but you can use it anywhere you need it. Styling is provided but if you need extras for positioning, you have to write it yourself.
+     &amp;lt;input type=&amp;#34;checkbox&amp;#34; class=&amp;#34;hamburger__checkbox&amp;#34; id=&amp;#34;nav-toggle&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nav-toggle&amp;#34; class=&amp;#34;hamburger&amp;#34; role=&amp;#34;button&amp;#34; aria-label=&amp;#34;Toggle the menu&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;hamburger__line&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;hamburger__line&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;hamburger__line&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Panels</title>
+      <link>https://fannypack.persgroep.net/modules/panels/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/panels/</guid>
+      <description>Containers for grouped information that are part of the same subject.
+General  This is the panel__body
+   &amp;lt;div class=&amp;#34;panel&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;panel__heading&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;panel__title&amp;#34;&amp;gt;General&amp;lt;/h3&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;panel__body&amp;#34;&amp;gt; ... &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; Using panels in forms Panels is something we use regularly in forms when building CRUD applications, but we use the semantically correct fieldset and legend.
+General Name  Comment (optional) A short help text for a textarea.   Reset Send    General Name  Comment (optional) A short help text for a textarea.</description>
+    </item>
+    
+    <item>
+      <title>Tabs</title>
+      <link>https://fannypack.persgroep.net/modules/tabs/</link>
+      <pubDate>Mon, 09 Oct 2017 11:39:15 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/modules/tabs/</guid>
+      <description>Tabs purely with html and css, no JavaScript required. Flexbox to the rescue!
+Active states are styled using the :checked pseudo selector on the input[type=&#34;radio&#34;] and the adjacent sibling combinator .tabs__trigger:checked + .tabs__label {...}.
+Home Raw denim you probably haven&#39;t heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.</description>
+    </item>
+    
+    <item>
+      <title>Getting started</title>
+      <link>https://fannypack.persgroep.net/getting-started/</link>
+      <pubDate>Mon, 09 Oct 2017 10:08:25 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/getting-started/</guid>
+      <description>It&amp;rsquo;s very easy to get started with Fannypack. Just include a link to our css file in your &amp;lt;head&amp;gt; and your good to go.
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://fannypack.persgroep.net/css/fannypack.css&amp;#34; /&amp;gt; Next: start implementing the html.
+Where is feature X or Module Y? Our goal is to keep Fannypack lightweight so we keep it to the basic modules. If you need something feel free to submit pull requests or report any bugs in our Github repo.</description>
     </item>
     
     <item>
@@ -129,7 +205,7 @@ Fannypack lovers   # First name Last name Role     1 Gwendolyn Matthys Visual de
       
       <guid>https://fannypack.persgroep.net/modules/pagination/</guid>
       <description>If you have a lot of content, pagination can be a solution to divide it smaller portions.
-Previous  1  2  3  &amp;hellip;  15  Next     &amp;lt;nav class=&amp;#34;pagination&amp;#34; role=&amp;#34;navigation&amp;#34; aria-label=&amp;#34;Pagination&amp;#34;&amp;gt; &amp;lt;ol class=&amp;#34;pagination__list&amp;#34;&amp;gt; &amp;lt;li class=&amp;#34;pagination__item pagination__item--previous&amp;#34; role=&amp;#34;none&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to previous page, page 1&amp;#34;&amp;gt;Previous&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item&amp;#34; role=&amp;#34;none&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to page 1&amp;#34;&amp;gt;1&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item is-active&amp;#34; role=&amp;#34;none&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Current page, page 2&amp;#34; aria-current=&amp;#34;true&amp;#34;&amp;gt;2&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item&amp;#34; role=&amp;#34;none&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to page 3&amp;#34;&amp;gt;3&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item pagination__item--dummy&amp;#34; role=&amp;#34;none&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;pagination__link&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;…&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item&amp;#34; role=&amp;#34;none&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to last page, page 15&amp;#34;&amp;gt;15&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item pagination__item--next&amp;#34; role=&amp;#34;none&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to next page, page 2&amp;#34;&amp;gt;Next&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/nav&amp;gt; Disabled states You can disable pagination items with .</description>
+Previous  1  2  3  &amp;hellip;  15  Next     &amp;lt;nav class=&amp;#34;pagination&amp;#34; role=&amp;#34;navigation&amp;#34; aria-label=&amp;#34;Pagination&amp;#34;&amp;gt; &amp;lt;ol class=&amp;#34;pagination__list&amp;#34;&amp;gt; &amp;lt;li class=&amp;#34;pagination__item pagination__item--previous&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to previous page, page 1&amp;#34;&amp;gt;Previous&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to page 1&amp;#34;&amp;gt;1&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item is-active&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Current page, page 2&amp;#34; aria-current=&amp;#34;true&amp;#34;&amp;gt;2&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to page 3&amp;#34;&amp;gt;3&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item pagination__item--dummy&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;pagination__link&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt;…&amp;lt;/span&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to last page, page 15&amp;#34;&amp;gt;15&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;pagination__item pagination__item--next&amp;#34; role=&amp;#34;none presentation&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;pagination__link&amp;#34; aria-label=&amp;#34;Go to next page, page 2&amp;#34;&amp;gt;Next&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/nav&amp;gt; Disabled states You can disable pagination items with .</description>
     </item>
     
     <item>
@@ -158,7 +234,8 @@ Home  Products  About     &amp;lt;nav class=&amp;#34;nav&amp;#34; role=&amp;#34;
       
       <guid>https://fannypack.persgroep.net/modules/app-icons/</guid>
       <description>Representation of an internal application without the application name visible. Because this has role=&amp;quot;img&amp;quot; you must provide aria-label=&amp;quot;&amp;quot; with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a simple graphic logo.
-T E   A E   W   T T   S M   S    &amp;lt;div class=&amp;#34;app-icon app-icon--lumberjack-red&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--spring-green&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Article Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;A&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--lavender-blue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Workflow&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;W&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--turquoise-blue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Timey Mc Timeface&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--steel-blue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Site Management&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--green-yellow&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Attribute  Description     role=&#34;</description>
+More colors are available, see color for all available color names.
+T E   A E   W   T T   S M   S M   S    &amp;lt;div class=&amp;#34;app-icon app-icon--orangepink&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Temptation Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--lightishgreen&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Article Editor&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;A&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--coolblue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Workflow&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;W&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--duskblue&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Timey Mc Timeface&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--lightbluegrey&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Site Management&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--slate&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Site Management&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;M&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--sunyellow&amp;#34; role=&amp;#34;img&amp;#34; aria-label=&amp;#34;Search&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;S&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;!</description>
     </item>
     
     <item>
@@ -178,7 +255,7 @@ face favorite person notifications  &amp;lt;span class=&amp;#34;material-icons&a
       <pubDate>Thu, 05 Oct 2017 16:29:36 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/buttons/</guid>
-      <description>Default Primary Success Warning Error  &amp;lt;button class=&amp;#34;button button--default&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;Default&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Primary&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--success&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;Success&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--warning&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Warning&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--error&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Error&amp;lt;/button&amp;gt;   Selector  Description     type=&#34;&#34; Required don&#39;t forget the type attribute. Requires one of the following values: [&#34;submit&#34;, &#34;button&#34;, &#34;reset&#34;]    States If the states are toggled with extra classes you can add .has-, or with JavaScript .</description>
+      <description>Default Primary Success Warning Error Link  &amp;lt;button class=&amp;#34;button button--default&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;Default&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Primary&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--success&amp;#34; type=&amp;#34;button&amp;#34;&amp;gt;Success&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--warning&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Warning&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--error&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Error&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--link&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Link&amp;lt;/button&amp;gt;   Selector  Description     type=&#34;&#34; Required don&#39;t forget the type attribute. Requires one of the following values: [&#34;submit&#34;, &#34;button&#34;, &#34;reset&#34;]    States If the states are toggled with extra classes you can add .</description>
     </item>
     
     <item>
@@ -198,7 +275,7 @@ J D  Your App Name     &amp;lt;header class=&amp;#34;site-header&amp;#34; role=&
       <pubDate>Tue, 03 Oct 2017 15:10:21 +0200</pubDate>
       
       <guid>https://fannypack.persgroep.net/modules/toolbar/</guid>
-      <description>Toolbars use flexbox the way it&amp;rsquo;s meant to be, for UI layout and not for Grid layout.
+      <description>Toolbars use flexbox the way it&amp;rsquo;s meant to be, for UI layout and not for page layout.
 Home  Brands  Lee    Save    &amp;lt;div class=&amp;#34;toolbar&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;toolbar__section&amp;#34;&amp;gt; &amp;lt;nav class=&amp;#34;breadcrumb&amp;#34; role=&amp;#34;navigation&amp;#34; aria-label=&amp;#34;Breadcrumb&amp;#34;&amp;gt; &amp;lt;ol class=&amp;#34;breadcrumb__list&amp;#34;&amp;gt; &amp;lt;li class=&amp;#34;breadcrumb__item&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;breadcrumb__link&amp;#34;&amp;gt;Home&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;breadcrumb__item&amp;#34;&amp;gt; &amp;lt;a href=&amp;#34;#&amp;#34; class=&amp;#34;breadcrumb__link&amp;#34;&amp;gt;Brands&amp;lt;/a&amp;gt; &amp;lt;/li&amp;gt; &amp;lt;li class=&amp;#34;breadcrumb__item&amp;#34;&amp;gt;Lee&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt; &amp;lt;/nav&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;toolbar__section&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Save&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Selector Description     .</description>
     </item>
     
@@ -227,7 +304,7 @@ Home  Brands  Lee    Save    &amp;lt;div class=&amp;#34;toolbar&amp;#34;&amp;gt;
       
       <guid>https://fannypack.persgroep.net/modules/forms/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quam!
-Name  Comment (optional) A short help text for a textarea.   Reset Send    &amp;lt;form action=&amp;#34;&amp;#34; method=&amp;#34;&amp;#34; class=&amp;#34;form&amp;#34;&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;nameid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Name&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;inputid&amp;#34; name=&amp;#34;inputname&amp;#34; type=&amp;#34;text&amp;#34; class=&amp;#34;form__field&amp;#34; /&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;textareid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Comment &amp;lt;span class=&amp;#34;form__label-meta&amp;#34;&amp;gt;(optional)&amp;lt;/span&amp;gt;&amp;lt;/label&amp;gt; &amp;lt;span class=&amp;#34;form__helptext&amp;#34; id=&amp;#34;textareahelptext&amp;#34;&amp;gt;A short help text for a textarea.&amp;lt;/span&amp;gt; &amp;lt;textarea name=&amp;#34;textareaname&amp;#34; id=&amp;#34;textareaid&amp;#34; class=&amp;#34;form__textarea&amp;#34; aria-describedby=&amp;#34;textareahelptext&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;div class=&amp;#34;form__actions&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--default&amp;#34; type=&amp;#34;reset&amp;#34;&amp;gt;Reset&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Send&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; About labels and placeholders Always use a label with your form elements.</description>
+Name  Comment (optional) A short help text for a textarea.   Reset Send    &amp;lt;form action=&amp;#34;&amp;#34; method=&amp;#34;&amp;#34; class=&amp;#34;form&amp;#34;&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;inputid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Name&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;inputid&amp;#34; name=&amp;#34;inputname&amp;#34; type=&amp;#34;text&amp;#34; class=&amp;#34;form__field&amp;#34; /&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;fieldset class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;textareid&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Comment &amp;lt;span class=&amp;#34;form__label-meta&amp;#34;&amp;gt;(optional)&amp;lt;/span&amp;gt;&amp;lt;/label&amp;gt; &amp;lt;span class=&amp;#34;form__helptext&amp;#34; id=&amp;#34;textareahelptext&amp;#34;&amp;gt;A short help text for a textarea.&amp;lt;/span&amp;gt; &amp;lt;textarea name=&amp;#34;textareaname&amp;#34; id=&amp;#34;textareaid&amp;#34; class=&amp;#34;form__textarea&amp;#34; aria-describedby=&amp;#34;textareahelptext&amp;#34;&amp;gt;&amp;lt;/textarea&amp;gt; &amp;lt;/fieldset&amp;gt; &amp;lt;div class=&amp;#34;form__actions&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--default&amp;#34; type=&amp;#34;reset&amp;#34;&amp;gt;Reset&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Send&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; About labels and placeholders Always use a label with your form elements.</description>
     </item>
     
   </channel>

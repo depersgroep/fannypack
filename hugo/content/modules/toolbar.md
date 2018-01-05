@@ -2,12 +2,12 @@
 title = "Toolbar"
 date = 2017-10-03T15:10:21+02:00
 description = "A section under the site header to add primary actions for that page"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++
 
-Toolbars use flexbox the way it's meant to be, for UI layout and not for Grid layout.
+Toolbars use flexbox the way it's meant to be, for UI layout and not for page layout.
 
 <div class="fp-example">
 	<div class="toolbar">

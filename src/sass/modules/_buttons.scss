@@ -7,7 +7,7 @@
 .button {
 	display: inline-block; // if the .button is a <a href="">
 	height: $button-height;
-	padding: 0 15px;
+	padding: 0 30px;
 	transition: background-color .15s ease-in-out;
 	border: 0;
 	border-radius: $button-border-radius;
@@ -59,6 +59,24 @@
 	&:hover {
 		background-color: $button-primary-hover-bg;
 		color: $button-primary-hover-color;
+	}
+}
+
+.button--link {
+	padding-right: 0;
+	padding-left: 0;
+	background: $button-link-bg;
+	color: $button-link-color;
+	cursor: pointer;
+
+	&:visited {
+		color: $button-link-color;
+	}
+
+	&:focus,
+	&:hover {
+		background: $button-link-hover-bg;
+		color: $button-link-hover-color;
 	}
 }
 
@@ -114,4 +132,26 @@
 		background-color: $button-error-hover-bg;
 		color: $button-error-hover-color;
 	}
+}
+
+//==============================================================================
+// WRAPPERS
+//==============================================================================
+
+.button__group {
+	.button {
+		@include mq-max($bp-small) {
+			margin-bottom: $double-spacing-unit;
+		}
+
+		&:last-child {
+			@include mq-max($bp-small) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.button__group--centered {
+	text-align: center;
 }

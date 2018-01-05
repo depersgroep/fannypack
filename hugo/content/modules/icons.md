@@ -2,7 +2,7 @@
 title = "Icons"
 date = 2017-10-05T16:39:45+02:00
 description = "Fannypack uses Google's Material Design Icons"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++

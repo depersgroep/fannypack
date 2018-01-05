@@ -2,7 +2,7 @@
 title = "Buttons"
 date = 2017-10-05T16:29:36+02:00
 description = "Styles for the available buttons."
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++
@@ -13,6 +13,7 @@ parent = "Modules"
 	<button class="button button--success" type="button">Success</button>
 	<button class="button button--warning" type="submit">Warning</button>
 	<button class="button button--error" type="submit">Error</button>
+	<button class="button button--link" type="submit">Link</button>
 </div>
 
 ```html
@@ -21,6 +22,7 @@ parent = "Modules"
 <button class="button button--success" type="button">Success</button>
 <button class="button button--warning" type="submit">Warning</button>
 <button class="button button--error" type="submit">Error</button>
+<button class="button button--link" type="submit">Link</button>
 ```
 
 <table class="table table--horizontal-borders">
@@ -95,6 +97,7 @@ Even links can be turned into buttons.
 	<a href="#" class="button button--success">Success</a>
 	<a href="#" class="button button--warning">Warning</a>
 	<a href="#" class="button button--error">Error</a>
+	<a href="#" class="button button--link">Link</a>
 </div>
 
 
@@ -104,4 +107,5 @@ Even links can be turned into buttons.
 <a href="#" class="button button--success">Success</a>
 <a href="#" class="button button--warning">Warning</a>
 <a href="#" class="button button--error">Error</a>
+<a href="#" class="button button--link">Link</a>
 ```

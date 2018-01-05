@@ -2,7 +2,7 @@
 title = "Breadcrumb"
 date = 2017-10-06T10:13:41+02:00
 description = "Breadcrumb is a graphical control element used as a navigational aid in user interfaces."
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++

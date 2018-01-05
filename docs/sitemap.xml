@@ -18,7 +18,17 @@
   </url>
   
   <url>
+    <loc>https://fannypack.persgroep.net/templates/login/</loc>
+    <lastmod>2017-10-23T09:19:17+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fannypack.persgroep.net/templates/2col/</loc>
+    <lastmod>2017-10-23T09:19:17+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.net/templates/vertical-header/</loc>
     <lastmod>2017-10-23T09:19:17+02:00</lastmod>
   </url>
   
@@ -45,6 +55,31 @@
   <url>
     <loc>https://fannypack.persgroep.net/modules/alert/</loc>
     <lastmod>2017-10-09T11:39:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.net/modules/boxes/</loc>
+    <lastmod>2017-10-09T11:39:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.net/modules/hamburger/</loc>
+    <lastmod>2017-10-09T11:39:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.net/modules/panels/</loc>
+    <lastmod>2017-10-09T11:39:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.net/modules/tabs/</loc>
+    <lastmod>2017-10-09T11:39:15+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.net/getting-started/</loc>
+    <lastmod>2017-10-09T10:08:25+02:00</lastmod>
   </url>
   
   <url>
@@ -114,6 +149,12 @@
   
   <url>
     <loc>https://fannypack.persgroep.net/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fannypack.persgroep.net/getting-started/</loc>
+    <lastmod>2017-10-09T10:08:25+02:00</lastmod>
     <priority>0</priority>
   </url>
   

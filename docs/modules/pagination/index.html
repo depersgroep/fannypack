@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" class="no-js theme--fp layout--fixed-header layout--drawer ">
+<html lang="en-us" class="no-js theme--fp layout--fixed-header layout--sidebar ">
 
 <head>
 	<meta charset="UTF-8" />
@@ -46,18 +46,41 @@
 
 
 
-<header class="site-header" role="banner">
+	<header class="site-header" role="banner">
 	<div class="site-header__section">
 		<a href="../../" class="app-icon app-icon--neon-pink" aria-labelledby="app-icon-name">
-	<div class="app-icon__logo" aria-hidden="true">
-		<span class="app-icon__character">F</span>
-		<span class="app-icon__character">P</span>
-	</div>
-	<span class="app-icon__name" id="app-icon-name">Fannypack</span>
+	<span class="app-icon__name" id="app-icon-name">De Persgroep <span class="text--muted">/ Fannypack</span></span>
 </a>
 
 	</div>
+	<div class="site-header__section">
+		
+
+<nav class="nav" role="navigation">
+	<ul class="nav__list">
 	
+		
+		<li class="nav__item">
+			
+
+
+<a class="nav__link" title="Documentation" href="../../layout/grid">Documentation</a>
+
+		</li>
+	
+		
+		<li class="nav__item">
+			
+
+
+<a class="nav__link" title="Github" href="https://github.com/depersgroep/fannypack">Github</a>
+
+		</li>
+	
+	</ul>
+</nav>
+
+	</div>
 </header>
 
 
@@ -65,19 +88,38 @@
 <body>
 <main class="main-container" role="main">
 	
-<input type="checkbox" class="drawer__checkbox" id="drawer__checkbox" />
-<label for="drawer__checkbox" tabindex="0" class="drawer__menu" role="button" aria-label="Menu">
-	<span class="drawer__menu-line" role="none presentation"></span>
-	<span class="drawer__menu-line" role="none presentation"></span>
-	<span class="drawer__menu-line" role="none presentation"></span>
+<input type="checkbox" class="sidebar__checkbox" id="sidebar__checkbox" />
+<label for="sidebar__checkbox" tabindex="0" class="sidebar__menu" role="button" aria-label="Menu">
+	<span class="sidebar__menu-line" role="none presentation"></span>
+	<span class="sidebar__menu-line" role="none presentation"></span>
+	<span class="sidebar__menu-line" role="none presentation"></span>
 </label>
 
-<div class="drawer">
+<div class="sidebar">
 	
 	
 
 <nav class="nav nav--vertical" role="navigation">
 	<ul class="nav__list">
+	
+	
+		<li class="nav__item">
+			<span class="nav__title">Getting started</span>
+			
+			<ul class="nav__list nav__list--nested">
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Getting started" href="../../getting-started/">Getting started</a>
+
+				</li>
+				
+			</ul>
+			
+		</li>
 	
 	
 		<li class="nav__item">
@@ -127,6 +169,15 @@
 					
 
 
+<a class="nav__link" title="Boxes" href="../../modules/boxes/">Boxes</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
 <a class="nav__link" title="Breadcrumb" href="../../modules/breadcrumb/">Breadcrumb</a>
 
 				</li>
@@ -146,6 +197,15 @@
 
 
 <a class="nav__link" title="Forms" href="../../modules/forms/">Forms</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Hamburger" href="../../modules/hamburger/">Hamburger</a>
 
 				</li>
 				
@@ -199,7 +259,25 @@
 					
 
 
+<a class="nav__link" title="Panels" href="../../modules/panels/">Panels</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
 <a class="nav__link" title="Tables" href="../../modules/tables/">Tables</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Tabs" href="../../modules/tabs/">Tabs</a>
 
 				</li>
 				
@@ -282,7 +360,25 @@
 					
 
 
+<a class="nav__link" title="Login" href="../../templates/login/">Login</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
 <a class="nav__link" title="Two col" href="../../templates/2col/">Two col</a>
+
+				</li>
+				
+				
+				<li class="nav__item">
+					
+
+
+<a class="nav__link" title="Vertical header" href="../../templates/vertical-header/">Vertical header</a>
 
 				</li>
 				
@@ -309,25 +405,25 @@
 <div class="fp-example">
     <nav class="pagination" role="navigation" aria-label="Pagination">
         <ol class="pagination__list">
-            <li class="pagination__item pagination__item--previous" role="none">
+            <li class="pagination__item pagination__item--previous" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to previous page, page 1">Previous</a>
             </li>
-            <li class="pagination__item" role="none">
+            <li class="pagination__item" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to page 1">1</a>
             </li>
-            <li class="pagination__item is-active" role="none">
+            <li class="pagination__item is-active" role="none presentation">
                 <span class="pagination__link" aria-label="Current page, page 2" aria-current="true">2</span>
             </li>
-            <li class="pagination__item" role="none">
+            <li class="pagination__item" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to page 3">3</a>
             </li>
-            <li class="pagination__item pagination__item--dummy" role="none">
+            <li class="pagination__item pagination__item--dummy" role="none presentation">
                 <span class="pagination__link" aria-hidden="true">&hellip;</span>
             </li>
-            <li class="pagination__item" role="none">
+            <li class="pagination__item" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to last page, page 15">15</a>
             </li>
-            <li class="pagination__item pagination__item--next" role="none">
+            <li class="pagination__item pagination__item--next" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to next page, page 2">Next</a>
             </li>
         </ol>
@@ -335,25 +431,25 @@
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Pagination&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__list&#34;</span><span class="p"></span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--previous&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--previous&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Go to previous page, page 1&#34;</span><span class="p"></span><span class="p">&gt;</span>Previous<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Go to page 1&#34;</span><span class="p"></span><span class="p">&gt;</span>1<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item is-active&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item is-active&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Current page, page 2&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p"></span><span class="p">&gt;</span>2<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Go to page 3&#34;</span><span class="p"></span><span class="p">&gt;</span>3<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--dummy&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--dummy&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p"></span><span class="p">&gt;</span>…<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Go to last page, page 15&#34;</span><span class="p"></span><span class="p">&gt;</span>15<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--next&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--next&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Go to next page, page 2&#34;</span><span class="p"></span><span class="p">&gt;</span>Next<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="p">/</span><span class="nt">ol</span><span class="p">&gt;</span>
@@ -365,25 +461,25 @@
 <div class="fp-example">
     <nav class="pagination" role="navigation" aria-label="Pagination">
         <ol class="pagination__list">
-            <li class="pagination__item pagination__item--previous is-disabled" role="none">
+            <li class="pagination__item pagination__item--previous is-disabled" role="none presentation">
                 <span class="pagination__link" aria-hidden="true">Previous</span>
             </li>
-            <li class="pagination__item is-active" role="none">
+            <li class="pagination__item is-active" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Current page, page 1" aria-current="true">1</a>
             </li>
-            <li class="pagination__item" role="none">
+            <li class="pagination__item" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to page 2">2</a>
             </li>
-            <li class="pagination__item" role="none">
+            <li class="pagination__item" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to page 3">3</a>
             </li>
-            <li class="pagination__item pagination__item--dummy" role="none">
+            <li class="pagination__item pagination__item--dummy" role="none presentation">
                 <span class="pagination__link" aria-hidden="true">&hellip;</span>
             </li>
-            <li class="pagination__item" role="none">
+            <li class="pagination__item" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to last page, page 15">15</a>
             </li>
-            <li class="pagination__item pagination__item--next" role="none">
+            <li class="pagination__item pagination__item--next" role="none presentation">
                 <a href="#" class="pagination__link" aria-label="Go to next page, page 2">Next</a>
             </li>
         </ol>
@@ -391,10 +487,10 @@
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;navigation&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Pagination&#34;</span><span class="p"></span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__list&#34;</span><span class="p"></span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--previous is-disabled&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item pagination__item--previous is-disabled&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p"></span><span class="p">&gt;</span>Previous<span class="p">&lt;</span><span class="p">/</span><span class="nt">span</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item is-active&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__item is-active&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;none presentation&#34;</span><span class="p"></span><span class="p">&gt;</span>
 			<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pagination__link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Current page, page 1&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p"></span><span class="p">&gt;</span>1<span class="p">&lt;</span><span class="p">/</span><span class="nt">a</span><span class="p">&gt;</span>
 		<span class="p">&lt;</span><span class="p">/</span><span class="nt">li</span><span class="p">&gt;</span>
 		...

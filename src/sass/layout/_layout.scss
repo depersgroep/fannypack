@@ -19,6 +19,17 @@
 	}
 }
 
+.layout--vertical-header {
+	body {
+		padding-top: $site-header-height;
+
+		@include mq-min($bp-small) {
+			padding-top: 0;
+			padding-left: $site-header-vertical-width;
+		}
+	}
+}
+
 .container {
 	max-width: $container-max-width;
 	margin-right: auto;
@@ -48,16 +59,162 @@
 		padding: $double-spacing-unit; // margin fixer
 	}
 
-	.drawer__checkbox + .drawer__menu + .drawer + .main-content {
+	.hamburger {
+		position: fixed;
+		top: ($base-spacing-unit * 1.5);
+		left: $base-spacing-unit;
+		z-index: $drawer-hamburger-z-index; // same as .site-header
+	}
+
+	// first line is deprecated
+	.drawer__checkbox + .drawer__menu + .drawer + .main-content,
+	.hamburger__checkbox + .hamburger + .drawer + .main-content {
 		@include mq-min($bp-medium) {
 			margin-left: $drawer-width;
 			transition: margin-left .3s ease-in-out;
 		}
 	}
 
-	.drawer__checkbox:checked + .drawer__menu + .drawer + .main-content {
+	// first line is deprecated
+	.drawer__checkbox:checked + .drawer__menu + .drawer + .main-content,
+	.hamburger__checkbox:checked + .hamburger + .drawer + .main-content {
 		@include mq-min($bp-medium) {
 			margin-left: 0;
 		}
+	}
+}
+
+.layout--sidebar {
+	body {
+		min-height: 100vh;
+
+		@include mq-min($bp-medium) {
+			display: flex;
+			flex-direction: column;
+
+			@supports (display: grid) {
+				display: block;
+			}
+		}
+	}
+
+	.main-container {
+		position: relative; // postioning context for the drawer
+
+		@include mq-min($bp-medium) {
+			display: flex;
+			flex: 1 0 auto;
+			flex-direction: row;
+
+			@supports (display: grid) {
+				// scss-lint:disable PropertySpelling
+				display: grid;
+				grid-template-columns: $sidebar-width 1fr;
+			}
+		}
+	}
+
+	.main-content {
+		padding: $double-spacing-unit; // margin fixer
+
+		@include mq-min($bp-medium) {
+			flex: 1;
+			min-width: 0; // fix for `nowrap` elements, e.g. <code>, in a flexbox container
+
+			@supports (display: grid) {
+				flex: none;
+			}
+		}
+	}
+}
+
+.layout--diorama {
+	body {
+		display: flex;
+		width: 100%;
+		min-height: 100vh;
+		background-color: $white;
+
+		@include mq-min($bp-medium) {
+			display: flex;
+			flex-direction: row;
+			padding: 0;
+			background-position: 50% 50%;
+			background-size: cover;
+
+			// scss-lint:disable PropertySpelling, PropertyUnits
+			@supports (display: grid) {
+				display: grid;
+				grid-template-columns: 500px 1fr;
+			}
+		}
+
+		&::before,
+		&::after {
+			@include mq-min($bp-medium) {
+				position: fixed;
+				color: $white;
+				text-align: right;
+				z-index: -1;
+			}
+		}
+
+		&::before {
+			@include mq-min($bp-medium) {
+				right: 0;
+				bottom: 0;
+				left: 0;
+				padding: ($base-spacing-unit * 3) ($base-spacing-unit * 3) ($base-spacing-unit * 5);
+				background: linear-gradient(to bottom, rgba($black, 0) 0%, rgba($black, .6) 100%);
+				content: attr(data-credit);
+			}
+		}
+
+		&::after {
+			@include mq-min($bp-medium) {
+				right: ($base-spacing-unit * 3);
+				bottom: ($base-spacing-unit * 3);
+				font-size: $font-size-medium;
+				content: '© ' attr(data-copyright);
+				opacity: .6;
+			}
+		}
+	}
+
+	.main-container {
+		width: 100%;
+		padding: $double-spacing-unit;
+		background-color: $white;
+
+
+		@include mq-min($bp-medium) {
+			display: flex;
+			flex: 0 0 500px;
+			flex-direction: column;
+			height: 100vh;
+			min-height: 100%;
+			padding: 70px;
+			overflow: auto;
+		}
+
+		p,
+		.form {
+			margin-top: ($base-spacing-unit * 4);
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+
+		.form {
+			margin-bottom: ($base-spacing-unit * 4);
+		}
+	}
+
+	.footer {
+		margin-top: auto;
+		padding-top: 25px;
+		border-top: 2px solid $border-color;
+		color: $warmgrey;
 	}
 }

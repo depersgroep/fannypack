@@ -34,20 +34,13 @@
 
 .pagination__item {
 	display: block;
-	border: 1px solid $pagination-border-color;
 
 	@include mq-max(799px) {
 		display: none;
 	}
 
-	&:not(:last-child) {
-		border-right: 0;
-	}
-
 	&.is-active,
 	&.js-is-active {
-		border-color: $pagination-active-border-color;
-		background-color: $pagination-active-bg;
 		color: $white;
 	}
 
@@ -76,19 +69,14 @@
 
 // the one with the ...
 .pagination__item--dummy {
-	&:focus,
-	&:hover {
-		border-color: $pagination-border-color;
-		background-color: $transparent;
-		color: inherit;
-	}
+	//
 }
 
 .pagination__link {
 	display: block;
-	// min-width: nth($pagination-item-dimension, 1);
-	padding-right: $double-spacing-unit;
-	padding-left: $double-spacing-unit;
+	padding-right: $base-spacing-unit;
+	padding-left: $base-spacing-unit;
+	border: 1px solid $pagination-border-color;
 	color: inherit;
 	line-height: nth($pagination-item-dimension, 1);
 	text-align: center;
@@ -108,6 +96,18 @@
 		border-color: $pagination-hover-bg;
 		background-color: $pagination-hover-bg;
 		color: $white;
+	}
+
+	// the one with the ...
+	.pagination__item--dummy &:focus,
+	.pagination__item--dummy &:hover {
+		border-color: $pagination-border-color;
+		background-color: $transparent;
+		color: inherit;
+	}
+
+	.pagination__item:not(:last-child) & {
+		border-right: 0;
 	}
 
 	.pagination__item--previous & {
@@ -130,6 +130,12 @@
 			content: '\203A'; // &rsaquo;
 			vertical-align: text-bottom;
 		}
+	}
+
+	.is-active > &,
+	.js-is-active > & {
+		border-color: $pagination-active-bg;
+		background-color: $pagination-active-bg;
 	}
 
 	.is-disabled &,

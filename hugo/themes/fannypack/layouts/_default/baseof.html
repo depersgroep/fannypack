@@ -4,15 +4,19 @@
 {{ partial "head" . }}
 
 {{ if eq .Section "templates" }}
-{{ partial "header-templates" . }}
+	{{ if in .Page.Permalink "vertical" }}
+		{{ partial "header-templates" (dict "modifier" "site-header--vertical") }}
+	{{ else }}
+		{{ partial "header-templates" (dict "modifier" "") }}
+	{{ end }}
 {{ else }}
-{{ partial "header" . }}
+	{{ partial "header" . }}
 {{ end }}
 
 <body>
 <main class="main-container" role="main">
 	{{ block "main" . }}
-	{{ partial "drawer-docs" . }}
+	{{ partial "menu-docs" . }}
 	<article class="fp-article">
 		{{ .Content }}
 	</article>

@@ -2,14 +2,12 @@
 title = "Color"
 date = 2017-10-09T13:02:58+02:00
 description = "Color palette"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Style"
 +++
 
 ## Default color palette
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
 
 <div class="grid">
 	<div class="col-4">
@@ -69,12 +67,48 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
 </div>
 
 
-
-
-
-
-
 ## Functional colors
+
+<div class="grid">
+	<div class="col-4">
+		<div class="fp-droplet success">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">success <small class="text--muted">= lightish green</small></div>
+				<div class="fp-droplet__hex">#6bd888</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="fp-droplet warning">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">warning <small class="text--muted">= apricot</small></div>
+				<div class="fp-droplet__hex">#ffb060</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="fp-droplet error">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">error <small class="text--muted">= orange pink</small></div>
+				<div class="fp-droplet__hex">#fe6c59</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4 col--clear">
+		<div class="fp-droplet info">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">info <small class="text--muted">= coolblue</small></div>
+				<div class="fp-droplet__hex">#47a0c3</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+## Additional colors
 
 <div class="grid">
 	<div class="col-4">
@@ -82,7 +116,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">orange pink</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#fe6c59</div>
 			</div>
 		</div>
 	</div>
@@ -91,32 +125,25 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">lightish green</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#6bd888</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-
-
-## Additional colors
-
-<div class="grid">
 	<div class="col-4">
 		<div class="fp-droplet lightishpurple">
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">lightish purple</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#ad71e2</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-4">
+	<div class="col-4 col--clear">
 		<div class="fp-droplet cornflower">
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">cornflower</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#5b84f3</div>
 			</div>
 		</div>
 	</div>
@@ -125,7 +152,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">light teal</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#84dcc8</div>
 			</div>
 		</div>
 	</div>
@@ -134,16 +161,16 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">sun yellow</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#ffd63e</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-4">
+	<div class="col-4 col--clear">
 		<div class="fp-droplet apricot">
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">apricot</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#ffb060</div>
 			</div>
 		</div>
 	</div>
@@ -152,7 +179,66 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum!
 			<div class="fp-droplet__color" role="none presentation"></div>
 			<div class="fp-droplet__meta">
 				<div class="fp-droplet__name">light salmon</div>
-				<div class="fp-droplet__hex">#9e9e9e</div>
+				<div class="fp-droplet__hex">#ffab93</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+## Social media colors
+
+<div class="grid">
+	<div class="col-4">
+		<div class="fp-droplet facebook">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">facebook</div>
+				<div class="fp-droplet__hex">#365187</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="fp-droplet twitter">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">twitter</div>
+				<div class="fp-droplet__hex">#199bd3</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="fp-droplet youtube">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">youtube</div>
+				<div class="fp-droplet__hex">#e52d27</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4 col--clear">
+		<div class="fp-droplet instagram">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">instagram</div>
+				<div class="fp-droplet__hex">#125688</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="fp-droplet spotify">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">spotify</div>
+				<div class="fp-droplet__hex">#1ed760</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="fp-droplet soundcloud">
+			<div class="fp-droplet__color" role="none presentation"></div>
+			<div class="fp-droplet__meta">
+				<div class="fp-droplet__name">soundcloud</div>
+				<div class="fp-droplet__hex">#f50</div>
 			</div>
 		</div>
 	</div>

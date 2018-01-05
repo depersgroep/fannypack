@@ -2,7 +2,7 @@
 title = "Grid"
 date = 2017-10-09T10:08:25+02:00
 description = "Reusable grid build with CSS Grid Layout and fallbacks"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Layout"
 +++

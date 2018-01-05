@@ -8,6 +8,10 @@
 .form {
 	width: 100%;
 	margin-bottom: $double-spacing-unit;
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .form__fieldset {
@@ -25,17 +29,24 @@
 	margin-bottom: $double-spacing-unit;
 	padding: 0;
 	border: 0;
-
-	// &:last-child {
-	// 	margin-bottom: 0;
-	// }
 }
 
 .form__label {
-	display: inline-block;
+	display: block;
 	margin-bottom: $half-spacing-unit;
 	font-weight: bold;
 }
+
+// scss-lint:disable QualifyingElement
+legend.form__label {
+	width: 100%;
+	float: left;
+
+	+ * {
+		clear: both;
+	}
+}
+// scss-lint:enable QualifyingElement
 
 .form__label-meta {
 	color: $form-meta-color;
@@ -48,18 +59,33 @@
 	width: 100%;
 	padding-right: $base-spacing-unit;
 	padding-left: $base-spacing-unit;
-	border: 1px solid $border-color;
+	border: 1px double $border-color;
 	border-radius: $border-radius-base;
 	box-shadow: 0 1px 2px 0 rgba($black, .03);
+
+	&:focus {
+		padding-right: ($base-spacing-unit - 1);
+		padding-left: ($base-spacing-unit - 1);
+		border: 2px solid $form-field-focus-border-color;
+		outline: 0;
+	}
 
 	.is-invalid &,
 	.js-is-invalid & {
 		border-color: $error-color;
+
+		&:focus {
+			border-color: $form-field-focus-border-color;
+		}
 	}
 
 	.is-valid &,
 	.js-is-valid & {
 		border-color: $success-color;
+
+		&:focus {
+			border-color: $form-field-focus-border-color;
+		}
 	}
 }
 
@@ -130,6 +156,12 @@ input[type="color"].form__field {
 		cursor: not-allowed;
 	}
 }
+
+//==============================================================================
+// FORM PANELS, same as PANELS
+//==============================================================================
+
+
 
 //==============================================================================
 // FEEDBACK & VALIDATION: ERROR reporting

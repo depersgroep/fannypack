@@ -2,7 +2,7 @@
 title = "Forms"
 date = 2017-10-02T14:34:21+02:00
 description = "Forms and form elements"
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++
@@ -30,7 +30,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, quam!
 ```html
 <form action="" method="" class="form">
 	<fieldset class="form__group">
-		<label for="nameid" class="form__label">Name</label>
+		<label for="inputid" class="form__label">Name</label>
 		<input id="inputid" name="inputname" type="text" class="form__field" />
 	</fieldset>
 	<fieldset class="form__group">
@@ -702,3 +702,7 @@ An example with a date picker and time input.
 		</tr>
 	</tbody>
 </table>
+
+## Grouped form elements in a panel
+
+Check out the [panel]({{< relref "panels.md#using-panels-in-forms" >}}) module, it has an example with the semantically correct way to group form elements in a `fieldset` with a `legend`. The outcome is the same. Just make sure you don't nest `fieldset`s.

@@ -2,44 +2,52 @@
 title = "App Icons"
 date = 2017-10-06T08:16:56+02:00
 description = "Logo's for the apps."
-modifiers = ["theme--fp", "layout--fixed-header", "layout--drawer"]
+modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 [menu.docs]
 parent = "Modules"
 +++
 
 Representation of an internal application **without** the application name visible. Because this has `role="img"` you **must provide** `aria-label=""` with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a [simple graphic logo]({{< relref "#graphic-logo" >}}).
 
+More colors are available, see [color]({{< relref "color.md" >}}) for all available color names.
+
 <div class="fp-example fp-example--app-icons">
-	<div class="app-icon app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+	<div class="app-icon app-icon--orangepink" role="img" aria-label="Temptation Editor">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">E</span>
 		</div>
 	</div>
-	<div class="app-icon app-icon--spring-green" role="img" aria-label="Article Editor">
+	<div class="app-icon app-icon--lightishgreen" role="img" aria-label="Article Editor">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">A</span>
 			<span class="app-icon__character">E</span>
 		</div>
 	</div>
-	<div class="app-icon app-icon--lavender-blue" role="img" aria-label="Workflow">
+	<div class="app-icon app-icon--coolblue" role="img" aria-label="Workflow">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">W</span>
 		</div>
 	</div>
-	<div class="app-icon app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+	<div class="app-icon app-icon--duskblue" role="img" aria-label="Timey Mc Timeface">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">T</span>
 		</div>
 	</div>
-	<div class="app-icon app-icon--steel-blue" role="img" aria-label="Site Management">
+	<div class="app-icon app-icon--lightbluegrey" role="img" aria-label="Site Management">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">S</span>
 			<span class="app-icon__character">M</span>
 		</div>
 	</div>
-	<div class="app-icon app-icon--green-yellow" role="img" aria-label="Search">
+	<div class="app-icon app-icon--slate" role="img" aria-label="Site Management">
+		<div class="app-icon__logo" aria-hidden="true">
+			<span class="app-icon__character">S</span>
+			<span class="app-icon__character">M</span>
+		</div>
+	</div>
+	<div class="app-icon app-icon--sunyellow" role="img" aria-label="Search">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">S</span>
 		</div>
@@ -47,40 +55,47 @@ Representation of an internal application **without** the application name visib
 </div>
 
 ```html
-<div class="app-icon app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+<div class="app-icon app-icon--orangepink" role="img" aria-label="Temptation Editor">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">T</span>
 		<span class="app-icon__character">E</span>
 	</div>
 </div>
-<div class="app-icon app-icon--spring-green" role="img" aria-label="Article Editor">
+<div class="app-icon app-icon--lightishgreen" role="img" aria-label="Article Editor">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">A</span>
 		<span class="app-icon__character">E</span>
 	</div>
 </div>
-<div class="app-icon app-icon--lavender-blue" role="img" aria-label="Workflow">
+<div class="app-icon app-icon--coolblue" role="img" aria-label="Workflow">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">W</span>
 	</div>
 </div>
-<div class="app-icon app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+<div class="app-icon app-icon--duskblue" role="img" aria-label="Timey Mc Timeface">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">T</span>
 		<span class="app-icon__character">T</span>
 	</div>
 </div>
-<div class="app-icon app-icon--steel-blue" role="img" aria-label="Site Management">
+<div class="app-icon app-icon--lightbluegrey" role="img" aria-label="Site Management">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">S</span>
 		<span class="app-icon__character">M</span>
 	</div>
 </div>
-<div class="app-icon app-icon--green-yellow" role="img" aria-label="Search">
+<div class="app-icon app-icon--slate" role="img" aria-label="Site Management">
+	<div class="app-icon__logo" aria-hidden="true">
+		<span class="app-icon__character">S</span>
+		<span class="app-icon__character">M</span>
+	</div>
+</div>
+<div class="app-icon app-icon--sunyellow" role="img" aria-label="Search">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">S</span>
 	</div>
 </div>
+<!-- more colors are available, see /style/color for all available color names -->
 ```
 
 <table class="table table--horizontal-borders">
@@ -113,19 +128,19 @@ Representation of an internal application **without** the application name visib
 ## Sizing
 
 <div class="fp-example fp-example--app-icons">
-	<div class="app-icon app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+	<div class="app-icon app-icon--orangepink" role="img" aria-label="Temptation Editor">
 		<div class="app-icon__logo">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">E</span>
 		</div>
 	</div>
-	<div class="app-icon app-icon--large app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+	<div class="app-icon app-icon--large app-icon--orangepink" role="img" aria-label="Temptation Editor">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">E</span>
 		</div>
 	</div>
-	<div class="app-icon app-icon--xlarge app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+	<div class="app-icon app-icon--xlarge app-icon--orangepink" role="img" aria-label="Temptation Editor">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">E</span>
@@ -134,19 +149,19 @@ Representation of an internal application **without** the application name visib
 </div>
 
 ```html
-<div class="app-icon app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+<div class="app-icon app-icon--orangepink" role="img" aria-label="Temptation Editor">
 	<div class="app-icon__logo">
 		<span class="app-icon__character">T</span>
 		<span class="app-icon__character">E</span>
 	</div>
 </div>
-<div class="app-icon app-icon--large app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+<div class="app-icon app-icon--large app-icon--orangepink" role="img" aria-label="Temptation Editor">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">T</span>
 		<span class="app-icon__character">E</span>
 	</div>
 </div>
-<div class="app-icon app-icon--xlarge app-icon--lumberjack-red" role="img" aria-label="Temptation Editor">
+<div class="app-icon app-icon--xlarge app-icon--orangepink" role="img" aria-label="Temptation Editor">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">T</span>
 		<span class="app-icon__character">E</span>
@@ -159,50 +174,64 @@ Representation of an internal application **without** the application name visib
 As we provide visible description of the logo, the way the **aria** attributes are arranged has changed.
 
 <div class="fp-example fp-example-app-icons-stacked">
-	<div class="app-icon app-icon--lumberjack-red" aria-labelledby="app-icon-name1">
+	<div class="app-icon app-icon--orangepink" aria-labelledby="app-icon-name1">
 		<div class="app-icon__logo" role="img">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">E</span>
 		</div>
 		<span class="app-icon__name" id="app-icon-name1">Temptation Editor</span>
 	</div>
-	<div class="app-icon app-icon--spring-green" aria-labelledby="app-icon-name5">
+	<div class="app-icon app-icon--lightishgreen" aria-labelledby="app-icon-name5">
 		<div class="app-icon__logo" role="img">
 			<span class="app-icon__character">A</span>
 			<span class="app-icon__character">E</span>
 		</div>
 		<span class="app-icon__name" id="app-icon-name5">Article Editor</span>
 	</div>
-	<div class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name1">
+	<div class="app-icon app-icon--coolblue" aria-labelledby="app-icon-name1">
 		<div class="app-icon__logo" role="img">
 			<span class="app-icon__character">W</span>
 		</div>
 		<span class="app-icon__name" id="app-icon-name1">Workflow</span>
 	</div>
-	<div class="app-icon app-icon--turquoise-blue" aria-labelledby="app-icon-name2">
+	<div class="app-icon app-icon--sunyellow" aria-labelledby="app-icon-name2">
 		<div class="app-icon__logo" role="img">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">T</span>
 		</div>
 		<span class="app-icon__name" id="app-icon-name2">Timey Mc Timeface</span>
 	</div>
-	<div class="app-icon app-icon--steel-blue" aria-labelledby="app-icon-name3">
+	<div class="app-icon app-icon--coolblue" aria-labelledby="app-icon-name3">
 		<div class="app-icon__logo" role="img">
 			<span class="app-icon__character">S</span>
 			<span class="app-icon__character">M</span>
 		</div>
 		<span class="app-icon__name" id="app-icon-name3">Site Management</span>
 	</div>
-	<div class="app-icon app-icon--green-yellow" aria-labelledby="app-icon-name4">
+	<div class="app-icon app-icon--apricot" aria-labelledby="app-icon-name4">
 		<div class="app-icon__logo" role="img">
 			<span class="app-icon__character">S</span>
 		</div>
 		<span class="app-icon__name" id="app-icon-name4">Search</span>
 	</div>
+	<div class="app-icon app-icon--lightishpurple app-icon--large" aria-labelledby="app-icon-name2">
+		<div class="app-icon__logo" role="img">
+			<span class="app-icon__character">T</span>
+			<span class="app-icon__character">T</span>
+		</div>
+		<span class="app-icon__name" id="app-icon-name2">Timey Mc Timeface</span>
+	</div>
+	<div class="app-icon app-icon--orangepink app-icon--xlarge" aria-labelledby="app-icon-name1">
+		<div class="app-icon__logo" role="img">
+			<span class="app-icon__character">T</span>
+			<span class="app-icon__character">E</span>
+		</div>
+		<span class="app-icon__name" id="app-icon-name1">Temptation Editor</span>
+	</div>
 </div>
 
 ```html
-<div class="app-icon app-icon--lumberjack-red" role="img" aria-labelledby="app-icon-name1">
+<div class="app-icon app-icon--orangepink" role="img" aria-labelledby="app-icon-name1">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">T</span>
 		<span class="app-icon__character">E</span>
@@ -240,7 +269,7 @@ Simply replace the `<div class="app-icon">` with `<a href="#" class="app-icon">`
 If for some reason you aren't able to swap the module element with a link you can nest a link inside the module wrapper.
 
 <div class="fp-example fp-example-app-icons-stacked">
-	<a href="#" class="app-icon app-icon--lumberjack-red" role="img" aria-labelledby="app-icon-link-name1">
+	<a href="#" class="app-icon app-icon--orangepink" role="img" aria-labelledby="app-icon-link-name1">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">T</span>
 			<span class="app-icon__character">E</span>
@@ -248,7 +277,7 @@ If for some reason you aren't able to swap the module element with a link you ca
 		<span class="app-icon__name" id="app-icon-link-name1">Temptation Editor</span>
 	</a>
 
-	<div class="app-icon app-icon--lumberjack-red" role="img" aria-labelledby="app-icon-link-name2">
+	<div class="app-icon app-icon--orangepink" role="img" aria-labelledby="app-icon-link-name2">
 		<a href="#" class="app-icon__link">
 			<div class="app-icon__logo" aria-hidden="true">
 				<span class="app-icon__character">T</span>
@@ -260,7 +289,7 @@ If for some reason you aren't able to swap the module element with a link you ca
 </div>
 
 ```html
-<a href="#" class="app-icon app-icon--lumberjack-red" role="img" aria-labelledby="app-icon-link-name1">
+<a href="#" class="app-icon app-icon--orangepink" role="img" aria-labelledby="app-icon-link-name1">
 	<div class="app-icon__logo" aria-hidden="true">
 		<span class="app-icon__character">T</span>
 		<span class="app-icon__character">E</span>
@@ -270,7 +299,7 @@ If for some reason you aren't able to swap the module element with a link you ca
 
 <!-- or -->
 
-<div class="app-icon app-icon--lumberjack-red" role="img" aria-labelledby="app-icon-link-name2">
+<div class="app-icon app-icon--orangepink" role="img" aria-labelledby="app-icon-link-name2">
 	<a href="#" class="app-icon__link">
 		<div class="app-icon__logo" aria-hidden="true">
 			<span class="app-icon__character">T</span>
@@ -295,17 +324,17 @@ The original image:
 In its processed state:
 
 <div class="fp-example fp-example--app-icons">
-	<div class="app-icon app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+	<div class="app-icon app-icon--coolblue" role="img" aria-label="Timey Mc Timeface">
 		<div class="app-icon__logo" aria-hidden="true">
 			<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
 		</div>
 	</div>
-	<div class="app-icon app-icon--large app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+	<div class="app-icon app-icon--large app-icon--coolblue" role="img" aria-label="Timey Mc Timeface">
 		<div class="app-icon__logo" aria-hidden="true">
 			<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
 		</div>
 	</div>
-	<div class="app-icon app-icon--xlarge app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+	<div class="app-icon app-icon--xlarge app-icon--coolblue" role="img" aria-label="Timey Mc Timeface">
 		<div class="app-icon__logo" aria-hidden="true">
 			<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
 		</div>
@@ -313,19 +342,19 @@ In its processed state:
 </div>
 
 ```html
-<div class="app-icon app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+<div class="app-icon app-icon--coolblue" role="img" aria-label="Timey Mc Timeface">
 	<div class="app-icon__logo" aria-hidden="true">
 		<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
 	</div>
 </div>
 <!-- large -->
-<div class="app-icon app-icon--large app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+<div class="app-icon app-icon--large app-icon--coolblue" role="img" aria-label="Timey Mc Timeface">
 	<div class="app-icon__logo" aria-hidden="true">
 		<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
 	</div>
 </div>
 <!--  xlarge -->
-<div class="app-icon app-icon--xlarge app-icon--turquoise-blue" role="img" aria-label="Timey Mc Timeface">
+<div class="app-icon app-icon--xlarge app-icon--coolblue" role="img" aria-label="Timey Mc Timeface">
 	<div class="app-icon__logo" aria-hidden="true">
 		<img src="/img/timeymctimeface-clock.png" class="app-icon__img" alt=""/>
 	</div>

@@ -28,7 +28,7 @@
       
       <guid>https://fannypack.persgroep.net/templates/drawer/</guid>
       <description>Drawer template Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements. You see this pattern often in dashboards. Toggling the drawer is done with the checkbox hack
-  Selector  Description     .layout--drawer Required On the html tag   .layout--fixed-header Required On the html tag.   .drawer__checkbox Required The checkbox hack   .drawer__menu Required The clickbale region that holds the hamburger icon   .</description>
+  Selector  Description     .layout--drawer Required On the html tag   .layout--fixed-header Required On the html tag.   .hamburger__checkbox Required The checkbox hack   .hamburger Required The clickbale region that holds the hamburger icon   .</description>
     </item>
     
     <item>
@@ -43,6 +43,15 @@ You can combine this with other .layout-- modifiers. So &amp;lt;html class=&amp;
     </item>
     
     <item>
+      <title>Login</title>
+      <link>https://fannypack.persgroep.net/templates/login/</link>
+      <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/templates/login/</guid>
+      <description>&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34; class=&amp;#34;no-js layout--diorama&amp;#34;&amp;gt; &amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt; &amp;lt;body style=&amp;#34;background-image: url(&amp;#39;img/antelopecanyon.jpg&amp;#39;);&amp;#34; data-copyright=&amp;#34;Unsplash&amp;#34; data-credit=&amp;#34;Ashim D’Silva&amp;#34;&amp;gt; &amp;lt;main class=&amp;#34;main-container&amp;#34; role=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon app-icon--xlarge app-icon--lumberjack-red&amp;#34; role=&amp;#34;img&amp;#34; aria-labelledby=&amp;#34;app-icon-name&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;app-icon__logo&amp;#34; aria-hidden=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;T&amp;lt;/span&amp;gt; &amp;lt;span class=&amp;#34;app-icon__character&amp;#34;&amp;gt;E&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;span class=&amp;#34;app-icon__name&amp;#34; id=&amp;#34;app-icon-name&amp;#34;&amp;gt;Temptation Editor&amp;lt;/span&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p&amp;gt;Sign in below with your De Persgroep account.&amp;lt;/p&amp;gt; &amp;lt;form action=&amp;#34;&amp;#34; class=&amp;#34;form&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;name&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Name&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;name&amp;#34; name=&amp;#34;name&amp;#34; type=&amp;#34;text&amp;#34; class=&amp;#34;form__field&amp;#34; required=&amp;#34;required&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;password&amp;#34; class=&amp;#34;form__label&amp;#34;&amp;gt;Password&amp;lt;/label&amp;gt; &amp;lt;input id=&amp;#34;password&amp;#34; name=&amp;#34;password&amp;#34; type=&amp;#34;password&amp;#34; class=&amp;#34;form__field&amp;#34; required=&amp;#34;required&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form__group&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;form__checkbox&amp;#34;&amp;gt; &amp;lt;label class=&amp;#34;form__checkbox__label&amp;#34;&amp;gt; &amp;lt;input type=&amp;#34;checkbox&amp;#34; class=&amp;#34;form__checkbox__input&amp;#34; value=&amp;#34;rememberme&amp;#34; /&amp;gt;Remember me &amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;form__actions&amp;#34;&amp;gt; &amp;lt;button class=&amp;#34;button button--primary&amp;#34; type=&amp;#34;submit&amp;#34;&amp;gt;Login&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt;&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt;Forgot password&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;footer class=&amp;#34;footer&amp;#34;&amp;gt; Experiencing problems or in need of assistance?</description>
+    </item>
+    
+    <item>
       <title>Two col</title>
       <link>https://fannypack.persgroep.net/templates/2col/</link>
       <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
@@ -50,6 +59,16 @@ You can combine this with other .layout-- modifiers. So &amp;lt;html class=&amp;
       <guid>https://fannypack.persgroep.net/templates/2col/</guid>
       <description>2 col template 1 column for the main content and a sidebar for some complementary content about the main content.   Sidebar Here some complementary info about the main article.
    &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34; class=&amp;#34;no-js&amp;#34;&amp;gt; &amp;lt;head&amp;gt;...&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;header class=&amp;#34;site-header&amp;#34;&amp;gt;...&amp;lt;/header&amp;gt; &amp;lt;main class=&amp;#34;main-container&amp;#34; role=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;main-content&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;container&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;grid&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;col-8&amp;#34;&amp;gt; &amp;lt;!-- or any other .col-X --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;col-6&amp;#34;&amp;gt; &amp;lt;!-- or any other .col-X --&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/main&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Vertical header</title>
+      <link>https://fannypack.persgroep.net/templates/vertical-header/</link>
+      <pubDate>Mon, 23 Oct 2017 09:19:17 +0200</pubDate>
+      
+      <guid>https://fannypack.persgroep.net/templates/vertical-header/</guid>
+      <description>Vertical header template When scrolling the page, your header wil be fixed at the left and always visible. On mobile this will transform to a horizontal header with a hamburger menu.
+  Selector  Description     .layout--vertical-header Required On the html tag   .site-header--vertical Required Modifier on .site-header   .nav--vertical Optional Only if you need navigation in the vertical header   .hamburger Optional Only if you need navigation in the vertical header.</description>
     </item>
     
   </channel>

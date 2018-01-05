@@ -30,6 +30,7 @@ var pkg = require('./package.json'),
 	cached = require('gulp-cached'),
 	concat = require('gulp-concat'),
 	copy = require('gulp-copy'),
+	cssminify = require('gulp-clean-css'),
 	eslint = require('gulp-eslint'),
 	imagemin = require('gulp-imagemin'),
 	notify = require('gulp-notify'),
@@ -40,6 +41,7 @@ var pkg = require('./package.json'),
 	uglify = require('gulp-uglify'),
 	gUtil = require('gulp-util'),
 	rename = require('gulp-rename'),
+	run = require('gulp-run-command').default,
 	fileExists = require('file-exists'),
 	imageminPngquant = require('imagemin-pngquant'),
 	gitHookDestinationPath = pkg.git.hooks.precommit.dest.substring(0, pkg.git.hooks.precommit.dest.lastIndexOf('/') + 1),
@@ -187,6 +189,24 @@ gulp.task('sassbuild', function() {
 	}));
 });
 
+gulp.task('cssbuild', ['sass', 'sassbuild'], function() {
+	return es.merge(pkg.sass.files.map(function(o) {
+		return gulp.src(o.dest + '/**/*.css', {
+			'base': './'
+		})
+			.pipe(plumber({
+				'errorHandler': onError
+			}))
+
+			.pipe(cssminify())
+			.pipe(gulp.dest('./'))
+			.pipe(notify({
+				'message': 'CSS: ' + o.file + ' minify complete',
+				'onLast': true // otherwise the notify will be fired for each file in the pipe
+			}));
+	}));
+});
+
 // default task
 gulp.task('default', ['hook', 'clean'], function() {
 	// pay attention when upgrading gulp: https://github.com/gulpjs/gulp/issues/505#issuecomment-45379280
@@ -202,14 +222,17 @@ gulp.task('default', ['hook', 'clean'], function() {
 	gulp.watch(pkg.sass.watch, ['sass']);
 });
 
-// deploy task
-gulp.task('deploy', function() {
+// build - before deploy
+gulp.task('build', function() {
 	// pay attention when upgrading gulp: https://github.com/gulpjs/gulp/issues/505#issuecomment-45379280
 	gulp.start('imgbuild');
 	gulp.start('fontsbuild');
 	gulp.start('jsbuild');
-	gulp.start('sassbuild');
+	gulp.start('cssbuild');
 });
+
+// deploy task
+gulp.task('deploy', run(['gulp build', 'hugo']));
 
 // pre-commit
 // on Mac, make sure the folder exists
