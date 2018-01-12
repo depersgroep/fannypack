@@ -671,29 +671,29 @@ It will calculate the widths based on the available width of its wrapper.</p>
 
 <p>Offsetting columns in a CSS Grid is tricky. It works the other way around. Instead of defining how many cols there are between adjacent columns, the offset determines how many columns (starting from the outer left edge) should be skipped. So you&rsquo;ll have to do some math yourself, knowing we have a total of 12 columns.</p>
 
-<p>So if you give an offset of 8 with <code>.col--offset-8</code>, your column will start on the 9th grid item, no matter if there are any other columns preceding. See example below.</p>
+<p>So if you give an offset of 8 with <code>.col--grid-offset-8</code>, your column will start on the 9th grid item, no matter if there are any other columns preceding. See example below.</p>
 
 <div class="fp-example fp-example--grid fp-example--grid-visible">
     <div class="grid">
         <div class="col-1 col--dashed">1</div>
         <div class="col-1 col--dashed">2</div>
         <div class="col-1 col--dashed">3</div>
-        <div class="col-6">.col-6.col--offset-3</div>
+        <div class="col-6">.col-6.col--grid-offset-3</div>
         <div class="col-3">.col-3</div>
         <div class="col-1 col--dashed col--clear">1</div>
         <div class="col-1 col--dashed">2</div>
-        <div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
+        <div class="col-4 col--grid-offset-2">.col-4.col--grid-offset-2</div>
         <div class="col-1 col--dashed">7</div>
         <div class="col-1 col--dashed">8</div>
-        <div class="col-3 col--grid-offset-8">.col-3.col--offset-8</div>
+        <div class="col-3 col--grid-offset-8">.col-3.col--grid-offset-8</div>
         <div class="col-1 col--dashed">12</div>
     </div>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6 col--offset-3&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-6.col--offset-3<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6 col--grid-offset-3&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-6.col--grid-offset-3<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
 	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4 col--offset-2 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4.col--offset-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3 col--offset-8&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3.col--offset-8<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4 col--grid-offset-2 col--clear&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4.col--grid-offset-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3 col--grid-offset-8&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3.col--grid-offset-8<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <p>If your math doesn&rsquo;t work out and your offsets collide with grid items that are already occupied, the faulty one will wrap to a new row.</p>
 
@@ -703,7 +703,7 @@ It will calculate the widths based on the available width of its wrapper.</p>
     <div class="grid">
         <div class="col-1 col--dashed">1</div>
         <div class="col-1 col--dashed">2</div>
-        <div class="col-4 col--grid-offset-2">.col-4.col--offset-2</div>
+        <div class="col-4 col--grid-offset-2">.col-4.col--grid-offset-2</div>
         <div class="col-1 col--dashed">7</div>
         <div class="col-1 col--dashed">8</div>
         <div class="col-1 col--dashed">9</div>
@@ -715,7 +715,7 @@ It will calculate the widths based on the available width of its wrapper.</p>
         <div class="col-1 col--dashed">3</div>
         <div class="col-1 col--dashed">4</div>
         <div class="col-1 col--dashed">5</div>
-        <div class="col-3 col--grid-offset-5">.col-3.col--offset-5</div>
+        <div class="col-3 col--grid-offset-5">.col-3.col--grid-offset-5</div>
         <div class="col-1 col--dashed">9</div>
         <div class="col-1 col--dashed">10</div>
         <div class="col-1 col--dashed">11</div>
@@ -723,8 +723,8 @@ It will calculate the widths based on the available width of its wrapper.</p>
     </div>
 </div>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid&#34;</span><span class="p"></span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4 col--grid-offset-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4.col--offset-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3 col--grid-offset-5&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3.col--offset-5<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4 col--grid-offset-2&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-4.col--grid-offset-2<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3 col--grid-offset-5&#34;</span><span class="p"></span><span class="p">&gt;</span>.col-3.col--grid-offset-5<span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="p">/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="offsets-and-float-based-grids">Offsets and float-based grids</h3>
 
@@ -735,7 +735,7 @@ It will calculate the widths based on the available width of its wrapper.</p>
         <div class="col-1 col--dashed">1</div>
         <div class="col-1 col--dashed">2</div>
         <div class="col-1 col--dashed">3</div>
-        <div class="col-6">.col-6.col--offset-3</div>
+        <div class="col-6">.col-6.col--grid-offset-3</div>
         <div class="col-3">.col-3</div>
         <div class="col-1 col--dashed col--clear">1</div>
         <div class="col-1 col--dashed">2</div>
