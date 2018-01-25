@@ -1,0 +1,323 @@
+@charset 'UTF-8';
+
+@import '../functions';
+@import '../site-settings';
+@import '../modules-settings';
+@import '../mixins/mixins';
+@import 'theme-fannypack';
+
+////////////////////////////////////////////////////////////////////////////////
+// DOCS
+//
+// description:
+// custom styling for the documentation site
+////////////////////////////////////////////////////////////////////////////////
+
+.app-icon--neon-pink {
+	.app-icon__logo {
+		// background-color: $neon-pink;
+	}
+
+	.app-icon__character {
+		&:first-child {
+			// color: $neon-blue;
+		}
+
+		&:last-child {
+			// color: $neon-yellow;
+			font-weight: bold;
+		}
+	}
+}
+
+.highlight {
+	margin-bottom: $double-spacing-unit;
+	border-radius: $border-radius-base;
+	background-color: $white;
+
+	> .chroma {
+		padding: $double-spacing-unit;
+	}
+}
+
+.chroma {
+	overflow: auto;
+}
+
+.fp-example {
+	padding: $double-spacing-unit;
+	border-radius: $border-radius-base;
+	background-color: $white;
+	overflow: auto;
+
+	+ .highlight {
+		box-shadow: inset 0 10px 5px -5px rgba($evil-gray, .4);
+
+		.chroma {
+			margin: 0;
+		}
+	}
+
+	&--dark {
+		background-color: $almost-black;
+	}
+
+	&--app-icons {
+		@include clearfix;
+
+		.app-icon {
+			margin-right: $double-spacing-unit;
+			float: left;
+		}
+	}
+
+	&-app-icons-stacked {
+		.app-icon:not(:last-child) {
+			margin-bottom: $double-spacing-unit;
+		}
+	}
+
+	&--grid {
+		[class^="col-"] {
+			padding: $base-spacing-unit;
+			border: 1px solid $iron;
+			background-color: $evil-gray;
+		}
+
+		[class^="grid"] {
+			margin-bottom: $double-spacing-unit;
+		}
+	}
+
+	&--grid-visible {
+		.col--dashed {
+			border: 1px dashed $evil-gray;
+			background-color: transparent;
+			color: $evil-gray;
+			text-align: center;
+		}
+	}
+
+	&--grid-float {
+		@supports (display: grid) {
+			.grid {
+				@include clearfix;
+				display: block;
+			}
+
+			[class^="col-"] {
+				margin-bottom: $double-spacing-unit;
+				float: left;
+			}
+
+			@for $i from 1 through 12 {
+				.col-#{$i} {
+					width: percentage($i / 12);
+				}
+			}
+
+			.col--clear {
+				clear: left;
+			}
+		}
+	}
+
+	> .site-header {
+		position: static;
+		padding-left: $double-spacing-unit;
+	}
+}
+
+.fp-main-container {
+	@include clearfix;
+	position: relative; // positioning context
+	width: 100%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+
+	.layout--drawer & {
+		@supports (display: grid) {
+			// scss-lint:disable PropertySpelling
+			display: grid;
+			grid-gap: 0;
+			grid-template-columns: $drawer-width calc(100% - #{$drawer-width});
+			grid-template-rows: auto;
+
+			&::after {
+				content: none;
+			}
+
+			@include mq-max($bp-medium - 1) {
+				display: block;
+			}
+		}
+	}
+}
+
+.fp-drawer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: $drawer-width;
+	padding: $double-spacing-unit;
+
+	@include mq-max($bp-medium - 1) {
+		display: none;
+	}
+
+	@supports (display: grid) {
+		position: static;
+		width: auto;
+	}
+}
+
+.fp-article {
+	padding: $double-spacing-unit;
+
+
+	.layout--drawer & {
+		position: relative; // positioning context
+		margin-top: 80px;
+		margin-left: $drawer-width;
+		background-color: $white;
+
+		@include mq-max($bp-medium - 1) {
+			margin-left: 0;
+		}
+
+		&::before {
+			display: block;
+			position: absolute;
+			top: -60px;
+			left: 0;
+			width: 100%;
+			height: 60px;
+			background-color: $white;
+			content: '';
+			clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+		}
+
+
+		@supports (display: grid) {
+			margin-left: 0;
+		}
+
+		> h1 {
+			display: block;
+			margin-top: -90px;
+			padding-right: $double-spacing-unit;
+			padding-left: $double-spacing-unit;
+			float: left;
+			transform: rotate(-4.33deg);
+		}
+	}
+}
+
+.fp-transparent-bg {
+	background-clip: border-box;
+	background-image: linear-gradient(45deg, rgba($black, .0980392) 25%, rgba($black, 0) 25%, rgba($black, 0) 75%, rgba($black, .0980392) 75%, rgba($black, .0980392) 0), linear-gradient(45deg, rgba($black, .0980392) 25%, rgba($black, 0) 25%, rgba($black, 0) 75%, rgba($black, .0980392) 75%, rgba($black, .0980392) 0);
+	background-position: 0 0, 10px 10px;
+	background-size: 20px 20px;
+	background-origin: padding-box;
+}
+
+
+.fp-droplet {
+	//
+}
+
+.fp-droplet__color {
+	padding-top: 50%;
+	border-radius: $border-radius-large $border-radius-large 0 0;
+
+	@each $name, $color in $allcolors {
+		.#{$name} > & {
+			background-color: $color;
+		}
+	}
+}
+
+.fp-droplet__meta {
+	padding: $double-spacing-unit;
+	border: 1px solid $border-color;
+	border-top: 0;
+	border-radius: 0 0 $border-radius-large $border-radius-large;
+	background-color: $white;
+}
+
+
+.fp-droplet__name {
+	font-size: $font-size-h4;
+	font-weight: 600;
+}
+
+.fp-droplet__hex {
+	color: $warmgrey;
+}
+
+.layout--diorama {
+	.dialog__checkbox {
+		@include visually-hidden;
+	}
+
+	.dialog__toggle {
+		position: fixed;
+		bottom: $double-spacing-unit;
+		left: $double-spacing-unit;
+		padding: .2em .6em;
+		border-radius: $border-radius-base;
+		background-color: $primary-color;
+		color: $white;
+		z-index: 2;
+
+		&::after {
+			content: 'Show code </>';
+		}
+
+	}
+
+	.dialog__checkbox:checked {
+		+ .dialog__toggle {
+			top: ($base-spacing-unit * 10);
+			right: ($base-spacing-unit * 6);
+			bottom: auto;
+			left: auto;
+
+			@include mq-min(1280px) {
+				right: auto;
+				right: calc(50% - 580px);
+			}
+
+			// scss-lint:disable NestingDepth
+			&::after {
+				content: 'Hide code </>';
+			}
+
+			+ .dialog {
+				display: block;
+			}
+		}
+	}
+
+	.dialog {
+		display: none;
+		position: fixed;
+		top: ($base-spacing-unit * 8);
+		right: ($base-spacing-unit * 4);
+		left: ($base-spacing-unit * 4);
+		max-width: 1200px;
+		max-height: 80vh;
+		padding: $double-spacing-unit;
+		border-radius: $border-radius-large;
+		background-color: $white;
+		box-shadow: 0 0 50px rgba($black, .3);
+		overflow: auto;
+		z-index: 1;
+
+		@include mq-min(1280px) {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}

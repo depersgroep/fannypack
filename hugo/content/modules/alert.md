@@ -130,7 +130,7 @@ Be brief in your description text, one paragraph should be more than enough to g
 
 ## Dismissible alerts
 
-You can click these alerts away. Needs Javascript to work!
+You can click these alerts away. You need to write your own Javascript to make it work (for now)!
 
 <div class="fp-example">
 	<div class="alert alert--condensed alert--dismissible alert--error" role="alert" aria-describedby="alertdescription1" aria-live="assertive">

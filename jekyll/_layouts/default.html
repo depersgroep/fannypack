@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="no-js theme--fp {% if page.modifier %}{{page.modifier}}{% endif %}" lang="en">
+	{% include head.html %}
+	<body class="bs-docs-home">
+		{% comment %}
+		<a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+		{% endcomment %}
+
+		{% include header.html %}
+
+		<main class="main-container" role="main">
+			{% include menu-docs.html %}
+			<div class="main-content">
+				<header class="page-header">
+					<h1>{{ page.title }}</h1>
+				</header>
+				<div class="main-content__inner">
+					{{ content }}
+				</div>
+			</div>
+			{% include footer.html %}
+		</main>
+	</body>
+</html>

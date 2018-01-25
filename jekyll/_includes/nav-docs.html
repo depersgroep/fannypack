@@ -1,0 +1,17 @@
+{% assign mydocs = site.docs | group_by: 'category' %}
+<nav class="nav nav--vertical" role="navigation">
+	<ul class="nav__list">
+		{% for cat in mydocs %}
+		<li class="nav__item">
+			<span class="nav__title">{{ cat.category | capitalize }}</span>
+			<ul class="nav__list">
+			{% assign items = cat.items | sort %}
+			{% for item in items %}
+				<li class="nav__item{% if item.url == page.url %} is-active{% endif %}">
+					<a class="nav__link" title="{{ item.title }}" href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+			{% endfor %}
+			</ul>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>

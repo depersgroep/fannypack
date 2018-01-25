@@ -22,64 +22,67 @@
   "license": "ISC",
   "homepage": "https://github.com/joggink/fannypack#readme",
   "clean": [
-    "dist/",
-    "hugo/dist/"
+    "jekyll/css",
+    "jekyll/js",
+    "jekyll/fonts",
+    "jekyll/img"
   ],
   "js": {
     "files": [
       {
         "src": [
-          "src/js/persgroep/3rdparty/*.js",
-          "src/js/persgroep/*.js",
-          "src/js/persgroep/classes/*.js",
-          "src/js/bootstrap.js",
-          "src/js/modules/*.js",
-          "src/js/vendor/picturefill.js"
+          "js/persgroep/3rdparty/*.js",
+          "js/persgroep/*.js",
+          "js/persgroep/classes/*.js",
+          "js/bootstrap.js",
+          "js/modules/*.js",
+          "js/vendor/picturefill.js"
         ],
-        "dest": "dist/js/",
+        "dest": "jekyll/js/",
         "file": "fannypack.js"
       },
       {
         "src": [
-          "src/js/config/*.js"
+          "js/config/*.js"
         ],
-        "dest": "dist/js/",
+        "dest": "jekyll/js/",
         "file": "fannypack-head.js"
       }
     ],
     "hint": {
       "src": [
-        "src/js/**/*.js",
-        "!./src/js/persgroep/**/*.js",
-        "!./src/js/vendor/**/*.js"
+        "js/**/*.js",
+        "!./js/persgroep/**/*.js",
+        "!./js/vendor/**/*.js"
       ]
     },
-    "watch": "src/js/**/*.js"
+    "watch": "js/**/*.js"
   },
   "sass": {
     "files": [
       {
-        "src": "src/sass/**/*.scss",
-        "dest": "dist/css",
+        "src": [
+          "sass/**/*.scss",
+          "!./sass/docs/**/*.scss"
+        ],
+        "dest": "jekyll/css",
         "file": "fannypack.css"
       },
       {
-        "src": "hugo/src/sass/**/*.scss",
-        "dest": "dist/css",
+        "src": "sass/docs/**/*.scss",
+        "dest": "jekyll/css",
         "file": "docs.css"
       }
     ],
     "hint": {
       "src": [
-        "src/sass/**/*.scss",
-        "!./src/sass/base/_normalize.scss",
-        "!./src/sass/modules/_syntax.scss",
-        "hugo/src/sass/**/*.scss"
+        "sass/**/*.scss",
+        "!./sass/base/_normalize.scss",
+        "!./sass/modules/_syntax.scss"
       ]
     },
     "watch": [
-      "src/sass/**/*.scss",
-      "hugo/src/sass/**/*.scss"
+      "sass/**/*.scss"
     ],
     "autoprefixer": {
       "browsers": [
@@ -93,14 +96,14 @@
     }
   },
   "img": {
-    "src": "hugo/src/img/**/*",
-    "dest": "dist/",
-    "watch": "hugo/src/img/**/*"
+    "src": "img/**/*",
+    "dest": "jekyll/img/",
+    "watch": "img/**/*"
   },
   "fonts": {
-    "src": "src/fonts/**/*",
-    "dest": "dist/",
-    "watch": "src/fonts/**/*"
+    "src": "fonts/**/*",
+    "dest": "jekyll/fonts/",
+    "watch": "fonts/**/*"
   },
   "git": {
     "hooks": {

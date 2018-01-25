@@ -1,0 +1,39 @@
+<header class="site-header{% if include.modifier %} {{ include.modifier }}{% endif %}" role="banner">
+	<div class="site-header__section">
+		<a href="/" class="app-icon app-icon--lavender-blue" aria-labelledby="app-icon-name">
+			<div class="app-icon__logo" aria-hidden="true">
+				<span class="app-icon__character">J</span>
+				<span class="app-icon__character">D</span>
+			</div>
+			<span class="app-icon__name" id="app-icon-name">Your App Name</span>
+		</a>
+	</div>
+	{% if include.modifier %}
+	<input type="checkbox" class="hamburger__checkbox" id="nav-toggle">
+	<label for="nav-toggle" class="hamburger" role="button" aria-label="Toggle the menu">
+		<span class="hamburger__line" role="none presentation"></span>
+		<span class="hamburger__line" role="none presentation"></span>
+		<span class="hamburger__line" role="none presentation"></span>
+	</label>
+	<nav class="nav nav--vertical" role="navigation" aria-label="Primary navigation">
+		<ul class="nav__list">
+			<li class="nav__item" role="none presentation">
+				<a href="#" class="nav__link">Home</a>
+			</li>
+			<li class="nav__item" role="none presentation">
+				<a href="#" class="nav__link">Products</a>
+			</li>
+			<li class="nav__item is-active" role="none presentation">
+				<a href="#" class="nav__link" aria-current="page">About</a>
+			</li>
+			<li class="nav__item nav__item--last" role="none presentation">
+				<a href="{% link _docs/layout/grid.md %}" class="nav__link">Back to docs</a>
+			</li>
+		</ul>
+	</nav>
+	{% else %}
+	<div class="site-header__section site-header__section--last">
+		<a href="{% link _docs/layout/grid.md %}">Back to docs</a>
+	</div>
+	{% endif %}
+</header>

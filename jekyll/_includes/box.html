@@ -1,0 +1,5 @@
+{% for color in site.data.colors.{{ colorgroup }} %}
+	<div class="box box--bordered box--{{ color }}">
+		<p>This is a bordered box with color name "{{ color }}"</p>
+	</div>
+{% endfor %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html class="no-js {% if page.modifier %}{{page.modifier}}{% endif %}" lang="en">
+	{% include head.html %}
+	<body class="bs-docs-home">
+		{% include header.html %}
+		{% comment %}
+		<a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+		{% endcomment %}
+
+		{% include header-templates.html %}
+
+		<main class="main-container" role="main">
+			<article class="fp-article">
+				{{ content }}
+			</article>
+		</main>
+	</body>
+</html>

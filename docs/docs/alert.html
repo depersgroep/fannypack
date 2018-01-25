@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="no-js theme--fp layout--fixed-header layout--sidebar theme--fp" lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+	<title>Alerts | Fannypack</title>
+
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Provide visual feedback about a recent action of the user.">
+	<link rel="canonical" href="">
+	
+
+	<link rel="stylesheet" href="http://localhost:4000/css/fannypack.css" />
+	<link rel="stylesheet" href="http://localhost:4000/css/docs.css" />
+
+	
+
+	<link rel="shortcut icon" type="image/png" href="http://localhost:4000/img/favicon.png" >
+</head>
+
+	<body class="bs-docs-home">
+		
+
+		<header class="site-header" role="banner">
+	<div class="site-header__section">
+		<a href="/" class="app-icon app-icon--neon-pink" aria-labelledby="app-icon-name">
+	<span class="app-icon__name" id="app-icon-name">De Persgroep <span class="text--muted">/ Fannypack</span></span>
+</a>
+
+	</div>
+	<div class="site-header__section">
+		<nav class="nav" role="navigation">
+	<ul class="nav__list">
+	
+	</ul>
+</nav>
+
+	</div>
+</header>
+
+
+		<main class="main-container" role="main">
+			<input type="checkbox" class="sidebar__checkbox" id="sidebar__checkbox" />
+<label for="sidebar__checkbox" tabindex="0" class="sidebar__menu" role="button" aria-label="Menu">
+	<span class="sidebar__menu-line" role="none presentation"></span>
+	<span class="sidebar__menu-line" role="none presentation"></span>
+	<span class="sidebar__menu-line" role="none presentation"></span>
+</label>
+
+<div class="sidebar">
+	
+<nav class="nav nav--vertical" role="navigation">
+	<ul class="nav__list">
+		
+		<li class="nav__item">
+			<span class="nav__title"></span>
+			<ul class="nav__list">
+			
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Getting started" href="/docs/getting-started">Getting started</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Grid" href="/docs/grid">Grid</a>
+			
+				<li class="nav__item is-active">
+					<a class="nav__link" title="Alerts" href="/docs/alert" aria-current="page">Alerts</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="App Icons" href="/docs/app-icons">App Icons</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Boxes" href="/docs/boxes">Boxes</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Breadcrumb" href="/docs/breadcrumb">Breadcrumb</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Buttons" href="/docs/buttons">Buttons</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Forms" href="/docs/forms">Forms</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Hamburger" href="/docs/hamburger">Hamburger</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Header" href="/docs/header">Header</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Icons" href="/docs/icons">Icons</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Labels" href="/docs/labels">Labels</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Navigation" href="/docs/navigation">Navigation</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Pagination" href="/docs/pagination">Pagination</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Panels" href="/docs/panels">Panels</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Tables" href="/docs/tables">Tables</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Tabs" href="/docs/tabs">Tabs</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Toolbar" href="/docs/toolbar">Toolbar</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Color" href="/docs/color">Color</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Typography" href="/docs/typography">Typography</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Two col" href="/docs/2col">Two col</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Base" href="/docs/base">Base</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Drawer" href="/docs/drawer">Drawer</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Fixed header" href="/docs/fixed-header">Fixed header</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Login" href="/docs/login">Login</a>
+			
+				<li class="nav__item">
+					<a class="nav__link" title="Vertical header" href="/docs/vertical-header">Vertical header</a>
+			
+			</ul>
+		</li>
+		
+	</ul>
+</nav>
+
+</div>
+
+			<div class="main-content">
+				<header class="page-header">
+					<h1>Alerts</h1>
+				</header>
+				<div class="main-content__inner">
+					<div class="fp-example">
+	<div class="alert alert--condensed alert--error" role="alert" aria-describedby="alertdescription1" aria-live="assertive">
+		<div class="alert__body">
+			<h3 class="alert__title">Error!</h3>
+			<p class="alert__text" id="alertdescription1">Major alert. <a href="#">Click here</a></p>
+		</div>
+	</div>
+	<div class="alert alert--condensed alert--warning" role="alert" aria-describedby="alertdescription2" aria-live="assertive">
+		<div class="alert__body">
+			<h3 class="alert__title">Warning!</h3>
+			<p class="alert__text" id="alertdescription2">Something's up. <a href="#">Click here</a></p>
+		</div>
+	</div>
+	<div class="alert alert--condensed alert--success" role="alert" aria-describedby="alertdescription3" aria-live="polite">
+		<div class="alert__body">
+			<h3 class="alert__title">Success!</h3>
+			<p class="alert__text" id="alertdescription3">You successfully did something. <a href="#">Click here</a></p>
+		</div>
+	</div>
+	<div class="alert alert--condensed alert--info" role="alert" aria-describedby="alertdescription4" aria-live="polite">
+		<div class="alert__body">
+			<h3 class="alert__title">Attention!</h3>
+			<p class="alert__text" id="alertdescription4"> This alert needs your attention. <a href="#">Click here</a></p>
+		</div>
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- ERROR --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--condensed alert--error"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription1"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription1"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- WARNING --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--condensed alert--warning"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription2"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription2"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- SUCCESS --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--condensed alert--success"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription3"</span> <span class="na">aria-live=</span><span class="s">"polite"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription3"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- INFORMATIVE --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--condensed alert--info"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription4"</span> <span class="na">aria-live=</span><span class="s">"polite"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Attention<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription4"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="with-a-description">With a description</h2>
+
+<p>Be brief in your description text, one paragraph should be more than enough to get your feedback across to the user.</p>
+
+<div class="fp-example">
+	<div class="alert alert--error" role="alert" aria-describedby="alertdescription1" aria-live="assertive">
+		<div class="alert__body">
+			<h3 class="alert__title">Error</h3>
+			<p class="alert__text" id="alertdescription1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</p>
+		</div>
+	</div>
+	<div class="alert alert--warning" role="alert" aria-describedby="alertdescription2" aria-live="assertive">
+		<div class="alert__body">
+			<h3 class="alert__title">Warning</h3>
+			<p class="alert__text" id="alertdescription2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</p>
+		</div>
+	</div>
+	<div class="alert alert--success" role="alert" aria-describedby="alertdescription3" aria-live="polite">
+		<div class="alert__body">
+			<h3 class="alert__title">Success</h3>
+			<p class="alert__text" id="alertdescription3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</p>
+		</div>
+	</div>
+	<div class="alert alert--info" role="alert" aria-describedby="alertdescription4" aria-live="polite">
+		<div class="alert__body">
+			<h3 class="alert__title">Attention</h3>
+			<p class="alert__text" id="alertdescription4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.</p>
+		</div>
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- ERROR --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--error"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription1"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription1"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- WARNING --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--warning"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription2"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription2"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- SUCCESS --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--success"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription3"</span> <span class="na">aria-live=</span><span class="s">"polite"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription3"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- INFORMATIVE --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--info"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription4"</span> <span class="na">aria-live=</span><span class="s">"polite"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Attention<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription4"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque error perferendis eveniet laborum, a iure ex odio asperiores eos placeat.<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="dismissible-alerts">Dismissible alerts</h2>
+
+<p>You can click these alerts away. You need to write your own Javascript to make it work (for now)!</p>
+
+<div class="fp-example">
+	<div class="alert alert--condensed alert--dismissible alert--error" role="alert" aria-describedby="alertdescription1" aria-live="assertive">
+		<div class="alert__body">
+			<h3 class="alert__title">Error!</h3>
+			<p class="alert__text" id="alertdescription1">Major alert. <a href="#">Click here</a></p>
+		</div>
+		<button class="alert__dismiss" type="button">&times;<span class="sr-only">Close</span></button>
+	</div>
+	<div class="alert alert--dismissible alert--error" role="alert" aria-describedby="alertdescription1" aria-live="assertive">
+		<div class="alert__body">
+			<h3 class="alert__title">Error!</h3>
+			<p class="alert__text" id="alertdescription1">Major alert. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nesciunt?. <a href="#">Click here</a></p>
+		</div>
+		<button class="alert__dismiss" type="button">&times;<span class="sr-only">Close</span></button>
+	</div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--condensed alert--dismissible alert--error"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription1"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Error!<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription1"</span><span class="nt">&gt;</span>Major alert. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Click here<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"alert__dismiss"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert--dismissible alert--error"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-describedby=</span><span class="s">"alertdescription1"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert__body"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"alert__title"</span><span class="nt">&gt;</span>Error!<span class="nt">&lt;/h3&gt;</span>
+		<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"alert__text"</span> <span class="na">id=</span><span class="s">"alertdescription1"</span><span class="nt">&gt;</span>Major alert. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, nesciunt?. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Click here<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+	<span class="nt">&lt;/div&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"alert__dismiss"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+
+				</div>
+			</div>
+			<footer class="site-footer" role="contentinfo">An Open Source project by De Persgroep &bull;&nbsp;<a href="https://github.com/depersgroep/fannypack">Source code at GitHub</a>  under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a> license
+</footer>
+
+		</main>
+	</body>
+</html>
