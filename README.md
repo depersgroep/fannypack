@@ -6,25 +6,31 @@ Built with **SMACSS, BEM and WAI-ARIA**.
 
 ## Development
 
-Fannypack runs on [Hugo](https://gohugo.io/), a static site generator and [Gulp](https://gulpjs.com/) as task manager.
+Fannypack runs on [Jekyll](https://jekyllrb.com/), a static site generator and [Gulp](https://gulpjs.com/) as task manager.
 
 ### Dependencies
-- NodeJS v6.X & NPM: https://nodejs.org/dist/latest-v6.x/
-- Hugo: https://gohugo.io/getting-started/installing/
+- NodeJS v6.X (or newer) & NPM: https://nodejs.org/dist/latest-v6.x/
+- Jekyll 3.7 or newer: https://jekyllrb.com/docs/installation/
 
 ### Run local
 
+In your fannypack project folder:
 ```bash
-# start hugo server and build/watch static files with gulp
-npm run develop
+# start jekyll server and watch html files
+bundle exec jekyll serve
+```
+and in another Terminal window, in your fannypack project folder:
+```bash
+# watch assets
+gulp
 ```
 
 ## Pushing code
 
-Before you can push your code, you need to build the static site.
-
+Before you can push your code, you need to build the static site and minify the assets.
+First, stop all running Jekyll and gulp commands, than in your fannypack project folder:
 ```bash
-npm run build
+gulp deploy
 ```
 
 Fannypack maintainers can now push the code to the remote `master` branch. This will trigger an auto-deploy.
