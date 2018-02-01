@@ -1,17 +1,20 @@
-{% assign mydocs = site.docs | group_by: 'category' %}
 <nav class="nav nav--vertical" role="navigation">
 	<ul class="nav__list">
-		{% for cat in mydocs %}
+		{% if site.menus %}
+		{% for item in site.menus.sidebar %}
 		<li class="nav__item">
-			<span class="nav__title">{{ cat.category | capitalize }}</span>
-			<ul class="nav__list">
-			{% assign items = cat.items | sort %}
-			{% for item in items %}
-				<li class="nav__item{% if item.url == page.url %} is-active{% endif %}">
+			<span class="nav__title">{{ item.identifier }}</span>
+			{% if item.children %}
+			<ul class="nav__list nav__list--nested">
+			{% for item in item.children %}
+				<li class="nav__item{% if item.url == page.url %} is-active{% endif %} {{ forloop.index }}">
 					<a class="nav__link" title="{{ item.title }}" href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+				</li>
 			{% endfor %}
 			</ul>
+			{% endif %}
 		</li>
 		{% endfor %}
+		{% endif %}
 	</ul>
 </nav>

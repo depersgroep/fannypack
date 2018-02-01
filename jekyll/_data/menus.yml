@@ -1,0 +1,15 @@
+sidebar:
+  - identifier: Getting started
+  - identifier: Style
+  - identifier: Layout
+  - identifier: Modules
+  - identifier: Templates
+
+
+header:
+  - title: "Documentation"
+    url: "/style/color"
+    identifier: Documentation
+  - title: "Github"
+    url: "https://github.com/depersgroep/fannypack"
+    identifier: Github

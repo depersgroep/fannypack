@@ -8,7 +8,7 @@
 			<span class="app-icon__name" id="app-icon-name">Your App Name</span>
 		</a>
 	</div>
-	{% if include.modifier %}
+	{% if include.modifier contains "vertical" %}
 	<input type="checkbox" class="hamburger__checkbox" id="nav-toggle">
 	<label for="nav-toggle" class="hamburger" role="button" aria-label="Toggle the menu">
 		<span class="hamburger__line" role="none presentation"></span>
@@ -27,13 +27,13 @@
 				<a href="#" class="nav__link" aria-current="page">About</a>
 			</li>
 			<li class="nav__item nav__item--last" role="none presentation">
-				<a href="{% link _docs/layout/grid.md %}" class="nav__link">Back to docs</a>
+				<a href="{% link layout/grid.md %}" class="nav__link">Back to docs</a>
 			</li>
 		</ul>
 	</nav>
 	{% else %}
 	<div class="site-header__section site-header__section--last">
-		<a href="{% link _docs/layout/grid.md %}">Back to docs</a>
+		<a href="{% link layout/grid.md %}">Back to docs</a>
 	</div>
 	{% endif %}
 </header>

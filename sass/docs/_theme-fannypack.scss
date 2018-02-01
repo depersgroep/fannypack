@@ -2,10 +2,11 @@
 // THEME: FANNYPACK
 //
 // description:
-// Fluo, 80s retro style for Fannypack documentation
+// style for Fannypack documentation
 ////////////////////////////////////////////////////////////////////////////////
 
 .theme--fp {
+	// scss-lint:disable SelectorDepth
 	.main-content {
 		padding-top: 0;
 	}
@@ -14,12 +15,6 @@
 		max-width: (764px + $drawer-width + ($double-spacing-unit * 2));
 		margin-right: auto;
 		margin-left: auto;
-
-		@include mq-min(764px + ($drawer-width * 2) + ($double-spacing-unit * 2)) {
-			max-width: none;
-			padding-right: 132px;
-			padding-left: 132px;
-		}
 	}
 
 	.page-header {
@@ -42,63 +37,11 @@
 			margin-right: auto;
 			margin-bottom: 0;
 			margin-left: auto;
-
-			@include mq-min(764px + ($drawer-width * 2) + ($double-spacing-unit * 2)) {
-				max-width: none;
-				padding-right: 132px;
-				padding-left: 132px;
-			}
 		}
 	}
 
 	.alert__dismiss {
 		display: block;
-	}
-
-	.hero-unit {
-		padding: 0;
-		background-color: $body-bg;
-
-		.container {
-			position: relative;
-			padding: ($base-spacing-unit * 5) 0 ($base-spacing-unit * 4);
-
-			@include mq-min($bp-small) {
-				padding-top: ($base-spacing-unit * 6);
-			}
-
-			@include mq-min($bp-medium) {
-				padding-top: ($base-spacing-unit * 12);
-			}
-		}
-	}
-
-	.hero-unit__title {
-		margin-top: 0;
-		margin-bottom: 160px;
-		font-size: emify(50);
-		text-align: center;
-
-		@include mq-min($bp-small) {
-			margin-bottom: 200px;
-			font-size: emify(70);
-		}
-
-		@include mq-min($bp-medium) {
-			margin-bottom: 210px;
-			font-size: emify(90);
-		}
-	}
-
-	.hero-unit__body {
-		font-size: $font-size-h4;
-		text-align: center;
-
-		@include mq-min($bp-small) {
-			width: 50%;
-			margin-right: auto;
-			margin-left: auto;
-		}
 	}
 
 	.hero-unit__svg {
@@ -116,45 +59,42 @@
 		}
 
 		@include mq-min($bp-medium) {
-			top: 163px;
-		}
-
-		@include mq-min(920px) {
-			top: 163px;
+			top: 30%;
 		}
 	}
 
 	.svg-check-1 {
-		top: 98px;
+		top: 28px;
 		left: 33%;
 		width: 24px;
 
 		@include mq-min($bp-small) {
-			top: 260px;
 			left: 15%;
 			width: auto;
 		}
 
 		@include mq-min($bp-medium) {
-			top: 345px;
+			top: 230px;
 			left: 26%;
 		}
 	}
 
 	.svg-check-2 {
-		top: 152px;
+		top: 92px;
 		right: 10%;
 		width: 30px;
 
 		@include mq-min($bp-small) {
-			top: 37px;
-			right: auto;
-			left: 19%;
+			display: none;
+			top: 22px;
 			width: auto;
 		}
 
 		@include mq-min($bp-medium) {
-			top: 90px;
+			display: block;
+			top: 50px;
+			right: auto;
+			left: 19%;
 		}
 	}
 
@@ -163,29 +103,20 @@
 
 		@include mq-min($bp-medium) {
 			display: block;
-			top: 269px;
-			right: 8%;
-		}
-
-		@include mq-min(920px) {
-			right: 11%;
+			top: 193px;
+			right: 9%;
 		}
 	}
 
 	.svg-fannypack {
-		top: 140px;
+		bottom: 0;
 		left: 50%;
 		width: 50%;
 		max-width: 255px;
 		transform: translateX(-50%);
 
 		@include mq-min($bp-small) {
-			top: 200px;
 			width: auto;
-		}
-
-		@include mq-min($bp-medium) {
-			top: 282px;
 		}
 	}
 
@@ -194,60 +125,56 @@
 
 		@include mq-min($bp-medium) {
 			display: block;
-			top: 265px;
-			left: 18%;
-		}
-
-		@include mq-min(920px) {
+			top: 160px;
 			left: 14%;
 		}
 	}
 
 	.svg-panel-1 {
-		top: 18px;
+		top: 10px;
 		right: 15%;
 		width: 62px;
 
 		@include mq-min($bp-small) {
-			right: auto;
-			left: 50%;
+			right: 20%;
 		}
 
 		@include mq-min($bp-medium) {
-			top: 221px;
-			left: 67%;
+			top: 0;
+			right: auto;
+			left: 50%;
 		}
 	}
 
 	.svg-panel-2 {
 		display: none;
 
-		@include mq-min($bp-small) {
+		@include mq-min($bp-medium) {
 			display: block;
-			top: 130px;
-			right: 22%;
-			width: 66px;
+			top: 38px;
+			right: 24%;
+			width: auto;
 		}
 
-		@include mq-min($bp-medium) {
-			top: 38px;
-			right: 34%;
-			width: auto;
+		@include mq-min(920px) {
+			top: 82px;
+			right: 26%;
 		}
 	}
 
 	.svg-star-1 {
-		top: 25px;
+		top: 0;
 		left: 10%;
 		width: 33px;
 
 		@include mq-min($bp-small) {
-			top: 120px;
-			left: 32%;
+			top: 55px;
+			left: 42%;
 		}
 
 		@include mq-min($bp-medium) {
-			top: 200px;
+			top: 84px;
+			left: 35%;
 		}
 	}
 
@@ -261,7 +188,7 @@
 		}
 
 		@include mq-min($bp-medium) {
-			top: 194px;
+			top: 119px;
 		}
 
 		@include mq-min(920px) {
@@ -272,23 +199,15 @@
 	.svg-text {
 		display: none;
 
-		@include mq-min($bp-small) {
-			display: block;
-			top: 260px;
-			right: 11%;
-		}
-
 		@include mq-min($bp-medium) {
-			top: 324px;
-		}
-
-		@include mq-min(920px) {
-			right: 26%;
+			display: block;
+			top: 209px;
+			right: 21%;
 		}
 	}
 
 	.svg-trash {
-		top: 157px;
+		top: 97px;
 		left: 10%;
 		width: 40px;
 
@@ -300,7 +219,8 @@
 		}
 
 		@include mq-min($bp-medium) {
-			top: 106px;
+			top: 30px;
+			right: 0;
 		}
 	}
 
@@ -339,6 +259,61 @@
 		.text--muted {
 			font-weight: normal;
 		}
+	}
+}
+
+.fp-hero-unit {
+	padding: 0;
+	background-color: $body-bg;
+
+	.container {
+		position: relative;
+		padding: ($base-spacing-unit * 5) 0 ($base-spacing-unit * 4);
+	}
+}
+
+// the svg
+.fp-hero-unit__img {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 1005px;
+	height: 0;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50%;
+
+	@include mq-min($bp-small) {
+		padding-top: 240px;
+	}
+
+	@include mq-min($bp-medium) {
+		padding-top: 288px;
+	}
+}
+
+.fp-hero-unit__title {
+	margin-top: 0;
+	font-size: emify(36);
+	text-align: center;
+
+	@include mq-min($bp-small) {
+		font-size: emify(52);
+	}
+
+	@include mq-min($bp-medium) {
+		font-size: emify(66);
+	}
+}
+
+.fp-hero-unit__body {
+	font-size: $font-size-h4;
+	text-align: center;
+
+	@include mq-min($bp-small) {
+		width: 50%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 

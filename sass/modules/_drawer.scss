@@ -14,6 +14,7 @@
 	@include visually-hidden;
 }
 
+// the menu (sidebar)
 .drawer__menu {
 	display: block;
 	position: fixed;
@@ -45,6 +46,31 @@
 	}
 }
 
+// wrapper for the main content, REQUIRED when using .layout--drawer-push
+.drawer__push-container {
+	// when the drawer completely disappears
+	.hamburger__checkbox:checked ~ & {
+		@include mq-min($bp-large) {
+			margin-left: 0;
+
+			.site-header {
+				left: 0;
+			}
+		}
+	}
+
+	// when the gutter (icons) remains visible
+	.hamburger__checkbox:checked ~ .drawer--gutter + & {
+		@include mq-min($bp-large) {
+			margin-left: $drawer-gutter-width;
+
+			.site-header {
+				left: $drawer-gutter-width;
+			}
+		}
+	}
+}
+
 
 //==============================================================================
 // THE ACTUAL DRAWER
@@ -56,21 +82,46 @@
 	left: ($drawer-width * -1);
 	width: $drawer-width;
 	padding: ($base-spacing-unit * 5) ($base-spacing-unit * 3);
-	transition: left .3s ease-in-out;
-	border-right: 1px solid $border-color;
 	background-color: $drawer-bg;
 	overflow: auto;
+	z-index: 2; // higher than .main-content
 
-	@include mq-min($bp-medium) {
+	@include mq-min($bp-large) {
 		left: 0;
 	}
 
-	.hamburger__checkbox:checked + .hamburger + &,
-	.drawer__checkbox:checked + .drawer__menu + & {
+	// .drawer__checkbox is deprecated
+	.drawer__checkbox:checked ~ &,
+	.hamburger__checkbox:checked ~ & {
 		left: 0;
 
-		@include mq-min($bp-medium) {
+		@include mq-min($bp-large) {
 			left: ($drawer-width * -1);
+		}
+	}
+}
+
+// when collapsed, the icons remain visible
+.drawer--gutter {
+	// on small screens the default is `collapsed with gutter visible`
+	.hamburger__checkbox:not(:checked) ~ & {
+		@include mq-max($bp-large - 1) {
+			left: 0;
+			width: $drawer-gutter-width;
+			padding-right: ($base-spacing-unit * 1.5);
+			padding-left: ($base-spacing-unit * 1.5);
+		}
+	}
+
+	.hamburger__checkbox:checked ~ & {
+		width: $drawer-width;
+
+		// large screens
+		@include mq-min($bp-large) {
+			left: 0;
+			width: $drawer-gutter-width;
+			padding-right: ($base-spacing-unit * 1.5);
+			padding-left: ($base-spacing-unit * 1.5);
 		}
 	}
 }
@@ -83,4 +134,18 @@
 	margin-bottom: $double-spacing-unit;
 	color: $drawer-section-title-color;
 	font-size: $font-size-medium;
+
+	.hamburger__checkbox:not(:checked) ~ .drawer--gutter & {
+		@include mq-max($bp-large - 1) {
+			visibility: hidden;
+		}
+	}
+
+	.hamburger__checkbox:checked ~ .drawer--gutter & {
+		visibility: visible;
+
+		@include mq-min($bp-large) {
+			visibility: hidden;
+		}
+	}
 }

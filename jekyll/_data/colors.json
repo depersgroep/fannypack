@@ -1,92 +1,116 @@
 {
-  "grayscale": [
-    "black",
-    "almost-black",
-    "dark-gray",
-    "steel",
-    "aluminum",
-    "gray",
-    "iron",
-    "silver",
-    "evil-gray",
-    "whitesmoke",
-    "white"
-  ],
-  "socialmedia": [
-    "facebook",
-    "twitter",
-    "youtube",
-    "instagram",
-    "spotify",
-    "soundcloud"
-  ],
-  "custom": [
-    "coolblue",
-    "duskblue",
-    "lightbluegrey",
-    "slate",
-    "dark",
-    "warmgrey"
-  ],
-  "additional": [
-    "orangepink",
-    "lightishgreen",
-    "lightishpurple",
-    "cornflower",
-    "lightteal",
-    "sunyellow",
-    "apricot",
-    "lightsalmon"
-  ],
-  "functional": [
-    "success",
-    "warning",
-    "error",
-    "info",
-    "muted"
-  ],
-  "main": [
-    "primary",
-    "secondary"
-  ],
-  "all": [
-    "black",
-    "almost-black",
-    "dark-gray",
-    "steel",
-    "aluminum",
-    "gray",
-    "iron",
-    "silver",
-    "evil-gray",
-    "whitesmoke",
-    "white",
-    "facebook",
-    "twitter",
-    "youtube",
-    "instagram",
-    "spotify",
-    "soundcloud",
-    "coolblue",
-    "duskblue",
-    "lightbluegrey",
-    "slate",
-    "dark",
-    "warmgrey",
-    "orangepink",
-    "lightishgreen",
-    "lightishpurple",
-    "cornflower",
-    "lightteal",
-    "sunyellow",
-    "apricot",
-    "lightsalmon",
-    "success",
-    "warning",
-    "error",
-    "info",
-    "muted",
-    "primary",
-    "secondary"
+  "colorgroups": [
+    {
+        "name" :"grayscale",
+        "colors": [
+            "black",
+            "almost-black",
+            "dark-gray",
+            "steel",
+            "aluminum",
+            "gray",
+            "iron",
+            "silver",
+            "evil-gray",
+            "whitesmoke",
+            "white"
+        ]
+    },
+    {
+        "name": "socialmedia",
+        "colors": [
+            "facebook",
+            "twitter",
+            "youtube",
+            "instagram",
+            "spotify",
+            "soundcloud"
+        ]
+    },
+    {
+        "name": "custom",
+        "colors": [
+            "coolblue",
+            "duskblue",
+            "lightbluegrey",
+            "slate",
+            "dark",
+            "warmgrey"
+        ]
+    },
+    {
+        "name": "additional",
+        "colors": [
+            "orangepink",
+            "lightishgreen",
+            "lightishpurple",
+            "cornflower",
+            "lightteal",
+            "sunyellow",
+            "apricot",
+            "lightsalmon"
+        ]
+    },
+    {
+        "name": "functional",
+        "colors": [
+            "success",
+            "warning",
+            "error",
+            "info",
+            "muted"
+        ]
+    },
+    {
+        "name": "main",
+        "colors": [
+            "primary",
+            "secondary"
+        ]
+    },
+    {
+        "name": "all",
+        "colors": [
+            "black",
+            "almost-black",
+            "dark-gray",
+            "steel",
+            "aluminum",
+            "gray",
+            "iron",
+            "silver",
+            "evil-gray",
+            "whitesmoke",
+            "white",
+            "facebook",
+            "twitter",
+            "youtube",
+            "instagram",
+            "spotify",
+            "soundcloud",
+            "coolblue",
+            "duskblue",
+            "lightbluegrey",
+            "slate",
+            "dark",
+            "warmgrey",
+            "orangepink",
+            "lightishgreen",
+            "lightishpurple",
+            "cornflower",
+            "lightteal",
+            "sunyellow",
+            "apricot",
+            "lightsalmon",
+            "success",
+            "warning",
+            "error",
+            "info",
+            "muted",
+            "primary",
+            "secondary"
+        ]
+    }
   ]
 }
+

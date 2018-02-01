@@ -117,6 +117,10 @@
 		grid-column-start: auto;
 	}
 
+	[class*="col--float-offset-"] {
+		margin-left: 0;
+	}
+
 	@for $i from 2 through 12 {
 		.col-#{$i} {
 			grid-column-end: span #{$i};

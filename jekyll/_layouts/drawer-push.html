@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="no-js{% if page.modifier %} {{page.modifier}}{% endif %}" lang="en">
+	{% include head.html %}
+	<body class="bs-docs-home">
+		{% comment %}
+		<a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
+		{% endcomment %}
+		{% if page.url contains '-gutter' %}
+				{% assign modifier = 'drawer--gutter' %}
+			{% else %}
+				{% assign modifier = '' %}
+			{% endif %}
+		{% include drawer-templates.html modifier=modifier %}
+
+		<div class="drawer__push-container">
+			{% include header-templates.html %}
+
+			<main class="main-container" role="main">
+				<div class="main-content">
+					{{ content }}
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

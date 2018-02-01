@@ -25,40 +25,27 @@ defaults:
   -
     scope:
       path: ""
-      type: "docs" # collection in _docs folder
+      type: "pages"
     values:
       layout: "default"
       modifier: "layout--fixed-header layout--sidebar theme--fp"
   -
     scope:
       path: "templates"
-      type: "docs"
+      type: "pages"
     values:
       layout: "templates"
-
-collections:
-  header:
-    -
-      page: "Documentation"
-      url: "/layout/grid"
-    -
-      page: "Github"
-      url: "https://github.com/depersgroep/fannypack"
-  docs:
-    output: true
-    name: /:title
-    category: /:path
-    permalink: /:collection/:name
+      modifier: ""
 
 # Build settings
-source: ./jekyll
-destination: ./docs
+source: jekyll
+destination: docs
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 #theme: minima
-#plugins:
-#  - jekyll-feed
+plugins:
+ - jekyll-menus
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

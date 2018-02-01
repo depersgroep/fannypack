@@ -1,8 +1,8 @@
 <nav class="nav" role="navigation">
 	<ul class="nav__list">
-	{% for item in site.collections.header %}
+	{% for item in site.menus.header %}
 		<li class="nav__item">
-			<a class="nav__link" title="{{ item.page }}" href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.page }}</a>
+			<a class="nav__link" title="{{ item.page }}" href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
 		</li>
 	{% endfor %}
 	</ul>

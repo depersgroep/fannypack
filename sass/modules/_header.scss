@@ -15,14 +15,6 @@
 	padding-left: $double-spacing-unit;
 	border-bottom: 1px solid $site-header-border-color;
 	background-color: $site-header-bg;
-
-	.layout--fixed-header & {
-		position: fixed;
-		top: 0;
-		right: 0;
-		left: 0;
-		z-index: $site-header-z-index;
-	}
 }
 
 .site-header--vertical {

@@ -1,5 +1,9 @@
-{% for color in site.data.colors.{{ colorgroup }} %}
+{% for colorgroup in site.data.colors.colorgroups %}
+	{% if include.colorgroup == colorgroup.name %}
+	{% for color in colorgroup.colors %}
 	<div class="box box--bordered box--{{ color }}">
 		<p>This is a bordered box with color name "{{ color }}"</p>
 	</div>
+	{% endfor %}
+	{% endif %}
 {% endfor %}

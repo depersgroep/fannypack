@@ -21,9 +21,9 @@
 	height: 32px;
 	padding: $half-spacing-unit;
 	cursor: pointer;
-	z-index: 2; // same as .site-header
+	z-index: $site-header-z-index; // same as .site-header
 
-	@include mq-min($bp-medium) {
+	@include mq-min($bp-large) {
 		display: none;
 	}
 }
@@ -70,7 +70,7 @@
 		padding: ($base-spacing-unit * 3);
 	}
 
-	@include mq-min($bp-medium) {
+	@include mq-min($bp-large) {
 		display: block;
 		flex: 0 0 $sidebar-width;
 		padding: ($base-spacing-unit * 5);
@@ -81,13 +81,14 @@
 	}
 
 	.sidebar__checkbox:checked + .sidebar__menu + & {
-		@include mq-max($bp-medium - 1) {
+		@include mq-max($bp-large - 1) {
 			display: block;
 			position: fixed;
 			top: $site-header-height;
 			right: 0;
 			bottom: 0;
 			left: 0;
+			max-width: 480px;
 			overflow: auto;
 			z-index: $z-index-sidebar;
 		}

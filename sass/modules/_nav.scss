@@ -5,7 +5,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 .nav {
-	//
+	.site-header & {
+		@include mq-max($bp-large - 1) {
+			display: none;
+		}
+	}
 }
 
 .nav--vertical {
@@ -32,9 +36,22 @@
 		}
 	}
 
-	.layout--vertical-header .hamburger__checkbox:checked + .hamburger + & {
+	.layout--vertical-header .hamburger__checkbox:checked ~ & {
 		@include mq-max($bp-small - 1) {
 			transform: translateX(0);
+		}
+	}
+
+	// scss-lint:disable SelectorDepth
+	.layout--drawer-gutter .hamburger__checkbox:checked ~ .drawer--gutter & {
+		@include mq-min($bp-large) {
+			.material-icons {
+				margin-right: 0;
+			}
+
+			.nav__txt {
+				display: none;
+			}
 		}
 	}
 }
@@ -49,6 +66,7 @@
 
 	.nav--vertical & {
 		display: block;
+		line-height: 1.2;
 	}
 
 	.site-header--vertical .nav--vertical & {
@@ -59,16 +77,10 @@
 }
 
 .nav__list--nested {
-	margin-top: $base-spacing-unit;
-	margin-bottom: $double-spacing-unit;
 	font-weight: normal;
 
-	@include mq-min($bp-small) {
-		margin-bottom: ($base-spacing-unit * 3);
-	}
-
-	@include mq-min($bp-medium) {
-		margin-bottom: ($base-spacing-unit * 4);
+	.nav--vertical & {
+		margin-bottom: $double-spacing-unit;
 	}
 }
 
@@ -78,6 +90,10 @@
 
 	& + & {
 		margin-left: $double-spacing-unit;
+	}
+
+	.nav--vertical & {
+		margin-bottom: 7px;
 	}
 
 	.nav--vertical & + & {
@@ -142,6 +158,30 @@
 			margin-right: $base-spacing-unit;
 		}
 	}
+
+	.hamburger__checkbox:not(:checked) ~ .drawer--gutter & {
+		@include mq-max($bp-large - 1) {
+			padding-right: 0;
+			padding-left: 0;
+			text-align: center;
+
+			.material-icons {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.hamburger__checkbox:checked ~ .drawer--gutter & {
+		@include mq-min($bp-large) {
+			padding-right: 0;
+			padding-left: 0;
+			text-align: center;
+
+			.material-icons {
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 .nav__title {
@@ -149,12 +189,23 @@
 	margin-bottom: $base-spacing-unit;
 	color: $warmgrey;
 	font-size: $font-size-medium;
+}
 
-	@include mq-min($bp-small) {
-		margin-bottom: $double-spacing-unit;
+// REQUIRED
+// extra <span> in .nav__link when using .drawer--gutter
+.nav__txt {
+	// for small screens
+	.hamburger__checkbox:not(:checked) ~ .drawer--gutter & {
+		@include mq-max($bp-large - 1) {
+			display: none;
+		}
 	}
 
-	@include mq-min($bp-medium) {
-		margin-bottom: ($base-spacing-unit * 3);
+	.hamburger__checkbox:checked ~ .drawer--gutter & {
+		// display: inline;
+
+		@include mq-min($bp-large) {
+			display: none;
+		}
 	}
 }

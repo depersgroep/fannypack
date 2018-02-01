@@ -81,10 +81,11 @@ code {
 	background-color: $silver;
 	color: $slate;
 	font-size: $font-size-medium;
-	white-space: nowrap;
 
 	pre & {
-		white-space: pre;
+		padding: 0;
+		background-color: $transparent;
+		white-space: pre-wrap;
 	}
 }
 
@@ -103,4 +104,10 @@ a {
 	&:active {
 		color: $link-active-color;
 	}
+}
+
+hr {
+	border-width: 0 0 1px;
+	border-style: solid;
+	color: $hr-border-color;
 }

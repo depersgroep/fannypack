@@ -8,6 +8,11 @@
 // scss-lint:disable SpaceAfterVariableName
 
 //==============================================================================
+// DEFAULTS
+//==============================================================================
+$hr-border-color: $border-color !default;
+
+//==============================================================================
 // CONTAINER
 //==============================================================================
 $container-max-width: 1200px !default;
@@ -90,43 +95,64 @@ $breadcrumb-light-color: $white !default;
 //==============================================================================
 $button-height: $form-elements-height !default;
 $button-border-radius: ($button-height / 2) !default;
-$button-font: Arial, sans-serif !default;
+$button-font: inherit !default;
+$button-border-width: 2px !default;
 
 // default
-$button-default-bg: $iron !default;
-$button-default-hover-bg: darken($button-default-bg, 15%) !default;
+$button-default-bg: $transparent !default;
+$button-default-hover-bg: $transparent !default;
 $button-default-color: $text-color !default;
 $button-default-hover-color: $text-color !default;
+$button-default-border-color: $silver !default;
+$button-default-hover-border-color: $dark !default;
 
 // primary
 $button-primary-bg: #47a0c3 !default;
 $button-primary-hover-bg: darken($button-primary-bg, 15%) !default;
 $button-primary-color: $white !default;
 $button-primary-hover-color: $white !default;
+$button-primary-border-color: $button-primary-bg !default;
+$button-primary-hover-border-color: $button-primary-hover-bg !default;
+
+// secondary
+$button-secondary-bg: $transparent !default;
+$button-secondary-hover-bg: $transparent !default;
+$button-secondary-color: $dark !default;
+$button-secondary-hover-color: $dark !default;
+$button-secondary-border-color: $coolblue !default;
+$button-secondary-hover-border-color: $duskblue !default;
 
 // success
 $button-success-bg: $success-color !default;
 $button-success-hover-bg: darken($button-success-bg, 15%) !default;
 $button-success-color: $white !default;
 $button-success-hover-color: $white !default;
+$button-success-border-color: $button-success-bg !default;
+$button-success-hover-border-color: $button-success-hover-bg !default;
 
 // warning
 $button-warning-bg: $warning-color !default;
 $button-warning-hover-bg: darken($button-warning-bg, 7.5%) !default;
-$button-warning-color: $black !default;
-$button-warning-hover-color: $black !default;
+$button-warning-color: $white !default;
+$button-warning-hover-color: $white !default;
+$button-warning-border-color: $button-warning-bg !default;
+$button-warning-hover-border-color: $button-warning-hover-bg !default;
 
 // error
 $button-error-bg: $error-color !default;
 $button-error-hover-bg: darken($button-error-bg, 15%) !default;
 $button-error-color: $white !default;
 $button-error-hover-color: $white !default;
+$button-error-border-color: $button-error-bg !default;
+$button-error-hover-border-color: $button-error-hover-bg !default;
 
 // link
 $button-link-bg: none !default;
 $button-link-hover-bg: none !default;
 $button-link-color: $link-color !default;
 $button-link-hover-color: $link-hover-color !default;
+$button-link-border-color: $transparent !default;
+$button-link-hover-border-color: $transparent !default;
 
 //==============================================================================
 // ICONS
@@ -178,6 +204,7 @@ $hamburger-border-color    : $silver !default;
 $hamburger-line-color      : $hamburger-border-color !default;
 $hamburger-light-line-color: $hamburger-border-color !default;
 $hamburger-border-radius   : $border-radius-large !default;
+$hamburger-focus-border-color: $coolblue !default;
 
 //==============================================================================
 // NAVIGATION
@@ -207,12 +234,15 @@ $z-index-sidebar         : 5 !default;
 // DRAWER
 //==============================================================================
 $drawer-width                     : 295px !default;
+$drawer-gutter-width              : 70px !default;
 $drawer-bg                        : $dark !default;
 $drawer-hamburger-dimension       : $hamburger-dimension !default;
 $drawer-hamburger-line-color      : $hamburger-line-color !default;
 $drawer-hamburger-light-line-color: $hamburger-light-line-color !default;
 $drawer-section-title-color       : #5c7087 !default;
 $drawer-hamburger-z-index         : $site-header-z-index !default; // same as site-header
+// $drawer-gutter-z-index            : 1 !default;
+// $drawer-gutter-push-container-z-index: 2 !default
 
 //==============================================================================
 // FOOTER
