@@ -1,4 +1,0 @@
-{{ $currentMenuEntry := .Scratch.Get "currentMenuEntry" }}
-{{ $isCurrent := eq .Permalink ($currentMenuEntry.URL | absURL | printf "%s") }}
-
-<a class="nav__link" title="{{ $currentMenuEntry.Name }}" href="{{ $currentMenuEntry.URL | relURL}}"{{if $isCurrent }} aria-current="page"{{ end }}>{{ $currentMenuEntry.Name }}</a>
