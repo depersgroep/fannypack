@@ -11,13 +11,19 @@ Fannypack runs on [Jekyll](https://jekyllrb.com/), a static site generator and [
 ### Dependencies
 - NodeJS v6.X (or newer) & NPM: https://nodejs.org/dist/latest-v6.x/
 - Jekyll 3.7 or newer: https://jekyllrb.com/docs/installation/
+- Jekyll-menus plugin: https://github.com/forestryio/jekyll-menus
 
 ### Run local
 
 In your fannypack project folder:
 ```bash
 # start jekyll server and watch html files
+# with bundler you also install the required plugins
 bundle exec jekyll serve
+
+# if you don't have bundler installed
+# make sure you also install jekyll-menus
+jekyll serve
 ```
 and in another Terminal window, in your fannypack project folder:
 ```bash
