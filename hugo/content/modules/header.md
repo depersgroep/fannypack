@@ -19,9 +19,10 @@ Layout is done with `flexbox`. Flexbox is made for handling vertical alignment a
 					<span class="app-icon__character">J</span>
 					<span class="app-icon__character">D</span>
 				</div>
-				<span class="app-icon__name" id="app-icon-name">Your App Name</span>
+				<span class="app-icon__name" id="app-icon-name" style="margin-left: 15px;">Your App Name</span>
 			</a>
 		</div>
+		<div class="site-header__section"></div>
 	</header>
 </div>
 
@@ -71,7 +72,7 @@ Layout is done with `flexbox`. Flexbox is made for handling vertical alignment a
 					<span class="app-icon__character">J</span>
 					<span class="app-icon__character">D</span>
 				</div>
-				<span class="app-icon__name" id="app-icon-name">Your App Name</span>
+				<span class="app-icon__name" id="app-icon-name" style="margin-left: 15px;">Your App Name</span>
 			</a>
 		</div>
 		<div class="site-header__section">
@@ -127,7 +128,7 @@ You can place sections at the opposite site of the header.
 					<span class="app-icon__character">J</span>
 					<span class="app-icon__character">D</span>
 				</div>
-				<span class="app-icon__name" id="app-icon-name">Your App Name</span>
+				<span class="app-icon__name" id="app-icon-name" style="margin-left: 15px;">Your App Name</span>
 			</a>
 		</div>
 		<div class="site-header__section site-header__section--last">

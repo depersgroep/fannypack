@@ -7,7 +7,7 @@ modifiers = ["theme--fp", "layout--fixed-header", "layout--sidebar"]
 parent = "Modules"
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum corrupti tenetur neque ipsa delectus sapiente consequuntur reiciendis deserunt aspernatur.
+The coloring of the label text is done by comparing contrast of a given color in the [YIQ color space](https://en.wikipedia.org/wiki/YIQ) to the light/dark arguments and returns whichever is most "contrasty"
 
 <div class="fp-example">
 	<span class="label">default</span>

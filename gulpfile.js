@@ -91,7 +91,7 @@ gulp.task('imgbuild', function() {
 
 	return gulp.src(pkg.img.src)
 		.pipe(copy(pkg.img.dest, {
-			'prefix': 2
+			'prefix': 1
 		})) // needs to be copy, not just ".dest" as mac often throws errors when the folder doesn't exist
 		.pipe(notify({
 			'message': 'IMG build complete',
@@ -155,31 +155,26 @@ gulp.task('jsbuild', function() {
 gulp.task('scsslint', function() {
 	return gulp.src(pkg.sass.hint.src)
 		.pipe(cached('scssLint'))
-		.pipe(scssLint());
+		.pipe(scssLint())
+		.pipe(notify({
+			'message': 'scsslint complete',
+			'onLast': true // otherwise the notify will be fired for each file in the pipe
+		}));
 });
 
 gulp.task('sass', ['scsslint'], function() {
-	gulp.start('sassbuild');
-});
-
-gulp.task('sassbuild', function() {
-	var sassoutputArg = getArgument('sassoutput');
-
 	return es.merge(pkg.sass.files.map(function(o) {
 		return gulp.src(o.src)
 			.pipe(plumber({
 				'errorHandler': onError
 			}))
 
-			// .pipe(plugins.sourcemaps.init()) // can't get them to work in conjunction with bless
-			.pipe(sass({
-				'outputStyle': sassoutputArg === null || ['nested', 'expanded', 'compact', 'compressed'].indexOf(sassoutputArg) < 0 ? 'expanded' : sassoutputArg
-			}))
+			// no Sass options: we only need outputStyle and it doesn't work as it gets overwritten by Bless
+			.pipe(sass())
 			.pipe(autoprefixer({
 				'browsers': pkg.sass.autoprefixer.browsers
 			}))
 
-			// .pipe(plugins.sourcemaps.write('maps')) // can't get them to work in conjunction with bless
 			.pipe(bless())
 			.pipe(gulp.dest(o.dest))
 			.pipe(notify({
@@ -189,7 +184,7 @@ gulp.task('sassbuild', function() {
 	}));
 });
 
-gulp.task('cssbuild', ['sass', 'sassbuild'], function() {
+gulp.task('cssbuild', ['sass'], function() {
 	return es.merge(pkg.sass.files.map(function(o) {
 		return gulp.src(o.dest + '/**/*.css', {
 			'base': './'
@@ -232,7 +227,7 @@ gulp.task('build', function() {
 });
 
 // deploy task
-gulp.task('deploy', run(['gulp build', 'hugo']));
+gulp.task('deploy', run(['gulp build', 'bundle exec jekyll build']));
 
 // pre-commit
 // on Mac, make sure the folder exists

@@ -12,6 +12,8 @@ theme = "fannypack"
 metaDataFormat = "toml"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
+verbose = true
+verboseLog = true
 
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""

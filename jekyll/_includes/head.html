@@ -1,0 +1,23 @@
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+	<title>{% if page.title %}{{ page.title}} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
+	<link rel="canonical" href="{{ page.permalink }}">
+	{% if site.author %}
+	<meta name="author" content="{{ site.author }}">
+	{% endif %}
+
+	<link rel="stylesheet" href="{{ "/css/fannypack.css" | absolute_url }}" />
+	<link rel="stylesheet" href="{{ "/css/docs.css" | absolute_url }}" />
+
+	{% comment %}
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/google_analytics_async.html" . }}
+	{% endcomment %}
+
+	<link rel="shortcut icon" type="image/png" href="{{ "/img/favicon.png" | absolute_url }}" >
+</head>

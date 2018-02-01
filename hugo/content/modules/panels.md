@@ -55,25 +55,6 @@ Panels is something we use regularly in forms when building CRUD applications, b
 			</div>
 		</div>
 	</fieldset>
-
-	<fieldset class="panel">
-		<legend class="panel__title">General</legend>
-		<div class="panel__body">
-			<div class="form__group">
-				<label for="panelinputid" class="form__label">Name</label>
-				<input id="panelinputid" name="panelinputname" type="text" class="form__field" />
-			</div>
-			<div class="form__group">
-				<label for="paneltextareid" class="form__label">Comment <span class="form__label-meta">(optional)</span></label>
-				<span class="form__helptext" id="paneltextareahelptext">A short help text for a textarea.</span>
-				<textarea name="textareaname" id="paneltextareaid" class="form__textarea" aria-describedby="paneltextareahelptext"></textarea>
-			</div>
-			<div class="form__actions">
-				<button class="button button--default" type="reset">Reset</button>
-				<button class="button button--primary" type="submit">Send</button>
-			</div>
-		</div>
-	</fieldset>
 </div>
 
 ```html

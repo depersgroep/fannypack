@@ -580,7 +580,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, officia.
 
 ## Layouting
 
-If you need to layout different fields according a grid pattern, you can use our [grid layout]({{< ref "/layout/grid.md" >}}).
+If you need to layout different fields according a grid pattern, you can use our [grid layout]({{< relref "layout/grid.md" >}}).
 
 <div class="fp-example">
 	<form action="" class="form">
@@ -705,4 +705,4 @@ An example with a date picker and time input.
 
 ## Grouped form elements in a panel
 
-Check out the [panel]({{< relref "panels.md#using-panels-in-forms" >}}) module, it has an example with the semantically correct way to group form elements in a `fieldset` with a `legend`. The outcome is the same. Just make sure you don't nest `fieldset`s.
+Check out the [panel]({{% ref "modules/panels.md#using-panels-in-forms" %}}) module, it has an example with the semantically correct way to group form elements in a `fieldset` with a `legend`. The outcome is the same. Just make sure you don't nest `fieldset`s.
