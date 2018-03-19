@@ -6,13 +6,13 @@
 		* "copy" images
 		* "copy" fonts
 		* js: eslint
-		* css: scss-lint
+		* css: scsslint
 		* WATCH FILES ABOVE
 	* gulp deploy
 		* "copy" images
 		* "copy" fonts
 		* js: eslint
-		* css: scss-lint
+		* css: scsslint
 * Flags:
 	* --imagemin=true|false: Null, empty or not true ==> no imagemin (default)
 	* --sassoutput=<value>: Null, empty or not one of ['nested', 'expanded', 'compact', 'compressed'] ==> expanded (default)
@@ -36,7 +36,7 @@ var pkg = require('./package.json'),
 	notify = require('gulp-notify'),
 	plumber = require('gulp-plumber'),
 	sass = require('gulp-sass'),
-	scssLint = require('gulp-scss-lint'),
+	scssLint = require('gulp-stylelint'),
 	sourcemaps = require('gulp-sourcemaps'),
 	uglify = require('gulp-uglify'),
 	gUtil = require('gulp-util'),
@@ -155,7 +155,16 @@ gulp.task('jsbuild', function() {
 gulp.task('scsslint', function() {
 	return gulp.src(pkg.sass.hint.src)
 		.pipe(cached('scssLint'))
-		.pipe(scssLint())
+		.pipe(plumber({
+			'errorHandler': onError
+		}))
+		.pipe(scssLint({
+			'reporters': [{
+				'formatter': 'string',
+				'console': true
+			}],
+			'failAfterError': false
+		}))
 		.pipe(notify({
 			'message': 'scsslint complete',
 			'onLast': true // otherwise the notify will be fired for each file in the pipe

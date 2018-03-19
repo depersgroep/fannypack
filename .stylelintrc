@@ -1,0 +1,11 @@
+extends: 
+  - stylelint-config-persgroep
+rules:
+  # Problems: one problem with nested blocks
+  selector-class-pattern: null
+  # Problems: check out specificity
+  selector-max-specificity: null
+  # Problems: some small problems
+  order/order: null
+  # Problems: codebase has block comments as single line comments + newlines after single line comments
+  order/properties-order: null
