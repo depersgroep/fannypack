@@ -126,6 +126,7 @@
 // !!!!!! the DOM is different !!!!!!!
 .layout--drawer-push {
 	// scss-lint:disable SelectorDepth, NestingDepth
+	// stylelint-disable max-nesting-depth, selector-max-specificity
 	.site-header {
 		@include mq-min($bp-large) {
 			left: $drawer-width;
@@ -201,6 +202,7 @@
 			}
 		}
 	}
+	// stylelint-enable max-nesting-depth, selector-max-specificity
 }
 
 // this version has a visible minified sidebar when collapsed. e.g. wordpress admin dashboard or jira board

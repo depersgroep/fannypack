@@ -7,6 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 // scss-lint:disable ImportantRule
+// stylelint-disable declaration-no-important
 
 @media print {
 	*,
@@ -33,7 +34,6 @@
 
 	// Don't show links that are fragment identifiers,
 	// or use the `javascript:` pseudo protocol
-
 	a[href^='#']::after,
 	a[href^='javascript:']::after {
 		content: '';
@@ -49,9 +49,7 @@
 		page-break-inside: avoid;
 	}
 
-	// Printing Tables:
-	// http://css-discuss.incutio.com/wiki/Printing_Tables
-
+	// Printing Tables: http://css-discuss.incutio.com/wiki/Printing_Tables
 	thead {
 		display: table-header-group;
 	}
@@ -74,4 +72,5 @@
 	}
 }
 
+// stylelint-enable declaration-no-important
 // scss-lint:enable ImportantRule

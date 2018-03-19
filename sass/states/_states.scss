@@ -24,7 +24,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 // scss-lint:disable ImportantRule
-
+// stylelint-disable declaration-no-important
 .is-hidden,
 .js-is-hidden {
 	display: none !important;
@@ -46,4 +46,5 @@
 	@include visually-hidden;
 }
 
+// stylelint-enable declaration-no-important
 // scss-lint:enable ImportantRule

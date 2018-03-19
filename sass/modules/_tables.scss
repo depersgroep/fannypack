@@ -5,6 +5,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 // scss-lint:disable NestingDepth, SelectorDepth
+// stylelint-disable max-nesting-depth
 
 // mandatory wrapper if you want your table to be "responsive"
 .table__wrapper {
@@ -191,4 +192,6 @@ caption {
 		}
 	}
 }
+
+// stylelint-enable max-nesting-depth
 // scss-lint:enable NestingDepth, SelectorDepth

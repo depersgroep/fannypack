@@ -37,7 +37,7 @@ $grayscalecolors: map-merge((
 	'evil-gray'   : $evil-gray,
 	'whitesmoke'  : $whitesmoke,
 	'white'       : $white
-	), $grayscalecolors);
+), $grayscalecolors);
 
 // Social Media
 $facebook-color  : #365187 !default;
@@ -55,7 +55,7 @@ $socialmediacolors: map-merge((
 	'instagram' : $instagram-color,
 	'spotify'   : $spotify-color,
 	'soundcloud': $soundcloud-color
-	), $socialmediacolors);
+), $socialmediacolors);
 
 // custom colors
 $coolblue     : #47a0c3 !default;
@@ -73,7 +73,7 @@ $customcolors: map-merge((
 	'slate'        : $slate,
 	'dark'         : $dark,
 	'warmgrey'     : $warmgrey
-	), $customcolors);
+), $customcolors);
 
 // additional colors
 $orangepink: #fe6c59 !default;
@@ -102,7 +102,7 @@ $additionalcolors: map-merge((
 	'sunyellow'     : $sunyellow,
 	'apricot'       : $apricot,
 	'lightsalmon'   : $lightsalmon
-	), $additionalcolors);
+), $additionalcolors);
 
 // states - functional colors
 $success-color   : $lightishgreen !default;
@@ -119,7 +119,7 @@ $functionalcolors: map-merge((
 	'error'  : $orangepink,
 	'info'   : $coolblue,
 	'muted'  : $warmgrey
-	), $functionalcolors);
+), $functionalcolors);
 
 // MAIN COLORS
 $primary-color   : $coolblue !default;
@@ -130,7 +130,7 @@ $maincolors: () !default;
 $maincolors: map-merge((
 	'primary': $coolblue,
 	'secondary': $dark
-	), $maincolors);
+), $maincolors);
 
 $allcolors: map-merge($customcolors, $functionalcolors) !default;
 $allcolors: map-merge($additionalcolors, $allcolors);
@@ -156,8 +156,8 @@ $muted-color       : $warmgrey !default;
 //==============================================================================
 $font-path        : '../fonts/' !default;
 
-$sans-serif       : 'Source Sans Pro', Arial, sans-serif !default;
-$serif            : Georgia, sans-serif !default;
+$sans-serif       : 'Source Sans Pro', 'Arial', 'sans-serif' !default;
+$serif            : 'Georgia', 'sans-serif' !default;
 
 $font-size-base   : 16px !default;
 $line-height-base : 1.5 !default;
