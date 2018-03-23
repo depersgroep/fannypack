@@ -33,37 +33,36 @@
 	// Support for Safari and Chrome.
 	text-rendering: optimizeLegibility;
 	text-transform: none;
-	white-space: nowrap;
-	vertical-align: -.3ex;
-	// vertical-align: baseline;
 	word-wrap: normal;
+	vertical-align: -.3ex;
+	white-space: nowrap;
 	direction: ltr;
 	// Support for IE.
 	font-feature-settings: 'liga';
 }
 
 .mi--18 {
-	width: 18px;
-	height: 18px;
-	font-size: 18px;
+	width: $icons-18;
+	height: $icons-18;
+	font-size: $icons-18;
 }
 
 .mi--24 {
-	width: 24px;
-	height: 24px;
-	font-size: 24px;
+	width: $icons-24;
+	height: $icons-24;
+	font-size: $icons-24;
 }
 
 .mi--36 {
-	width: 36px;
-	height: 36px;
-	font-size: 36px;
+	width: $icons-36;
+	height: $icons-36;
+	font-size: $icons-36;
 }
 
 .mi--48 {
-	width: 48px;
-	height: 48px;
-	font-size: 48px;
+	width: $icons-48;
+	height: $icons-48;
+	font-size: $icons-48;
 }
 
 .mi--dark {

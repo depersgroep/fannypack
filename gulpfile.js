@@ -6,13 +6,13 @@
 		* "copy" images
 		* "copy" fonts
 		* js: eslint
-		* css: scsslint
+		* css: stylelint
 		* WATCH FILES ABOVE
 	* gulp deploy
 		* "copy" images
 		* "copy" fonts
 		* js: eslint
-		* css: scsslint
+		* css: stylelint
 * Flags:
 	* --imagemin=true|false: Null, empty or not true ==> no imagemin (default)
 	* --sassoutput=<value>: Null, empty or not one of ['nested', 'expanded', 'compact', 'compressed'] ==> expanded (default)
@@ -36,7 +36,7 @@ var pkg = require('./package.json'),
 	notify = require('gulp-notify'),
 	plumber = require('gulp-plumber'),
 	sass = require('gulp-sass'),
-	scssLint = require('gulp-stylelint'),
+	stylelint = require('gulp-stylelint'),
 	sourcemaps = require('gulp-sourcemaps'),
 	uglify = require('gulp-uglify'),
 	gUtil = require('gulp-util'),
@@ -152,13 +152,13 @@ gulp.task('jsbuild', function() {
 });
 
 // CSS
-gulp.task('scsslint', function() {
+gulp.task('style-lint', function() {
 	return gulp.src(pkg.sass.hint.src)
-		.pipe(cached('scssLint'))
+		.pipe(cached('stylelint'))
 		.pipe(plumber({
 			'errorHandler': onError
 		}))
-		.pipe(scssLint({
+		.pipe(stylelint({
 			'reporters': [{
 				'formatter': 'string',
 				'console': true
@@ -166,12 +166,12 @@ gulp.task('scsslint', function() {
 			'failAfterError': false
 		}))
 		.pipe(notify({
-			'message': 'scsslint complete',
+			'message': 'style-lint complete',
 			'onLast': true // otherwise the notify will be fired for each file in the pipe
 		}));
 });
 
-gulp.task('sass', ['scsslint'], function() {
+gulp.task('sass', ['style-lint'], function() {
 	return es.merge(pkg.sass.files.map(function(o) {
 		return gulp.src(o.src)
 			.pipe(plumber({

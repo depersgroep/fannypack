@@ -22,9 +22,9 @@
 
 .breadcrumb__item {
 	&::after {
+		content: '\203A'; // &rsaquo;
 		margin-right: 7px;
 		margin-left: $half-spacing-unit;
-		content: '\203A'; // &rsaquo;
 	}
 
 	&:last-child {

@@ -19,6 +19,7 @@
 .drawer__menu {
 	display: block;
 	position: fixed;
+	z-index: $drawer-hamburger-z-index; // same as .site-header
 	top: ($base-spacing-unit * 1.5);
 	left: $base-spacing-unit;
 	width: $drawer-hamburger-dimension;
@@ -27,7 +28,6 @@
 	border: 1px solid $hamburger-border-color;
 	border-radius: $hamburger-border-radius;
 	cursor: pointer;
-	z-index: $drawer-hamburger-z-index; // same as .site-header
 }
 
 .drawer__menu-line {
@@ -65,9 +65,11 @@
 		@include mq-min($bp-large) {
 			margin-left: $drawer-gutter-width;
 
+			// stylelint-disable selector-max-specificity
 			.site-header {
 				left: $drawer-gutter-width;
 			}
+			// stylelint-enable
 		}
 	}
 }
@@ -78,14 +80,14 @@
 //==============================================================================
 .drawer {
 	position: fixed;
+	z-index: $drawer-z-index; // higher than .main-content
 	top: $site-header-height;
 	bottom: 0;
 	left: ($drawer-width * -1);
 	width: $drawer-width;
 	padding: ($base-spacing-unit * 5) ($base-spacing-unit * 3);
-	background-color: $drawer-bg;
 	overflow: auto;
-	z-index: 2; // higher than .main-content
+	background-color: $drawer-bg;
 
 	@include mq-min($bp-large) {
 		left: 0;

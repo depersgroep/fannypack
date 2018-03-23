@@ -44,7 +44,6 @@
 	font-size: $panel-title-font-size;
 }
 
-// scss-lint:disable QualifyingElement
 // stylelint-disable selector-no-qualifying-type
 legend.panel__title {
 	display: block;
@@ -68,7 +67,6 @@ legend.panel__title {
 	}
 }
 // stylelint-enable selector-no-qualifying-type
-// scss-lint:enable QualifyingElement
 .panel__body {
 	> *:first-child {
 		margin-top: 0;

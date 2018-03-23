@@ -5,8 +5,6 @@
 // Per module settings
 ////////////////////////////////////////////////////////////////////////////////
 
-// scss-lint:disable SpaceAfterVariableName
-
 //==============================================================================
 // DEFAULTS
 //==============================================================================
@@ -158,6 +156,10 @@ $button-link-hover-border-color: $transparent !default;
 // ICONS
 //==============================================================================
 $icon-font-path: #{$font-path}MaterialIcons !default;
+$icons-18: 18px !default;
+$icons-24: 24px !default;
+$icons-36: 36px !default;
+$icons-48: 48px !default;
 
 //==============================================================================
 // PAGINATION
@@ -168,7 +170,8 @@ $pagination-color: #152030 !default;
 $pagination-active-bg: $pagination-color !default;
 $pagination-active-border-color: $pagination-color !default;
 $pagination-hover-bg: $primary-color !default;
-$pagination-font-size: $font-size-small, emify(18);
+$pagination-font-size: $font-size-small, emify(48);
+$pagination-jump-font-size: 150% !default; // the PREV and  NEXT links
 $pagination-disabled-color: $aluminum !default;
 
 //==============================================================================
@@ -241,6 +244,10 @@ $drawer-hamburger-line-color      : $hamburger-line-color !default;
 $drawer-hamburger-light-line-color: $hamburger-light-line-color !default;
 $drawer-section-title-color       : #5c7087 !default;
 $drawer-hamburger-z-index         : $site-header-z-index !default; // same as site-header
+$drawer-push-hamburger-z-index    : $drawer-hamburger-z-index + 1 !default; // higher as .site-header because of .drawer__push-container
+
+$drawer-z-index                   : 2 !default;
+$drawer-main-content-z-index      : $drawer-z-index - 1 !default;
 // $drawer-gutter-z-index            : 1 !default;
 // $drawer-gutter-push-container-z-index: 2 !default
 
@@ -267,7 +274,9 @@ $panel-close-icon         : '-' !default;
 //==============================================================================
 // TABS
 //==============================================================================
-$tabs-height: 50px !default;
+$tabs-height        : 50px !default;
+$tabs-label-z-index : 2 !default;
+$tabs-pane-z-index  : $tabs-label-z-index - 1 !default;
 
 $tabs-primary-tab-bg      : $whitesmoke !default;
 $tabs-primary-pane-bg     : $white !default;
@@ -304,5 +313,3 @@ $tabs-alt-secondary-active-border-color: $tabs-alt-primary-active-border-color !
 //==============================================================================
 $box-border-color : $border-color !default;
 $box-border-radius: $border-radius-base !default;
-
-// scss-lint:enable SpaceAfterVariableName

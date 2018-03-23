@@ -6,7 +6,6 @@
 // http://www.phpied.com/delay-loading-your-print-css/
 ////////////////////////////////////////////////////////////////////////////////
 
-// scss-lint:disable ImportantRule
 // stylelint-disable declaration-no-important
 
 @media print {
@@ -14,9 +13,9 @@
 	*::before,
 	*::after {
 		background: transparent !important;
+		box-shadow: none !important;
 		color: $black !important; // Black prints faster: http://www.sanbeiji.com/archives/953 */
 		text-shadow: none !important;
-		box-shadow: none !important;
 	}
 
 	a,
@@ -73,4 +72,3 @@
 }
 
 // stylelint-enable declaration-no-important
-// scss-lint:enable ImportantRule

@@ -4,7 +4,6 @@
 // description
 ////////////////////////////////////////////////////////////////////////////////
 
-// scss-lint:disable NestingDepth, SelectorDepth
 // stylelint-disable max-nesting-depth
 
 // mandatory wrapper if you want your table to be "responsive"
@@ -15,9 +14,9 @@
 .table {
 	width: 100%;
 	max-width: 100%;
-	background-color: $table-bg;
-	border-collapse: collapse;
 	overflow-x: auto;
+	border-collapse: collapse;
+	background-color: $table-bg;
 
 	th,
 	td {
@@ -155,8 +154,8 @@ caption {
 		&[data-title] {
 			&::before {
 				@include mq-max(799px) {
-					font-weight: bold;
 					content: attr(data-title) ':\00A0';
+					font-weight: bold;
 				}
 			}
 		}
@@ -194,4 +193,3 @@ caption {
 }
 
 // stylelint-enable max-nesting-depth
-// scss-lint:enable NestingDepth, SelectorDepth

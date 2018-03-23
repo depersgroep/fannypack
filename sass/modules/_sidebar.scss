@@ -16,13 +16,13 @@
 .sidebar__menu {
 	display: block;
 	position: fixed;
+	z-index: $site-header-z-index; // same as .site-header
 	top: $double-spacing-unit;
 	right: $base-spacing-unit;
 	width: 32px;
 	height: 32px;
 	padding: $half-spacing-unit;
 	cursor: pointer;
-	z-index: $site-header-z-index; // same as .site-header
 
 	@include mq-min($bp-large) {
 		display: none;
@@ -45,6 +45,7 @@
 		background-color: $sidebar-light-line-color;
 	}
 
+	// stylelint-disable selector-max-specificity
 	.sidebar__checkbox:checked + .sidebar__menu & {
 		&:first-of-type {
 			transform: rotate(-45deg);
@@ -59,6 +60,7 @@
 			transform: rotate(45deg);
 		}
 	}
+	// stylelint-enable
 }
 
 .sidebar {
@@ -85,13 +87,13 @@
 		@include mq-max($bp-large - 1) {
 			display: block;
 			position: fixed;
+			z-index: $z-index-sidebar;
 			top: $site-header-height;
 			right: 0;
 			bottom: 0;
 			left: 0;
 			max-width: 480px;
 			overflow: auto;
-			z-index: $z-index-sidebar;
 		}
 	}
 }
