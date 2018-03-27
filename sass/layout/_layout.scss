@@ -20,10 +20,10 @@
 
 	.site-header {
 		position: fixed;
+		z-index: $site-header-z-index;
 		top: 0;
 		right: 0;
 		left: 0;
-		z-index: $site-header-z-index;
 	}
 }
 
@@ -61,8 +61,8 @@
 
 	.main-content {
 		position: relative;
+		z-index: $drawer-main-content-z-index; // lower than .drawer
 		padding: $double-spacing-unit; // margin fixer
-		z-index: 1; // lower than .drawer
 	}
 
 	.hamburger {
@@ -106,6 +106,7 @@
 		}
 	}
 
+	// stylelint-disable selector-max-specificity
 	// .drawer__checkbox:checked is deprecated
 	.drawer__checkbox:checked ~,
 	.hamburger__checkbox:checked ~ {
@@ -115,7 +116,7 @@
 			}
 		}
 	}
-
+	// stylelint-enable
 	.hamburger {
 		z-index: $drawer-hamburger-z-index; // same as .site-header
 	}
@@ -125,7 +126,7 @@
 // pushes the <header> AND the main content
 // !!!!!! the DOM is different !!!!!!!
 .layout--drawer-push {
-	// scss-lint:disable SelectorDepth, NestingDepth
+	// stylelint-disable max-nesting-depth, selector-max-specificity
 	.site-header {
 		@include mq-min($bp-large) {
 			left: $drawer-width;
@@ -134,7 +135,7 @@
 	}
 
 	.hamburger {
-		z-index: ($drawer-hamburger-z-index + 1); // higher as .site-header because of .drawer__push-container
+		z-index: $drawer-push-hamburger-z-index; // higher as .site-header because of .drawer__push-container
 
 		@include mq-min($bp-large) {
 			left: ($drawer-width + $base-spacing-unit);
@@ -167,7 +168,7 @@
 	// The site-header moves AND has visible icons when it's collapsed
 	&.layout--drawer-gutter {
 		.hamburger {
-			z-index: ($drawer-hamburger-z-index + 1); // higher as .site-header because of .drawer__push-container
+			z-index: $drawer-push-hamburger-z-index; // higher as .site-header because of .drawer__push-container
 
 			@include mq-min($bp-large) {
 				left: ($drawer-width + $base-spacing-unit);
@@ -197,10 +198,11 @@
 	&.layout--fixed-header {
 		.hamburger__checkbox:checked ~ .drawer__push-container .site-header {
 			@include mq-max($bp-large - 1) {
-				z-index: 1;
+				z-index: $z-index-base;
 			}
 		}
 	}
+	// stylelint-enable max-nesting-depth, selector-max-specificity
 }
 
 // this version has a visible minified sidebar when collapsed. e.g. wordpress admin dashboard or jira board
@@ -239,7 +241,6 @@
 			min-height: calc(100vh - #{$site-header-height});
 
 			@supports (display: grid) {
-				// scss-lint:disable PropertySpelling, PropertyUnits
 				display: grid;
 				grid-template-columns: $sidebar-width 1fr;
 				grid-template-rows: 1fr;
@@ -274,7 +275,6 @@
 			background-position: 50% 50%;
 			background-size: cover;
 
-			// scss-lint:disable PropertySpelling, PropertyUnits
 			@supports (display: grid) {
 				display: grid;
 				grid-template-columns: 500px 1fr;
@@ -285,30 +285,30 @@
 		&::after {
 			@include mq-min($bp-medium) {
 				position: fixed;
+				z-index: $z-index-negative;
 				color: $white;
 				text-align: right;
-				z-index: -1;
 			}
 		}
 
 		&::before {
 			@include mq-min($bp-medium) {
+				content: attr(data-credit);
 				right: 0;
 				bottom: 0;
 				left: 0;
 				padding: ($base-spacing-unit * 3) ($base-spacing-unit * 3) ($base-spacing-unit * 5);
 				background: linear-gradient(to bottom, rgba($black, 0) 0%, rgba($black, .6) 100%);
-				content: attr(data-credit);
 			}
 		}
 
 		&::after {
 			@include mq-min($bp-medium) {
+				content: '© ' attr(data-copyright);
 				right: ($base-spacing-unit * 3);
 				bottom: ($base-spacing-unit * 3);
-				font-size: $font-size-medium;
-				content: '© ' attr(data-copyright);
 				opacity: .6;
+				font-size: $font-size-medium;
 			}
 		}
 	}

@@ -1,9 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
-// ALERTS
-//
-// description:
-// A message that gives a user some feedback about the result of an action
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* ALERTS
+*
+* description:
+* A message that gives a user some feedback about the result of an action
+******************************************************************************/
 
 .alert {
 	position: relative; // positioning context
@@ -43,7 +43,7 @@
 .alert__title {
 	margin-top: 0;
 	margin-bottom: $base-spacing-unit;
-	font-size: 1em;
+	font-size: $font-size-root;
 
 	.alert--condensed & {
 		display: inline;
@@ -74,9 +74,9 @@
 	right: $half-spacing-unit;
 	width: 30px;
 	height: 30px;
+	overflow: hidden;
 	border: 0;
 	background: none;
-	overflow: hidden;
 	appearance: none;
 
 	.no-js & {

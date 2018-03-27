@@ -1,9 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
-// HEADER
-//
-// description:
-// The page header
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* HEADER
+*
+* description:
+* The page header
+******************************************************************************/
 
 .site-header {
 	display: flex;
@@ -19,9 +19,9 @@
 
 .site-header--vertical {
 	position: fixed;
+	z-index: $site-header-z-index;
 	top: 0;
 	left: 0;
-	z-index: $site-header-z-index;
 
 	@include mq-min($bp-small) {
 		bottom: 0;

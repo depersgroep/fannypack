@@ -1,8 +1,8 @@
-////////////////////////////////////////////////////////////////////////////////
-// NAVIGATION
-//
-// description
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* NAVIGATION
+*
+*
+******************************************************************************/
 
 .nav {
 	.site-header & {
@@ -42,7 +42,7 @@
 		}
 	}
 
-	// scss-lint:disable SelectorDepth
+	// stylelint-disable selector-max-specificity
 	.layout--drawer-gutter .hamburger__checkbox:checked ~ .drawer--gutter & {
 		@include mq-min($bp-large) {
 			.material-icons {
@@ -54,6 +54,7 @@
 			}
 		}
 	}
+	// stylelint-enable
 }
 
 .nav__list {
@@ -132,10 +133,11 @@
 	.nav--light & {
 		padding: $base-spacing-unit ($base-spacing-unit * 1.5);
 		border-radius: $border-radius-base;
+		color: $nav-light-link-color;
+
 		@if (type-of($nav-light-link-bg) == 'color' and $nav-light-link-bg != $transparent) {
 			background-color: $nav-light-link-bg;
 		}
-		color: $nav-light-link-color;
 
 		&:visited {
 			color: $nav-light-link-color;
@@ -159,6 +161,7 @@
 		}
 	}
 
+	// stylelint-disable selector-max-specificity
 	.hamburger__checkbox:not(:checked) ~ .drawer--gutter & {
 		@include mq-max($bp-large - 1) {
 			padding-right: 0;
@@ -182,6 +185,7 @@
 			}
 		}
 	}
+	// stylelint-enable
 }
 
 .nav__title {

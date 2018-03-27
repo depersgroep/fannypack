@@ -1,9 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
-// DEFAULT
-//
-// description
-// no classes here, only element selectors
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* DEFAULT
+*
+* description
+* no classes here, only element selectors
+******************************************************************************/
 
 html {
 	box-sizing: border-box;
@@ -22,7 +22,6 @@ body {
 }
 
 body {
-	// @include font-smoothing(on);
 	background-color: $body-bg;
 	color: $text-color;
 	font-family: $sans-serif;

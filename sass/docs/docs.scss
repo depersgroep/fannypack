@@ -3,17 +3,17 @@
 @import '../functions';
 @import '../site-settings';
 @import '../modules-settings';
+@import '../docs-settings';
 @import '../mixins/mixins';
 @import 'theme-fannypack';
 @import 'modules/modules';
 
-////////////////////////////////////////////////////////////////////////////////
-// DOCS
-//
-// description:
-// custom styling for the documentation site
-////////////////////////////////////////////////////////////////////////////////
-
+/******************************************************************************
+* DOCS
+*
+* description:
+* custom styling for the documentation site
+******************************************************************************/
 
 .layout--diorama {
 	.dialog__checkbox {
@@ -22,13 +22,13 @@
 
 	.dialog__toggle {
 		position: fixed;
+		z-index: $example-diorama-dialog-button-z-index;
 		bottom: $double-spacing-unit;
 		left: $double-spacing-unit;
 		padding: .2em .6em;
 		border-radius: $border-radius-base;
 		background-color: $primary-color;
 		color: $white;
-		z-index: 2;
 
 		&::after {
 			content: 'Show code </>';
@@ -48,7 +48,7 @@
 				right: calc(50% - 580px);
 			}
 
-			// scss-lint:disable NestingDepth
+			// stylelint-disable selector-max-specificity
 			&::after {
 				content: 'Hide code </>';
 			}
@@ -56,23 +56,24 @@
 			+ .dialog {
 				display: block;
 			}
+			// stylelint-enable
 		}
 	}
 
 	.dialog {
 		display: none;
 		position: fixed;
+		z-index: $example-diorama-dialog-z-index;
 		top: ($base-spacing-unit * 8);
 		right: ($base-spacing-unit * 4);
 		left: ($base-spacing-unit * 4);
 		max-width: 1200px;
 		max-height: 80vh;
 		padding: $double-spacing-unit;
+		overflow: auto;
 		border-radius: $border-radius-large;
 		background-color: $white;
 		box-shadow: 0 0 50px rgba($black, .3);
-		overflow: auto;
-		z-index: 1;
 
 		@include mq-min(1280px) {
 			margin-right: auto;

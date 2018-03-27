@@ -1,8 +1,8 @@
-////////////////////////////////////////////////////////////////////////////////
-// GRID
-//
-// description
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* GRID
+*
+*
+******************************************************************************/
 
 .grid {
 	@include clearfix;
@@ -85,13 +85,12 @@
 // If browser supports grid layout, we use the cascade in our advantage
 
 @supports (display: grid) {
-	// scss-lint:disable PropertySpelling
 	.grid {
 		display: grid;
-		margin-right: 0;
-		margin-left: 0;
 		grid-gap: $double-spacing-unit;
 		grid-template-columns: repeat(12, minmax(0, 1fr));
+		margin-right: 0;
+		margin-left: 0;
 
 		&::after {
 			content: none;
@@ -111,16 +110,16 @@
 	}
 
 	[class^="col-"] {
+		grid-column-start: auto;
 		width: auto;
 		padding-right: 0;
 		padding-left: 0;
-		grid-column-start: auto;
 	}
 
 	[class*="col--float-offset-"] {
 		margin-left: 0;
 	}
-
+	// stylelint-disable order/order
 	@for $i from 2 through 12 {
 		.col-#{$i} {
 			grid-column-end: span #{$i};
@@ -132,7 +131,7 @@
 			grid-column-start: #{$i + 1};
 		}
 	}
-
+	// stylelint-enable
 	.col--clear {
 		clear: none;
 	}

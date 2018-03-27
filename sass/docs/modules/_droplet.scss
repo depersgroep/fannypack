@@ -1,13 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
-// DROPLET
-//
-// description:
-// color swatches
-////////////////////////////////////////////////////////////////////////////////
-
-.fp-droplet {
-	//
-}
+/******************************************************************************
+* DROPLET
+*
+* description:
+* color swatches
+******************************************************************************/
 
 .fp-droplet__color {
 	padding-top: 50%;
@@ -25,7 +21,7 @@
 	border: 1px solid $border-color;
 	border-top: 0;
 	border-radius: 0 0 $border-radius-large $border-radius-large;
-	background-color: $white;
+	background-color: currentColor;
 }
 
 

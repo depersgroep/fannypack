@@ -1,8 +1,10 @@
-////////////////////////////////////////////////////////////////////////////////
-// PAGINATION
-//
-// description
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* PAGINATION
+*
+*
+*
+******************************************************************************/
+
 .pagination__list {
 	@include unstyled-list;
 
@@ -112,22 +114,22 @@
 
 	.pagination__item--previous & {
 		&::before {
+			content: '\2039'; // &lsaquo;
 			display: inline-block;
 			margin-right: $base-spacing-unit;
-			font-size: 150%;
+			font-size: $pagination-jump-font-size;
 			line-height: 1;
-			content: '\2039'; // &lsaquo;
 			vertical-align: text-bottom;
 		}
 	}
 
 	.pagination__item--next & {
 		&::after {
+			content: '\203A'; // &rsaquo;
 			display: inline-block;
 			margin-left: $base-spacing-unit;
-			font-size: 150%;
+			font-size: $pagination-jump-font-size;
 			line-height: 1;
-			content: '\203A'; // &rsaquo;
 			vertical-align: text-bottom;
 		}
 	}

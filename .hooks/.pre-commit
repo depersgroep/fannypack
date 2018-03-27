@@ -13,13 +13,11 @@ WEBSRC="."
 declare -a errors=()
 
 # First check if scss-lint is installed
-scsslinter=$(which scss-lint)
-if [ "$scsslinter" == '' ]; then
-	echo 'WARNING: SCSS Lint is not installed command line.'
+scsslinter=$WEBSRC/node_modules/stylelint/bin/stylelint.js
+if [ ! -f "$scsslinter" ]; then
+	echo 'WARNING: Stylelint is not found.'
 	echo 'Please execute:'
-	echo '	$ gem install scss_lint'
-	echo 'More info:'
-	echo '	https://github.com/brigade/scss-lint'
+	echo '	$ npm install'
 	exit 1
 fi
 
@@ -48,7 +46,7 @@ if [ -n "$files" ]; then
 	echo "Checking SCSS Files"
 	echo "------------------"
 
-	scss-lint $files --config $WEBSRC/.scss-lint.yml
+	$scsslinter $files --config $WEBSRC/.stylelintrc
 	RESULT=$?
 
 	if [ $RESULT != 0 ]; then

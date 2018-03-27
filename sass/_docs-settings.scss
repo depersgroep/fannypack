@@ -1,14 +1,9 @@
 ////////////////////////////////////////////////////////////////////////////////
-// ELLIPSIS
+// DOCS SETTINGS
 //
 // description:
-// text-overflow: ellipsis
+// variables for the docs styling
 ////////////////////////////////////////////////////////////////////////////////
 
-@mixin ellipsis {
-	display: block;
-	max-width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
+$example-diorama-dialog-button-z-index: 2;
+$example-diorama-dialog-z-index: ($example-diorama-dialog-button-z-index - 1);

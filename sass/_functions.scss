@@ -19,8 +19,7 @@
 // YIQ color space = https://en.wikipedia.org/wiki/YIQ
 @function color-contrast($color, $dark: $black, $light: $white) {
 	@if not is-color($color) {
-		@error "`#{$color}` is not a valid color for the `$color` argument in " +
-		"the `color-contrast` function.";
+		@error "`#{$color}` is not a valid color for the `$color` argument in the `color-contrast` function.";
 	} @else {
 		$r: red($color);
 		$g: green($color);
@@ -40,8 +39,7 @@
 // make it lighter
 @function tint($color, $percent) {
 	@if not is-color($color) {
-		@error "`#{$color}` is not a valid color for the `$color` argument in " +
-		"the `tint` function.";
+		@error "`#{$color}` is not a valid color for the `$color` argument in the `tint` function.";
 	} @else {
 		@return mix($white, $color, $percent);
 	}
@@ -50,8 +48,7 @@
 // make it darker
 @function shade($color, $percent) {
 	@if not is-color($color) {
-		@error "`#{$color}` is not a valid color for the `$color` argument in " +
-		"the `shade` function.";
+		@error "`#{$color}` is not a valid color for the `$color` argument in the `shade` function.";
 	} @else {
 		@return mix($black, $color, $percent);
 	}

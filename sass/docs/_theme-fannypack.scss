@@ -1,12 +1,12 @@
-////////////////////////////////////////////////////////////////////////////////
-// THEME: FANNYPACK
-//
-// description:
-// style for Fannypack documentation
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* THEME: FANNYPACK
+*
+* description:
+* style for Fannypack documentation
+******************************************************************************/
 
 .theme--fp {
-	// scss-lint:disable SelectorDepth
+	// stylelint-disable selector-max-specificity
 	.main-content {
 		padding-top: 0;
 	}
@@ -260,6 +260,7 @@
 			font-weight: normal;
 		}
 	}
+	// stylelint-enable selector-max-specificity
 }
 
 .fp-hero-unit {

@@ -23,8 +23,7 @@
 // This improves debugging quite a lot
 ////////////////////////////////////////////////////////////////////////////////
 
-// scss-lint:disable ImportantRule
-
+// stylelint-disable declaration-no-important
 .is-hidden,
 .js-is-hidden {
 	display: none !important;
@@ -46,4 +45,4 @@
 	@include visually-hidden;
 }
 
-// scss-lint:enable ImportantRule
+// stylelint-enable declaration-no-important
