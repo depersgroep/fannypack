@@ -6,9 +6,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 .fp-example {
 	padding: $double-spacing-unit;
+	overflow: auto;
 	border-radius: $border-radius-base;
 	background-color: $white;
-	overflow: auto;
 
 	+ .highlight {
 		box-shadow: inset 0 10px 5px -5px rgba($evil-gray, .4);
@@ -77,12 +77,13 @@
 				float: left;
 			}
 
+			// stylelint-disable order/order
 			@for $i from 1 through 12 {
 				.col-#{$i} {
 					width: percentage($i / 12);
 				}
 			}
-
+			// stylelint-enable
 			.col--clear {
 				clear: left;
 			}

@@ -1,8 +1,8 @@
-////////////////////////////////////////////////////////////////////////////////
-// PANELS
-//
-// description
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* PANELS
+*
+* description
+******************************************************************************/
 
 .panel {
 	display: block; // for <fieldset>
@@ -44,7 +44,7 @@
 	font-size: $panel-title-font-size;
 }
 
-// scss-lint:disable QualifyingElement
+// stylelint-disable selector-no-qualifying-type
 legend.panel__title {
 	display: block;
 	width: 100%;
@@ -66,8 +66,7 @@ legend.panel__title {
 		clear: both; // to clear the floating <legend>
 	}
 }
-// scss-lint:enable QualifyingElement
-
+// stylelint-enable selector-no-qualifying-type
 .panel__body {
 	> *:first-child {
 		margin-top: 0;

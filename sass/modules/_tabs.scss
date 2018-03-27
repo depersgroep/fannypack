@@ -1,8 +1,8 @@
-////////////////////////////////////////////////////////////////////////////////
-// TABS
-//
-//
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* TABS
+*
+*
+******************************************************************************/
 
 .tabs {
 	display: flex;
@@ -10,9 +10,10 @@
 	flex-wrap: wrap; // does magic of wrapping the pane to the next line
 }
 
-//==============================================================================
-// MODIFIERS
-//==============================================================================
+/******************************************************************************
+* MODIFIERS
+******************************************************************************/
+
 .tabs--primary {
 	background-color: $tabs-primary-tab-bg;
 }
@@ -26,9 +27,9 @@
 	background-color: $tabs-alt-primary-tab-bg;
 }
 
-//==============================================================================
-// ELEMENTS
-//==============================================================================
+/******************************************************************************
+* ELEMENTS
+******************************************************************************/
 
 .tabs__link,
 .tabs__label {
@@ -44,8 +45,8 @@
 	//The Magic
 	.tabs__trigger:checked + & {
 		position: relative;
+		z-index: $tabs-label-z-index;
 		cursor: default;
-		z-index: 2;
 	}
 
 	.tabs--primary & {
@@ -106,12 +107,13 @@
 		}
 	}
 
+	// stylelint-disable selector-max-specificity
 	.tabs--alt.tabs--primary .tabs__trigger:checked + & {
 		border-bottom: 3px solid $tabs-alt-secondary-active-border-color;
 		background: $tabs-alt-primary-active-bg;
 		color: $tabs-alt-primary-active-color;
 	}
-
+	// stylelint-enable
 	.tabs--alt.tabs--secondary & {
 		color: $tabs-alt-secondary-color;
 
@@ -121,11 +123,13 @@
 		}
 	}
 
+	// stylelint-disable selector-max-specificity
 	.tabs--alt.tabs--secondary .tabs__trigger:checked + & {
 		border-bottom: 3px solid $tabs-alt-secondary-active-border-color;
 		background: $tabs-alt-secondary-active-bg;
 		color: $tabs-alt-secondary-active-color;
 	}
+	// stylelint-enable
 }
 
 // the checkbox
@@ -143,8 +147,8 @@
 	.tabs__trigger:checked + .tabs__label + & {
 		display: block;
 		position: relative;
+		z-index: $tabs-pane-z-index;
 		top: 0;
-		z-index: 1;
 	}
 
 	.tabs--primary & {

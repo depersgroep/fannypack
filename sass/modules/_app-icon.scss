@@ -1,9 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
-// APP ICON
-//
-// description:
-// App logo's
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* APP ICON
+*
+* description:
+* App logo's
+******************************************************************************/
 
 .app-icon {
 	flex-shrink: 0;
@@ -49,7 +49,7 @@
 	}
 
 	// coloring
-
+	// stylelint-disable order/order
 	@each $name, $color in $customcolors {
 		.app-icon--#{$name} & {
 			background-color: $color;
@@ -61,6 +61,7 @@
 			background-color: $color;
 		}
 	}
+	// stylelint-enable
 }
 
 .app-icon__character {

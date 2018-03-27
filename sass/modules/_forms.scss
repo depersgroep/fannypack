@@ -1,9 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
-// FORMS
-//
-// description:
-// forms and form elements
-////////////////////////////////////////////////////////////////////////////////
+/******************************************************************************
+* FORMS
+*
+* description:
+* forms and form elements
+******************************************************************************/
 
 .form {
 	width: 100%;
@@ -20,10 +20,6 @@
 	border: 0;
 }
 
-.form__legend {
-	//
-}
-
 // wrapper around label and input/textarea
 .form__group {
 	margin-bottom: $double-spacing-unit;
@@ -37,7 +33,7 @@
 	font-weight: bold;
 }
 
-// scss-lint:disable QualifyingElement
+// stylelint-disable selector-no-qualifying-type
 legend.form__label {
 	width: 100%;
 	float: left;
@@ -46,8 +42,7 @@ legend.form__label {
 		clear: both;
 	}
 }
-// scss-lint:enable QualifyingElement
-
+// stylelint-enable selector-no-qualifying-type
 .form__label-meta {
 	color: $form-meta-color;
 	font-weight: normal;
@@ -105,7 +100,7 @@ legend.form__label {
 	}
 }
 
-// scss-lint:disable QualifyingElement
+// stylelint-disable selector-no-qualifying-type
 input[type="file"].form__field {
 	display: inline-block;
 	height: auto;
@@ -120,8 +115,7 @@ input[type="color"].form__field {
 	padding-right: 0;
 	padding-left: 0;
 }
-// scss-lint:enable QualifyingElement
-
+// stylelint-enable selector-no-qualifying-type
 .form__textarea {
 	min-height: 120px;
 }

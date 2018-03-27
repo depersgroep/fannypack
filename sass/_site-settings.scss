@@ -5,8 +5,6 @@
 // global variables
 ////////////////////////////////////////////////////////////////////////////////
 
-// scss-lint:disable SpaceAfterVariableName
-
 //==============================================================================
 // COLORS
 //==============================================================================
@@ -37,7 +35,7 @@ $grayscalecolors: map-merge((
 	'evil-gray'   : $evil-gray,
 	'whitesmoke'  : $whitesmoke,
 	'white'       : $white
-	), $grayscalecolors);
+), $grayscalecolors);
 
 // Social Media
 $facebook-color  : #365187 !default;
@@ -55,7 +53,7 @@ $socialmediacolors: map-merge((
 	'instagram' : $instagram-color,
 	'spotify'   : $spotify-color,
 	'soundcloud': $soundcloud-color
-	), $socialmediacolors);
+), $socialmediacolors);
 
 // custom colors
 $coolblue     : #47a0c3 !default;
@@ -73,7 +71,7 @@ $customcolors: map-merge((
 	'slate'        : $slate,
 	'dark'         : $dark,
 	'warmgrey'     : $warmgrey
-	), $customcolors);
+), $customcolors);
 
 // additional colors
 $orangepink: #fe6c59 !default;
@@ -102,7 +100,7 @@ $additionalcolors: map-merge((
 	'sunyellow'     : $sunyellow,
 	'apricot'       : $apricot,
 	'lightsalmon'   : $lightsalmon
-	), $additionalcolors);
+), $additionalcolors);
 
 // states - functional colors
 $success-color   : $lightishgreen !default;
@@ -119,7 +117,7 @@ $functionalcolors: map-merge((
 	'error'  : $orangepink,
 	'info'   : $coolblue,
 	'muted'  : $warmgrey
-	), $functionalcolors);
+), $functionalcolors);
 
 // MAIN COLORS
 $primary-color   : $coolblue !default;
@@ -130,7 +128,7 @@ $maincolors: () !default;
 $maincolors: map-merge((
 	'primary': $coolblue,
 	'secondary': $dark
-	), $maincolors);
+), $maincolors);
 
 $allcolors: map-merge($customcolors, $functionalcolors) !default;
 $allcolors: map-merge($additionalcolors, $allcolors);
@@ -156,8 +154,8 @@ $muted-color       : $warmgrey !default;
 //==============================================================================
 $font-path        : '../fonts/' !default;
 
-$sans-serif       : 'Source Sans Pro', Arial, sans-serif !default;
-$serif            : Georgia, sans-serif !default;
+$sans-serif       : 'Source Sans Pro', 'Arial', 'sans-serif' !default;
+$serif            : 'Georgia', 'sans-serif' !default;
 
 $font-size-base   : 16px !default;
 $line-height-base : 1.5 !default;
@@ -176,6 +174,7 @@ $font-size-h4     : emify(21) !default;
 $font-size-h5     : $font-size-large !default;
 $font-size-h6     : $font-size-small !default;
 
+$font-size-root   : 1em !default;
 //==============================================================================
 // SPACINGS
 //==============================================================================
@@ -196,4 +195,8 @@ $bp-small : 480px !default;
 $bp-medium: 720px !default;
 $bp-large: 920px !default;
 
-// scss-lint:enable SpaceAfterVariableName
+//==============================================================================
+// Z-INDEX
+//==============================================================================
+$z-index-base: 1!default;
+$z-index-negative: -1 !default;
