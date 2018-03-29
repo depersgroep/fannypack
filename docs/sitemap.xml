@@ -8,15 +8,26 @@
 
 	<meta name="robots" content="index, follow">
 	<meta name="description" content="An open source HTML and CSS toolkit with prebuilt modules and a responsive design. Build the most awesome sites and applications.">
-	<link rel="canonical" href="">
+	<link rel="canonical" href="http://localhost:4000/sitemap.xml">
 	
 
-	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/fannypack.css" />
-	<link rel="stylesheet" href="https://fannypack.persgroep.net/css/docs.css" />
+	<link rel="stylesheet" href="http://localhost:4000/css/fannypack.css" />
+	<link rel="stylesheet" href="http://localhost:4000/css/docs.css" />
 
-	
+	<meta property="og:locale" content="en_US">
+<meta property="og:type" content="product.item">
+<meta property="og:title" content="Fannypack">
+<meta property="og:description" content="An open source HTML and CSS toolkit with prebuilt modules and a responsive design. Build the most awesome sites and applications.">
+<meta property="og:url" content="http://localhost:4000/sitemap.xml">
+<meta property="og:site_name" content="Fannypack">
 
-	<link rel="shortcut icon" type="image/png" href="https://fannypack.persgroep.net/img/favicon.png" >
+
+
+
+<meta name="twitter:card" content="summary" />
+
+
+	<link rel="shortcut icon" type="image/png" href="http://localhost:4000/img/favicon.png" >
 </head>
 
 	<body class="bs-docs-home">
@@ -236,16 +247,16 @@
 					<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fannypack.persgroep.net/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/2col/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/2col/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -253,8 +264,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/404/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/404/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -262,8 +273,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/alert/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/alert/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -271,8 +282,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/app-icons/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/app-icons/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -280,8 +291,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/base/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/base/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -289,8 +300,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/boxes/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/boxes/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -298,8 +309,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/breadcrumb/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/breadcrumb/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -307,8 +318,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/buttons/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/buttons/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -316,8 +327,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/style/color/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/style/color/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -325,8 +336,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/drawer-gutter/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/drawer-gutter/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -334,8 +345,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/drawer-push-gutter/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/drawer-push-gutter/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -343,8 +354,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/drawer-push/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/drawer-push/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -352,8 +363,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/drawer/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/drawer/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -361,8 +372,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/fixed-header/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/fixed-header/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -370,8 +381,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/forms/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/forms/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -379,8 +390,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/getting-started/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/getting-started/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -388,8 +399,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/layout/grid/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/layout/grid/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -397,8 +408,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/hamburger/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/hamburger/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -406,8 +417,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/header/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/header/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -415,8 +426,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/icons/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/icons/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -426,8 +437,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/labels/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/labels/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -435,8 +446,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/login/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/login/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -444,8 +455,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/navigation/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/navigation/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -453,8 +464,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/pagination/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/pagination/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -462,8 +473,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/panels/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/panels/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -471,8 +482,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/tables/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/tables/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -480,8 +491,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/tabs/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/tabs/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -489,8 +500,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/modules/toolbar/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/modules/toolbar/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -498,8 +509,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/style/typography/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/style/typography/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -507,8 +518,8 @@
   
   
   <url>
-    <loc>https://fannypack.persgroep.net/templates/vertical-header/</loc>
-    <lastmod>2018-03-27T11:58:11+02:00</lastmod>
+    <loc>http://localhost:4000/templates/vertical-header/</loc>
+    <lastmod>2018-03-29T14:44:07+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

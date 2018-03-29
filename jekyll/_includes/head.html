@@ -6,7 +6,7 @@
 
 	<meta name="robots" content="index, follow">
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description}}{% endif %}">
-	<link rel="canonical" href="{{ page.permalink }}">
+	<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 	{% if site.author %}
 	<meta name="author" content="{{ site.author }}">
 	{% endif %}
@@ -14,10 +14,7 @@
 	<link rel="stylesheet" href="{{ "/css/fannypack.css" | absolute_url }}" />
 	<link rel="stylesheet" href="{{ "/css/docs.css" | absolute_url }}" />
 
-	{% comment %}
-	{{ template "_internal/opengraph.html" . }}
-	{{ template "_internal/google_analytics_async.html" . }}
-	{% endcomment %}
+	{% include open-graph.html %}
 
 	<link rel="shortcut icon" type="image/png" href="{{ "/img/favicon.png" | absolute_url }}" >
 </head>
