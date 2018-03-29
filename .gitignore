@@ -63,7 +63,7 @@ typings/
 .idea
 
 # Frontend
-public/
+docs/
 
 # OS
 .DS_Store
