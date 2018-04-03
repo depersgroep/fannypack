@@ -236,7 +236,7 @@ gulp.task('build', function() {
 });
 
 // deploy task
-gulp.task('deploy', run(['gulp build', 'bundle exec jekyll build']));
+gulp.task('deploy', run('gulp build'));
 
 // pre-commit
 // on Mac, make sure the folder exists
