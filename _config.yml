@@ -43,8 +43,7 @@ destination: _site
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-exclude: ["sass", "node_modules", "package-lock.json", "package.json", ".stylelintrc", ".eslintignore", ".eslintrc", ".npmrc", "Gemfile", "Gemfile.lock", "gulpfile.js"]
-#theme: minima
+exclude: ["sass", "node_modules", "package-lock.json", "package.json", ".stylelintrc", ".eslintignore", ".eslintrc", ".npmrc", "Gemfile", "Gemfile.lock", "gulpfile.js", "CONTRIBUTING.md", "README.md"]
 plugins:
  - jekyll-menus
 
