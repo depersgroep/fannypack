@@ -1,6 +1,6 @@
 ---
 title: Color
-description: Color palette
+description: Fannypack's available color palette. Divided in default, functional, additional and social media colors
 menus: Style
 ---
 
