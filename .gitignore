@@ -64,6 +64,7 @@ typings/
 
 # Frontend
 docs/
+_site/
 
 # OS
 .DS_Store
