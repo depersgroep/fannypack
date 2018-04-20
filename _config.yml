@@ -39,7 +39,6 @@ defaults:
 
 # Build settings
 source: jekyll
-destination: docs
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
