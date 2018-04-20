@@ -38,14 +38,14 @@
           "js/modules/*.js",
           "js/vendor/picturefill.js"
         ],
-        "dest": "jekyll/js/",
+        "dest": "js/",
         "file": "fannypack.js"
       },
       {
         "src": [
           "js/config/*.js"
         ],
-        "dest": "jekyll/js/",
+        "dest": "js/",
         "file": "fannypack-head.js"
       }
     ],
@@ -53,7 +53,9 @@
       "src": [
         "js/**/*.js",
         "!./js/persgroep/**/*.js",
-        "!./js/vendor/**/*.js"
+        "!./js/vendor/**/*.js",
+        "!./js/fannypack.js",
+        "!./js/fannypack-head.js",
       ]
     },
     "watch": "js/**/*.js"
@@ -65,12 +67,12 @@
           "sass/**/*.scss",
           "!./sass/docs/**/*.scss"
         ],
-        "dest": "jekyll/css",
+        "dest": "css",
         "file": "fannypack.css"
       },
       {
         "src": "sass/docs/**/*.scss",
-        "dest": "jekyll/css",
+        "dest": "css",
         "file": "docs.css"
       }
     ],
@@ -97,12 +99,12 @@
   },
   "img": {
     "src": "img/**/*",
-    "dest": "jekyll/img/",
+    "dest": "img/",
     "watch": "img/**/*"
   },
   "fonts": {
     "src": "fonts/**/*",
-    "dest": "jekyll/fonts/",
+    "dest": "fonts/",
     "watch": "fonts/**/*"
   },
   "git": {

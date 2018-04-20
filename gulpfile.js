@@ -214,14 +214,14 @@ gulp.task('cssbuild', ['sass'], function() {
 // default task
 gulp.task('default', ['hook', 'clean'], function() {
 	// pay attention when upgrading gulp: https://github.com/gulpjs/gulp/issues/505#issuecomment-45379280
-	gulp.start('imgbuild');
-	gulp.start('fontsbuild');
+	// gulp.start('imgbuild');
+	// gulp.start('fontsbuild');
 	gulp.start('js');
 	gulp.start('sass');
 
 	// watch
-	gulp.watch(pkg.img.watch, ['imgbuild']);
-	gulp.watch(pkg.fonts.watch, ['fontsbuild']);
+	// gulp.watch(pkg.img.watch, ['imgbuild']);
+	// gulp.watch(pkg.fonts.watch, ['fontsbuild']);
 	gulp.watch(pkg.js.watch, ['js']);
 	gulp.watch(pkg.sass.watch, ['sass']);
 });
@@ -229,8 +229,8 @@ gulp.task('default', ['hook', 'clean'], function() {
 // build - before deploy
 gulp.task('build', function() {
 	// pay attention when upgrading gulp: https://github.com/gulpjs/gulp/issues/505#issuecomment-45379280
-	gulp.start('imgbuild');
-	gulp.start('fontsbuild');
+	// gulp.start('imgbuild');
+	// gulp.start('fontsbuild');
 	gulp.start('jsbuild');
 	gulp.start('cssbuild');
 });

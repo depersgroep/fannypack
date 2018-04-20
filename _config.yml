@@ -38,11 +38,12 @@ defaults:
       modifier: ""
 
 # Build settings
-source: ./jekyll
-destination: ./_site
+#source:
+destination: _site
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+exclude: ["sass", "node_modules", "package-lock.json", "package.json", ".stylelintrc", ".eslintignore", ".eslintrc", ".npmrc", "Gemfile", "Gemfile.lock", "gulpfile.js"]
 #theme: minima
 plugins:
  - jekyll-menus
