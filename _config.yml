@@ -38,8 +38,8 @@ defaults:
       modifier: ""
 
 # Build settings
-source: jekyll
-destination: docs
+source: ./jekyll
+destination: ./_site
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
