@@ -1,14 +1,73 @@
 sidebar:
   - identifier: Getting started
+    children:
+      - page: Getting started
+        url: /getting-started/
   - identifier: Style
+    children:
+      - page: Color
+        url: /style/color/
+      - page: Typography
+        url: /style/typography/
   - identifier: Layout
+    children:
+      - page: Grid
+        url: /layout/grid/
   - identifier: Modules
+    children:
+      - page: Alert
+        url: /modules/alert/
+      - page: App icons
+        url: /modules/app-icons/
+      - page: Boxes
+        url: /modules/boxes/
+      - page: Breadcrumb
+        url: /modules/breadcrumb/
+      - page: Buttons
+        url: /modules/buttons/
+      - page: Forms
+        url: /modules/forms/
+      - page: Hamburger
+        url: /modules/hamburger/
+      - page: Header
+        url: /modules/header/
+      - page: Icons
+        url: /modules/icons/
+      - page: Labels
+        url: /modules/labels/
+      - page: Navigation
+        url: /modules/navigation/
+      - page: Pagination
+        url: /modules/pagination/
+      - page: Panels
+        url: /modules/panels/
+      - page: Tables
+        url: /modules/tables/
+      - page: Toolbar
+        url: /modules/toolbar/
   - identifier: Templates
+    children:
+      - page: Base
+        url: /templates/base/
+      - page: 2 column
+        url: /templates/2col/
+      - page: Drawer
+        url: /templates/drawer/
+      - page: Drawer with gutter
+        url: /templates/drawer-gutter/
+      - page: Drawer with gutter and push
+        url: /templates/drawer-push-gutter/
+      - page: Fixed header
+        url: /templates/fixed-header/
+      - page: Vertical header
+        url: /templates/vertical-header/
+      - page: Login
+        url: /templates/login/
 
 
 header:
   - title: "Documentation"
-    url: "/style/color"
+    url: "/getting-started/"
     identifier: Documentation
   - title: "Github"
     url: "https://github.com/depersgroep/fannypack"

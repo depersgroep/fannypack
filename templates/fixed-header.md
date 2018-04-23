@@ -2,7 +2,6 @@
 title: Fixed header
 description: When scrolling the page, your header wil be fixed at the top and always visible.
 modifier: layout--fixed-header
-menus: Templates
 ---
 
 # Fixed header template

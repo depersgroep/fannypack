@@ -1,7 +1,6 @@
 ---
 title: Icons
 description: Fannypack uses Google's Material Design Icons
-menus: Modules
 ---
 
 We use [Material Icons](https://material.io/icons/) from Google. All available icons are listed there, click them to get the instructions.

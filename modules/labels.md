@@ -1,7 +1,6 @@
 ---
 title: Labels
 description: Giving a visual representation to small pieces of content
-menus: Modules
 ---
 
 ## a11y ready

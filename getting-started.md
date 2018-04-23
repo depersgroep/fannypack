@@ -2,7 +2,6 @@
 title: Getting started
 description: lorem
 slug: getting-started
-menus: Getting started
 ---
 
 It's very easy to get started with Fannypack. Just include a link to our css file in your `<head>` and you're good to go.

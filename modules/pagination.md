@@ -1,7 +1,6 @@
 ---
 title: Pagination
 description: Navigate between pages of related content across multiple pages
-menus: Modules
 ---
 
 If you have a lot of content, pagination can be a solution to divide it smaller portions.

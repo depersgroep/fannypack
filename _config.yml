@@ -43,17 +43,12 @@ destination: _site
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-exclude: ["sass", "node_modules", "package-lock.json", "package.json", ".stylelintrc", ".eslintignore", ".eslintrc", ".npmrc", "Gemfile", "Gemfile.lock", "gulpfile.js", "CONTRIBUTING.md", "README.md"]
-plugins:
- - jekyll-menus
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude: ["sass", "node_modules", "package-lock.json", "package.json", ".stylelintrc", ".eslintignore", ".eslintrc", ".npmrc", "Gemfile", "Gemfile.lock", "gulpfile.js", "CONTRIBUTING.md", "README.md"]
+
+#plugins:
+#  - jekyll-menus # not supported by Github-pages
+

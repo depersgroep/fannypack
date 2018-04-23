@@ -2,7 +2,6 @@
 title: Two col
 description: A two column layout, 1 column for the content and a sidebar for complementary content.
 modifier: layout--fixed-header
-menus: Templates
 ---
 
 <div class="grid">

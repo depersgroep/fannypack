@@ -3,7 +3,6 @@ layout: default
 title: Grid
 description: Reusable grid build with CSS Grid Layout and fallbacks
 modifiers: layout--fixed-header layout--sidebar
-menus: Layout
 ---
 
 We have a standard **12 column grid** for you available. You can do **any combination of columns** as long as the total of each (virtual) row is 12.

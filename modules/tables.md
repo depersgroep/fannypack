@@ -1,7 +1,6 @@
 ---
 title: Tables
 description: Tabular data isn't dead!
-menus: Modules
 ---
 
 <div class="fp-example">

@@ -1,7 +1,6 @@
 ---
 title: Navigation
 description: Main navigation component
-menus: Modules
 ---
 
 Standard horizontal navigation. Mostly used in the heading.

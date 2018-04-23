@@ -2,7 +2,6 @@
 title: Vertical header
 description: When scrolling the page, your header wil be fixed at the left and always visible.
 modifier: layout--vertical-header
-menus: Templates
 ---
 
 # Vertical header template

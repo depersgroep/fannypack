@@ -1,7 +1,6 @@
 ---
 title: Hamburger
 description: The hamburger menu icon
-menus: Modules
 ---
 
 We use this hamburger icon in the drawer and the vertical header but you can use it anywhere you need it. Styling is provided but if you need extras for positioning, you have to write it yourself.

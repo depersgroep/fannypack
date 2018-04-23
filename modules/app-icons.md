@@ -1,7 +1,6 @@
 ---
 title: App Icons
 description: Logo's for the apps.
-menus: Modules
 ---
 
 Representation of an internal application **without** the application name visible. Because this has `role="img"` you **must provide** `aria-label=""` with a description of the application. App icons are usually created by combining color and minimal type. If needed, the app icon can be a [simple graphic logo](#graphic-logo).

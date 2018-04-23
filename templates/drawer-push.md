@@ -3,7 +3,6 @@ title: Drawer (push)
 description: Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements.
 layout: drawer-push
 modifier: layout--drawer-push layout--fixed-header
-menus: Templates
 ---
 
 # Drawer with push

@@ -3,7 +3,6 @@ title: Drawer (gutter)
 description: Example template with a drawer. A drawer is an (auto-) collapsible sidebar with navigational elements.
 layout: drawer
 modifier: layout--drawer layout--fixed-header
-menus: Templates
 ---
 
 # Drawer with gutter

@@ -55,7 +55,7 @@
         "!./js/persgroep/**/*.js",
         "!./js/vendor/**/*.js",
         "!./js/fannypack.js",
-        "!./js/fannypack-head.js",
+        "!./js/fannypack-head.js"
       ]
     },
     "watch": "js/**/*.js"

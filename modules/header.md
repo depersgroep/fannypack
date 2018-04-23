@@ -1,7 +1,6 @@
 ---
 title: Header
 description: The site's header
-menus: Modules
 ---
 
 Your site's main header. A place for your app logo and maybe some navigation.

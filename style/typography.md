@@ -1,7 +1,6 @@
 ---
 title: Typography
 description: Typographic information and kitchen sink for Fannypack
-menus: Style
 ---
 
 ## Font

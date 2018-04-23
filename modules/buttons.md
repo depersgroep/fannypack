@@ -1,7 +1,6 @@
 ---
 title: Buttons
 description: Styles for the available buttons.
-menus: Modules
 ---
 
 <div class="fp-example">

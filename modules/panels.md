@@ -1,7 +1,6 @@
 ---
 title: Panels
 description: Boxes that hold content
-menus: Modules
 ---
 
 Containers for grouped information that are part of the same subject.

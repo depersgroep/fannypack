@@ -1,7 +1,6 @@
 ---
 title: Base
 description: Default layout, header and a container for your content.
-menus: Templates
 ---
 
 # Base template

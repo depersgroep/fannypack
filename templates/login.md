@@ -3,7 +3,6 @@ title: Login
 description: Example of the Login page
 layout: login
 modifier: layout--diorama
-menus: Templates
 ---
 
 {% highlight html %}

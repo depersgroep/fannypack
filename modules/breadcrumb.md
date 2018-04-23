@@ -1,7 +1,6 @@
 ---
 title: Breadcrumb
 description: Breadcrumb is a graphical control element used as a navigational aid in user interfaces.
-menus: Modules
 ---
 
 <div class="fp-example">

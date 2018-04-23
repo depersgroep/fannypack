@@ -1,7 +1,6 @@
 ---
 title: Boxes
 description: Sometimes you just need a box.
-menus: Modules
 ---
 
 <div class="fp-example">

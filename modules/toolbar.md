@@ -1,7 +1,6 @@
 ---
 title: Toolbar
 description: Section under the site header to add primary actions for that page.
-menus: Modules
 ---
 
 Toolbars use flexbox the way it's meant to be, for UI layout and not for page layout.

@@ -1,7 +1,6 @@
 ---
 title: Tabs
 description: Provide visual feedback about a recent action of the user.
-menus: Modules
 ---
 
 <p class="lead">Tabs purely with html and css, no JavaScript required. <code>Flexbox</code> to the rescue!</p>

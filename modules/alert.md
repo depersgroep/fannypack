@@ -1,7 +1,6 @@
 ---
 title: Alert
 description: Provide visual feedback about a recent action of the user.
-menus: Modules
 ---
 
 <div class="fp-example">
