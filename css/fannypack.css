@@ -546,27 +546,27 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: emify(40);
 }
 
 h2 {
-  font-size: 2em;
+  font-size: emify(32);
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: emify(24);
 }
 
 h4 {
-  font-size: 1.3125em;
+  font-size: emify(21);
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: emify(20);
 }
 
 h6 {
-  font-size: 0.75em;
+  font-size: emify(12);
 }
 
 h1,
@@ -598,7 +598,7 @@ code {
   border-radius: 2px;
   background-color: #dedede;
   color: #3c4d62;
-  font-size: 0.875em;
+  font-size: emify(14);
 }
 
 pre code {
@@ -655,7 +655,7 @@ hr {
 
 .lead,
 .text--large {
-  font-size: 1.25em;
+  font-size: emify(20);
   line-height: 1.3;
 }
 
@@ -1445,7 +1445,7 @@ hr {
     right: 30px;
     bottom: 30px;
     opacity: .6;
-    font-size: 0.875em;
+    font-size: emify(14);
   }
 }
 
@@ -1811,7 +1811,7 @@ hr {
 .app-icon__name {
   margin-left: 15px;
   color: #000;
-  font-size: 1.25em;
+  font-size: emify(20);
   font-weight: bold;
   line-height: 1.16667;
 }
@@ -2402,7 +2402,7 @@ hr {
 .drawer__section-title {
   margin-bottom: 20px;
   color: #5c7087;
-  font-size: 0.875em;
+  font-size: emify(14);
 }
 
 @media only screen and (max-width: 919px) {
@@ -2437,7 +2437,7 @@ hr {
   padding: 20px;
   border-top: 1px solid #dedede;
   background-color: #fff;
-  font-size: 0.875em;
+  font-size: emify(14);
   text-align: center;
 }
 
@@ -2588,7 +2588,7 @@ input[type="color"].form__field {
   display: block;
   margin-bottom: 5px;
   color: #9e9e9e;
-  font-size: 0.875em;
+  font-size: emify(14);
 }
 
 .form__checkbox--inline,
@@ -2621,7 +2621,7 @@ input[type="color"].form__field {
 }
 
 .form__feedback {
-  font-size: 0.875em;
+  font-size: emify(14);
 }
 
 .is-invalid .form__feedback,
@@ -3918,7 +3918,7 @@ input[type="color"].form__field {
   display: block;
   margin-bottom: 10px;
   color: #9e9e9e;
-  font-size: 0.875em;
+  font-size: emify(14);
 }
 
 @media only screen and (max-width: 919px) {
@@ -3956,7 +3956,7 @@ input[type="color"].form__field {
 
 .pagination {
   color: #152030;
-  font-size: 0.75em;
+  font-size: emify(12);
   font-weight: bold;
 }
 
@@ -3971,7 +3971,7 @@ input[type="color"].form__field {
 
 @media only screen and (min-width: 800px) {
   .pagination {
-    font-size: 1.125em;
+    font-size: emify(18);
   }
 }
 
@@ -4154,7 +4154,7 @@ input[type="color"].form__field {
 
 .panel__title {
   margin: 0;
-  font-size: 1.125em;
+  font-size: emify(18);
 }
 
 legend.panel__title {
@@ -4231,7 +4231,7 @@ legend.panel__title + .panel__body {
   width: 32px;
   height: 32px;
   color: #aaa;
-  font-size: 1.5em;
+  font-size: emify(24);
   line-height: 32px;
   text-align: center;
   cursor: pointer;

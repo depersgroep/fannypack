@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js layout--diorama{% if page.modifier %} {{page.modifier}}{% endif %}">
+
+{% include head.html %}
+
+<body style="background-image: url('{{ "img/map.jpg" | absolute_url }}');" data-copyright="Unsplash" data-credit="N.">
+	<main class="main-container" role="main">
+		{% include 404.html %}
+	</main>
+
+	{% if page.url == '/templates/404/' %}
+	<input type="checkbox" id="dialog__checkbox" class="dialog__checkbox" checked="checked" />
+	<label for="dialog__checkbox" class="dialog__toggle"></label>
+	<div class="dialog" role="dialog">
+		<div class="dialog__body">
+			{{ content }}
+		</div>
+	</div>
+	{% endif %}
+</body>
+</html>

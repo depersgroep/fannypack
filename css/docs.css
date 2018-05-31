@@ -344,24 +344,24 @@
 
 .fp-hero-unit__title {
   margin-top: 0;
-  font-size: 2.25em;
+  font-size: emify(36);
   text-align: center;
 }
 
 @media only screen and (min-width: 480px) {
   .fp-hero-unit__title {
-    font-size: 3.25em;
+    font-size: emify(52);
   }
 }
 
 @media only screen and (min-width: 720px) {
   .fp-hero-unit__title {
-    font-size: 4.125em;
+    font-size: emify(66);
   }
 }
 
 .fp-hero-unit__body {
-  font-size: 1.3125em;
+  font-size: emify(21);
   text-align: center;
 }
 
@@ -506,7 +506,7 @@
 }
 
 .fp-droplet__name {
-  font-size: 1.3125em;
+  font-size: emify(21);
   font-weight: 600;
 }
 
