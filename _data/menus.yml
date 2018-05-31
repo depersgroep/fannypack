@@ -63,6 +63,8 @@ sidebar:
         url: /templates/vertical-header/
       - page: Login
         url: /templates/login/
+      - page: 403
+        url: /templates/403/
       - page: 404
         url: /templates/404/
 

@@ -3,12 +3,21 @@
 
 {% include head.html %}
 
-<body style="background-image: url('{{ "img/map.jpg" | absolute_url }}');" data-copyright="Unsplash" data-credit="N.">
+
+{% if page.url contains '403' %}
+<body style="background-image: url('{{ 'img/stop.jpg' | absolute_url }}');" data-copyright="Unsplash" data-credit="Sam Xu">
+{% elsif page.url contains '404' %}
+<body style="background-image: url('{{ 'img/map.jpg' | absolute_url }}');" data-copyright="Unsplash" data-credit="N.">
+{% endif %}
 	<main class="main-container" role="main">
-		{% include 404.html %}
+		{% if page.url contains '403' %}
+			{% include 403.html %}
+		{% elsif page.url contains '404' %}
+			{% include 404.html %}
+		{% endif %}
 	</main>
 
-	{% if page.url == '/templates/404/' %}
+	{% if page.url contains '/templates/40' %}
 	<input type="checkbox" id="dialog__checkbox" class="dialog__checkbox" checked="checked" />
 	<label for="dialog__checkbox" class="dialog__toggle"></label>
 	<div class="dialog" role="dialog">
