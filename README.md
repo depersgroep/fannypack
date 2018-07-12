@@ -11,7 +11,6 @@ Fannypack runs on [Jekyll](https://jekyllrb.com/), a static site generator and [
 ### Dependencies
 - NodeJS v6.X (or newer) & NPM: https://nodejs.org/dist/latest-v6.x/
 - Jekyll 3.7 or newer: https://jekyllrb.com/docs/installation/
-- Jekyll-menus plugin: https://github.com/forestryio/jekyll-menus
 
 ### Run local
 
