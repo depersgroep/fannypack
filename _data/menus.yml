@@ -43,6 +43,8 @@ sidebar:
         url: /modules/panels/
       - page: Tables
         url: /modules/tables/
+      - page: Tabs
+        url: /modules/tabs/
       - page: Toolbar
         url: /modules/toolbar/
   - identifier: Templates
