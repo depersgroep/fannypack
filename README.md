@@ -9,9 +9,16 @@ Built with **SMACSS, BEM and WAI-ARIA**.
 Fannypack runs on [Jekyll](https://jekyllrb.com/), a static site generator and [Gulp](https://gulpjs.com/) as task manager.
 
 ### Dependencies
-- NodeJS v6.X (or newer) & NPM: https://nodejs.org/dist/latest-v6.x/
-- Jekyll 3.7 or newer: https://jekyllrb.com/docs/installation/
-- Jekyll-menus plugin: https://github.com/forestryio/jekyll-menus
+- Ruby, for the gems (Jekyll and Bundler) : https://www.ruby-lang.org/en/downloads/
+- NodeJS v6.X (or newer) & NPM: https://nodejs.org/dist/latest-v6.x/ 
+- Jekyll 3.7 or newer: https://jekyllrb.com/docs/installation/ 
+- Bundler : https://bundler.io/
+
+Install these gems before you move on :
+```bash
+gem install bundler jekyll
+bundle install
+```
 
 ### Run local
 
@@ -22,7 +29,6 @@ In your fannypack project folder:
 bundle exec jekyll serve
 
 # if you don't have bundler installed
-# make sure you also install jekyll-menus
 jekyll serve
 ```
 and in another Terminal window, in your fannypack project folder:
