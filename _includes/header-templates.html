@@ -11,22 +11,22 @@
 	{% if include.modifier contains "vertical" %}
 	<input type="checkbox" class="hamburger__checkbox" id="nav-toggle">
 	<label for="nav-toggle" class="hamburger" role="button" aria-label="Toggle the menu">
-		<span class="hamburger__line" role="none presentation"></span>
-		<span class="hamburger__line" role="none presentation"></span>
-		<span class="hamburger__line" role="none presentation"></span>
+		<span class="hamburger__line" role="presentation"></span>
+		<span class="hamburger__line" role="presentation"></span>
+		<span class="hamburger__line" role="presentation"></span>
 	</label>
 	<nav class="nav nav--vertical" role="navigation" aria-label="Primary navigation">
 		<ul class="nav__list">
-			<li class="nav__item" role="none presentation">
+			<li class="nav__item" role="presentation">
 				<a href="#" class="nav__link">Home</a>
 			</li>
-			<li class="nav__item" role="none presentation">
+			<li class="nav__item" role="presentation">
 				<a href="#" class="nav__link">Products</a>
 			</li>
-			<li class="nav__item is-active" role="none presentation">
+			<li class="nav__item is-active" role="presentation">
 				<a href="#" class="nav__link" aria-current="page">About</a>
 			</li>
-			<li class="nav__item nav__item--last" role="none presentation">
+			<li class="nav__item nav__item--last" role="presentation">
 				<a href="{% link layout/grid.md %}" class="nav__link">Back to docs</a>
 			</li>
 		</ul>

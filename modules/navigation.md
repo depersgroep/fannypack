@@ -8,13 +8,13 @@ Standard horizontal navigation. Mostly used in the heading.
 <div class="fp-example">
 	<nav class="nav" role="navigation" aria-label="Primary navigation">
 		<ul class="nav__list">
-			<li class="nav__item" role="none">
+			<li class="nav__item" role="presentation">
 				<a href="#" class="nav__link">Home</a>
 			</li>
-			<li class="nav__item" role="none">
+			<li class="nav__item" role="presentation">
 				<a href="#" class="nav__link">Products</a>
 			</li>
-			<li class="nav__item is-active" role="none">
+			<li class="nav__item is-active" role="presentation">
 				<a href="#" class="nav__link" aria-current="page">About</a>
 			</li>
 		</ul>
@@ -24,13 +24,13 @@ Standard horizontal navigation. Mostly used in the heading.
 {% highlight html %}
 <nav class="nav" role="navigation" aria-label="Primary navigation">
 	<ul class="nav__list">
-		<li class="nav__item" role="none">
+		<li class="nav__item" role="presentation">
 			<a href="#" class="nav__link">Home</a>
 		</li>
-		<li class="nav__item" role="none">
+		<li class="nav__item" role="presentation">
 			<a href="#" class="nav__link">Products</a>
 		</li>
-		<li class="nav__item is-active" role="none">
+		<li class="nav__item is-active" role="presentation">
 			<a href="#" class="nav__link" aria-current="page">About</a>
 		</li>
 	</ul>
@@ -69,13 +69,13 @@ Standard horizontal navigation. Mostly used in the heading.
 <div class="fp-example">
 	<nav class="nav nav--vertical" role="navigation" aria-label="Primary navigation">
 		<ul class="nav__list">
-			<li class="nav__item" role="none">
+			<li class="nav__item" role="presentation">
 				<a href="#" class="nav__link">Home</a>
 			</li>
-			<li class="nav__item" role="none">
+			<li class="nav__item" role="presentation">
 				<a href="#" class="nav__link">Products</a>
 			</li>
-			<li class="nav__item is-active" role="none">
+			<li class="nav__item is-active" role="presentation">
 				<a href="#" class="nav__link" aria-current="page">About</a>
 			</li>
 		</ul>
@@ -85,13 +85,13 @@ Standard horizontal navigation. Mostly used in the heading.
 {% highlight html %}
 <nav class="nav nav--vertical" role="navigation" aria-label="Primary navigation">
 	<ul class="nav__list">
-		<li class="nav__item" role="none">
+		<li class="nav__item" role="presentation">
 			<a href="#" class="nav__link">Home</a>
 		</li>
-		<li class="nav__item" role="none">
+		<li class="nav__item" role="presentation">
 			<a href="#" class="nav__link">Products</a>
 		</li>
-		<li class="nav__item is-active" role="none">
+		<li class="nav__item is-active" role="presentation">
 			<a href="#" class="nav__link" aria-current="page">About</a>
 		</li>
 	</ul>

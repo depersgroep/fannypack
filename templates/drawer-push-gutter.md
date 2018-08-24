@@ -98,9 +98,9 @@ Example template with a **drawer**. A drawer is an (auto-) collapsible sidebar w
 <body>
 	<input type="checkbox" class="hamburger__checkbox" id="drawer-toggle">
 	<label for="drawer-toggle" class="hamburger" role="button" aria-label="Menu">
-		<span class="hamburger__line" role="none presentation"></span>
-		<span class="hamburger__line" role="none presentation"></span>
-		<span class="hamburger__line" role="none presentation"></span>
+		<span class="hamburger__line" role="presentation"></span>
+		<span class="hamburger__line" role="presentation"></span>
+		<span class="hamburger__line" role="presentation"></span>
 	</label>
 	<div class="drawer drawer--gutter">
 		<div class="drawer__section">
@@ -110,7 +110,7 @@ Example template with a **drawer**. A drawer is an (auto-) collapsible sidebar w
 	</div>
 	<div class="drawer__push-container">
 		<header class="site-header">...</header>
-		<main class="main-container" role="main">
+		<main class="main-container">
 			<div class="main-content">
 				...
 			</div>

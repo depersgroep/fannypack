@@ -5,15 +5,15 @@ description: Forms and form elements
 
 <div class="fp-example">
 	<form action="" method="" class="form">
-		<fieldset class="form__group">
+		<div class="form__group">
 			<label for="inputid" class="form__label">Name</label>
 			<input id="inputid" name="inputid" type="text" class="form__field" />
-		</fieldset>
-		<fieldset class="form__group">
+		</div>
+		<div class="form__group">
 			<label for="textareaid" class="form__label">Comment <span class="form__label-meta">(optional)</span></label>
 			<span class="form__helptext" id="textareahelptext">A short help text for a textarea.</span>
 			<textarea name="textareaname" id="textareaid" class="form__textarea" aria-describedby="textareahelptext"></textarea>
-		</fieldset>
+		</div>
 		<div class="form__actions">
 			<button class="button button--default" type="reset">Reset</button>
 			<button class="button button--primary" type="submit">Send</button>
@@ -44,12 +44,14 @@ description: Forms and form elements
 **Always** use a `label` with your form elements. Don't use the `placeholder` attribute as a subsitute for a `label`. The `placeholder` attribute isn't meant to give an extensive description. It's meant to be a guideline or a hint.
 
 <div class="fp-example">
+	<p class="text--error">Bad example: placeholder used as label</p>
 	<div class="form__group">
 		<input type="email" class="form__field" placeholder="e-mail address" />
 	</div>
+	<p class="text--success">Good example: separate label and placeholder</p>
 	<div class="form__group">
-		<label class="form__label" for="emailplaceholder">E-mail</label>
-		<input type="email" class="form__field" id="emailplaceholder" placeholder="john@example.com" />
+		<label class="form__label" for="searchplaceholder">Search</label>
+		<input type="email" class="form__field" id="searchplaceholder" placeholder="Search query here" />
 	</div>
 </div>
 
@@ -58,8 +60,8 @@ description: Forms and form elements
 <input type="email" class="form__field" placeholder="e-mail address" />
 
 <!-- GOOD -->
-<label class="form__label" for="email">E-mail</label>
-<input type="email" class="form__field" id="email" placeholder="john@example.com" />
+<label class="form__label" for="searchplaceholder">Search</label>
+<input type="email" class="form__field" id="searchplaceholder" placeholder="Search query here" />
 {% endhighlight %}
 
 ## Form elements
@@ -328,7 +330,7 @@ By default checkboxes and radio buttons are stacked.
 
 ### Inline checkboxes and radio buttons
 
-If you add modifier <code>.form\_\_checkbox--inline</code> or <code>.form\_\_radio--inline</code> they will display inline.
+If you add modifier <code>.form__checkbox--inline</code> or <code>.form__radio--inline</code> they will display inline.
 
 <div class="fp-example">
 	<legend class="form__label" id="brandpicker2">Choose a brand</legend>

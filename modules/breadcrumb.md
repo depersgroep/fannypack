@@ -53,7 +53,7 @@ description: Breadcrumb is a graphical control element used as a navigational ai
 		<tr>
 			<td><code>aria-current="page"</code></td>
 			<td><span class="label label--warning">Required</span></td>
-			<td>On <code>.breadcrumb__item</code>. For a11y. A token with value: <strong>page</strong></code>.</td>
+			<td>On <code>.breadcrumb__item</code>. For a11y. A token with value: <code>page</code>.</td>
 		</tr>
 	</tbody>
 </table>

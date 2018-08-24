@@ -26,7 +26,7 @@ modifier: layout--fixed-header
 <head>...</head>
 <body>
 	<header class="site-header">...</header>
-	<main class="main-container" role="main">
+	<main class="main-container">
 		<div class="main-content">
 			<div class="container">
 				<div class="grid">

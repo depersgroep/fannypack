@@ -35,7 +35,7 @@ So `<html class="layout--drawer layout--fixed-header">` is valid and will work.
 <head>...</head>
 <body>
 	<header class="site-header">...</header>
-	<main class="main-container" role="main">
+	<main class="main-container">
 		<div class="main-content">
 			<div class="container">
 				...

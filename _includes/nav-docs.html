@@ -2,12 +2,12 @@
 	<ul class="nav__list">
 		{% if site.data.menus %}
 		{% for item in site.data.menus.sidebar %}
-		<li class="nav__item">
+		<li class="nav__item" role="presentation">
 			<span class="nav__title">{{ item.identifier }}</span>
 			{% if item.children %}
 			<ul class="nav__list nav__list--nested">
 			{% for entry in item.children %}
-				<li class="nav__item{% if entry.url == page.url %} is-active{% endif %} {{ forloop.index }}">
+				<li class="nav__item{% if entry.url == page.url %} is-active{% endif %} {{ forloop.index }}" role="presentation">
 					<a class="nav__link" title="{{ entry.page }}" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.page }}</a>
 					<!-- {{ entry.url }} -->
 					<!-- {{ page.url }} -->

@@ -9,7 +9,7 @@
 {% elsif page.url contains '404' %}
 <body style="background-image: url('{{ 'img/map.jpg' | absolute_url }}');" data-copyright="Unsplash" data-credit="N.">
 {% endif %}
-	<main class="main-container" role="main">
+	<main class="main-container">
 		{% if page.url contains '403' %}
 			{% include 403.html %}
 		{% elsif page.url contains '404' %}

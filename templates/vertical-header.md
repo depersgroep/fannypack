@@ -52,13 +52,13 @@ On mobile this will transform to a horizontal header with a hamburger menu.
 		</div>
 		<input type="checkbox" class="hamburger__checkbox" id="nav-toggle">
 		<label for="nav-toggle" class="hamburger" role="button" aria-label="Toggle the menu">
-			<span class="hamburger__line" role="none presentation"></span>
-			<span class="hamburger__line" role="none presentation"></span>
-			<span class="hamburger__line" role="none presentation"></span>
+			<span class="hamburger__line" role="presentation"></span>
+			<span class="hamburger__line" role="presentation"></span>
+			<span class="hamburger__line" role="presentation"></span>
 		</label>
 		<nav class="nav nav--vertical">...</nav>
 	</header>
-	<main class="main-container" role="main">
+	<main class="main-container">
 		<div class="main-content">
 			<div class="container">
 				...

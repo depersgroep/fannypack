@@ -10,7 +10,7 @@ modifier: layout--diorama
 <html lang="en" class="no-js layout--diorama">
 <head>...</head>
 <body style="background-image: url('{{ "img/antelopecanyon.jpg" | absolute_url }}');" data-copyright="Unsplash" data-credit="Ashim D’Silva">
-	<main class="main-container" role="main">
+	<main class="main-container">
 			<div class="app-icon app-icon--xlarge app-icon--lumberjack-red" role="img" aria-labelledby="app-icon-name">
 				<div class="app-icon__logo" aria-hidden="true">
 					<span class="app-icon__character">T</span>
