@@ -3,7 +3,13 @@ title: Icons
 description: Fannypack uses Google's Material Design Icons
 ---
 
-We use [Material Icons](https://material.io/icons/) from Google. All available icons are listed there, click them to get the instructions.
+We use [Material Icons](https://material.io/icons/) from Google.
+
+<div class="alert alert--condensed alert--info" role="alert" aria-describedby="materialiconsalert">
+	<div class="alert__body">
+		<p id="materialiconsalert" class="alert__text">If there are any issues with icons, check Material Icons documentation or Google it. E.g. Some icons are missing from the icon font.</p>
+	</div>
+</div>
 
 **Note** instead of `<i>` we use `<span>` to wrap the icons. That's semantically more correct.
 

@@ -11,11 +11,9 @@
 	font-family: 'Material Icons';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Material Icons'),
-		local('MaterialIcons-Regular'),
-		url('#{$icon-font-path}/MaterialIcons-Regular.woff2?lppymq') format('woff2'),
-		url('#{$icon-font-path}//MaterialIcons-Regular.woff?lppymq') format('woff'),
-		url('#{$icon-font-path}/MaterialIcons-Regular.ttf?lppymq') format('truetype');
+	src: url('#{$icon-font-path}/MaterialIcons-Regular.woff2?nj3tfl1x1') format('woff2'),
+		url('#{$icon-font-path}/MaterialIcons-Regular.woff?nj3tfl1x1') format('woff'),
+		url('#{$icon-font-path}/MaterialIcons-Regular.ttf?nj3tfl1x1') format('truetype');
 }
 
 .material-icons {
