@@ -49,10 +49,15 @@ If the states are toggled with extra classes you can add `.has-`, or with JavaSc
 		<button class="button button--primary js-has-warning" type="submit">Primary has Warning</button>
 		<button class="button button--primary js-has-error" type="submit">Primary has Error</button>
 	</div>
-	<div>
+	<div style="margin-bottom: 20px;">
 		<button class="button button--secondary has-success" type="submit">Secondary has Success</button>
 		<button class="button button--secondary js-has-warning" type="submit">Secondary has Warning</button>
 		<button class="button button--secondary js-has-error" type="submit">Secondary has Error</button>
+	</div>
+	<div>
+		<button class="button button--link has-success" type="submit">link has Success</button>
+		<button class="button button--link js-has-warning" type="submit">link has Warning</button>
+		<button class="button button--link js-has-error" type="submit">link has Error</button>
 	</div>
 </div>
 
@@ -66,6 +71,9 @@ If the states are toggled with extra classes you can add `.has-`, or with JavaSc
 <button class="button button--secondary has-success" type="submit">Secondary has Success</button>
 <button class="button button--secondary js-has-warning" type="submit">Secondary has Warning</button>
 <button class="button button--secondary js-has-error" type="submit">Secondary has Error</button>
+<button class="button button--link has-success" type="submit">link has Success</button>
+<button class="button button--link js-has-warning" type="submit">link has Warning</button>
+<button class="button button--link js-has-error" type="submit">link has Error</button>
 {% endhighlight %}
 
 ## Full width

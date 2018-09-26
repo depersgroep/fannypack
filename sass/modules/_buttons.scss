@@ -1,7 +1,7 @@
 /******************************************************************************
 * BUTTONS
 *
-* 
+*
 ******************************************************************************/
 
 .button {
@@ -115,6 +115,17 @@
 	&:hover {
 		border-color: $button-success-hover-border-color;
 	}
+
+	&.button--link {
+		border: $button-link-border-color;
+		color: $button-link-success-color;
+
+		&:focus,
+		&:hover {
+			border-color: $button-link-hover-border-color;
+			color: $button-link-success-hover-color;
+		}
+	}
 }
 
 .button--warning,
@@ -126,6 +137,17 @@
 	&:hover {
 		border-color: $button-warning-hover-border-color;
 	}
+
+	&.button--link {
+		border: $button-link-border-color;
+		color: $button-link-warning-color;
+
+		&:focus,
+		&:hover {
+			border-color: $button-link-hover-border-color;
+			color: $button-link-warning-hover-color;
+		}
+	}
 }
 
 .button--error,
@@ -136,6 +158,17 @@
 	&:focus,
 	&:hover {
 		border-color: $button-error-hover-border-color;
+	}
+
+	&.button--link {
+		border: $button-link-border-color;
+		color: $button-link-error-color;
+
+		&:focus,
+		&:hover {
+			border-color: $button-link-hover-border-color;
+			color: $button-link-error-hover-color;
+		}
 	}
 }
 
