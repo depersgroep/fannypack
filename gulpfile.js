@@ -1,5 +1,5 @@
 /*
-* de Persgroep Frontend gulfile
+* DPG Media Frontend gulfile
 *
 * Commands:
 	* gulp default
@@ -21,6 +21,7 @@
 
 /* do NOT change the order of the pipes as this could cause unwanted effects */
 'use strict';
+
 var pkg = require('./package.json'),
 	del = require('del'),
 	es = require('event-stream'),

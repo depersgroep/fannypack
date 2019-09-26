@@ -7,7 +7,7 @@ slug: getting-started
 It's very easy to get started with Fannypack. Just include a link to our css file in your `<head>` and you're good to go.
 
 {% highlight html %}
-<link rel="stylesheet" href="https://fannypack.persgroep.net/css/fannypack.css" />
+<link rel="stylesheet" href="https://fannypack.dpgmedia.net/css/fannypack.css" />
 {% endhighlight %}
 
 Next: start implementing the html.

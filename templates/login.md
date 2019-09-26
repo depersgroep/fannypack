@@ -18,7 +18,7 @@ modifier: layout--diorama
 				</div>
 				<span class="app-icon__name" id="app-icon-name">Temptation Editor</span>
 			</div>
-			<p>Sign in below with your De Persgroep account.</p>
+			<p>Sign in below with your DPG Media account.</p>
 			<form action="" class="form">
 				<div class="form__group">
 					<label for="name" class="form__label">Name</label>
