@@ -1,4 +1,4 @@
-# Fannypack
+# DPG Fannypack
 
 An open source HTML and CSS toolkit. With prebuilt modules and a responsive design you can build the most awesome sites and applications.
 
